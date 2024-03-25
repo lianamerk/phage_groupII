@@ -1,0 +1,103 @@
+[11:53:59] This is prokka 1.14.6
+[11:53:59] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[11:53:59] Homepage is https://github.com/tseemann/prokka
+[11:53:59] Local time is Fri Dec 15 11:53:59 2023
+[11:53:59] You are lmerk
+[11:53:59] Operating system is linux
+[11:53:59] You have BioPerl 1.006923
+[11:53:59] System has 36 cores.
+[11:53:59] Will use maximum of 20 cores.
+[11:53:59] Annotating as >>> Bacteria <<<
+[11:53:59] Creating new output folder: GenomesDB/MK448781
+[11:53:59] Running: mkdir -p GenomesDB\/MK448781
+[11:53:59] Using filename prefix: MK448781.XXX
+[11:53:59] Setting HMMER_NCPU=1
+[11:53:59] Writing log to: GenomesDB/MK448781/MK448781.log
+[11:53:59] Command: /n/home07/lmerk/.conda/envs/defensefinder/bin/prokka --noanno --outdir GenomesDB/MK448781 --prefix MK448781 --locustag MK448781 GenomesDB/MK448781.fasta --cpus 20
+[11:53:59] Appending to PATH: /n/home07/lmerk/.conda/envs/defensefinder/bin
+[11:53:59] Looking for 'aragorn' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/aragorn
+[11:53:59] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
+[11:53:59] Looking for 'barrnap' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/barrnap
+[11:53:59] Determined barrnap version is 000009 from 'barrnap 0.9'
+[11:53:59] Looking for 'blastp' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/blastp
+[11:54:00] Determined blastp version is 002015 from 'blastp: 2.15.0+'
+[11:54:00] Looking for 'cmpress' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/cmpress
+[11:54:00] Determined cmpress version is 001001 from '# INFERNAL 1.1.4 (Dec 2020)'
+[11:54:00] Looking for 'cmscan' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/cmscan
+[11:54:00] Determined cmscan version is 001001 from '# INFERNAL 1.1.4 (Dec 2020)'
+[11:54:00] Looking for 'egrep' - found /usr/bin/egrep
+[11:54:00] Looking for 'find' - found /usr/bin/find
+[11:54:00] Looking for 'grep' - found /usr/bin/grep
+[11:54:00] Looking for 'hmmpress' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/hmmpress
+[11:54:00] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[11:54:00] Looking for 'hmmscan' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/hmmscan
+[11:54:00] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[11:54:00] Looking for 'java' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/java
+[11:54:00] Looking for 'makeblastdb' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/makeblastdb
+[11:54:00] Determined makeblastdb version is 002015 from 'makeblastdb: 2.15.0+'
+[11:54:00] Looking for 'minced' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/minced
+[11:54:00] Determined minced version is 004002 from 'minced 0.4.2'
+[11:54:00] Looking for 'parallel' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/parallel
+[11:54:00] Determined parallel version is 20230922 from 'GNU parallel 20230922'
+[11:54:00] Looking for 'prodigal' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/prodigal
+[11:54:00] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[11:54:00] Looking for 'prokka-genbank_to_fasta_db' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/prokka-genbank_to_fasta_db
+[11:54:00] Looking for 'sed' - found /usr/bin/sed
+[11:54:00] Looking for 'tbl2asn' - found /n/home07/lmerk/.conda/envs/defensefinder/bin/tbl2asn
+[11:54:00] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
+[11:54:00] Using genetic code table 11.
+[11:54:00] Loading and checking input file: GenomesDB/MK448781.fasta
+[11:54:00] Wrote 1 contigs totalling 40382 bp.
+[11:54:00] Predicting tRNAs and tmRNAs
+[11:54:00] Running: aragorn -l -gc11  -w GenomesDB\/MK448781\/MK448781\.fna
+[11:54:00] Found 0 tRNAs
+[11:54:00] Predicting Ribosomal RNAs
+[11:54:00] Running Barrnap with 20 threads
+[11:54:01] Found 0 rRNAs
+[11:54:01] Skipping ncRNA search, enable with --rfam if desired.
+[11:54:01] Total of 0 tRNA + rRNA features
+[11:54:01] Searching for CRISPR repeats
+[11:54:01] Found 0 CRISPRs
+[11:54:01] Predicting coding sequences
+[11:54:01] Contigs total 40382 bp, so using meta mode
+[11:54:01] Running: prodigal -i GenomesDB\/MK448781\/MK448781\.fna -c -m -g 11 -p meta -f sco -q
+[11:54:01] Found 64 CDS
+[11:54:01] Connecting features back to sequences
+[11:54:01] Not using genus-specific database. Try --usegenus to enable it.
+[11:54:01] Option --noanno enabled, so skipping CDS similarity searches
+[11:54:01] Labelling remaining 64 proteins as 'unannotated protein'
+[11:54:01] Found 0 unique /gene codes.
+[11:54:01] Fixed 0 colliding /gene names.
+[11:54:01] Adding /locus_tag identifiers
+[11:54:01] Assigned 64 locus_tags to CDS and RNA features.
+[11:54:01] Writing outputs to GenomesDB/MK448781/
+[11:54:01] Generating annotation statistics file
+[11:54:01] Generating Genbank and Sequin files
+[11:54:01] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z GenomesDB\/MK448781\/MK448781\.err -i GenomesDB\/MK448781\/MK448781\.fsa 2> /dev/null
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/errorsummary.val
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/MK448781.dr
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/MK448781.fixedproducts
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/MK448781.ecn
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/MK448781.val
+[11:54:01] Repairing broken .GBK output that tbl2asn produces...
+[11:54:01] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < GenomesDB\/MK448781\/MK448781\.gbf > GenomesDB\/MK448781\/MK448781\.gbk
+[11:54:01] Deleting unwanted file: GenomesDB/MK448781/MK448781.gbf
+[11:54:01] Output files:
+[11:54:01] GenomesDB/MK448781/MK448781.tbl
+[11:54:01] GenomesDB/MK448781/MK448781.ffn
+[11:54:01] GenomesDB/MK448781/MK448781.gff
+[11:54:01] GenomesDB/MK448781/MK448781.gbk
+[11:54:01] GenomesDB/MK448781/MK448781.txt
+[11:54:01] GenomesDB/MK448781/MK448781.tsv
+[11:54:01] GenomesDB/MK448781/MK448781.fsa
+[11:54:01] GenomesDB/MK448781/MK448781.faa
+[11:54:01] GenomesDB/MK448781/MK448781.fna
+[11:54:01] GenomesDB/MK448781/MK448781.log
+[11:54:01] GenomesDB/MK448781/MK448781.sqn
+[11:54:01] GenomesDB/MK448781/MK448781.err
+[11:54:01] Annotation finished successfully.
+[11:54:01] Walltime used: 0.03 minutes
+[11:54:01] If you use this result please cite the Prokka paper:
+[11:54:01] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[11:54:01] Type 'prokka --citation' for more details.
+[11:54:01] Thank you, come again.
