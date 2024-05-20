@@ -1,0 +1,64 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300021267_000141_3300021267_Ga0210353_104785_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300021267_000141_3300021267_Ga0210353_104785_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=178]
+Description: source=IMGVR_UViG_3300021267_000141_3300021267_Ga0210353_104785/1-668 coords=2..535 length=178 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+  ------ inclusion threshold ------
+      0.043   14.1   0.3      0.091   13.1   0.3    1.6  1  HNH            HNH endonuclease
+      0.084   12.9   0.1       0.24   11.5   0.1    1.8  1  Zn_Tnp_IS1595  Transposase zinc-ribbon domain
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.3   9.2e-06     0.091       1      46 [.     121     170 ..     121     171 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 9.2e-06
+           -SSSS-B-SSEE--EEEESS-TTT....T--BSGGGEEEE-HHHHHHHHH CS
+   HNH   1 CeyCgrkfhksdalevdHiipisq....ggaddieNlqllCksCHnkkhd 46 
+           C  Cg+     +  ev+H  ++++      +++    ++l+k CH++ h+
+  orf1 121 CPACGQSLSNGENIEVHHLPSLKDlrllATPNTRVKTVALHKLCHSRMHK 170
+           999****9999************9888899999999**********9986 PP
+
+>> Zn_Tnp_IS1595  Transposase zinc-ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.1   2.5e-05      0.24      10      27 ..     110     127 ..     107     131 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.5e-05
+  Zn_Tnp_IS1595  10 leklrWpngpvCPhCgsr 27 
+                    +ek++ ++++vCP+Cg +
+           orf1 110 VEKICKRQKFVCPACGQS 127
+                    677888899*******65 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (178 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       542  (0.027608); expected 392.6 (0.02)
+Passed bias filter:                      444  (0.0226161); expected 392.6 (0.02)
+Passed Vit filter:                        74  (0.00376936); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.27u 0.17s 00:00:00.44 Elapsed: 00:00:00.30
+# Mc/sec: 1916.58
+//
+[ok]

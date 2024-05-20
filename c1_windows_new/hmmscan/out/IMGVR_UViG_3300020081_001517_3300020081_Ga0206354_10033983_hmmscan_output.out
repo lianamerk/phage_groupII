@@ -1,0 +1,84 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300020081_001517_3300020081_Ga0206354_10033983_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300020081_001517_3300020081_Ga0206354_10033983_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=220]
+Description: source=IMGVR_UViG_3300020081_001517_3300020081_Ga0206354_10033983/1-662 coords=3..662 length=220 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+  ------ inclusion threshold ------
+      0.046   12.7   0.2      0.063   12.3   0.2    1.1  1  COX1         Cytochrome C and Quinol oxidase polypeptide I
+       0.13   12.0   0.4       0.23   11.2   0.4    1.4  1  Quaking_NLS  Putative nuclear localisation signal of quaking
+       0.21   11.6   0.3       0.84    9.7   0.1    2.0  2  PPTA         Protein prenyltransferase alpha subunit repeat
+
+
+Domain annotation for each model (and alignments):
+>> COX1  Cytochrome C and Quinol oxidase polypeptide I
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.2   9.7e-06     0.063       5      37 ..       1      40 [.       1      44 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 9.7e-06
+          HHHHHHHHHHHHHHHHHHHHHHHCTCT.......-HHCHH CS
+  COX1  5 lylivalvlllvggllgllirlqlafp.......dletyn 37
+          lyli+al+ +++g+++++lirl+la p       d + yn
+  orf1  1 LYLIFALFSGMIGTAFSMLIRLELAGPgiqylqgDHQLYN 40
+          69**********************9886655555557776 PP
+
+>> Quaking_NLS  Putative nuclear localisation signal of quaking
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.4   3.6e-05      0.23       4      15 ..     143     154 ..     141     155 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 3.6e-05
+  Quaking_NLS   4 aTKvRRHDkRiH 15 
+                   TK+RRH kR H
+         orf1 143 STKIRRHLKRTH 154
+                  6*********99 PP
+
+>> PPTA  Protein prenyltransferase alpha subunit repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.1   0.00013      0.84      10      24 ..      45      59 ..      44      59 .. 0.92
+   2 ?   -1.3   0.0      0.42   2.7e+03       3      17 ..     102     116 ..     100     117 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 0.00013
+  PPTA 10 llleknpknysaWnh 24
+          +l+++ +k++s+Wnh
+  orf1 45 NLIDRGSKDQSLWNH 59
+          6899**********9 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.42
+  PPTA   3 eELaltdllleknpk 17 
+           e L+l+ +ll ++ +
+  orf1 102 ESLQLIMRLLITDTS 116
+           679999999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (220 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       314  (0.0159943); expected 392.6 (0.02)
+Passed bias filter:                      274  (0.0139568); expected 392.6 (0.02)
+Passed Vit filter:                        20  (0.00101874); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.27u 0.19s 00:00:00.46 Elapsed: 00:00:00.32
+# Mc/sec: 2255.70
+//
+[ok]

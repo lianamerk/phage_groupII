@@ -1,0 +1,84 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_7000000652_000216_7000000652_SRS020226_Baylor_scaffold_24119_89-171627_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_7000000652_000216_7000000652_SRS020226_Baylor_scaffold_24119_89-171627_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=493]
+Description: source=IMGVR_UViG_7000000652_000216_7000000652_SRS020226_Baylor_scaffold_24119_89-171627/149113-150697 coords=3..1481 length=493 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.9e-35  122.6   0.1    4.1e-35  121.4   0.1    1.6  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+    0.00094   19.4   1.8    0.00094   19.4   1.8    2.3  2  HNH       HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  121.4   0.1   4.2e-39   4.1e-35      14     222 .]       2     218 ..       1     218 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 121.4 bits;  conditional E-value: 4.2e-39
+            ....-THHHHCTB--.........-------HHHH..............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET.................. CS
+  RVT_1  14 llsvdykalnkliakrLkdvlekllsenqpgfrpgrstldav.edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptk.linliksflstrsfs 115
+            ++++ +++++++i++ L++ +e  ++++++gfrp rs ++a+ + +  +  + +k  + +++Dlk +Fd+vp+++l + l+++++++k ++ +i+++l+t    
+   orf1   2 IPTIEDRIIQQAIKQILEPWCEARFHPHSYGFRPLRSAHHALsRAVSLI--NVGKMYYTVNIDLKEFFDNVPHKQLNKALWNIGIHDKrVLSIINKMLKTEV-- 101
+            7999**************************************7444444..558889****************************86527789999996666.. PP
+
+            ........TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T........................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEG CS
+  RVT_1 116 vrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra..................kgvtllrYaDDililskskeelqelleaveewlke.sglkinp 200
+                    ++   +kg+ qG++lSPll+n+++n+l+  +++++                  k+ +++rYaDD+ i+++s +++ + + av ewl+   +l +n+
+   orf1 102 -------VGEGILTKGVLQGGILSPLLSNIILNQLDWWVSTQWedlpvknkryvhqkktnlKSGYIVRYADDFKIMCRSYKHAIRWYHAVTEWLETyLKLPVNK 198
+            .......688999************************************************9*********************************988****** PP
+
+            GG-EEE......ESSEEETTEEE CS
+  RVT_1 201 eKtklvlftv.kseevkyLGvtl 222
+            +K++++   + k+++ ++LG+t+
+   orf1 199 DKSSVT---NlKRKSTEFLGFTI 218
+            ******...77**********97 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.1       0.2   1.9e+03       9      23 ..     342     354 ..     339     364 .. 0.70
+   2 !   19.4   1.8   9.6e-08   0.00094      12      43 ..     422     453 ..     411     457 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.2
+           SSEE--EEEESS-TT CS
+   HNH   9 hksdalevdHiipis 23 
+           h+   + v+H+ p +
+  orf1 342 HII--QAVHHKNPMN 354
+           555..789**99876 PP
+
+  == domain 2  score: 19.4 bits;  conditional E-value: 9.6e-08
+           E--EEEESS-TTTT--BSGGGEEEE-HHHHHH CS
+   HNH  12 dalevdHiipisqggaddieNlqllCksCHnk 43 
+           +  +++H+ip++ gg+d++ Nl+ ++k+ H+ 
+  orf1 422 ENVHCHHKIPRKSGGTDEYKNLTIVHKTVHKL 453
+           4679**********************987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (493 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1071  (0.0545538); expected 392.6 (0.02)
+Passed bias filter:                      467  (0.0237877); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.40u 0.17s 00:00:00.57 Elapsed: 00:00:00.29
+# Mc/sec: 5626.54
+//
+[ok]

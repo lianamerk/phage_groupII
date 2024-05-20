@@ -1,0 +1,100 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300029083_000020_3300029083_Ga0169225_100862_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300029083_000020_3300029083_Ga0169225_100862_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=133]
+Description: source=IMGVR_UViG_3300029083_000020_3300029083_Ga0169225_100862/1-953 coords=3..401 length=133 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.026   14.7   0.4      0.038   14.1   0.4    1.3  1  Rab_bind  Rab binding domain
+       0.13   12.6   3.4       0.16   12.4   0.7    2.1  2  Osmo_CC   Osmosensory transporter coiled coil
+
+
+Domain annotation for each model (and alignments):
+>> Rab_bind  Rab binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.4   3.9e-06     0.038      27      64 ..      25      63 ..       4      65 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 3.9e-06
+  Rab_bind 27 dhlngLLreteatnavLmeqikL.LkseirrLernqere 64
+                 ng+L e ++     meqi + L  ei+rLer  e e
+      orf1 25 RNANGVLSEEDSKTYDAMEQIIVdLGKEIQRLERQAEIE 63
+              56799999999999999***9766999*******99976 PP
+
+>> Osmo_CC  Osmosensory transporter coiled coil
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.1     0.082   8.1e+02      28      37 ..       3      12 ..       1      16 [. 0.84
+   2 ?   12.4   0.7   1.6e-05      0.16      12      34 ..      37      59 ..      23      68 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.082
+             HHHHHHHHHH CS
+  Osmo_CC 28 IaaLeekRqq 37
+             I++L ekR++
+     orf1  3 IKELREKRKK 12
+             899****987 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 1.6e-05
+             XXXTHHHHHHHHHHHHHHHHHHH CS
+  Osmo_CC 12 eaYdnIEqkiediDeeIaaLeek 34
+              +Yd  Eq i d+ +eI++Le +
+     orf1 37 KTYDAMEQIIVDLGKEIQRLERQ 59
+             47******************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (133 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       854  (0.0435004); expected 392.6 (0.02)
+Passed bias filter:                      576  (0.0293399); expected 392.6 (0.02)
+Passed Vit filter:                        59  (0.0030053); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.34u 0.22s 00:00:00.56 Elapsed: 00:00:00.36
+# Mc/sec: 1199.51
+//
+Query:       orf2  [L=143]
+Description: source=IMGVR_UViG_3300029083_000020_3300029083_Ga0169225_100862/1-953 coords=431..3 length=143 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (143 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       484  (0.0246536); expected 392.6 (0.02)
+Passed bias filter:                      271  (0.013804); expected 392.6 (0.02)
+Passed Vit filter:                        14  (0.000713121); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.34u 0.18s 00:00:00.52 Elapsed: 00:00:00.34
+# Mc/sec: 1379.39
+//
+[ok]

@@ -1,0 +1,143 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300013922_000010_3300013922_Ga0121075_100299_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300013922_000010_3300013922_Ga0121075_100299_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=202]
+Description: source=IMGVR_UViG_3300013922_000010_3300013922_Ga0121075_100299/3672-1987 coords=2..607 length=202 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    1.6e-07   31.3   0.5    1.1e-06   28.6   0.5    2.2  1  DUF559     Protein of unknown function (DUF559)
+    3.8e-07   30.2   0.0    3.7e-06   27.0   0.0    2.3  1  MTES_1575  REase_MTES_1575
+    0.00078   19.4   0.2     0.0028   17.6   0.0    2.0  2  Vsr        DNA mismatch endonuclease Vsr
+
+
+Domain annotation for each model (and alignments):
+>> DUF559  Protein of unknown function (DUF559)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.5   1.6e-10   1.1e-06      40     108 ..     116     198 ..      76     199 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 1.6e-10
+             EETTEEEEEEETTTTEEEEEE-------..............----HHHHHHHHHTT-EEEEEEHHHHHH-HHHHHHHHHHHH CS
+  DUF559  40 pigsYivDfvclkaklivelDGaqhdee..............eeyDaeRtelLeslGftvlRfkndevlknieevleeilkal 108
+             + +    Df+ + + +++e DG   +++              +++D e++++ ++ G+t lRf+ de++++ e+v ++i++al
+    orf1 116 IFEGAQFDFLLVGTNILIECDGDFWHGNpkfyssfyevqkriKARDLEKNQIAAANGYTLLRFWEDEIKNDFENVKKRIINAL 198
+             555555677788888888888764332223333344444456789*********************************99876 PP
+
+>> MTES_1575  REase_MTES_1575
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.0   5.6e-10   3.7e-06       2      96 .]      97     198 ..      96     198 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 5.6e-10
+  MTES_1575   2 eeeVaealrergykvkpqvgvggyriDlvvedppgryllaIecDgakyhsskeard...........rdrlrqkvLerlgWkilRiwstdwyrnpeeele 90 
+                e+++ ++l e+ ++ k ++  +g + D+ +++      + IecDg+ +h++++ +            rd +++++    g+++lR+w+ +  ++ e++++
+       orf1  97 EKDLENFLVEQSITYKYSFIFEGAQFDFLLVGT----NILIECDGDFWHGNPKFYSsfyevqkrikaRDLEKNQIAAANGYTLLRFWEDEIKNDFENVKK 192
+                67888999999999999999************9....899**********98855445555566667999****************************** PP
+
+  MTES_1575  91 rlleal 96 
+                r+++al
+       orf1 193 RIINAL 198
+                ***987 PP
+
+>> Vsr  DNA mismatch endonuclease Vsr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.1      0.63   4.1e+03       6      22 ..      12      28 ..       8      29 .. 0.76
+   2 !   17.6   0.0   4.2e-07    0.0028      14      70 ..      87     143 ..      69     145 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.63
+          HHHHHHHHHTXXSSSXH CS
+   Vsr  6 kakRskvmakikskdtk 22
+          k   + + ++ +s++t+
+  orf1 12 KTCSKECASRLRSQNTG 28
+          55667888999999986 PP
+
+  == domain 2  score: 17.6 bits;  conditional E-value: 4.2e-07
+           HTXXSSSXHHHHHHHHHHHHTT--EEES-TTSTT--SEEEGGGTEEEEEE-TTTTT- CS
+   Vsr  14 akikskdtkpElrlaklltglGlryRkndkslaGkPDvvlkkykvvvFvhGcFWHgh 70 
+           ++   + t +E+ l ++l+ + + y+        + D+ l +  + +  +G FWHg+
+  orf1  87 ERETFRKTSIEKDLENFLVEQSITYKYSFIFEGAQFDFLLVGTNILIECDGDFWHGN 143
+           3445689******************99887777799*******************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (202 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1227  (0.0625); expected 392.6 (0.02)
+Passed bias filter:                      581  (0.0295945); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.33u 0.16s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 2039.64
+//
+Query:       orf2  [L=215]
+Description: source=IMGVR_UViG_3300013922_000010_3300013922_Ga0121075_100299/3672-1987 coords=815..1459 length=215 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.6e-17   63.4   0.0    2.5e-17   62.7   0.0    1.2  1  Ribonuc_red_lgC  Ribonucleotide reductase, barrel domain
+
+
+Domain annotation for each model (and alignments):
+>> Ribonuc_red_lgC  Ribonucleotide reductase, barrel domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.7   0.0   1.3e-21   2.5e-17      75     195 ..       8     205 ..       4     214 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 62.7 bits;  conditional E-value: 1.3e-21
+                      XXXXXXXXXXXXXXXXXXXXXXXXXXXXX................................................................. CS
+                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............................................................... RF
+  Ribonuc_red_lgC  75 kRrGAamvylevwHpDiekfieaKekntgee............................................................... 105
+                      +++ A+m++l  wHpDi++fi  K +n                                                                   
+             orf2   8 RKKSAQMIMLADWHPDIVEFIISKMQNPR-Ilrylienttdetiirlakeklnfkplsmqeeamyqgivnyknieglggfdtaiirdaenklrd 100
+                      5789********************66444.1567777888899999999********************************************* PP
+
+                      ........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...XXX.................................XXXXXXXXXXXXX CS
+                      ........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxxxxxx.....xxxxxxxxxxxxxxx...xxxxxxxxxxxxxxx RF
+  Ribonuc_red_lgC 106 ........enrlsnlnisvgvpdlFmeavkedkdwtLfdPrt...vvkleklygee.....feeeyeeleekakik...kkevkakeLfeeiae 180
+                               + l  +nisv+++ +Fmeav++d d++L  P+    +++  ++y  +       +e+e++      k    +++kakeL++ i  
+             orf2 101 ggtytvhnPEFLTGANISVTLTKEFMEAVEKDADFELRFPAVeeyTKEEMSVYNTKwhevgDVREWEKMGY----KvrtYRTIKAKELWNLINV 190
+                      ******99999******************************544433334444444322222223333333....233456************* PP
+
+                      XXXXXXXXXXXXXXX CS
+                      xxxxxxxxxxxxxxx RF
+  Ribonuc_red_lgC 181 sawetgdPgvlfkDa 195
+                      +a  +++Pg++f+D+
+             orf2 191 CATYSAEPGIFFIDN 205
+                      **************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (215 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       522  (0.0265892); expected 392.6 (0.02)
+Passed bias filter:                      396  (0.0201711); expected 392.6 (0.02)
+Passed Vit filter:                        27  (0.00137531); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.33u 0.15s 00:00:00.48 Elapsed: 00:00:00.31
+# Mc/sec: 2275.64
+//
+[ok]

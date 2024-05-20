@@ -1,0 +1,134 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300025847_000158_3300025847_Ga0209607_1001427_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300025847_000158_3300025847_Ga0209607_1001427_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=127]
+Description: source=IMGVR_UViG_3300025847_000158_3300025847_Ga0209607_1001427/12558-10919 coords=3..383 length=127 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+     0.0047   17.1   0.1     0.0072   16.5   0.1    1.4  1  GSKIP_dom     GSKIP domain
+  ------ inclusion threshold ------
+      0.078   11.4   0.0      0.083   11.3   0.0    1.2  1  Peptidase_M6  Immune inhibitor A peptidase M6
+
+
+Domain annotation for each model (and alignments):
+>> GSKIP_dom  GSKIP domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.1   7.4e-07    0.0072      32      63 ..      81     112 ..      51     122 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 7.4e-07
+  GSKIP_dom  32 vylnvetlEgeelcvelsakGfrivgskydtv 63 
+                + +n+et+E+ + ++els++ ++ v+++yd v
+       orf1  81 LEVNIETTENGKKIIELSKALYTTVSNAYDIV 112
+                568***************************98 PP
+
+>> Peptidase_M6  Immune inhibitor A peptidase M6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   8.4e-06     0.083     403     473 ..      17      87 ..       7     125 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 8.4e-06
+  Peptidase_M6 403 didgeidvspaksdqsdknalsgkvdawidakydLsayaGkkveLkfdyltDgglamkGfavDdlavtvdG 473
+                   d   e++ + ++++  +  ++ ++ + +  ak +++  +G kv+    y+   g++m  f+ D+l+v+++ 
+          orf1  17 DGYSESEKQEIIDEYTPIGCIIKNNNIYFPAKLPFKLEIGSKVDPTAFYISRKGVSMGIFYPDELEVNIET 87 
+                   4455677778888888888999999******************************************9975 PP
+
+
+
+Internal pipelineQuery:       orf2  [L=120]
+Description: source=IMGVR_UViG_3300025847_000158_3300025847_Ga0209607_1001427/12066-10482 coords=533..892 length=120 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (120 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       401  (0.0204258); expected 392.6 (0.02)
+Passed bias filter:                      282  (0.0143643); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.22u 0.20s 00:00:00.42 Elapsed: 00:00:00.40
+# Mc/sec: 982.86
+//
+[ok]
+  #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.1     3e-08   0.00059      99     164 ..      29      95 ..      10     102 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 3e-08
+           E-TTS-EEEEEE-TTSSSSS-EEEEETTTTEEEEETTT-----.T-.--SEES-HHHHGGGTHHHHH CS
+   ODP  99 klgsgreLefipahflHsegnfvlYdpkskiLFsgDlgaalve.ekeeklvvedfeehikkmegFHr 164
+           + +++ +++++ a flH + n + + +     FsgD++    +  + +  + ++ ++ +++++ F++
+  orf2  29 SNSNKIRITCFLAEFLHRQDNSHSWSKLKTCTFSGDVFIKYKSsITPNAGMSHKEKDLVDYIKLFYT 95 
+           33455689999***************************98665333333333444677888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (103 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       594  (0.0302567); expected 392.6 (0.02)
+Passed bias filter:                      423  (0.0215465); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.24u 0.11s 00:00:00.35 Elapsed: 00:00:00.23
+# Mc/sec: 1462.00
+//
+Query:       orf3  [L=120]
+Description: source=IMGVR_UViG_3300025847_000158_3300025847_Ga0209607_1001427/12558-10919 coords=1025..1384 length=120 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (120 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       401  (0.0204258); expected 392.6 (0.02)
+Passed bias filter:                      282  (0.0143643); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.23u 0.11s 00:00:00.34 Elapsed: 00:00:00.22
+# Mc/sec: 1756.58
+//
+[ok]

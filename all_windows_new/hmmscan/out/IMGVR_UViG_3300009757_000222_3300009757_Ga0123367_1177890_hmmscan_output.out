@@ -1,0 +1,191 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=178]
+Description: source=IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890/2365-3947 coords=1..534 length=178 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+  ------ inclusion threshold ------
+      0.097   13.0   0.9       0.59   10.5   0.2    2.1  2  DUF2304         Uncharacterized conserved protein (DUF2304)
+        0.4   11.2   3.8         13    6.3   2.2    2.2  2  G0-G1_switch_2  G0/G1 switch protein 2
+          4    7.7   5.5       0.49   10.6   0.4    2.0  2  Insulin_TMD     Insulin receptor trans-membrane segment
+
+
+Domain annotation for each model (and alignments):
+>> DUF2304  Uncharacterized conserved protein (DUF2304)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.2   8.9e-05      0.59      58     101 ..       4      47 ..       2      50 .. 0.93
+   2 ?    0.5   0.0      0.11   7.4e+02      32      57 ..      75     100 ..      63     111 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 8.9e-05
+  DUF2304  58 lGvgrgtdllflllivfllvllfslslkisrleekikeLaqeiA 101
+              +G+  +t+++ l++i +l   ++sl+ k+s++++ +++L  +i+
+     orf1   4 VGTLLATNVICLIMITVLCGEIYSLQEKLSEMTDIVRTLNDKIS 47 
+              788889*********************************99886 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.11
+  DUF2304  32 llwllfalilivlslfpqlltvvanl 57 
+              l+++ +++++ + ++ p++l +  nl
+     orf1  75 LTIIGVIILIYFGGIDPGALGKALNL 100
+              55566666666666666666665555 PP
+
+>> G0-G1_switch_2  G0/G1 switch protein 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.0    0.0054        35      28      86 ..       3      62 ..       1      67 [. 0.82
+   2 ?    6.3   2.2     0.002        13      25      40 ..      67      82 ..      60      86 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.0054
+  G0-G1_switch_2 28 vlGsvlAlfGvviglvetvc.spFtaeerlreeeaavaelraarekealekeeelvlekg 86
+                    ++G++lA   + + ++ ++c + ++ +e+l e  + v++l+++  + +  +ee+l  ek+
+            orf1  3 IVGTLLATNVICLIMITVLCgEIYSLQEKLSEMTDIVRTLNDKISRIEVIQEETLFGEKK 62
+                    6899999999999999999945789999************99998888888887755554 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.002
+  G0-G1_switch_2 25 klYvlGsvlAlfGvvi 40
+                     +Y+lG++l ++Gv+i
+            orf1 67 NVYILGGTLTIIGVII 82
+                    59************98 PP
+
+>> Insulin_TMD  Insulin receptor trans-membrane segment
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.4   7.4e-05      0.49      20      38 ..      10      28 ..       1      32 [. 0.82
+   2 ?   -1.4   0.6      0.44   2.9e+03      22      31 ..      77      86 ..      65      89 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 7.4e-05
+  Insulin_TMD 20 gPvicviLllvvigavfvv 38
+                   vic+i++ v++g ++ +
+         orf1 10 TNVICLIMITVLCGEIYSL 28
+                 469*************975 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.44
+  Insulin_TMD 22 vicviLllvv 31
+                 +i vi+l+  
+         orf1 77 IIGVIILIYF 86
+                 4555555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (178 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       955  (0.0486451); expected 392.6 (0.02)
+Passed bias filter:                      641  (0.0326508); expected 392.6 (0.02)
+Passed Vit filter:                        59  (0.0030053); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.31u 0.17s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1802.72
+//
+Query:       orf2  [L=311]
+Description: source=IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890/2365-3947 coords=507..1439 length=311 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.19   11.8   0.5       0.37   10.9   0.5    1.5  1  Imm27     Immunity protein 27
+
+
+Domain annotation for each model (and alignments):
+>> Imm27  Immunity protein 27
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.5   1.9e-05      0.37      10      50 ..     186     226 ..     178     235 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.9e-05
+  Imm27  10 aalariewliknkLeelksdgdgwetlYrdprdgrlWeLaY 50 
+            ++l+ +  +i ++ + +++++++++++Y ++r++ l  L +
+   orf2 186 NNLEEVGNIIDENTNDVNNNSEERNEEYNRERSNVLNSLNW 226
+            466889999*************************8866655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (311 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       831  (0.0423289); expected 392.6 (0.02)
+Passed bias filter:                      554  (0.0282192); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.31u 0.16s 00:00:00.47 Elapsed: 00:00:00.29
+# Mc/sec: 3493.32
+//
+Query:       orf3  [L=112]
+Description: source=IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890/2365-3947 coords=925..590 length=112 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (112 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       267  (0.0136002); expected 392.6 (0.02)
+Passed bias filter:                      234  (0.0119193); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.14s 00:00:00.42 Elapsed: 00:00:00.29
+# Mc/sec: 1267.31
+//
+Query:       orf4  [L=102]
+Description: source=IMGVR_UViG_3300009757_000222_3300009757_Ga0123367_1177890/2365-3947 coords=308..3 length=102 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (102 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       432  (0.0220049); expected 392.6 (0.02)
+Passed bias filter:                      306  (0.0155868); expected 392.6 (0.02)
+Passed Vit filter:                        20  (0.00101874); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.17s 00:00:00.46 Elapsed: 00:00:00.32
+# Mc/sec: 1046.61
+//
+[ok]

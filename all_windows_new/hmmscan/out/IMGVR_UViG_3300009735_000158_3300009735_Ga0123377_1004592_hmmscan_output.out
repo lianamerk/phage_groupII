@@ -1,0 +1,49 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300009735_000158_3300009735_Ga0123377_1004592_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300009735_000158_3300009735_Ga0123377_1004592_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=116]
+Description: source=IMGVR_UViG_3300009735_000158_3300009735_Ga0123377_1004592/1001-2587 coords=763..1110 length=116 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    2.5e-21   76.2   1.0    2.6e-21   76.2   1.0    1.0  1  Intron_maturas2  Type II intron maturase
+
+
+Domain annotation for each model (and alignments):
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.2   1.0   1.3e-25   2.6e-21      31     109 ..       3      81 ..       1     110 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 76.2 bits;  conditional E-value: 1.3e-25
+  Intron_maturas2  31 kPrsvlrwidledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvrkvikkfGkklsdl 109
+                       P++  r+i+ + ++I+++y ai rg+l YY +a+n+ rl+ r+++ l++sc++T+ +K+kl t+r ++kk+Gk  + +
+             orf1   3 RPTRNRRYINANLWNIIDNYRAIERGVLYYYAMANNYGRLAVRVHFSLKYSCALTISSKMKLRTMRGAFKKYGKDFPIV 81 
+                      699999*******************************************************************544444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (116 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       345  (0.0175733); expected 392.6 (0.02)
+Passed bias filter:                      295  (0.0150265); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.35
+# Mc/sec: 1085.70
+//
+[ok]

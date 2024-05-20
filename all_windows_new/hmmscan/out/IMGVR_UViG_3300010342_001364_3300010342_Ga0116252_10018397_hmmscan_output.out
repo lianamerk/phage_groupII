@@ -1,0 +1,122 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300010342_001364_3300010342_Ga0116252_10018397_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300010342_001364_3300010342_Ga0116252_10018397_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=369]
+Description: source=IMGVR_UViG_3300010342_001364_3300010342_Ga0116252_10018397/1659-3231 coords=295..1401 length=369 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.6e-08   32.7   0.2      1e-06   29.0   0.2    2.3  1  Metallophos_2  Calcineurin-like phosphoesterase superfamily d
+    8.9e-07   29.7   0.0    1.6e-06   28.9   0.0    1.6  1  Metallophos    Calcineurin-like phosphoesterase
+  ------ inclusion threshold ------
+      0.062   12.9   0.0       0.12   12.0   0.0    1.4  1  Sigma70_r4     Sigma-70, region 4
+
+
+Domain annotation for each model (and alignments):
+>> Metallophos_2  Calcineurin-like phosphoesterase superfamily domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.0   0.2   1.6e-10     1e-06       2     141 ..     137     320 ..     136     335 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 29.0 bits;  conditional E-value: 1.6e-10
+  Metallophos_2   2 kiaiiSDtH.....dnlealeavleelkev.vdliihaGDl......................anpevleeleelas............pvlaVrG 57 
+                    +++++SDtH     +++  l++++++++++ + +++h+GD+                      +            +            + + + G
+           orf1 137 RFGVVSDTHlgskyQQITHLNTMYDIFSKEgITTVYHSGDMsegenmraghayecfihgadaiE------------NyivknypkrkniRTYFING 220
+                    79*********999999999*********************99988888876666665543332............133444455555999***** PP
+
+  Metallophos_2  58 NhD....eavkearleaeaefatdlp.eeaelel...egekvlliHgs.............glkdalaellreaeeged..vvvlGHtHkpsveek 130
+                    NhD    +       +  +++  ++  +++ ++     + k+ l+                +l+ ++++ +++++ ge+  +++ GH Hk+     
+           orf1 221 NHDastiK-------ACGHDMGIYIDsKRDDMTYlgmLNAKINLTPNCvielnhpldggsyALSYSIQKYIDSMSGGEKsnILINGHHHKAMSLFY 309
+                    ***33321.......222223333322333333212233333333333555556779888888888888888866655566*********955555 PP
+
+  Metallophos_2 131 ggvllvnPGsv 141
+                    +++  + +G  
+           orf1 310 RNIHAIEAGTF 320
+                    55666666655 PP
+
+>> Metallophos  Calcineurin-like phosphoesterase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.0   2.5e-10   1.6e-06       2      77 ..     137     264 ..     136     367 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 2.5e-10
+                  EEEEEESBTB.TTTCHCHHHHHHHHHHHHHHHTTESEEEEESTSSSSS................HHHHHHHHHHHHHHHHTSEEEEEC-TTS...... CS
+  Metallophos   2 rilvigDlHl.dalgggqlddllkllddllpeekpdlvllaGDlvdrg................dlekellellaalvkypvpvyllpGNHe...... 76 
+                  r+ v++D+Hl +   + q+  l++++d + +e ++  v++ GD  ++                  +e+++++++ +  +  ++ y++ GNH+      
+         orf1 137 RFGVVSDTHLgS--KYQQITHLNTMYDIFSKE-GITTVYHSGDMSEGEnmraghayecfihgadAIENYIVKNYPKRKN--IRTYFINGNHDastika 229
+                  899******962..349999999999888777.**********666656666666666665557777777777655555..899********888888 PP
+
+                  ..................................C CS
+  Metallophos  77 ..................................g 77 
+                                                     
+         orf1 230 cghdmgiyidskrddmtylgmlnakinltpncviE 264
+                  86666444444444444443333333333333330 PP
+
+>> Sigma70_r4  Sigma-70, region 4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   1.8e-05      0.12      21      43 ..      21      43 ..      13      44 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.8e-05
+                --HHHHHHHHTS-HHHHHHHHHH CS
+  Sigma70_r4 21 lTleEigerlgiSrerVrqiekr 43
+                l+ e+ig+++giS er r i ++
+        orf1 21 LSWEDIGQQFGISGERARDITRK 43
+                7789**************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (369 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       618  (0.0314792); expected 392.6 (0.02)
+Passed bias filter:                      418  (0.0212918); expected 392.6 (0.02)
+Passed Vit filter:                        36  (0.00183374); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.32
+# Mc/sec: 3760.13
+//
+Query:       orf2  [L=129]
+Description: source=IMGVR_UViG_3300010342_001364_3300010342_Ga0116252_10018397/1659-3231 coords=668..282 length=129 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (129 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       673  (0.0342808); expected 392.6 (0.02)
+Passed bias filter:                      252  (0.0128362); expected 392.6 (0.02)
+Passed Vit filter:                        11  (0.00056031); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.26u 0.16s 00:00:00.42 Elapsed: 00:00:00.28
+# Mc/sec: 1488.54
+//
+[ok]

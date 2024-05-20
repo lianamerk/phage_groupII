@@ -1,0 +1,153 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300036470_000091_3300036470_Ga0393245_01371_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300036470_000091_3300036470_Ga0393245_01371_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=477]
+Description: source=IMGVR_UViG_3300036470_000091_3300036470_Ga0393245_01371/3735-5319 coords=2..1432 length=477 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.1e-29  102.2   0.1    5.5e-29  101.4   0.1    1.4  1  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    0.00046   20.3   1.8     0.0016   18.6   0.6    2.4  2  GIIM             Group II intron, maturase-specific domain
+    0.00063   20.0   0.9     0.0019   18.4   0.9    1.8  1  HNH              HNH endonuclease
+  ------ inclusion threshold ------
+      0.015   15.4   0.1      0.039   14.1   0.1    1.8  1  Intron_maturas2  Type II intron maturase
+       0.13   12.4   0.1       0.41   10.8   0.1    1.8  1  HNH_4            HNH endonuclease
+       0.16   12.0   0.3       0.36   10.9   0.3    1.6  1  HNH_5            HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.4   0.1   1.7e-32   5.5e-29      66     222 .]      13     197 ..       2     197 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 101.4 bits;  conditional E-value: 1.7e-32
+            TS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T............ CS
+  RVT_1  66 kkaklllklDlkkaFdsvpleellrkltafkvptk.linliksflstrsfsvrv.ngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra......... 158
+            ++ ++++++D++++Fd+v++++l+++++a+++++k li +ik++l+ +   + + ng   +++   kg+pqG+++SPll+n+++nel++ +++++         
+   orf1  13 TGLHYVVEFDIRGFFDNVDHQKLIKQIWALGIQDKqLIYVIKQILKAP---IMMpNG---EKYIPHKGTPQGGIISPLLANIVLNELDHWIESQWeknpvayky 110
+            67789***************************8652688899999433...355455...89999*************************************** PP
+
+            ...........................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEGGG-EEE......ESSEEETTEEE CS
+  RVT_1 159 ........................kgvtllrYaDDililskskeelqelleaveewlke.sglkinpeKtklvlftv.kseevkyLGvtl 222
+                                    k+ +++rYaDD+ il+++ke++ +   av +wlk+  +l i++eKtk+v   + +++ +++LG+++
+   orf1 111 avtinkngsenkgsgyramkktnlKEMYIVRYADDFRILCRTKESALKTKYAVTQWLKQrLNLDISEEKTKVV---NmEKQYCEFLGFKI 197
+            **********************************************************999************...779********986 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.64   2.1e+03      47      57 ..      89      99 ..      85     110 .. 0.73
+   2 !   18.6   0.6   4.8e-07    0.0016       2      74 ..     222     294 ..     221     308 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.64
+  GIIM 47 vfskldhyirr 57
+          v+++ldh+i++
+  orf1 89 VLNELDHWIES 99
+          56777777764 PP
+
+  == domain 2  score: 18.6 bits;  conditional E-value: 4.8e-07
+  GIIM   2 krfkrkireltkrsskgvsleelirklnpiirGWanYyrlv.vakrvfskldhyirrrLrrwllrkhkkkkrrr 74 
+           +++k++i+++  + + +++  + + ++n+++ G  nYy+++    + f ++ + i+  +++ l+  ++k +  r
+  orf1 222 EKLKQQIKRIA-HPKDDKDALTQALRYNSMVMGMQNYYQHAsHINKDFARVAWLINDVMMHQLRTTREKGRLSR 294
+           5899******9.66688999999999***************99*******************999999965333 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.9   5.9e-07    0.0019       7      36 ..     398     427 ..     392     436 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 5.9e-07
+           B-SSEE--EEEESS-TTTT--BSGGGEEEE CS
+   HNH   7 kfhksdalevdHiipisqggaddieNlqll 36 
+           +f+  ++ +++H+ip+s gg+d + Nl+l+
+  orf1 398 EFENASEIHCHHKIPKSLGGSDKYANLILI 427
+           55555899***Query:       orf2  [L=111]
+Description: source=IMGVR_UViG_3300036470_000091_3300036470_Ga0393245_01371/1098-2794 coords=541..873 length=111 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (111 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       446  (0.022718); expected 392.6 (0.02)
+Passed bias filter:                      318  (0.016198); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.27u 0.18s 00:00:00.45 Elapsed: 00:00:00.32
+# Mc/sec: 1145.12
+//
+Query:       orf3  [L=172]
+Description: source=IMGVR_UViG_3300036470_000091_3300036470_Ga0393245_01371/1098-2794 coords=943..1458 length=172 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-11   44.4   0.0    3.6e-11   43.1   0.0    1.6  1  DNA_methylase  C-5 cytosine-specific DNA methylase
+
+
+Domain annotation for each model (and alignments):
+>> DNA_methylase  C-5 cytosine-specific DNA methylase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.1   0.0   1.8e-15   3.6e-11       3     112 ..      31     168 ..      29     170 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 43.1 bits;  conditional E-value: 1.8e-15
+                    EEEES-TT-HHHHHHHHTT.......................-EEEEEEE--TTTHHHHHHH-..-SEEEES-TTTS-GS--.-SEEEE---GGGT CS
+  DNA_methylase   3 fidLfaGiGGfrlgleaag.......................fecvaaseidkkaaktYeanfk.kvsigDitkidkkklpediDlLvgGfPCqpf 74 
+                     ++Lf GiG+ r +le++                        ++ +  +e  + a++ Y++ f  +   +Di+  +   +   +D+Lv G PCq+f
+           orf3  31 LLELFGGIGAPRRALENVIsqmvkdsnpdankrqlrnlaaekVKSIDYVEVLPFAVQAYNQMFDlSNRPQDIRLWN---MN--VDILVHGSPCQDF 121
+                    6899************99966677777777777666666555555555666666*********9988899999988...44..9************ PP
+
+                    ECTSEE--TTSGGGHHHHHHHHHHHHH-..........-SEEEEEEEG CS
+  DNA_methylase  75 SvaGkqkgfedtrgtLffeiiriikekk..........PkvfllENVk 112
+                    S  G ++++++ r+ L+    +i++ +           Pkv++ ENV+
+           orf3 122 SREG-KNDINTGRSILYERTLQILDPNPsdgyreltrqPKVVIWENVR 168
+                    ****.99*****************98767777777777*********8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (172 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       455  (0.0231764); expected 392.6 (0.02)
+Passed bias filter:                      387  (0.0197127); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.29u 0.19s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1764.32
+//
+[ok]
+ 00:00:00.32
+# Mc/sec: 1464.74
+//
+[ok]

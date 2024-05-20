@@ -1,0 +1,111 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300006192_000596_3300006192_Ga0075011_10000195_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300006192_000596_3300006192_Ga0075011_10000195_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=381]
+Description: source=IMGVR_UViG_3300006192_000596_3300006192_Ga0075011_10000195/8490-6811 coords=2..1144 length=381 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+  ------ inclusion threshold ------
+      0.018   15.1   0.0      0.034   14.2   0.0    1.4  1  Acetyltransf_10  Acetyltransferase (GNAT) domain
+      0.065   13.2   9.4       0.83    9.6   1.6    2.9  3  NinG             Bacteriophage Lambda NinG protein
+        0.5   10.0   3.1         23    4.7   0.0    3.5  4  zf-ribbon_3      zinc-ribbon domain
+
+
+Domain annotation for each model (and alignments):
+>> Acetyltransf_10  Acetyltransferase (GNAT) domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.0   5.2e-06     0.034      60     109 ..     281     329 ..     223     334 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 5.2e-06
+  Acetyltransf_10  60 dkeyrgqGigkaLlkaveeeaekqeiklseltvnaspyavpfYeklGFka 109
+                      + ++    i   +lk +++++ k++i+++e++v+ s+ ++ +Y+klGFk+
+             orf1 281 KSDCCMFNITSLILKSIINKY-KNKINEIEIKVDLSNGSRVIYKKLGFKR 329
+                      55666667788899*******.6668888*******************96 PP
+
+>> NinG  Bacteriophage Lambda NinG protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   1.6   0.00013      0.83       5      31 ..       5      31 ..       2      33 .. 0.90
+   2 ?    9.1   1.8   0.00018       1.2       2      37 ..      27      64 ..      27      81 .. 0.76
+   3 ?   -1.8   0.0       0.4   2.6e+03     170     192 ..     286     308 ..     278     310 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 0.00013
+  NinG  5 krrkCkvCkeafkpakatqivCseeca 31
+          +++kC  C+e f+ ++atqi+C++++ 
+  orf1  5 HEKKCEICGELFIAKSATQIYCKKQHY 31
+          689********************9986 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 0.00018
+  NinG  2 kkpkrrkCkvCkeafkpakatq..ivCseecaeevrke 37
+          kk + +kC  C++ fk  ++ +  +vCs +c+ +++++
+  orf1 27 KKQHYKKCEICGSEFKIRQNHRpgKVCSFQCGARLTNS 64
+          577889*********9777665448*******776544 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.4
+  NinG 170 plkltieelkeiraeykaklkel 192
+           + ++t   lk+i+++yk+k+ e+
+  orf1 286 MFNITSLILKSIINKYKNKINEI 308
+           55666777899*******99887 PP
+
+>> zf-ribbon_3  zinc-ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.7   0.0    0.0035        23       2      17 ..       6      21 ..       5      23 .. 0.82
+   2 ?    3.4   0.1    0.0091        60       3      18 ..      32      46 ..      30      47 .. 0.79
+   3 ?   -0.9   0.1       0.2   1.3e+03       7      12 ..      56      61 ..      51      65 .. 0.75
+   4 ?   -2.0   0.0      0.47   3.1e+03       8      14 ..     372     378 ..     371     380 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.0035
+  zf-ribbon_3  2 tvrCPnCGapplssdd 17
+                 +++C  CG++++++++
+         orf1  6 EKKCEICGELFIAKSA 21
+                 689999**98788876 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0091
+  zf-ribbon_3  3 vrCPnCGapplssddn 18
+                 ++C  CG+++ + ++n
+         orf1 32 KKCEICGSEF-KIRQN 46
+                 6899999988.88877 PP
+
+  == domain 3  score: -0.9 bits;  conditional E-value: 0.2
+  zf-ribbon_3  7 nCGapp 12
+                 +CGa++
+         orf1 56 QCGARL 61
+                 688866 PP
+
+  == domain 4  score: -2.0 bits;  conditional E-value: 0.47
+  zf-ribbon_3   8 CGappls 14 
+                  CG+++l+
+         orf1 372 CGHEVLT 378
+                  8988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (381 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1092  (0.0556235); expected 392.6 (0.02)
+Passed bias filter:                      417  (0.0212408); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.33u 0.17s 00:00:00.50 Elapsed: 00:00:00.32
+# Mc/sec: 3955.84
+//
+[ok]

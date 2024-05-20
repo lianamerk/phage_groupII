@@ -1,0 +1,92 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300015241_000318_3300015241_Ga0137418_10008840_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300015241_000318_3300015241_Ga0137418_10008840_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=204]
+Description: source=IMGVR_UViG_3300015241_000318_3300015241_Ga0137418_10008840/4328-2733 coords=2..613 length=204 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.7e-39  133.4   2.8    1.8e-38  132.2   2.8    1.5  1  LAGLIDADG_2  LAGLIDADG DNA endonuclease family
+      4e-06   27.2   0.1     0.0015   18.9   0.1    2.3  2  LAGLIDADG_3  LAGLIDADG-like domain
+  ------ inclusion threshold ------
+      0.064   13.3   0.0       0.14   12.2   0.0    1.5  1  BTB_3        BTB/POZ domain
+
+
+Domain annotation for each model (and alignments):
+>> LAGLIDADG_2  LAGLIDADG DNA endonuclease family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.2   2.8   2.8e-42   1.8e-38       2     169 .]       5     186 ..       4     186 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 132.2 bits;  conditional E-value: 2.8e-42
+                  HHHHHHHHTT-EEE-SSTTS-BEEEEEE..S-HHHHHHHHHHTGGG--S--EEEEEE-TT.EEEEEEEE---BGGGHHHHHHHBSS............ CS
+  LAGLIDADG_2   2 eiliGlLLgDgslekrkkrknarfefkqskkhkeYllyvfsllkeillsnpkikerstrr.sekklefqtrslpsftelaklfysk............ 86 
+                  ++++G+LL+Dg++ +++   n r+ +kqs k+ eYl+ vf +l+ +++s+p i+++ +r+  + + ef tr+l+s++e+++ fy              
+         orf1   5 SVIVGVLLSDGHI-QKRVHWNPRISLKQSLKNFEYLWSVFISLSVFCSSYPYINKTIKRGkLFYSTEFMTRQLKSLNEIYNIFYLVpstgtfpfekai 101
+                  8************.888899***********************************999999***********************9888999999999* PP
+
+                  ...SSB---TTHHHH--HHHHHHHHHHHESTT-S--EEE--TTS-HHHHHHHHHHHHHHH---EEEEEETTE.EEEEE-GGGHHHH CS
+  LAGLIDADG_2  87 ...gkkiipkdilklLtplaLAiwimddGskvkkggleLntnsfseeevellvkiLkdkfnlkcrlkkkgkkkyviyiksesmkkl 169
+                     ++k i+ d++ +L+ +aLA+wi +dG k +kgg++L+t+sfs +ev+ll++iL +kfn+k++++ +++k  +iyi++ +++k+
+         orf1 102 gvsKIKSITPDLFHYLDFIALAHWIQGDGAKRNKGGIVLCTDSFSVKEVILLMNILLIKFNIKSTIHVDNGK-ARIYINKVELDKF 186
+                  9999********************************************************************.*******999988 PP
+
+>> LAGLIDADG_3  LAGLIDADG-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.5   0.0    0.0017        11       7      36 ..       7      36 ..       1      82 [. 0.87
+   2 !   18.9   0.1   2.3e-07    0.0015       7      82 ..     122     190 ..     118     191 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.0017
+                 HHHHHHHCCECCECSTTTTSEEEEES-HHH CS
+  LAGLIDADG_3  7 LrGlFdaDGsvskskkkgssisltssskel 36
+                 + G   +DG+++k+ + +++isl++s k++
+         orf1  7 IVGVLLSDGHIQKRVHWNPRISLKQSLKNF 36
+                 6677899**********999***9987665 PP
+
+  == domain 2  score: 18.9 bits;  conditional E-value: 2.3e-07
+                  HHHHHHHCCECCECSTTTTSEEEEES-...HHHHHHHHHHHHHCT.HSCEEEEEEE-SCCCCECCCHCHCTTCGGGTTT CS
+  LAGLIDADG_3   7 LrGlFdaDGsvskskkkgssisltsss...kelledvqrlLlrlGiestiyekkkaggrgvyrlliisgenlkrFleki 82 
+                  L++ +++DG  +++++    i+l + s   ke++  +  lL +++i+sti+ +  +g+     +++i++ +l +F   i
+         orf1 122 LAHWIQGDGAKRNKGG----IVLCTDSfsvKEVILLMNILLIKFNIKSTIHVD--NGKA----RIYINKVELDKFKHLI 190
+                  899999***9999997....8888888889***********************..3333....3458888888888776 PP
+
+>> BTB_3  BTB/POZ domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   2.2e-05      0.14      66     101 ..     135     171 ..     132     175 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 2.2e-05
+  BTB_3  66 ktGvikcPpsvsvkelreacdyllipfdak.tikcqn 101
+            k G++ c +s svke+    + lli+f+ k ti+++n
+   orf1 135 KGGIVLCTDSFSVKEVILLMNILLIKFNIKsTIHVDN 171
+            679*************************752688776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (204 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       632  (0.0321923); expected 392.6 (0.02)
+Passed bias filter:                      426  (0.0216993); expected 392.6 (0.02)
+Passed Vit filter:                        17  (0.000865933); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.34
+# Mc/sec: 1990.15
+//
+[ok]

@@ -1,0 +1,170 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300002026_001925_3300002026_MIS_10011587_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300002026_001925_3300002026_MIS_10011587_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=520]
+Description: source=IMGVR_UViG_3300002026_001925_3300002026_MIS_10011587/1664-17 coords=2..1561 length=520 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.2e-21   75.3   1.0    2.4e-10   40.4   0.0    3.2  3  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    3.1e-14   53.3   1.7    3.1e-14   53.3   1.7    2.5  2  Intron_maturas2  Type II intron maturase
+    1.1e-05   25.5   0.5    4.1e-05   23.7   0.5    2.0  1  GIIM             Group II intron, maturase-specific domain
+  ------ inclusion threshold ------
+       0.66    9.9   3.1        3.6    7.5   0.1    2.7  3  DUF1854          Domain of unknown function (DUF1854)
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.4   0.0   4.9e-14   2.4e-10      78     158 ..       1      75 [.       1      89 [. 0.89
+   2 ?   -0.3   0.1      0.14   6.7e+02      23      80 ..      80     136 ..      74     158 .. 0.82
+   3 !   31.6   0.0   2.5e-11   1.2e-07     158     221 ..     202     270 ..     188     271 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 40.4 bits;  conditional E-value: 4.9e-14
+            CGCCCSBB-GGGGGGG-EEET.........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T... CS
+  RVT_1  78 kaFdsvpleellrkltafkvptklinliksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra 158
+            ++Fd++++  l++ l++   ++k++ li++fl     ++ +++   + + +  g+pqG+++SPll n+++nel++ ++k +
+   orf1   1 GCFDNIDHTILIKLLEKRIDDQKFLGLIRKFL----NAGYIDN--FQYHNTFSGTPQGGIISPLLTNVYLNELDQFVDKLC 75 
+            59******************************....5556765..49****************************999976 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.14
+            HCTB--.........-------HHHH.............HCCHTS--EEEEEEBCCGC CS
+  RVT_1  23 nkliakrLkdvlekllsenqpgfrpgrstldavedllkalkkkkkaklllklDlkkaF 80 
+            nk +++ +++ + kl +++q    + +   ++ e+ +k+++++  +k ++k D+k+ F
+   orf1  80 NKEVKNNINKEYTKLNHDYQHSKNKIKHYQEKYEVTKKYIEENLANKNFSK-DIKDIF 136
+            677888899999999999999999999998888888888777776666665.777766 PP
+
+  == domain 3  score: 31.6 bits;  conditional E-value: 2.5e-11
+            ..........TEEECTTEEEEEESS.HHHHHHHHHHHHHHHHH.TT--BEGGG-EEE.....ESSEEETTEE CS
+  RVT_1 158 a......kgvtllrYaDDililsks.keelqelleaveewlke.sglkinpeKtklvlftvkseevkyLGvt 221
+            +      + ++++rYaDD+++ + + ke +q++++++++++++  +l+i++eK+ ++     s+ +++LG+ 
+   orf1 202 TennpdfERLHYVRYADDFILGYIGtKEGVQNIYDSIVNFIESeLKLEISKEKSGITF---ASKGIQFLGYD 270
+            3334455899***********99985666************988*************5...9********96 PP
+
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   1.9       0.8   3.9e+03      99     125 ..     155     180 ..      68     194 .. 0.55
+   2 !   53.3   1.7   6.3e-18   3.1e-14       3     101 ..     299     394 ..     297     428 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.8
+  Intron_maturas2  99 ikkfGkklsdlekeeflsieknvklkt 125
+                        k+G k + l+k ++ +  k ++ ++
+             orf1 155 CTKLG-KQIGLHKSDLYQAFKVFEYRS 180
+                      23444.444555555555555555555 PP
+
+  == domain 2  score: 53.3 bits;  conditional E-value: 6.3e-18
+  Intron_maturas2   3 klvlnaPirkiikkLakagfvktkkekgkPrsvlrwidledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvr 96 
+                      k+v+++P +k ik  +k+g+ +    +   +  + + + +  +I+++y+a  rgl++YY+ a n k   + ++++ ++s++kTLA K+k   v+
+             orf1 299 KPVFKVPTEKCIKFVSKKGYGSYV--ENTSNHRTFLQNFDEIEIIKQYNAELRGLIQYYKHAVNCKSVIGKVQWLWQYSLLKTLAAKHKC-SVA 389
+                      789*****************9996..566677777889999*************************************************.9** PP
+
+  Intron_maturas2  97 kvikk 101
+                      +v+kk
+             orf1 390 QVFKK 394
+                      ***99 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.5   8.3e-09   4.1e-05      23      69 ..     339     386 ..     329     398 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 8.3e-09
+  GIIM  23 elirklnpiirGWanYyrlv.vakrvfskldhyirrrLrrwllrkhkk 69 
+           e+i+++n+ +rG ++Yy+++ ++k+v+ k+++  + +L + l  khk 
+  orf1 339 EIIKQYNAELRGLIQYYKHAvNCKSVIGKVQWLWQYSLLKTLAAKHKC 386
+           89******************9*********9999999*******9995 PP
+
+>> DUF1854  Domain of unknown function (DUF1854)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5   0.1   0.00072       3.6      25      69 ..      98     142 ..      87     154 .. 0.82
+   2 ?    2.0   0.1     0.037   1.8e+02      59     106 ..     396     443 ..     388     459 .. 0.85
+   3 ?   -3.8   0.0       2.3   1.1e+04      78      98 ..     469     489 ..     466     490 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00072
+  DUF1854  25 dgkElaiiedladLdeesrklleeeLarrefvpeikrilsvseka 69 
+               ++    i+++++  e ++k +ee+La+++f   ik i +v  k+
+     orf1  98 YQHSKNKIKHYQEKYEVTKKYIEENLANKNFSKDIKDIFEVCFKY 142
+              56666678999999999*********************9997766 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.037
+  DUF1854  59 ikril.svsekatpstweveTdrGettfvlkneedirrleskrllitDs 106
+              i +++ ++++k++ +++eve ++ ++ f +++ + i+++ +k  +++D+
+     orf1 396 IIKVKlDLDTKSKIWYYEVEGKQFDV-FNIRSVDYINMFYAKDTFVNDV 443
+              555533788999**********9985.9**************9999997 PP
+
+  == domain 3  score: -3.8 bits;  conditional E-value: 2.3
+  DUF1854  78 TdrGettfvlkneedirrles 98 
+              T++ ett++l++ ++ir++ +
+     orf1 469 TTNTETTIILHHPNQIRTIPK 489
+              788899999999999998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (520 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      2595  (0.132182); expected 392.6 (0.02)
+Passed bias filter:                      591  (0.0301039); expected 392.6 (0.02)
+Passed Vit filter:                        53  (0.00269967); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.45u 0.21s 00:00:00.66 Elapsed: 00:00:00.38
+# Mc/sec: 4519.88
+//
+Query:       orf2  [L=100]
+Description: source=IMGVR_UViG_3300002026_001925_3300002026_MIS_10011587/1664-17 coords=1522..1223 length=100 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.052   13.5   0.0      0.065   13.2   0.0    1.0  1  DUF2806   Protein of unknown function (DUF2806)
+
+
+Domain annotation for each model (and alignments):
+>> DUF2806  Protein of unknown function (DUF2806)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   3.3e-06     0.065      94     166 ..      18      90 ..      16      93 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 3.3e-06
+  DUF2806  94 llekaaslsvkvgsdtslklllgfkkkgglkdllkkakkvklsl.gkfglpysslltLielglllaselesgel 166
+              ++ ++ +l ++v++++ +  ++g  + + + + ++k  ++++ l ++f + y+s++ ++ ++++ +s++e  +l
+     orf2  18 IFRNCPNLIWMVENNS-RFGICGTANFTFICNQFSKGATSTIDLpSEFYIIYKSVFCIEHINIINTSNIEYVKL 90 
+              89999*******9998.777888888889998899999999987589*********************997665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (100 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       487  (0.0248064); expected 392.6 (0.02)
+Passed bias filter:                      305  (0.0155359); expected 392.6 (0.02)
+Passed Vit filter:                        16  (0.000814996); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.29u 0.17s 00:00:00.46 Elapsed: 00:00:00.32
+# Mc/sec: 1037.78
+//
+[ok]

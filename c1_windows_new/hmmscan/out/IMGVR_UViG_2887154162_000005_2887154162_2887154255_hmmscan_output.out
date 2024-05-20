@@ -1,0 +1,127 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_2887154162_000005_2887154162_2887154255_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_2887154162_000005_2887154162_2887154255_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=352]
+Description: source=IMGVR_UViG_2887154162_000005_2887154162_2887154255/2117-55 coords=3..1058 length=352 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.9e-18   66.8   0.1    6.7e-18   65.6   0.1    1.6  1  DUF5906       Family of unknown function (DUF5906)
+    0.00087   19.1   0.5     0.0011   18.7   0.5    1.2  1  AAA_15        AAA ATPase domain
+  ------ inclusion threshold ------
+      0.018   15.6   0.0      0.035   14.6   0.0    1.5  1  RNA_helicase  RNA helicase
+      0.077   12.9   2.6          3    7.7   2.6    2.1  1  AAA_21        AAA domain, putative AbiEii toxin, Type IV TA s
+
+
+Domain annotation for each model (and alignments):
+>> DUF5906  Family of unknown function (DUF5906)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.6   0.1   1.4e-21   6.7e-18       2     103 ..      83     181 ..      82     195 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 65.6 bits;  conditional E-value: 1.4e-21
+  DUF5906   2 iGkeqgvGKstlaeyllgkllgsenvtisd.ek.lgkfnsahlegkllvvvdemev.sqedqkasdalKslitnksvsierKgkdaisvsnyarfifssNkp 100
+              +++e ++GKst+++ +l+ l+ ++nvt+++ e+ +++fn   + gkll+vvde+   ++ed   s++lK+l+t+ s ++e+Kgkd  ++  +a+f+++sN++
+     orf1  83 VSEERNTGKSTFLN-FLKLLF-QNNVTFNTnEDfRSRFNFD-WAGKLLIVVDEVLLnRRED---SERLKNLSTTLSYKVEAKGKDRDKIAFFAKFVLCSNNE 178
+              677899********.998666.678885553446999**98.9*********954434444...9*******8679************************76 PP
+
+  DUF5906 101 kip 103
+               +p
+     orf1 179 YLP 181
+              444 PP
+
+>> AAA_15  AAA ATPase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.5   2.3e-07    0.0011      33      87 ..      88     162 ..      86     276 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 2.3e-07
+  AAA_15  33 nsGKssilealdlflnnkekfkldd............kkvikiekedleifenideskdieIdvef........a 87 
+             n+GKs++l +l+l+++n+  f++++            k +i++++  l+  e+ +++k+++ ++ +        +
+    orf1  88 NTGKSTFLNFLKLLFQNNVTFNTNEdfrsrfnfdwagKLLIVVDEVLLNRREDSERLKNLSTTLSYkveakgkdR 162
+             9*****************99999999***********88999999999999999999999988888443333330 PP
+
+>> RNA_helicase  RNA helicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.0   7.2e-06     0.035       6     106 ..      86     177 ..      81     178 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 7.2e-06
+  RNA_helicase   6 psgeGKStlakeLakallkklklkkkdsvysrnpeddfwdgYtgqevvvidDfgqvkdeenpsdlaelirlvsstpyplnmasleekgtlftSkvvi 102
+                   ++++GKSt+ + L   +++++ +++++++     ++ f   + g+  +v+d++  ++ e    d + l +l ++  y+++ +  +  ++ f +k+v+
+          orf1  86 ERNTGKSTFLNFLKLLFQNNVTFNTNEDF-----RSRFNFDWAGKLLIVVDEVLLNRRE----DSERLKNLSTTLSYKVEAKGKDRDKIAFFAKFVL 173
+                   5699********76666666666666666.....889999999*************988....999*******************999********* PP
+
+  RNA_helicase 103 vtsN 106
+                   ++ N
+          orf1 174 CSNN 177
+                   *988 PP
+
+>> AAA_21  AAA domain, putative AbiEii toxin, Type IV TA system
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7   2.6   0.00061         3       9      48 ..      88     126 ..      88     271 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.00061
+  AAA_21   9 gsGKSnLLdaldflarldrdvegltdeerrgggirkipsl 48 
+             ++GKS++L  l++l++ ++  ++++ ++r++ ++++  +l
+    orf1  88 NTGKSTFLNFLKLLFQ-NNVTFNTNEDFRSRFNFDWAGKL 126
+             79************98.55555555555555555554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (352 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       545  (0.0277608); expected 392.6 (0.02)
+Passed bias filter:                      403  (0.0205277); expected 392.6 (0.02)
+Passed Vit filter:                        31  (0.00157905); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.38u 0.20s 00:00:00.58 Elapsed: 00:00:00.38
+# Mc/sec: 3028.68
+//
+Query:       orf2  [L=94]
+Description: source=IMGVR_UViG_2887154162_000005_2887154162_2887154255/2117-55 coords=431..150 length=94 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (94 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       470  (0.0239405); expected 392.6 (0.02)
+Passed bias filter:                      384  (0.0195599); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.17s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 959.45
+//
+[ok]

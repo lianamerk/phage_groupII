@@ -1,0 +1,145 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029716_000374_3300029716_Ga0245260_1005549_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029716_000374_3300029716_Ga0245260_1005549_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=496]
+Description: source=IMGVR_UViG_3300029716_000374_3300029716_Ga0245260_1005549/4496-2799 coords=3..1490 length=496 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+     0.0037   17.5   3.2       0.26   11.5   1.4    3.0  2  CagE_TrbE_VirB  CagE, TrbE, VirB family, component of type IV
+     0.0076   16.9   0.1      0.024   15.3   0.1    1.8  1  Spectrin        Spectrin repeat
+     0.0095   15.0   0.1      0.021   13.9   0.1    1.5  1  AAA_10          AAA-like domain
+
+
+Domain annotation for each model (and alignments):
+>> CagE_TrbE_VirB  CagE, TrbE, VirB family, component of type IV transporter system
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.0      0.13   8.5e+02      87     112 ..      77     102 ..      59     143 .. 0.73
+   2 !   11.5   1.4     4e-05      0.26      64     174 ..     231     359 ..     219     366 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.13
+  CagE_TrbE_VirB  87 llsldieliitesfskiskqkalskl 112
+                     l+sld+ ++it + ++++ +++++k 
+            orf1  77 LNSLDCNYKITINNKNKNMDELRDKV 102
+                     67888888888888888888887764 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 4e-05
+  CagE_TrbE_VirB  64 ekfasilsikeYpeetrsslldsllsldieliitesfskiskqkalsklkkk..........qsrllsiedkaksqi........teledlidev 140
+                     +kf+ +l ik+Yp+  +   ++ + sl++  i      +++k+ + + l+kk          q+r ++ +++  ++i         e+e+ +d v
+            orf1 231 SKFCKALFIKKYPSSLSDRFINEITSLPVHSITSIDVVPVPKDLTTKVLQKKylgiesdiikQQRVRNKNNDFSTEIsyakrtekKEIEEIMDDV 325
+                     55666666666666555555555555555555555555555544444443322222222222455555555544443111111116899999999 PP
+
+  CagE_TrbE_VirB 141 asgdvalGayhlslvlfaedkekLdkavseatkl 174
+                     + +d+ l   +++++l+ae+k++L++ ++ ++++
+            orf1 326 RENDQCLFFVGVTIILMAESKKELESVCETVETI 359
+                     9999999999999***************999875 PP
+
+>> Spectrin  Spectrin repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.1   3.6e-06     0.024      36      88 ..     276     328 ..     267     333 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 3.6e-06
+               HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTTHTTHHHHHHHHHHHHHH CS
+  Spectrin  36 vqallkkhkaleaelaaqqervkalnelaeklldeghsaseeieerleelner 88 
+               ++ l+kk+ ++e ++  qq+  ++ n++++++  ++  +++eiee +++++e+
+      orf1 276 TKVLQKKYLGIESDIIKQQRVRNKNNDFSTEISYAKRTEKKEIEEIMDDVREN 328
+               689**********************************************9987 PP
+
+>> AAA_10  AAA-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.1   3.2e-06     0.021      16      63 ..     433     481 ..     423     494 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 3.2e-06
+  AAA_10  16 gsktnasasliiGdlGnGKSvlakllvlyisllg.gkaliiDpkkerek 63 
+             ++k  + + ++ G +G GKS++ k+ +  + l g + +++iDp +  ++
+    orf1 433 RKKLINGNGFVFGVPGSGKSFFCKMEMGSVFLSGdDEIIVIDPMNGAKR 481
+             567778899****************98888888757899****988443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Q[ok]
+sequence(s):                         1  (496 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1107  (0.0563875); expected 392.6 (0.02)
+Passed bias filter:                      561  (0.0285758); expected 392.6 (0.02)
+Passed Vit filter:                        52  (0.00264874); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.38u 0.20s 00:00:00.58 Elapsed: 00:00:00.37
+# Mc/sec: 4436.93
+//
+Query:       orf2  [L=90]
+Description: source=IMGVR_UViG_3300029716_000374_3300029716_Ga0245260_1005549/4496-2799 coords=1111..842 length=90 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (90 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       481  (0.0245008); expected 392.6 (0.02)
+Passed bias filter:                      226  (0.0115118); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.16s 00:00:00.44 Elapsed: 00:00:00.32
+# Mc/sec: 932.22
+//
+Query:       orf3  [L=169]
+Description: source=IMGVR_UViG_3300029716_000374_3300029716_Ga0245260_1005549/4496-2799 coords=740..234 length=169 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (169 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       438  (0.0223105); expected 392.6 (0.02)
+Passed bias filter:                      161  (0.0082009); expected 392.6 (0.02)
+Passed Vit filter:                        18  (0.00091687); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.18s 00:00:00.46 Elapsed: 00:00:00.33
+# Mc/sec: 1696.92
+//
+[ok]

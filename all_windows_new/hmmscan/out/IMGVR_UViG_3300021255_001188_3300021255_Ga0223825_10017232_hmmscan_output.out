@@ -1,0 +1,193 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300021255_001188_3300021255_Ga0223825_10017232_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300021255_001188_3300021255_Ga0223825_10017232_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=216]
+Description: source=IMGVR_UViG_3300021255_001188_3300021255_Ga0223825_10017232/555-2151 coords=2..649 length=216 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+  ------ inclusion threshold ------
+      0.061   13.5   0.6      0.061   13.5   0.6    2.2  2  V-set_2        ICOS V-set domain
+      0.068   13.0   0.2       0.11   12.3   0.2    1.3  1  Peptidase_C58  Yersinia/Haemophilus virulence surface antigen
+      0.071   13.0   0.0       0.11   12.3   0.0    1.3  1  Fucose_iso_N1  L-fucose isomerase, first N-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> V-set_2  ICOS V-set domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.3      0.31     2e+03      41      65 ..      19      43 ..       6      59 .. 0.70
+   2 ?   13.5   0.6   9.4e-06     0.061      15      61 ..     120     165 ..     108     214 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.31
+             EEEEEEE-TTS-EEEE-SS--EEEE CS
+  V-set_2 41 CdLtktkesgnavsiknvklCqaql 65
+             C   k  ++ n  +ik+vkl ++  
+     orf1 19 CCSAKCSNNHNIDKIKQVKLARYGS 43
+             4445677777777777777766554 PP
+
+  == domain 2  score: 13.5 bits;  conditional E-value: 9.4e-06
+              CEEEEEE--TT--EEEEEEEETTEEEEEEEEEE-TTS-EEEE-SS-- CS
+  V-set_2  15 gvqilckypetvqqfkmqLlkgkevlCdLtktkesgnavsiknvklC 61 
+              g + + ++p+++ ++k + lk   v+C+L+ t e ++++  k+v++ 
+     orf1 120 GTEYVTQNPDIISKIKSTNLKRYGVVCNLN-TDEVKKKIGTKEVQIK 165
+              456789***********************9.8888888777776654 PP
+
+>> Peptidase_C58  Yersinia/Haemophilus virulence surface antigen
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.2   1.7e-05      0.11      58     114 ..      25      85 ..      18     114 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.7e-05
+                    CHHHHHHHHHHHHHHHCCSSSHHHHHHHHHHHHHHTT-EE-CEEECCE....EEEECEHCC CS
+  Peptidase_C58  58 aeiqslysikklqllsqrakaqdqqfqatdtwlkeaglepseeelklg....evagavsae 114
+                    ++ ++++ ik+ +l + ++++ + q ++++t l++ g++   +++k++    ++a   +++
+           orf1  25 SNNHNIDKIKQVKLARYGSSTYNNQVKVKETCLERYGVSSVLKIPKVHengiKAAHSKESN 85 
+                    67899*******************************************7665222222222 PP
+
+>> Fucose_iso_N1  L-fucose isomerase, first N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   1.8e-05      0.11      70     133 ..     102     164 ..      91     169 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.8e-05
+  Fucose_iso_N1  70 fkeenvevtitvtpvwcygsetvdldpdlpkavwgfngterPGaVylaAalaalaqkGlpafri 133
+                     ++e +++ i  t+++ yg+e v  +pd++  + + n  +r G+V  + ++   ++ G++  +i
+           orf1 102 YASESIKTKIKQTNIFKYGTEYVTQNPDIISKIKSTN-LKRYGVVCNLNTDEVKKKIGTKEVQI 164
+                    57889999*************************9999.9999***9999999999888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (216 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       962  (0.0490016); expected 392.6 (0.02)
+Passed bias filter:                      288  (0.0146699); expected 392.6 (0.02)
+Passed Vit filter:                        18  (0.00091687); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.29u 0.16s 00:00:00.44 Elapsed: 00:00:00.31
+# Mc/sec: 2315.04
+//
+Query:       orf2  [L=109]
+Description: source=IMGVR_UViG_3300021255_001188_3300021255_Ga0223825_10017232/555-2151 coords=582..908 length=109 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (109 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1031  (0.0525163); expected 392.6 (0.02)
+Passed bias filter:                      323  (0.0164527); expected 392.6 (0.02)
+Passed Vit filter:                        26  (0.00132437); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.13s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1246.69
+//
+[ok]
+29 ..      62     157 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 5.8e-05
+                    CHHHHHHHHHHHHHHHCCSSSHHHHHHHHHHHHHHTT-EE-CEEECCE....EEEECEHCC CS
+  Peptidase_C58  58 aeiqslysikklqllsqrakaqdqqfqatdtwlkeaglepseeelklg....evagavsae 114
+                    ++ ++++ ik+ +l + ++++ + q ++++t l++ g++   +++k++    ++a   +++
+           orf1  69 SNNHNIDKIKQVKLARYGSSTYNNQVKVKETCLERYGVSSVLKIPKVHengiKAAHSKESN 129
+                    67899*******************************************7665222222222 PP
+
+>> Fucose_iso_N1  L-fucose isomerase, first N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   6.1e-05      0.17      70     132 ..     146     207 ..     137     212 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 6.1e-05
+  Fucose_iso_N1  70 fkeenvevtitvtpvwcygsetvdldpdlpkavwgfngterPGaVylaAalaalaqkGlpafr 132
+                     ++e +++ i  t+++ yg+e v  +pd++  + + n  +r G+V  + ++   ++ G++  +
+           orf1 146 YASESIKTKIKQTNIFKYGTEYVTQNPDIISKIKSTN-LKRYGVVCNLNTDEVKKKIGTKEVQ 207
+                    57789999*************************9999.9999***999999998888887766 PP
+
+>> FYVE  FYVE zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   8.8     0.097   2.7e+02      11      64 ..       3     101 ..       1     105 [. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 1.9 bits;  conditional E-value: 0.097
+           B-TTT--B-.-SSS--EE-TTT--EE-....................................STTS-EEE.EE.........GGGTEEEEEEE-HHHH CS
+  FYVE  11 kCeiCakkF.sllrrrhHCrlCGkvvC....................................skCssklvell........veksaeeksvrvCkeCl 64 
+           +C+iC+++F s+ +  hH r+    +                                     +kCs+++  +           +s+ +++v+v ++Cl
+  orf1   3 NCSICQTQFeSIRKLSHHIRVHKITLQeyydsymkkpnegicvvcgkktsfrglsegyleccsAKCSNNHNIDKikqvklarYGSSTYNNQVKVKETCL 101
+           7********665555677665333333444444444444444444444447777777764444444433322225555555555555666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (260 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1507  (0.0767624); expected 392.6 (0.02)
+Passed bias filter:                      485  (0.0247046); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         7  (0.000356561); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.32u 0.15s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 2711.24
+//
+Query:       orf2  [L=109]
+Description: source=IMGVR_UViG_3300021255_001188_3300021255_Ga0223825_10017232/54-1700 coords=1083..1409 length=109 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (109 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1031  (0.0525163); expected 392.6 (0.02)
+Passed bias filter:                      323  (0.0164527); expected 392.6 (0.02)
+Passed Vit filter:                        26  (0.00132437); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.26u 0.15s 00:00:00.41 Elapsed: 00:00:00.28
+# Mc/sec: 1289.05
+//
+[ok]

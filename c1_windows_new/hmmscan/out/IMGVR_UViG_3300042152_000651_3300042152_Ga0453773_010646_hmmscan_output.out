@@ -1,0 +1,50 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300042152_000651_3300042152_Ga0453773_010646_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300042152_000651_3300042152_Ga0453773_010646_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=175]
+Description: source=IMGVR_UViG_3300042152_000651_3300042152_Ga0453773_010646/1-535 coords=11..535 length=175 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+     0.0049   16.2   0.0     0.0065   15.8   0.0    1.1  1  Fructosamin_kin  Fructosamine kinase
+
+
+Domain annotation for each model (and alignments):
+>> Fructosamin_kin  Fructosamine kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.0   3.3e-07    0.0065      60     131 ..      71     142 ..      60     151 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 3.3e-07
+                      HHHHHHHHHTTSSB---EEEEEE-TSSEEEEEE-----.-SS--HHHHHHHHHHHHH---SS-BB-SS-EEE CS
+  Fructosamin_kin  60 aesLealaesqtirvPkvlavGelkdasfLvleyLelklekkesaaelgqqLaklHraseqkefGfdvdnti 131
+                      ++ L+ l+++   +vP  +   ++  ++++v   L+ +++ ++s+  +g+    +H+ ++++efG+++++ +
+             orf1  71 MDRLTNLNSTVGSEVPFSYNKNMQGAKNYVVFFVLNQSKQPARSSRLIGEGPKGIHHCQKRSEFGISRNTKV 142
+                      57899*********************************99***************************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (175 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       327  (0.0166565); expected 392.6 (0.02)
+Passed bias filter:                      281  (0.0143134); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.34u 0.21s 00:00:00.55 Elapsed: 00:00:00.37
+# Mc/sec: 1568.43
+//
+[ok]

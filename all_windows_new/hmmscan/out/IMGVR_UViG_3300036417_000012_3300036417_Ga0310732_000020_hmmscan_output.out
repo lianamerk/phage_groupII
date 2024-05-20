@@ -1,0 +1,110 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300036417_000012_3300036417_Ga0310732_000020_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300036417_000012_3300036417_Ga0310732_000020_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=235]
+Description: source=IMGVR_UViG_3300036417_000012_3300036417_Ga0310732_000020/13015-11440 coords=53..757 length=235 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.2e-25   89.5   0.3    3.2e-25   88.1   0.3    1.7  1  DnaJ      DnaJ domain
+     0.0077   16.7   0.1      0.014   15.9   0.1    1.4  1  SH3_3     Bacterial SH3 domain
+  ------ inclusion threshold ------
+       0.15   12.2   2.7       0.27   11.4   2.7    1.3  1  DUF3985   Protein of unknown function (DUF3985)
+       0.17   10.9   0.1       0.23   10.5   0.1    1.1  1  DUF1704   Domain of unknown function (DUF1704)
+       0.54   10.2   3.6        7.1    6.6   1.1    2.4  2  LemA      LemA family
+
+
+Domain annotation for each model (and alignments):
+>> DnaJ  DnaJ domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.1   0.3   8.3e-29   3.2e-25       1      63 []       5      67 ..       5      67 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 88.1 bits;  conditional E-value: 8.3e-29
+          HHHHHHTSSTTC-HHHHHHHHHHHHHHCSTTTSCTHHHHHHHHHHHHHHHHHHTSHHHHHHHH CS
+  DnaJ  1 dyYevLgvskdasedeIkkaYrklalkyHPDknpkdpeaeekFkeineAyevLsdpekRkqYD 63
+          +yY++Lg++++as++eIkka+rkl+lk+HPDkn++d+  +e+Fk+ineA e+Lsd +kRk YD
+  orf1  5 NYYDILGLEPSASQEEIKKAFRKLSLKFHPDKNDGDTFLAEMFKNINEANEILSDTTKRKFYD 67
+          7*************************************************************9 PP
+
+>> SH3_3  Bacterial SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1   3.6e-06     0.014       9      53 ..     186     232 ..     182     234 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 3.6e-06
+  SH3_3   9 PstssevigtlpaGekVevleetgggdWykv...rtddgy.eGWvssgy 53 
+            P+ ss+vi+t+p+G+ +  +eet +   +kv   + d+++ eG+++++y
+   orf1 186 PDISSTVIDTVPKGTGFDCIEETQY--CIKVecyDKDGNRkEGYIWKKY 232
+            999**********************..9*****855555548****998 PP
+
+>> DUF3985  Protein of unknown function (DUF3985)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   2.7   6.8e-05      0.27       4      18 ..     139     153 ..     137     155 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 6.8e-05
+  DUF3985   4 LtiiLivLLiYvvFK 18 
+              L  iLi+LLiY vFK
+     orf1 139 LFPILIILLIYFVFK 153
+              5669**********9 PP
+
+>> DUF1704  Domain of unknown function (DUF1704)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.1   5.9e-05      0.23      24     103 ..      19      99 ..       6     122 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 5.9e-05
+  DUF1704  24 eakkrelyeiereiied.ealkkllrekvdeyelvvrmLeargtkeFlelsrelYGspsdaleageptllelaerlleils 103
+              e+ k+++++++ + ++d ++ +++l e+ ++++++ ++L++  +++F++  +  Y s+ +++++++p+ ++ ++   ++++
+     orf1  19 EEIKKAFRKLSLKFHPDkNDGDTFLAEMFKNINEANEILSDTTKRKFYDETLYNYNSSINKFNNDSPRAAASSQVHEDLIN 99 
+              5567778888888888788999*******************************************9999888776655544 PP
+
+>> LemA  LemA family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   1.1    0.0018       7.1      99     120 ..      61      82 ..      43      96 .. 0.86
+   2 ?    3.8   0.1     0.013        50      14      44 ..      96     126 ..      87     192 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.0018
+  LemA  99 vaRrrYneavreyNtkiesfps 120
+           ++R++Y e+  +yN++i++f +
+  orf1  61 TKRKFYDETLYNYNSSINKFNN 82 
+           68******************86 PP
+
+  == domain 2  score: 3.8 bits;  conditional E-value: 0.013
+  LemA  14 DlipnLvetvkgyakhEketlee.vteaRaka 44 
+           Dli n+ + +k+y + E+++l++ +t +Ra+ 
+  orf1  96 DLI-NIFNLIKKYFEIEENVLSKrLTLLRANN 126
+           454.8999**********99965266677665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (235 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1107  (0.0563875); expected 392.6 (0.02)
+Passed bias filter:                      585  (0.0297983); expected 392.6 (0.02)
+Passed Vit filter:                        63  (0.00320905); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 2429.08
+//
+[ok]

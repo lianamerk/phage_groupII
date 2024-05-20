@@ -1,0 +1,124 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300012064_000005_3300012064_Ga0153973_100087_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300012064_000005_3300012064_Ga0153973_100087_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=341]
+Description: source=IMGVR_UViG_3300012064_000005_3300012064_Ga0153973_100087/7832-5812 coords=249..1271 length=341 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.8e-22   78.7  21.5    6.4e-20   72.2   3.4    4.0  3  LAGLIDADG_1    LAGLIDADG endonuclease
+  ------ inclusion threshold ------
+       0.16   12.0   0.0       0.38   10.8   0.0    1.6  1  PriA_3primeBD  3'DNA-binding domain (3'BD)
+
+
+Domain annotation for each model (and alignments):
+>> LAGLIDADG_1  LAGLIDADG endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.2     0.079   7.7e+02      37      84 ..      27      72 ..      19      82 .. 0.78
+   2 !   13.5   4.3   1.2e-05      0.12      26      84 ..     107     166 ..      96     182 .. 0.77
+   3 !   72.2   3.4   6.5e-24   6.4e-20       1     101 [.     213     311 ..     213     312 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.079
+                 GGGHHHHHHHHHHHTECEEEEETTTEEEEEEE-SHHHHHHTHHHHHHH CS
+  LAGLIDADG_1 37 kkdesllekikeylglgsikkrkkdkyvsyiisnsskslkilipyfdk 84
+                 + ++s+l+ i   l+ gsi+  ++   ++++  +s+  ++  ++ +++
+         orf1 27 SFKYSILNDIVIKLKQGSISAGNN--FIQLKHGTSETLCNETVEVLEN 72
+                 567999*********999999888..7777777777777777777666 PP
+
+  == domain 2  score: 13.5 bits;  conditional E-value: 1.2e-05
+                  EEEEEEEEEEEGGGHHHHHHHHHHHTECEEEEETTTE..EEEEEE-SHHHHHHTHHHHHHH CS
+  LAGLIDADG_1  26 kvqlefqielkkkdesllekikeylglgsikkrkkdk..yvsyiisnsskslkilipyfdk 84 
+                  + + e+ ie+++ d sl + ik+++g g +kk +k+   ++++++s+ ++ l ++i+ ++ 
+         orf1 107 TNKQELVIEFHHLDASLAYFIKKSIGYGRVKKIHKEDkeSIFLVVSS-IEGLIKVINLING 166
+                  456799********************666655444444367777776.999999**99886 PP
+
+  == domain 3  score: 72.2 bits;  conditional E-value: 6.5e-24
+                  HHHHHHHHEEEEEEEEETTTTTTSEEEEEEEEEEEEGGGHHHHHHHHHHHTECEEEEETTTEEEEEEE-SHHHHHHTHHHHHHHST-SSTHHHHHHHH CS
+  LAGLIDADG_1   1 laGFiDgdGsfsitvtkskskktslkvqlefqielkkkdesllekikeylglgsikkrkkdkyvsyiisnsskslkilipyfdkypllssKyldyldf 98 
+                  laGF+D+ +sf+i+  +++++k++l++ ++++ ++k + ++ l+ i+++lg g+i +++++++++y  ++ +  +k++i+y+d+y+llssK++++l++
+         orf1 213 LAGFSDATASFQINFVNNSNHKSGLQLNFKIEPAQKDNILFALQFIQDSLG-GNIAYNQNNETYNYDSTS-FGTAKNVIDYLDHYHLLSSKQVNFLKW 308
+                  89*****************99999997777777777777899*********.********9999999999.*************************** PP
+
+                  HHH CS
+  LAGLIDADG_1  99 kkv 101
+                  +k 
+         orf1 309 RKS 311
+                  996 PP
+
+>> PriA_3primeBD  3'DNA-binding domain (3'BD)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   3.9e-05      0.38      52      85 ..     282     315 ..     257     322 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 3.9e-05
+  PriA_3primeBD  52 eeklkeieevldeepllteellelaewvaeyyla 85 
+                        k++++ ld+ +ll+++++++++w ++y + 
+           orf1 282 FGTAKNVIDYLDHYHLLSSKQVNFLKWRKSYIII 315
+                    6678*************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (341 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       827  (0.0421251); expected 392.6 (0.02)
+Passed bias filter:                      308  (0.0156887); expected 392.6 (0.02)
+Passed Vit filter:                        24  (0.00122249); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.41u 0.19s 00:00:00.60 Elapsed: 00:00:00.37
+# Mc/sec: 3061.23
+//
+Query:       orf2  [L=195]
+Description: source=IMGVR_UViG_3300012064_000005_3300012064_Ga0153973_100087/7832-5812 coords=1435..2019 length=195 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.02   15.5   0.2       0.03   14.9   0.2    1.3  1  RSS_P20   Suppressor of RNA silencing P21-like N-terminal dom
+
+
+Domain annotation for each model (and alignments):
+>> RSS_P20  Suppressor of RNA silencing P21-like N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   0.2   1.5e-06      0.03      17      69 ..      87     141 ..      74     152 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.5e-06
+  RSS_P20  17 vtkllrrvfedsiglekgnlidsieeFv..ellklsdslKsdindsvkekedskk 69 
+                + l+ + ++ +g+  +n +++i+eF+  e++    sl  d n++vk+++ +  
+     orf2  87 KASSLNLITFCGTGHLIKNCMRRINEFTcaEIPNVANSLERDSNNCVKTGQSKTT 141
+              4566888899****************97669*****************9986544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (195 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       495  (0.0252139); expected 392.6 (0.02)
+Passed bias filter:                      404  (0.0205786); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.15s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 2046.79
+//
+[ok]

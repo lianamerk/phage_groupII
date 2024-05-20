@@ -1,0 +1,154 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029705_005885_3300029705_Ga0224414_10042525_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029705_005885_3300029705_Ga0224414_10042525_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=386]
+Description: source=IMGVR_UViG_3300029705_005885_3300029705_Ga0224414_10042525/10428-8751 coords=3..1160 length=386 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.4e-07   31.4   0.1    5.2e-07   29.5   0.0    2.0  2  RVT_1          Reverse transcriptase (RNA-dependent DNA polym
+    1.1e-05   25.6   1.9    2.4e-05   24.6   1.9    1.5  1  HNH            HNH endonuclease
+  ------ inclusion threshold ------
+      0.021   14.8   0.6      0.044   13.8   0.6    1.5  1  HNH_5          HNH endonuclease
+        0.2   12.0   1.6         12    6.3   0.1    2.8  3  Binary_toxB_3  Clostridial binary toxin B/anthrax toxin PA do
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0   1.1e-10   5.2e-07     160     221 ..      46     106 ..       9     107 .. 0.89
+   2 ?   -2.1   0.0      0.51   2.5e+03     101     133 ..     202     235 ..     190     236 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 1.1e-10
+            ..TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEGGG-EEE......ESSEEETTEE CS
+  RVT_1 160 gvtllrYaDDililskskeelqelleaveewlke.sglkinpeKtklvlftv.kseevkyLGvt 221
+            +  l+rYaDD+ i++++ +++++ + +v+ wlke  gl+i++eK+k+v   + +++  ++LG++
+   orf1  46 EGWLVRYADDFKIVCRNYNDAKRWYHSVRLWLKEqLGLEISEEKSKIV---NlRKNYSEFLGLK 106
+            55689****************************999************...6688888899886 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.51
+            ........................TEEEEESB-- CS
+  RVT_1 101 linliksflstrsfsvrvnge.eskgryekkglp 133
+            ++  +k+++++    +  +   +sk++++++glp
+   orf1 202 THSKLKRYVKGNGNKYIEDRYgKSKRLKVWRGLP 235
+            3344566665555555554445778888888888 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   1.9   4.8e-09   2.4e-05       3      36 ..     300     341 ..     299     351 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 4.8e-09
+           SSS-B-SSE........E--EEEESS-TTTT--BSGGGEEEE CS
+   HNH   3 yCgrkfhks........dalevdHiipisqggaddieNlqll 36 
+           yCg++++          ++ +++Hii++sqgg+d +eNl+ +
+  orf1 300 YCGQNGKCAisgeilqtNDMHCHHIIHKSQGGSDKYENLMFV 341
+           677777666777777999*********************975 PP
+
+>> HNH_5  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8   0.6   8.9e-06     0.044       1      32 [.     307     338 ..     307     343 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 8.9e-06
+  HNH_5   1 CiyCgkeipeeelseeHIipeslGGklkisnl 32 
+            C++ g+  ++++++  HIi++s GG+ k +nl
+   orf1 307 CAISGEILQTNDMHCHHIIHKSQGGSDKYENL 338
+            7888888999********************99 PP
+
+>> Binary_toxB_3  Clostridial binary toxin B/anthrax toxin PA domain 3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.0   0.0     0.013        62      70      96 ..     185     219 ..     114     224 .. 0.62
+   2 ?   -2.3   0.0       1.2   5.8e+03      76      98 ..     258     280 ..     254     283 .. 0.77
+   3 ?    6.3   0.1    0.0024        12      40      91 ..     317     365 ..     311     376 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 4.0 bits;  conditional E-value: 0.013
+                    G........EEEEE-HHHHHHHHHHHHHTT-SSTT CS
+  Binary_toxB_3  70 e........vdfifdrrtekkikkeleelkakniy 96 
+                             v   f++rt+ k+k+ ++++ +k i 
+           orf1 185 SdvnridyqVFRTFEKRTHSKLKRYVKGNGNKYIE 219
+                    1455555555558***************9999875 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 1.2
+                    -HHHHHHHHHHHHHTT-SSTTTG CS
+  Binary_toxB_3  76 drrtekkikkeleelkakniydv 98 
+                      +  + i+k+l++++ + +y +
+           orf1 258 TPEGRESIHKNLQGIDRNVLYYL 280
+                    556678999***99998888754 PP
+
+  == domain 3  score: 6.3 bits;  conditional E-value: 0.0024
+                    --EBHHHHHHHHT-EB-SSSS-EETTEEGGGEEEEE-HHHHHHHHHHHHHTT CS
+  Binary_toxB_3  40 PdltlgealekavGaeeekeklsykdesidevdfifdrrtekkikkeleelk 91 
+                     d+   + ++k+ G  ++ e+l +    +++v++      e+ ikk l ++k
+           orf1 317 NDMHCHHIIHKSQGGSDKYENLMF---VTKDVHILLHATNEETIKKTLTKVK 365
+                    5778888899999***********...78899**************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (386 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       925  (0.047117); expected 392.6 (0.02)
+Passed bias filter:                      523  (0.0266402); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.40u 0.23s 00:00:00.63 Elapsed: 00:00:00.39
+# Mc/sec: 3238.45
+//
+Query:       orf2  [L=110]
+Description: source=IMGVR_UViG_3300029705_005885_3300029705_Ga0224414_10042525/10428-8751 coords=1164..1493 length=110 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.012   15.3   0.1      0.024   14.3   0.1    1.6  1  FlbD      Flagellar and Swarming motility proteins
+
+
+Domain annotation for each model (and alignments):
+>> FlbD  Flagellar and Swarming motility proteins
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.1   1.2e-06     0.024      20      38 ..      71      89 ..      61      97 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 1.2e-06
+  FlbD 20 etveetPDTvitLtnGkky 38
+          e +e +PDTvi++t+ + y
+  orf2 71 EVIERHPDTVIVITTNTEY 89
+          789************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (110 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       412  (0.0209861); expected 392.6 (0.02)
+Passed bias filter:                      336  (0.0171149); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.31u 0.19s 00:00:00.50 Elapsed: 00:00:00.33
+# Mc/sec: 1086.59
+//
+[ok]

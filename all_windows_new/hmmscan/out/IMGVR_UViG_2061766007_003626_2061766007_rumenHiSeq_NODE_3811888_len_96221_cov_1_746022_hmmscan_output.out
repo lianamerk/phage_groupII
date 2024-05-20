@@ -1,0 +1,114 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2061766007_003626_2061766007_rumenHiSeq_NODE_3811888_len_96221_cov_1_746022_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2061766007_003626_2061766007_rumenHiSeq_NODE_3811888_len_96221_cov_1_746022_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=207]
+Description: source=IMGVR_UViG_2061766007_003626_2061766007_rumenHiSeq_NODE_3811888_len_96221_cov_1_746022/84324-82740 coords=1..621 length=207 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      2e-16   59.9   0.0    3.5e-16   59.1   0.0    1.4  1  HHH_4     Helix-hairpin-helix containing domain
+     0.0025   17.7   0.2      0.005   16.7   0.2    1.5  1  AAA_30    AAA domain
+  ------ inclusion threshold ------
+      0.013   15.6   0.6       0.03   14.4   0.0    2.0  2  Rho_N     Rho termination factor, N-terminal domain
+      0.029   14.7   0.3      0.063   13.6   0.1    1.6  2  AAA_19    AAA domain
+
+
+Domain annotation for each model (and alignments):
+>> HHH_4  Helix-hairpin-helix containing domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.1   0.0   7.1e-20   3.5e-16       6      92 .]       2      85 ..       1      85 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 59.1 bits;  conditional E-value: 7.1e-20
+  HHH_4  6 relmeflqeygisaalaekiykkygeealevlkenPYrlledvegigFktadkiakklgieadspeRiragilyvlkeaaeeeGhty 92
+           +el+ fl+ yg + ++++k++k+yg + l+ +kenPY + +  +g +  ++d+iak lgi+a s+ R++a +  +lk +    Ghty
+   orf1  2 KELLDFLAPYGGNYTVMKKVVKEYGPDGLRLIKENPYLMSD--YGWTITQCDSIAKDLGIQAVSDMRLDAIVMTILKAEK-MAGHTY 85
+           6899*********************************5544..799**********************************.69***9 PP
+
+>> AAA_30  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.2     1e-06     0.005       2      34 ..     172     202 ..     171     207 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 1e-06
+  AAA_30   2 lnaeQaaavealltsgdrvavltGpAGtGKtta 34 
+             ++++Q++a+  l ++g  +a+ltG++GtGK+ +
+    orf1 172 YAPQQRDAFSLLKQTG--IAILTGGPGTGKSAT 202
+             7899*****7665555..9************87 PP
+
+>> Rho_N  Rho termination factor, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.1       1.8   8.9e+03      21      27 ..      14      20 ..      14      20 .. 0.92
+   2 ?   14.4   0.0   6.1e-06      0.03      12      41 ..      52      81 ..      46      83 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 1.8
+           TGGGS-H CS
+  Rho_N 21 nysrlRK 27
+           ny+ ++K
+   orf1 14 NYTVMKK 20
+           8999**9 PP
+
+  == domain 2  score: 14.4 bits;  conditional E-value: 6.1e-06
+           HHHHHTT-TTGGGS-HHHHHHHHHHGGGSS CS
+  Rho_N 12 aiAkelgienysrlRKqdLIfaIlkaqaek 41
+            iAk+lgi+ +s +R + ++  Ilka + +
+   orf1 52 SIAKDLGIQAVSDMRLDAIVMTILKAEKMA 81
+           69***********************98765 PP
+
+>> AAA_19  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0      0.75   3.7e+03      28      28 ..     110     110 ..      60     162 .. 0.62
+   2 ?   13.6   0.1   1.3e-05     0.063       1      26 [.     176     202 ..     176     206 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.75
+  AAA_19  28 v 28 
+             +
+    orf1 110 T 110
+             1 PP
+
+  == domain 2  score: 13.6 bits;  conditional E-value: 1.3e-05
+  AAA_19   1 qreave.alkekvllvtaGpGtGKTrt 26 
+             qr a +   + ++ ++t+GpGtGK+ t
+    orf1 176 QRDAFSlLKQTGIAILTGGPGTGKSAT 202
+             67777767788999**********987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (207 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       697  (0.0355033); expected 392.6 (0.02)
+Passed bias filter:                      575  (0.0292889); expected 392.6 (0.02)
+Passed Vit filter:                        65  (0.00331092); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.34u 0.18s 00:00:00.52 Elapsed: 00:00:00.35
+# Mc/sec: 1923.12
+//
+[ok]
+  (0.0232783); expected 392.6 (0.02)
+Passed Vit filter:                        49  (0.00249593); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.34u 0.21s 00:00:00.55 Elapsed: 00:00:00.36
+# Mc/sec: 3264.43
+//
+[ok]

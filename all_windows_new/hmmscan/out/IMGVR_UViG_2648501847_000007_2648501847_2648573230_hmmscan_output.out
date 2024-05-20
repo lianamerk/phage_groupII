@@ -1,0 +1,187 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2648501847_000007_2648501847_2648573230_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2648501847_000007_2648501847_2648573230_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=131]
+Description: source=IMGVR_UViG_2648501847_000007_2648501847_2648573230/1-1090 coords=3..395 length=131 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.3e-09   37.0   2.8    0.00018   22.4   0.1    2.5  3  WD40         WD domain, G-beta repeat
+     0.0065   15.4   0.1       0.05   12.5   0.0    1.8  2  Nup160       Nucleoporin Nup120/160
+  ------ inclusion threshold ------
+      0.012   16.0   0.2      0.031   14.7   0.0    1.7  2  ANAPC4_WD40  Anaphase-promoting complex subunit 4 WD40 domain
+      0.041   13.3   0.0      0.048   13.1   0.0    1.1  1  WD40_like    WD40-like domain
+       0.09   11.7   0.2        4.8    6.0   0.1    2.0  2  NBCH_WD40    Neurobeachin beta propeller domain
+
+
+Domain annotation for each model (and alignments):
+>> WD40  WD domain, G-beta repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.4   0.1   4.5e-08   0.00018      11      37 ..       2      28 ..       1      29 [. 0.93
+   2 !   14.8   0.1   1.1e-05     0.042       2      37 ..      34      72 ..      33      73 .. 0.77
+   3 ?   -3.6   0.0         5     2e+04       8      10 ..      89      91 ..      85      98 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 22.4 bits;  conditional E-value: 4.5e-08
+          SSEEEEEEETTSSEEEEEETTSEEEEE CS
+  WD40 11 ssvtslafspdgawlasGsdDgtvriW 37
+          ssv+s+ +sp  + +asGs+D+tvr+W
+  orf1  2 SSVNSVVYSPIDTQIASGSEDHTVRLW 28
+          469************************ PP
+
+  == domain 2  score: 14.8 bits;  conditional E-value: 1.1e-05
+          EEEEEEESS.SSEEEEEEETTSSE........EEEEETTSEEEEE CS
+  WD40  2 qclrtltGH.ssvtslafspdgaw........lasGsdDgtvriW 37
+           clr++ +  ++v s+      aw        l++Gs D++vr W
+  orf1 34 VCLRVIQAFtGPVLSV------AWterdghqyLVTGSLDKSVRHW 72
+          6888877776679999......555555556899*********** PP
+
+  == domain 3  score: -3.6 bits;  conditional E-value: 5
+          ESS CS
+  WD40  8 tGH 10
+          +GH
+  orf1 89 SGH 91
+          355 PP
+
+>> Nup160  Nucleoporin Nup120/160
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   1.3e-05      0.05     235     278 ..      12      51 ..       1      64 [. 0.72
+   2 ?    2.6   0.0     0.012        48     229     254 ..      49      75 ..      44      87 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.3e-05
+             TTTEEEEEETT-EEEEEETTTTEEEEEEE--..-SSSTTS--SS CS
+  Nup160 235 gsnflfalslDgkLrvWnlltgkclatidlltrdeeaqdesssk 278
+              ++ +++ s D+++r+W +++g cl++i       + ++ s+ +
+    orf1  12 IDTQIASGSEDHTVRLWEVSSGVCLRVIQAF----TGPVLSVAW 51 
+             5677888899*****************7655....466666666 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.012
+             T......TTTEEEEEETT-EEEEEETT CS
+  Nup160 229 savvei.gsnflfalslDgkLrvWnll 254
+             +a +e  g ++l++ slD+ +r W l+
+    orf1  49 VAWTERdGHQYLVTGSLDKSVRHWELQ 75 
+             455666799***************987 PP
+
+>> ANAPC4_WD40  Anaphase-promoting complex subunit 4 WD40 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.0   7.8e-06     0.031      39      91 ..       2      53 ..       1      54 [. 0.94
+   2 ?   -1.5   0.0      0.87   3.4e+03      30      48 ..      72      89 ..      56      98 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 7.8e-06
+  ANAPC4_WD40 39 sevrsLaWkpdGklLavalsdgevrlldaesgkvvhslsvksekavtclgWge 91
+                 s+v+s+ ++p  + +a + +d +vrl +++sg +++ +++ +   v ++ W+e
+         orf1  2 SSVNSVVYSPIDTQIASGSEDHTVRLWEVSSGVCLRVIQAFTG-PVLSVAWTE 53
+                 68999***********************************999.59*****86 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.87
+  ANAPC4_WD40 30 wtleedkedsevrsLaWkp 48
+                 w+l++++e+ +  +L+W+ 
+         orf1 72 WELQKEAEGYK-LKLNWSS 89
+                 55533333333.2466655 PP
+
+>> WD40_like  WD40-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   1.2e-05     0.048       3      74 ..       4      78 ..       2      88 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.2e-05
+  WD40_like  3 iYsidiskkgslilyGgkddkctvlkleslesvsivesfedSvifvkllddd..lilv.vtlDGtillsllenee 74
+               + s+ +s+  + i+ G++d+++++ ++ s+    +++ f+  v+ v   + d  ++lv ++lD  + +  l++e 
+       orf1  4 VNSVVYSPIDTQIASGSEDHTVRLWEVSSGVCLRVIQAFTGPVLSVAWTERDghQYLVtGSLDKSVRHWELQKEA 78
+               667888999999*****************************9999998876655777735899888777777765 PP
+
+>> NBCH_WD40  Neurobeachin beta propeller domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.1    0.0012       4.8     130     155 ..       7      32 ..       2      39 .. 0.76
+   2 ?    4.1   0.0    0.0047        18     128     157 ..      47      78 ..      31      89 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.0012
+  NBCH_WD40 130 vavtsdgsilatGsydttvmvwevlr 155
+                v  +   + +a+Gs d tv +wev+ 
+       orf1   7 VVYSPIDTQIASGSEDHTVRLWEVSS 32 
+                44444456689************975 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0047
+  NBCH_WD40 128 scvavt.sdg.silatGsydttvmvwevlrar 157
+                 +va t  dg + l+tGs d +v  we+ +  
+       orf1  47 LSVAWTeRDGhQYLVTGSLDKSVRHWELQKEA 78 
+                44444415663579*************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (131 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       371  (0.0188977); expected 392.6 (0.02)
+Passed bias filter:                      340  (0.0173187); expected 392.6 (0.02)
+Passed Vit filter:                        27  (0.00137531); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.33u 0.20s 00:00:00.53 Elapsed: 00:00:00.33
+# Mc/sec: 1287.87
+//
+Query:       orf2  [L=136]
+Description: source=IMGVR_UViG_2648501847_000007_2648501847_2648573230/1-1090 coords=537..130 length=136 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.12   12.7   0.9       0.27   11.5   0.8    1.7  2  MRP-L20   Mitochondrial ribosomal protein subunit L20
+
+
+Domain annotation for each model (and alignments):
+>> MRP-L20  Mitochondrial ribosomal protein subunit L20
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0      0.11   2.1e+03      45      64 ..      17      36 ..       7      54 .. 0.56
+   2 ?   11.5   0.8   1.4e-05      0.27       9      53 ..      64     112 ..      19     121 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.11
+  MRP-L20 45 fLPksdprrellaakekkas 64
+              LP+s +++++ +a++  a+
+     orf2 17 GLPSSQVQHSIQQANTFMAQ 36
+             46666666665554444443 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 1.4e-05
+  MRP-L20   9 synrtksrlnlkpeesfg....liynPpssapsvshtPtkfLPksdprr 53 
+              s++++ srl+l   + +     + + P ss++s+++ P+ f ++s +r 
+     orf2  64 SKAAHSSRLSLLRLQATYllhsMLHAPNSSSVSTYSLPLLFAAPSAART 112
+              455555555543332222467799******************9999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (136 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       272  (0.0138549); expected 392.6 (0.02)
+Passed bias filter:                      189  (0.00962714); expected 392.6 (0.02)
+Passed Vit filter:                        11  (0.00056031); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.28u 0.18s 00:00:00.46 Elapsed: 00:00:00.30
+# Mc/sec: 1464.46
+//
+[ok]

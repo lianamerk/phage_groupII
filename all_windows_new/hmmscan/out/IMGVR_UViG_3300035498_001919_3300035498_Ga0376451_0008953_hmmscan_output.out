@@ -1,0 +1,143 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300035498_001919_3300035498_Ga0376451_0008953_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300035498_001919_3300035498_Ga0376451_0008953_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=366]
+Description: source=IMGVR_UViG_3300035498_001919_3300035498_Ga0376451_0008953/5837-4200 coords=1..1098 length=366 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    0.00075   19.9   0.8      0.069   13.5   0.7    2.6  1  RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+  ------ inclusion threshold ------
+       0.14   12.2   2.1        8.3    6.4   0.0    2.9  3  Peptidase_C3    3C cysteine protease (picornain 3C)
+
+
+Domain annotation for each model (and alignments):
+>> RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.7     7e-06     0.069       3     124 ..     242     346 ..     240     357 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 7e-06
+                     EESSEEEEEEEEETTS-TTEEEEEHHHHTTSEEEEE-STTTHHHHHHHHHHTTTSSSSEEEEETTTSSEEETTTS-CHHHHTTTTTSEEEEE-ST CS
+  RNA_pol_Rpb1_2   3 rvdysaRsvispdpnlkldevgvPisvakkltvpeivtelnikklrklvengpevyPgasyvkredgsekklkakkrklakelekgdiverhvkd 97 
+                     r+dy++R vis + +l  +ev +P++  +   ++e++ ++  + l+     g ++   a ++ +++ +e++ k    k+ ++l        + k+
+            orf1 242 RIDYTSRMVISLGIDLMPHEVDIPYQTMM-VVYEERIAKYLST-LE-----GISIS-KAITIVQDHAMERDEKFV--KIINQLL-------KSKT 319
+                     89**********************99765.5688888887543.33.....33333.233344444444444444..2333333.......3467 PP
+
+                     TCEEEEEESSTTSGGGEEEEEEEEESS CS
+  RNA_pol_Rpb1_2  98 gdvvllNRqPsLhklsimahrvkvlek 124
+                     g   l+NR+P++  +si   rv+ +++
+            orf1 320 GVWALINRNPTISESSILYVRVRKIHE 346
+                     888999999999999999999875554 PP
+
+>> Peptidase_C3  3C cysteine protease (picornain 3C)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4   0.0   0.00085       8.3      82     136 ..      74     127 ..      65     136 .. 0.88
+   2 ?   -0.5   0.0      0.11   1.1e+03      83      99 ..     213     229 ..     193     236 .. 0.79
+   3 ?    3.6   0.1    0.0063        62      80     131 ..     301     353 ..     260     359 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.00085
+                   SS--B---GGGS-SS---EEEEEEEE-SSSSTTEEEEEEEEEEEEEE.EETTEEE CS
+  Peptidase_C3  82 rgekfkdirkylaarikkgkpvvllinnneagrlivsveavtakgkiktldgttt 136
+                   r   + di +y  +  + ++++  +   ++++ +i sv++++++gk+   dg++t
+          orf1  74 RTTMYIDIAPYHILTYHGYNAMCRVFKDKVMEDIITSVKRISTSGKV-IDDGKPT 127
+                   66778899999999999******************************.7777765 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.11
+                   S--B---GGGS-SS--- CS
+  Peptidase_C3  83 gekfkdirkylaarikk 99 
+                    + f +i+k+++++i+ 
+          orf1 213 QQDFNNITKFIETQING 229
+                   67899*******99964 PP
+
+  == domain 3  score: 3.6 bits;  conditional E-value: 0.0063
+                   ESSS--B---GGGS-SS---EEEEEEEE-SS....SSTTEEEEEEEEEEEEEE.EE CS
+  Peptidase_C3  80 lkrgekfkdirkylaarikkgkpvvllinnn....eagrlivsveavtakgkiktl 131
+                   + r+ekf +i + l    k+++ v+ lin n    e ++l+v v+++++ g+  t+
+          orf1 301 MERDEKFVKIINQLL---KSKTGVWALINRNptisESSILYVRVRKIHEDGTDMTM 353
+                   367777777776666...88999*****9864444789999*****9999876565 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (366 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1003  (0.0510901); expected 392.6 (0.02)
+Passed bias filter:                      728  (0.0370823); expected 392.6 (0.02)
+Passed Vit filter:                        58  (0.00295436); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.44u 0.20s 00:00:00.64 Elapsed: 00:00:00.38
+# Mc/sec: 3173.02
+//
+Query:       orf2  [L=117]
+Description: source=IMGVR_UViG_3300035498_001919_3300035498_Ga0376451_0008953/5837-4200 coords=1613..1263 length=117 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (117 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       361  (0.0183883); expected 392.6 (0.02)
+Passed bias filter:                      327  (0.0166565); expected 392.6 (0.02)
+Passed Vit filter:                        18  (0.00091687); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.17s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 1202.32
+//
+Query:       orf3  [L=109]
+Description: source=IMGVR_UViG_3300035498_001919_3300035498_Ga0376451_0008953/5837-4200 coords=1083..757 length=109 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (109 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       267  (0.0136002); expected 392.6 (0.02)
+Passed bias filter:                      226  (0.0115118); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.15s 00:00:00.47 Elapsed: 00:00:00.30
+# Mc/sec: 1188.71
+//
+[ok]

@@ -1,0 +1,141 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300036949_000702_3300036949_Ga0377206_015114_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300036949_000702_3300036949_Ga0377206_015114_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=207]
+Description: source=IMGVR_UViG_3300036949_000702_3300036949_Ga0377206_015114/1759-114 coords=3..623 length=207 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.3e-09   38.2   2.7    2.5e-09   37.3   2.7    1.6  1  HNH       HNH endonuclease
+    5.3e-05   23.2   1.9    6.3e-05   22.9   0.5    1.9  2  HNH_5     HNH endonuclease
+  ------ inclusion threshold ------
+       0.09   13.1   2.4       0.42   10.9   2.4    2.0  1  HNH_2     HNH endonuclease
+       0.11   12.4   0.0       0.15   11.9   0.0    1.1  1  DUF429    Protein of unknown function (DUF429)
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   2.7   5.2e-13   2.5e-09      14      46 ..       2      34 ..       1      35 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 5.2e-13
+          -EEEESS-TTTT--BSGGGEEEE-HHHHHHHHH CS
+   HNH 14 levdHiipisqggaddieNlqllCksCHnkkhd 46
+          lev+Hii +sqgg+d+ eNl++lC +CH   h+
+  orf1  2 LEVHHIIFRSQGGSDEPENLITLCHTCHYDLHH 34
+          79**************************98886 PP
+
+>> HNH_5  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.9   0.5   1.3e-08   6.3e-05      13      45 ..       2      34 ..       1      43 [. 0.89
+   2 ?   -3.5   0.0       2.3   1.2e+04       3      12 ..     118     127 ..     117     134 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 22.9 bits;  conditional E-value: 1.3e-08
+  HNH_5 13 lseeHIipeslGGklkisnlqtlCkkCNsklgq 45
+           l+  HIi  s GG+  ++nl tlC +C+ +l +
+   orf1  2 LEVHHIIFRSQGGSDEPENLITLCHTCHYDLHH 34
+           6788***********************988865 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 2.3
+  HNH_5   3 yCgkeipeee 12 
+            +Cg+  +++ 
+   orf1 118 SCGDYQQTKG 127
+            5777766654 PP
+
+>> HNH_2  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   2.4   8.5e-05      0.42      45      65 ..      12      32 ..       1      37 [. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 8.5e-05
+  HNH_2 45 gstidspsNgllLspdiHklF 65
+           +++ d p+N+++L++++H   
+   orf1 12 QGGSDEPENLITLCHTCHYDL 32
+           4568**************755 PP
+
+>> DUF429  Protein of unknown function (DUF429)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0     3e-05      0.15     148     195 ..      53     104 ..      34     114 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 3e-05
+  DUF429 148 aegraeRrellaaa....iaeallageaakeklvakdDvlDAvacaltArra 195
+              +    R +ll+ +     +  +++++++     +kd++lDA++ a ++  +
+    orf1  53 TQMNSIRCQLLKSYpdaiETFGMVTKANRLNLSIEKDHHLDACVIASSGEPV 104
+             3447889999998899973345667777999***************999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (207 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       580  (0.0295436); expected 392.6 (0.02)
+Passed bias filter:                      478  (0.024348); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.29u 0.18s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 2131.71
+//
+Query:       orf2  [L=173]
+Description: source=IMGVR_UViG_3300036949_000702_3300036949_Ga0377206_015114/1759-114 coords=648..1166 length=173 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    6.6e-08   32.5   1.0    0.00072   19.6   0.1    2.2  2  OrfB_Zn_ribbon  Putative transposase DNA-binding domain
+
+
+Domain annotation for each model (and alignments):
+>> OrfB_Zn_ribbon  Putative transposase DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.1   3.7e-08   0.00072       1      29 [.      51      79 ..      51      80 .. 0.96
+   2 !   11.8   0.1   9.7e-06      0.19      47      69 .]     110     132 ..      98     132 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 3.7e-08
+  OrfB_Zn_ribbon  1 frklkeqleykakeyGikveevnpayTSk 29
+                    ++++k++l+y ++ yGi+++e +++yTSk
+            orf2 51 YGQFKNRLRYLCNIYGITYVEQEESYTSK 79
+                    789*************************9 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 9.7e-06
+  OrfB_Zn_ribbon  47 fkCpnCgfeadrDvnAaiNilkr 69 
+                     +++++ g  +++Dvn+a+Nil++
+            orf2 110 LYRTDDGRILNADVNGALNILRK 132
+                     5556667789**********986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (173 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       278  (0.0141606); expected 392.6 (0.02)
+Passed bias filter:                      260  (0.0132437); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.28u 0.15s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1967.19
+//
+[ok]

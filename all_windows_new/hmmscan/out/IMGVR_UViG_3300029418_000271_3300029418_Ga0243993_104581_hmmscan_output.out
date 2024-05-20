@@ -1,0 +1,157 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029418_000271_3300029418_Ga0243993_104581_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029418_000271_3300029418_Ga0243993_104581_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=271]
+Description: source=IMGVR_UViG_3300029418_000271_3300029418_Ga0243993_104581/1-970 coords=1..813 length=271 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     0.0031   17.7   0.3     0.0061   16.8   0.3    1.5  1  HNH       HNH endonuclease
+  ------ inclusion threshold ------
+       0.17   12.5   0.0        1.5    9.4   0.0    2.1  2  SUKH-3    SUKH-3 immunity protein
+        0.5   10.4   2.8       0.38   10.8   1.0    1.7  2  FtsL_2    Bacteriodetes cell division protein (FtsL-like)
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.3   9.3e-07    0.0061      11      36 ..     198     225 ..     189     235 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 9.3e-07
+           E..E--EEEESS-TTTT--BSGGGEEEE CS
+   HNH  11 s..dalevdHiipisqggaddieNlqll 36 
+               + +++H+ p ++gg+d++ Nl+l+
+  orf1 198 MeaHDIHCHHKRPAAKGGTDEYGNLVLI 225
+           4445679******************997 PP
+
+>> SUKH-3  SUKH-3 immunity protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.0   0.00023       1.5      34     106 ..      60     130 ..      22     133 .. 0.73
+   2 ?    0.7   0.0      0.11   7.4e+02      33      71 ..     202     246 ..     172     267 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 0.00023
+  SUKH-3  34 egyevfpaarefleeFGgLrvpktgpgeqvapaeididpleakeigehtadtladleealgeeliPiGelakg 106
+             ++y +   a ++ e FG L    +++  ++ +++++ + + +k + ++++  +++l   +g++++PiG+++++
+    orf1  60 HQYYC--IATAASEDFGKLAYGVKKQMHNRLRNDLTRKGELKKGYIKEKYGKSSQLRFLHGRPVVPIGYVQSR 130
+             44444..46788999****7766655556666666666666678889999*******************9765 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.11
+  SUKH-3  33 q.egyevfpaarefleeFGgLrv.....pktgpgeqvapaeidid 71 
+             + + +   paa+   +e+G+L +     +k  +  ++a+++++++
+    orf1 202 DiHCHHKRPAAKGGTDEYGNLVLisapvHKLIHASDMATIKFYLN 246
+             257788889999999*****9444221122233333555555554 PP
+
+>> FtsL_2  Bacteriodetes cell division protein (FtsL-like)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   1.0   5.9e-05      0.38      31      76 ..      11      56 ..      10      63 .. 0.83
+   2 ?   -2.8   0.0      0.97   6.3e+03      37      67 ..     131     161 ..     127     172 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 5.9e-05
+  FtsL_2 31 mIanshsaekkvrkia.klnkevkelrseyvdlkselmklkkeseva 76
+            ++ +sh+++k  +k++ kl++evk+l+    d k+++m+l +   v 
+    orf1 11 YVVKSHMCDKAYKKVQkKLTEEVKKLEHS-ADDKAQFMQLMTYNAVV 56
+            7899********998637********976.68899999998877775 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.97
+  FtsL_2  37 saekkvrkiaklnkevkelrseyvdlkselm 67 
+             +a++k ++++k + e +el  + ++  ++ m
+    orf1 131 NAQHKRKSVNKYTPEGRELIHKNLNIDTKTM 161
+             5777777778877777777666655555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (271 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1178  (0.0600041); expected 392.6 (0.02)
+Passed bias filter:                      590  (0.030053); expected 392.6 (0.02)
+Passed Vit filter:                        47  (0.00239405); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.36u 0.18s 00:00:00.54 Elapsed: 00:00:00.35
+# Mc/sec: 2511.06
+//
+Query:       orf2  [L=92]
+Description: source=IMGVR_UViG_3300029418_000271_3300029418_Ga0243993_104581/1-970 coords=728..453 length=92 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (92 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       268  (0.0136512); expected 392.6 (0.02)
+Passed bias filter:                      178  (0.00906683); expected 392.6 (0.02)
+Passed Vit filter:                        12  (0.000611247); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.16s 00:00:00.44 Elapsed: 00:00:00.30
+# Mc/sec: 994.21
+//
+Query:       orf3  [L=195]
+Description: source=IMGVR_UViG_3300029418_000271_3300029418_Ga0243993_104581/1-970 coords=585..1 length=195 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+  ------ inclusion threshold ------
+      0.055   13.2   0.4      0.069   12.9   0.4    1.1  1  Guanylate_cyc  Adenylate and Guanylate cyclase catalytic doma
+
+
+Domain annotation for each model (and alignments):
+>> Guanylate_cyc  Adenylate and Guanylate cyclase catalytic domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.4   3.5e-06     0.069       2      68 ..      80     147 ..      79     173 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.5e-06
+  Guanylate_cyc   2 eaesydevtilFadIvgft.alssehs..peevvklLnelysrfdellekkkvykvktiGdaymvvsglp 68 
+                    ++ ++   +ilF dI+ f+ a++  ++  p+ +v+lL + +s++ ++l++ ++  v  + ++   ++g +
+           orf3  80 QKSQLTAFSILFFDIAFFQfAFA--CQviPQTIVHLLFDPISQLSKVLRSSRCNAVILVYSCHHSIVGHQ 147
+                    566778899******98863444..4445************************99988888877777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (195 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       603  (0.0307152); expected 392.6 (0.02)
+Passed bias filter:                      302  (0.015383); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.31u 0.17s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1972.22
+//
+[ok]

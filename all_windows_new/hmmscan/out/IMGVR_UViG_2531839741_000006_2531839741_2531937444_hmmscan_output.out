@@ -1,0 +1,196 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2531839741_000006_2531839741_2531937444_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2531839741_000006_2531839741_2531937444_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=178]
+Description: source=IMGVR_UViG_2531839741_000006_2531839741_2531937444/27805-26111 coords=103..636 length=178 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.1e-16   59.6   1.4    3.1e-16   59.6   1.4    1.9  2  SH3_3     Bacterial SH3 domain
+    2.2e-09   37.0   0.8    3.7e-09   36.4   0.1    1.8  2  SH3_4     Bacterial SH3 domain
+     0.0037   17.6   0.0     0.0055   17.1   0.0    1.3  1  DUF6550   Family of unknown function (DUF6550)
+  ------ inclusion threshold ------
+      0.035   14.3   0.1      0.061   13.5   0.1    1.3  1  PSA_CBD   PSA endolysin C-terminal cell wall binding domain
+      0.076   13.0   1.6        0.1   12.6   0.4    1.9  2  SH3_2     Variant SH3 domain
+       0.14   12.1   1.5       0.26   11.2   0.4    2.0  2  SH3_16    Bacterial dipeptidyl-peptidase Sh3 domain
+       0.25   11.5   1.1        2.4    8.4   0.0    2.3  2  DUF3561   Protein of unknown function (DUF3561)
+
+
+Domain annotation for each model (and alignments):
+>> SH3_3  Bacterial SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.1       2.7   7.4e+03      12      27 ..     112     127 ..     107     128 .. 0.69
+   2 !   59.6   1.4   1.1e-19   3.1e-16       2      52 ..     130     177 ..     129     178 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 2.7
+  SH3_3  12 ssevigtlpaGekVev 27 
+             +e  +t+  G++V +
+   orf1 112 EGEEGTTVLTGTVVGI 127
+            5566678888888865 PP
+
+  == domain 2  score: 59.6 bits;  conditional E-value: 1.1e-19
+  SH3_3   2 glnvRsgPstssevigtlpaGekVevleetgggdWykvrtddgyeGWvssg 52 
+             ln+Rsg++ ++ vig+l +G++Vev++e++g  Wy+v t dg++G+v s+
+   orf1 130 YLNLRSGAGMNYGVIGKLANGTEVEVIGEENG--WYQV-TVDGQTGYVYSR 177
+            69******************************..****.*********875 PP
+
+>> SH3_4  Bacterial SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.1       2.2   6.2e+03      32      44 ..      97     109 ..      90     111 .. 0.71
+   2 !   36.4   0.1   1.3e-12   3.7e-09       4      52 ..     130     177 ..     128     178 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 2.2
+  SH3_4  32 ckenWcrvrDadG 44 
+            ++++W  ++D+++
+   orf1  97 TYGDWSWAVDSEK 109
+            5678877777766 PP
+
+  == domain 2  score: 36.4 bits;  conditional E-value: 1.3e-12
+  SH3_4   4 evnlrsgPsekaavaaylkaGvpvevvackenWcrvrDadGaeGWieks 52 
+            + nlrsg++ ++ v+ +l++G+ vev+ ++++W++v+  dG++G+++++
+   orf1 130 YLNLRSGAGMNYGVIGKLANGTEVEVIGEENGWYQVT-VDGQTGYVYSR 177
+            68***********************************.*********98 PP
+
+>> DUF6550  Family of unknown function (DUF6550)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0     2e-06    0.0055       7      71 ..      23      90 ..      19     118 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 2e-06
+  DUF6550  7 ktkkilliag..lallCv.vlvvgifsllggsadksksaiaddttnnkvsvvdikkddeaevkvqevt 71
+             k  ++ +i++    llCv +   ++f+ + g a+ +++a a+ tt++ ++ +++++d e+ ++v +  
+     orf1 23 KHMRTKIISVmtALLLCVgMFSTTVFAYVEGDANAEETAEAEVTTDTAETDEEVDDDTEPTLEVTVSE 90
+             444555555510567899445789*******************************9999999998765 PP
+
+>> PSA_CBD  PSA endolysin C-terminal cell wall binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.1   2.2e-05     0.061      24      57 ..     144     175 ..     138     177 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 2.2e-05
+              EEEEETT-EEEEEEETTSEEEEEECCCCCEEEEE CS
+  PSA_CBD  24 lrtyKtGtklkvykhnkywyktyvkdkkklfYiy 57 
+              + +++ Gt++ v  + ++wy+  v+    ++Y+y
+     orf1 144 IGKLANGTEVEVIGEENGWYQVTVDG--QTGYVY 175
+              557899********************..778877 PP
+
+>> SH3_2  Variant SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.1       1.4   3.8e+03      35      43 ..      99     109 ..      95     127 .. 0.70
+   2 ?   12.6   0.4   3.6e-05       0.1      21      51 ..     150     176 ..     108     177 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 1.4
+            TTE.EEEEE.C CS
+  SH3_2  35 dgw.weGav.g 43 
+            ++w w++ + +
+   orf1  99 GDWsWAVDSeK 109
+            67878776633 PP
+
+  == domain 2  score: 12.6 bits;  conditional E-value: 3.6e-05
+            TEEEEEE..EEEECTTEEEEEECCCEEEEEG CS
+  SH3_2  21 GdvihvlslgdkesdgwweGavgGrvGlfPs 51 
+            G  + v+    +e +gw++++v+G++G+++s
+   orf1 150 GTEVEVI----GEENGWYQVTVDGQTGYVYS 176
+            5557777....7888**************86 PP
+
+>> SH3_16  Bacterial dipeptidyl-peptidase Sh3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0       1.5   4.3e+03      27      38 ..      81      92 ..      75      96 .. 0.67
+   2 ?   11.2   0.4   9.3e-05      0.26      14      43 ..     147     174 ..     142     177 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 1.5
+            ETEEEEEETTT- CS
+  SH3_16 27 dgwawVqlceDg 38
+            +  ++V   eDg
+    orf1 81 EPTLEVTVSEDG 92
+            335889999998 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 9.3e-05
+             E-TT-EEEEEEEEETEEEEEETTT--EEEE CS
+  SH3_16  14 alaGrhlrvledtdgwawVqlceDgYvGWl 43 
+             ++ G++++v+ +++gw++V  +  g  G++
+    orf1 147 LANGTEVEVIGEENGWYQVTVD--GQTGYV 174
+             678*************999876..888888 PP
+
+>> DUF3561  Protein of unknown function (DUF3561)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.3   0.3      0.13   3.6e+02      78     107 .]      24      53 ..      14      53 .. 0.77
+   2 ?    8.4   0.0   0.00086       2.4      12      36 ..     107     131 ..     102     144 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 1.3 bits;  conditional E-value: 0.13
+  DUF3561  78 llrgkllysilatllavavlfgllflfllG 107
+               +r+k++  ++a ll+v+++ + +f ++ G
+     orf1  24 HMRTKIISVMTALLLCVGMFSTTVFAYVEG 53 
+              578888877888888888888899999876 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.00086
+  DUF3561  12 adaaeeddettyslsGavvGfisyl 36 
+              +++++e +e t +l+G+vvG +syl
+     orf1 107 SEKETEGEEGTTVLTGTVVGITSYL 131
+              6778999****************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (178 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1042  (0.0530766); expected 392.6 (0.02)
+Passed bias filter:                      693  (0.0352995); expected 392.6 (0.02)
+Passed Vit filter:                        73  (0.00371842); expected 19.6 (0.001)
+Passed Fwd filter:                         7  (0.000356561); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.35u 0.19s 00:00:00.54 Elapsed: 00:00:00.35
+# Mc/sec: 1692.73
+//
+Query:       orf2  [L=168]
+Description: source=IMGVR_UViG_2531839741_000006_2531839741_2531937444/27805-26111 coords=657..154 length=168 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (168 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       321  (0.0163509); expected 392.6 (0.02)
+Passed bias filter:                      281  (0.0143134); expected 392.6 (0.02)
+Passed Vit filter:                        12  (0.000611247); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.17s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1734.53
+//
+[ok]

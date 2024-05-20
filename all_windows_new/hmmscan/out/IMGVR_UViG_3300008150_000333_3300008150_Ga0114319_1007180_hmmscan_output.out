@@ -1,0 +1,64 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300008150_000333_3300008150_Ga0114319_1007180_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300008150_000333_3300008150_Ga0114319_1007180_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=313]
+Description: source=IMGVR_UViG_3300008150_000333_3300008150_Ga0114319_1007180/3855-2216 coords=25..963 length=313 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.11   11.7   0.1       0.11   11.7   0.1    2.6  3  LisH_2    LisH
+
+
+Domain annotation for each model (and alignments):
+>> LisH_2  LisH
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.4      0.37   7.3e+03      22      26 ..     170     174 ..     170     175 .. 0.86
+   2 ?   11.7   0.1   5.7e-06      0.11       4      16 ..     206     218 ..     204     219 .. 0.91
+   3 ?   -0.6   0.6     0.041   8.1e+02       8      16 ..     283     291 ..     282     291 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.37
+  LisH_2  22 lPEsG 26 
+             l+E++
+    orf1 170 LCECN 174
+             79**8 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 5.7e-06
+  LisH_2   4 LiaEYLqsqgYnY 16 
+             ++++YL+s++Y++
+    orf1 206 MVVDYLKSNDYDF 218
+             79**********8 PP
+
+  == domain 3  score: -0.6 bits;  conditional E-value: 0.041
+  LisH_2   8 YLqsqgYnY 16 
+             Y +++gYnY
+    orf1 283 YAKRNGYNY 291
+             6689****9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (313 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       743  (0.0378464); expected 392.6 (0.02)
+Passed bias filter:                      403  (0.0205277); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.20s 00:00:00.52 Elapsed: 00:00:00.36
+# Mc/sec: 2885.78
+//
+[ok]

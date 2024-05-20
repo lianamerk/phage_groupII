@@ -1,0 +1,122 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300007500_000151_3300007500_Ga0104983_100016_11030-244861_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300007500_000151_3300007500_Ga0104983_100016_11030-244861_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=271]
+Description: source=IMGVR_UViG_3300007500_000151_3300007500_Ga0104983_100016_11030-244861/24828-23157 coords=2..814 length=271 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.35   11.1   0.3       0.35   11.1   0.3    2.0  2  SipA_VBS  SipA vinculin binding site
+
+
+Domain annotation for each model (and alignments):
+>> SipA_VBS  SipA vinculin binding site
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.3   1.8e-05      0.35       4      16 ..      97     109 ..      96     109 .. 0.93
+   2 ?   -1.8   0.1      0.23   4.5e+03       2      10 ..     240     248 ..     239     249 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 1.8e-05
+  SipA_VBS   4 YeaAKeVtsSLSk 16 
+               +eaAK++t+S S+
+      orf1  97 FEAAKKITNSKSN 109
+               9*********887 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.23
+  SipA_VBS   2 aIYeaAKeV 10 
+                I++  K++
+      orf1 240 SIFKNNKKI 248
+               599999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (271 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       619  (0.0315302); expected 392.6 (0.02)
+Passed bias filter:                      356  (0.0181337); expected 392.6 (0.02)
+Passed Vit filter:                        17  (0.000865933); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.31u 0.16s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 2829.13
+//
+Query:       orf2  [L=231]
+Description: source=IMGVR_UViG_3300007500_000151_3300007500_Ga0104983_100016_11030-244861/24828-23157 coords=801..1493 length=231 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+     0.0086   15.0   0.0      0.012   14.6   0.0    1.1  1  T4SS-DNA_transf  Type IV secretory system Conjugative DNA tra
+  ------ inclusion threshold ------
+       0.11   13.0   0.9       0.22   12.0   0.9    1.5  1  Nodulin_late     Late nodulin protein
+       0.25   10.2   0.3        0.3    9.9   0.3    1.1  1  DUF2207          Predicted membrane protein (DUF2207)
+
+
+Domain annotation for each model (and alignments):
+>> T4SS-DNA_transf  Type IV secretory system Conjugative DNA transfer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   1.8e-06     0.012      13      80 ..     148     217 ..     141     223 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.8e-06
+                      XXXXXXXXXXXXXXXXXXXXXXXX..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...XXXXXXXXXXX CS
+  T4SS-DNA_transf  13 llkrektikgevltkdkkalyagg..llntdGdfehvlvvAptrsgKgvgvviPnllkw...kqsiVvlDpkg 80 
+                      +l ++++ +  v+ +dk + y g+  +++  G  +hvl+++ +++ K+ +  iP +l+    ++s++ +Dpkg
+             orf2 148 ILGWDRESDDTVSYVDK-PQYEGDkrMYVIGG--PHVLIMGSSGARKSRSWAIPRILQAirrGESLILTDPKG 217
+                      56666666777777774.66666666566666..9*******************9886422267********8 PP
+
+>> Nodulin_late  Late nodulin protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.9   3.3e-05      0.22       3      20 ..      24      41 ..      23      49 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 3.3e-05
+  Nodulin_late  3 kilkfvYalilflslflv 20
+                  ++l fvYa+  fls+fl+
+          orf2 24 RTLFFVYAVLAFLSIFLL 41
+                  5899************97 PP
+
+>> DUF2207  Predicted membrane protein (DUF2207)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.3   4.6e-05       0.3     363     427 ..      12     105 ..       4     147 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 4.6e-05
+  DUF2207 363 fdkkgkkklkslsalglvlillglilillallllvll.............................lsfalilllilliiaiivllffagllgr 427
+              f +k+   + + ++l  v+++l+++ i+l+ ++++l+                             + f+ i ++++l+++ +++++ + + g 
+     orf2  12 FLEKCWDLWDENRTLFFVYAVLAFLSIFLLGGSIGLMirggevnqwghatggfnpfnipynlfmgfTDFLPISFFLILLFGGVAWFILRQFAGD 105
+              7788888888899999999999999999999999988999*************************86666666666666666666666665544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (231 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       528  (0.0268949); expected 392.6 (0.02)
+Passed bias filter:                      413  (0.0210371); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.31u 0.14s 00:00:00.45 Elapsed: 00:00:00.28
+# Mc/sec: 2674.56
+//
+[ok]

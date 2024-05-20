@@ -1,0 +1,116 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300050158_000144_3300050158_Ga0501172_002527_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300050158_000144_3300050158_Ga0501172_002527_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=237]
+Description: source=IMGVR_UViG_3300050158_000144_3300050158_Ga0501172_002527/1593-24 coords=3..713 length=237 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.8e-48  164.0   0.0    7.2e-48  163.7   0.0    1.1  1  RNA_pol_Rpb2_6  RNA polymerase Rpb2, domain 6
+      2e-22   79.5   0.0    3.1e-22   78.9   0.0    1.3  1  RNA_pol_Rpb2_7  RNA polymerase Rpb2, domain 7
+
+
+Domain annotation for each model (and alignments):
+>> RNA_pol_Rpb2_6  RNA polymerase Rpb2, domain 6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.7   0.0   7.3e-52   7.2e-48     259     389 .]       1     146 [.       1     146 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 163.7 bits;  conditional E-value: 7.3e-52
+                     B-TTTSEEETTS---SEEE-GGGCHHH-BTTHHHHHHHHHCCCSSSS--B--TT-..S-.HHHHHHHHHTTS-T..............T-EE-EE CS
+  RNA_pol_Rpb2_6 259 lpqeDmPfledGivvDivlNPlgvPSRmtigqllEtllgkaaalkgkkvdatvFdgake.eeikelLekaglea..............sGkevly 338
+                     lp++DmP+l+dG +vD+v+NPlgvPSRm++gq++E+ lg+a+ l g+++   +Fd+  e e+ ++l  ++ +ea               Gk+ ++
+            orf1   1 LPRQDMPYLQDGRPVDMVFNPLGVPSRMNVGQIFECSLGLAGDLLGRHYRIAPFDERYEqEASRKLVFSELYEAskqtanpwvfepeyPGKSRIF 95 
+                     689****************************************************987624444444444455566779999999999******* PP
+
+                     ETTTS-B-SS-EEB-EEEEEEBS--CCCS----SS--B-TTT--B-SCGGG CS
+  RNA_pol_Rpb2_6 339 dGrtGekleaevfvGviYylkLkhlvedKihaRstGpyslltqQPlgGkaq 389
+                     dGrtG+++e++v++G  Y+lkL h v+dKih Rs G y l+tqQPl+G+a+
+            orf1  96 DGRTGDPFEQPVIIGKPYILKLIHQVDDKIHGRSSGHYALVTQQPLRGRAK 146
+                     *************************************************96 PP
+
+>> RNA_pol_Rpb2_7  RNA polymerase Rpb2, domain 7
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   78.9   0.0   3.2e-26   3.1e-22       1      85 [.     148     223 ..     148     225 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 78.9 bits;  conditional E-value: 3.2e-26
+                     BBEEECHHHHHHHHHHTBHHHHHHHHTTTTTEEEEEEETTTCSCHBCCBBTTTTCSSSEEEEEEEHHHHHHHHHHHHTTEEEEEE CS
+  RNA_pol_Rpb2_7   1 GGlrfGEMErdaliayGaaalLkerltikSDavevdvcgrckllaaaneCkivkseekiekvevpeafklLlqeLqslaialkll 85 
+                     GG+r+GEME++al+++G a++L+e+lt+kSD    +++ r+++l +     ++ +++ +++ + pe+f+lL++eL+sla++l+ +
+            orf1 148 GGQRVGEMEVWALEGFGVAHMLQEMLTYKSD----HIRARQEVLGT-----TIIGRTIPKPEDAPESFRLLVRELRSLALELNHF 223
+                     9******************************....***********.....99999************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (237 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       281  (0.0143134); expected 392.6 (0.02)
+Passed bias filter:                      271  (0.013804); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.37u 0.17s 00:00:00.54 Elapsed: 00:00:00.36
+# Mc/sec: 2145.22
+//
+Query:       orf2  [L=158]
+Description: source=IMGVR_UViG_3300050158_000144_3300050158_Ga0501172_002527/1593-24 coords=704..1177 length=158 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.7e-18   65.4   0.1    7.7e-18   65.0   0.1    1.1  1  RNA_pol_Rpb1_1  RNA polymerase Rpb1, domain 1
+
+
+Domain annotation for each model (and alignments):
+>> RNA_pol_Rpb1_1  RNA polymerase Rpb1, domain 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.0   0.1   3.9e-22   7.7e-18       5      94 ..      21     144 ..      18     156 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 65.0 bits;  conditional E-value: 3.9e-22
+                     EEEEEEE--HHHHHHH-.........SEE--CSTSCCTTSSSSCTSSSSSSSSS-SSSSSTSTTSSSSTT............TS--......... CS
+                     xxxxxxxxxxxxxxxxx.........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............xxxx......... RF
+  RNA_pol_Rpb1_1   5 keiqfgiaspeeirkwS.........vvevtkaetieekslkPeegGllDerlgtidkdleCetCgkkkk............eCeg......... 69 
+                     +++q+g +sp++i +w+         v+evtk+ t+++k++kPe+ Gl++er++++ k+  C +Cg+++             +C +         
+            orf2  21 QQLQIGSVSPQQISAWAnkilpngeiVGEVTKPYTFHYKTNKPEKDGLFCERIFGPIKSGIC-ACGNYRVigdekedpkfceQCGVefvdsrirr 114
+                     5788899999999999855555555569**********************************.****9999********8888888********* PP
+
+                     .--EEEEEEEEEE-CCCHHH....HHHHHC CS
+                     .xxxxxxxxxxxxxxxxxxx....xxxxxx RF
+  RNA_pol_Rpb1_1  70 .hfGhieLakPvfhigffkl....ilkile 94 
+                      ++G+i+La Pv h++++k     i ++l+
+            orf2 115 yQMGYIKLACPVTHVWYLKRlpsyIANLLD 144
+                     *******************96666444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (158 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       581  (0.0295945); expected 392.6 (0.02)
+Passed bias filter:                      507  (0.0258252); expected 392.6 (0.02)
+Passed Vit filter:                        50  (0.00254686); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.30u 0.19s 00:00:00.49 Elapsed: 00:00:00.33
+# Mc/sec: 1584.95
+//
+[ok]

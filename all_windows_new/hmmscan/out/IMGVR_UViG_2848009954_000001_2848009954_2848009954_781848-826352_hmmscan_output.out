@@ -1,0 +1,89 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2848009954_000001_2848009954_2848009954_781848-826352_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2848009954_000001_2848009954_2848009954_781848-826352_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=182]
+Description: source=IMGVR_UViG_2848009954_000001_2848009954_2848009954_781848-826352/43427-41843 coords=608..1153 length=182 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+  ------ inclusion threshold ------
+       0.06   12.5   0.0       0.06   12.5   0.0    1.1  1  Penicil_amidase  Penicillin amidase
+
+
+Domain annotation for each model (and alignments):
+>> Penicil_amidase  Penicillin amidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0     3e-06      0.06      65     135 ..      50     121 ..      22     161 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 3e-06
+                      HHHT-HHHHHHHHHTS........HHHHHHHHHHHHHHHHH-..-ST-HH.HHHH---....S.........SS CS
+  Penicil_amidase  65 rtlglrraaeaelaal.ldpet..ralleaYaaGvNaylaelkakalPlefallgykpepWtpvdslavaklma 135
+                      r+ ++++ a++ +++  ++p++    l+++Y+ G+  y +++ +  +++ef  l y+ +++t   +++v k+ +
+             orf1  50 RKQQIKKEARERIRKIqQSPTAqnTLLFNSYVLGIHNYFNRATH--VSVEFSRLAYDLRRFTYNRLISVGKYGF 121
+                      5556666666666555544433348899***********98775..89**************999999988755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (182 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1020  (0.051956); expected 392.6 (0.02)
+Passed bias filter:                      532  (0.0270986); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.33u 0.23s 00:00:00.56 Elapsed: 00:00:00.39
+# Mc/sec: 1537.17
+//
+Query:       orf2  [L=164]
+Description: source=IMGVR_UViG_2848009954_000001_2848009954_2848009954_781848-826352/43427-41843 coords=999..1490 length=164 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    0.00016   21.9   0.6    0.00033   20.9   0.6    1.6  1  HNH       HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.6   1.7e-08   0.00033      12      46 ..      91     125 ..      79     126 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 1.7e-08
+           E--EEEESS-TTTT--BSGGGEEEE-HHHHHHHHH CS
+   HNH  12 dalevdHiipisqggaddieNlqllCksCHnkkhd 46 
+           ++ +++H +p ++gg+d ++Nl+ l+++ H+  h+
+  orf2  91 EDVHCHHYQPMKNGGSDKFSNLRILHRDVHRLIHS 125
+           7789***********************99988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (164 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       778  (0.0396292); expected 392.6 (0.02)
+Passed bias filter:                      508  (0.0258761); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.19s 00:00:00.51 Elapsed: 00:00:00.34
+# Mc/sec: 1579.79
+//
+[ok]

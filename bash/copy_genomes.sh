@@ -6,5 +6,5 @@ list_file="./genomes_wth_groupII.txt"
 
 # Loop through the list file and copy each genome directory
 while IFS= read -r genome_dir || [[ -n "$genome_dir" ]]; do
-    cp -r "/n/eddy_lab/data/phage-2023_11/GenomesDB/$genome_dir" "$destination_directory"
+    cp -r "/n/eddy_lab/data/IMGVR-2022-12-19_7$genome_dir" "$destination_directory"
 done < "$list_file"

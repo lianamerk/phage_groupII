@@ -1,0 +1,125 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_637000339_000001_637000339_637000100_243504-275628_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_637000339_000001_637000339_637000100_243504-275628_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=368]
+Description: source=IMGVR_UViG_637000339_000001_637000339_637000100_243504-275628/1917-319 coords=383..1486 length=368 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    6.8e-47  160.0   0.1    1.3e-46  159.1   0.1    1.5  1  RVT_1           Reverse transcriptase (RNA-dependent DNA poly
+     0.0064   17.2   0.4        1.7    9.4   0.0    2.5  2  Mga             Mga helix-turn-helix domain
+  ------ inclusion threshold ------
+      0.082   13.1   5.4       0.36   11.1   5.4    2.1  1  GIIM            Group II intron, maturase-specific domain
+        5.7    7.2   6.7         22    5.4   0.5    2.9  3  Ribosomal_L38e  Ribosomal L38e protein family
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  159.1   0.1   2.6e-50   1.3e-46       1     221 [.      16     246 ..      16     247 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 159.1 bits;  conditional E-value: 2.6e-50
+            EE-TT.S-EEE......-THHHHCTB--.........-------HHHH.............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...... CS
+  RVT_1   1 ipKkgpgsyRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldavedllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinl 104
+            ipK g ++ R ++++s+ +k+++ +++k L++++e ++ ++++gfrpgr++++a++ l ka   +k  ++++++D+kk+Fd+v++++l+++l +   +++l+ l
+   orf1  16 IPKAGSKEKRGLGIPSTEDKLVQVMLKKILENIYEANFMDSSYGFRPGRNCHQAINALDKA-VMHKPINYIVEVDIKKFFDNVQHKWLMNCLRERIADPNLLWL 118
+            8******************************************************888877.678889************************************ PP
+
+            ...................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T............TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGGG CS
+  RVT_1 105 iksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra......kgvtllrYaDDililskskeelqelleaveewlkesglkinpeK 202
+            ik+fl    +++ v+      +++ +g+pqG+++SP+l+n++++ +l  + ++         ++l+r+ DD+++ ++++e+++e le ++++l++ gl+i+++K
+   orf1 119 IKRFL----KAGIVEVG--CYKATDQGTPQGGIVSPVLANIYLHYVLDLWFEKKfkpkarGYLQLIRFCDDFVVGCEREEDAKEFLELLKQRLSKFGLEIAENK 216
+            *****....66777554..789**************************9988888***9999****************************************** PP
+
+            -EEE................ESSEEETTEE CS
+  RVT_1 203 tklvlft..........v.kseevkyLGvt 221
+            tk+v f+          + ++ ++++LG+t
+   orf1 217 TKIVKFGkkewyqaereKrRTASFNFLGFT 246
+            ****999*****99875389********98 PP
+
+>> Mga  Mga helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.4   0.1    0.0062        31      52      72 ..     199     219 ..     174     226 .. 0.81
+   2 !    9.4   0.0   0.00034       1.7      35      66 ..     256     293 ..     237     302 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 5.4 bits;  conditional E-value: 0.0062
+           HHHHHHCHCCT-EEETTCCEE CS
+   Mga  52 kelnklLkefdlelkkknlkl 72 
+           + l+++L++f+le+ +++ k+
+  orf1 199 ELLKQRLSKFGLEIAENKTKI 219
+           5689**********5555444 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.00034
+           HHHHHCT--HHHHHHHHHHHHHHCHCCT-EE......E CS
+   Mga  35 slaeelyiSestlyrkikelnklLkefdlel......k 66 
+           +l ++   S+ +l rkike++++Lk +  ++      +
+  orf1 256 KLMMKQKTSKISLARKIKEIKEWLKMVRSRIclkdwwQ 293
+           67777788999**************8776665455444 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   5.4   7.3e-05      0.36       6      74 ..     273     341 ..     268     345 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 7.3e-05
+  GIIM   6 rkireltkrsskgvsleelirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkkrrr 74 
+           ++i+e++k  ++   l++  +kl++ ++G   Y++     r + +  + +++   +w+ r+ +kk+  +
+  orf1 273 KEIKEWLKMVRSRICLKDWWQKLKAKLTGHYSYFGVSGNYRCLIQFYRPVTKLAFKWINRRSQKKSMDW 341
+           689**********************************9999999**9*****************99777 PP
+
+>> Ribosomal_L38e  Ribosomal L38e protein family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.1         2   9.7e+03       6      15 ..      89      98 ..      88     100 .. 0.76
+   2 ?    5.4   0.5    0.0045        22       5      34 ..     192     222 ..     190     225 .. 0.85
+   3 ?    4.6   0.1    0.0076        37       2      16 ..     270     284 ..     269     290 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 2
+  Ribosomal_L38e  6 diKeFLeiar 15
+                    diK+F   ++
+            orf1 89 DIKKFFDNVQ 98
+                    8999988766 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.0045
+  Ribosomal_L38e   5 tdiKeFLeiarrkDak.svkikknkkkqtKf 34 
+                     +d KeFLe+++++  k  ++i +nk+k++Kf
+            orf1 192 EDAKEFLELLKQRLSKfGLEIAENKTKIVKF 222
+                     699*******965555499******999999 PP
+
+  == domain 3  score: 4.6 bits;  conditional E-value: 0.0076
+  Ribosomal_L38e   2 keitdiKeFLeiarr 16 
+                     ++i++iKe+L+++r 
+            orf1 270 RKIKEIKEWLKMVRS 284
+                     79**********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (368 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       831  (0.0423289); expected 392.6 (0.02)
+Passed bias filter:                      554  (0.0282192); expected 392.6 (0.02)
+Passed Vit filter:                        48  (0.00244499); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.36u 0.19s 00:00:00.55 Elapsed: 00:00:00.35
+# Mc/sec: 3459.10
+//
+[ok]

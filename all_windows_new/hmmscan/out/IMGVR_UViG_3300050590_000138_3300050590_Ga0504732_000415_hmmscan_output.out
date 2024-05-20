@@ -1,0 +1,97 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300050590_000138_3300050590_Ga0504732_000415_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300050590_000138_3300050590_Ga0504732_000415_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=456]
+Description: source=IMGVR_UViG_3300050590_000138_3300050590_Ga0504732_000415/1038-2613 coords=3..1370 length=456 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.3e-24   84.5   0.0    1.8e-23   83.4   0.0    1.6  2  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+  ------ inclusion threshold ------
+       0.02   15.1   0.7      0.057   13.6   0.7    1.8  1  GIIM      Group II intron, maturase-specific domain
+       0.14   11.2   0.0        0.2   10.7   0.0    1.2  1  HPS6_C    Hermansky-Pudlak syndrome 6 protein C-terminal doma
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   83.4   0.0   2.7e-27   1.8e-23       1     221 [.      94     321 ..      94     322 .. 0.81
+   2 ?   -3.4   0.0      0.95   6.2e+03      95     124 ..     339     364 ..     332     372 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 83.4 bits;  conditional E-value: 2.7e-27
+            EE-TT.S-EEE......-THHHHCTB--..................-------HHHH................HCCHTS--EEEEEEBCCGCCCSBB-GGGGGG CS
+  RVT_1   1 ipKkgpgsyRpisllsvdykalnkliakrLkdvl.........ekllsenqpgfrpgrstldav...edllkalkkkkkaklllklDlkkaFdsvpleellrkl 92 
+            ipKk+ g++R++s++++ + a  + ++   ++++         e+      +g r ++++ +a+   ++l+k    ++ + ++++ D+ ++F s+p + + + l
+   orf1  94 IPKKD-GTVRMLSVPNIADNARINCLVALVTPLAerlfqevweESDRRFLVSGSRIKHGVGTAIsclKQLHKR-IGRAYKAHIIFCDIASCFPSIPYKLVEYVL 195
+            8****.**********998875554444477777777755564444444556666666666666766444444.2445559*********************** PP
+
+            G-EEET.........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T......TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH... CS
+  RVT_1  93 tafkvptklinliksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkrakgvtllrYaDDililskskeelqelleaveewlke... 193
+            t+++vp     +++s + ++s+++ + +  +++   kkglpqG ++SPl++n++++ llr++  + +++  + Y DD+++++ +  + q++l +++++l +   
+   orf1 196 TEINVP----VWVRSEILKASKVFMIGN--PQRTSNKKGLPQGNPISPLICNIVVTFLLRKYIVH-SKLGAISYLDDLVVVCPEGVNPQHVLADLSRCLDRfgs 292
+            ******....789998888886666644..699******************************97.8*****************99988888888877776666 PP
+
+            ..TT--BEGGG-EEE.....ESSEEETTEE CS
+  RVT_1 194 ..sglkinpeKtklvlftvkseevkyLGvt 221
+              +g++++++Kt++++ ++++++ ++LGv 
+   orf1 293 mkVGMTLKDAKTEIIS-GQRRSNARWLGVD 321
+            789************4.449999*****96 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.95
+            EEET.........................T CS
+  RVT_1  95 fkvptklinliksflstrsfsvrvngeesk 124
+            f++p    n+i +++s+ s+++r ++++ +
+   orf1 339 FSLP---SNYIADLVSKCSQVIRAHKRK-H 364
+            5566...458888888888777776664.3 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.7   8.7e-06     0.057      12      59 ..     365     412 ..     351     418 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 8.7e-06
+  GIIM  12 tkrsskgvsleelirklnpiirGWanYyrlv.vakrvfskldhyirrrL 59 
+           + ++ + +  e+l+rk +pii G +nY++l+ ++ +v   l +++ +rL
+  orf1 365 R-KRLWRMEPEKLVRKWQPIILGSVNYFGLFmNMYHVKGVLFKRLVWRL 412
+           3.33367999*********************888888877766666665 PP
+
+>> HPS6_C  Hermansky-Pudlak syndrome 6 protein C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   3.1e-05       0.2     277     324 ..     234     283 ..     209     305 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 3.1e-05
+  HPS6_C 277 kksPllnkeifkllLaefsrhreld..pyldllwelcPedltvtdlLnlv 324
+             + sPl+ + + + lL  +  h +l   +yld l+ +cPe + ++++L  +
+    orf1 234 PISPLICNIVVTFLLRKYIVHSKLGaiSYLDDLVVVCPEGVNPQHVLADL 283
+             579*********************8446***************9999755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (456 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       410  (0.0208843); expected 392.6 (0.02)
+Passed bias filter:                      366  (0.018643); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.37u 0.19s 00:00:00.56 Elapsed: 00:00:00.36
+# Mc/sec: 4145.56
+//
+[ok]

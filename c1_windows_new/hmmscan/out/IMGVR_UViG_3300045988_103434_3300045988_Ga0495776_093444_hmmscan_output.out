@@ -1,0 +1,102 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300045988_103434_3300045988_Ga0495776_093444_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300045988_103434_3300045988_Ga0495776_093444_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=409]
+Description: source=IMGVR_UViG_3300045988_103434_3300045988_Ga0495776_093444/40648-42755 coords=100..1326 length=409 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.7e-09   38.1   0.2    0.00085   19.6   0.1    3.6  4  Laminin_G_3  Concanavalin A-like lectin/glucanases superfamil
+    2.9e-08   33.6   0.1      5e-08   32.8   0.1    1.3  1  Sipho_tail   Phage tail protein
+  ------ inclusion threshold ------
+      0.074   13.2   0.1       0.17   12.1   0.1    1.6  1  PKD_4        PKD domain
+
+
+Domain annotation for each model (and alignments):
+>> Laminin_G_3  Concanavalin A-like lectin/glucanases superfamily
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   1.6e-05      0.11       2      34 ..      55      88 ..      54     106 .. 0.88
+   2 !   19.6   0.1   1.3e-07   0.00085      70     150 ..     106     181 ..      89     182 .. 0.78
+   3 ?    1.4   0.0      0.05   3.3e+02       8      81 ..     236     306 ..     231     310 .. 0.59
+   4 ?   -2.8   0.0         1   6.8e+03      41      67 ..     336     362 ..     326     375 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.6e-05
+  Laminin_G_3  2 ggddyvtlpdaslp.sssfTvsaWvkpdslpqaa 34
+                 +g++y++++ +++p s sfT+ aWvk ++ p+ +
+         orf1 55 DGEGYADVNYNVVPlSGSFTILAWVKANKYPDGY 88
+                 6789******99999*************998754 PP
+
+  == domain 2  score: 19.6 bits;  conditional E-value: 1.3e-07
+  Laminin_G_3  70 vtsgasvpageWvHvavtydggtlrlYvNGvevgsatltggllsatsgplviGrdsggddpfdGlidevriydralsaaeI 150
+                   t + +v++++W + a+  +g+ + +Y++ ++ ++  l+++l+      +++ +d  g  +  +++d v++y+ +ls+aeI
+         orf1 106 RTFWIDVEPDSWGFFAIKKSGNRVLVYLDTQLIETIVLPSTLTG-----IALIQDIYGIGYGYADLDSVKVYNVVLSDAEI 181
+                  456789*******************************9999664.....2333333334455789***************9 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.05
+  Laminin_G_3   8 tlpdaslpsssfTvsaWvkpdslpqaaqaiissssdg..gfelgldgsgqlrfavnagngaeesvt.sgasvpageW 81 
+                  +l+++  ++ ++T+  W+k ++  +    ++     +  + +++ dg+++l ++++ ++   + v   ++ +p+ +W
+         orf1 236 DLSEKRYQEREITLNCWLKASGKMD----FV--ERVNtlYDRFRQDGTQRLMISIHPTKPLVYEVYcEDGVAPSKRW 306
+                  56666777899********998877....33..22231233344444446666666665555544434444444666 PP
+
+  == domain 4  score: -2.8 bits;  conditional E-value: 1
+  Laminin_G_3  41 ssdggfelgldgsgqlrfavnagngae 67 
+                  s++ + ++ + +++ +++++++g+ + 
+         orf1 336 SGSAKVSVAFKSDKMINIYWGDGTVDT 362
+                  444467777788888888888887554 PP
+
+>> Sipho_tail  Phage tail protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.1   7.7e-12     5e-08      28     159 ..     237     365 ..     218     398 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 32.8 bits;  conditional E-value: 7.7e-12
+  Sipho_tail  28 yvgtsigartitvpfklkakdredlrkkrraLasilnqkdpkkLifsdepd..kvyyavvsgdisld....ennnigkgeitflvpdPyaysvetsrln 120
+                 + ++++++r+it++++lka+ + d+ ++++ L+  ++q+  + L+ s  p   +vy +++++   +       ++ig++++++  pdP++  v   rln
+        orf1 237 LSEKRYQEREITLNCWLKASGKMDFVERVNTLYDRFRQDGTQRLMISIHPTkpLVYEVYCEDGVAPSkrwhDDKMIGTFSLKLKEPDPVKRVVRHQRLN 335
+                 4889******************************************99988678*******999998777678888***************88888885 PP
+
+  Sipho_tail 121 etnfavnlwgadlnitnkgeyksdtvtvtNhGtveadpi 159
+                        + ++ ++ +      +++ + + +Gtv++d++
+        orf1 336 S---GSAKVSVAFKSD------KMINIYWGDGTVDTDVY 365
+                 3...333344444444......55555555677777665 PP
+
+>> PKD_4  PKD domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   2.6e-05      0.17      41      64 ..     355     386 ..     322     398 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2.6e-05
+  PKD_4  41 FGDGt.......tatgkn.vshtYaapGtYtv 64 
+             GDGt         tgkn +shtY+++G Y +
+   orf1 355 WGDGTvdtdvygDCTGKNaISHTYTDNGIYYI 386
+            4999988888887787777***********65 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (409 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       500  (0.0254686); expected 392.6 (0.02)
+Passed bias filter:                      451  (0.0229727); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.34u 0.18s 00:00:00.52 Elapsed: 00:00:00.34
+# Mc/sec: 4002.21
+//
+[ok]

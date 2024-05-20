@@ -1,0 +1,92 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300031993_002688_3300031993_Ga0310696_10004497_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300031993_002688_3300031993_Ga0310696_10004497_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=445]
+Description: source=IMGVR_UViG_3300031993_002688_3300031993_Ga0310696_10004497/7498-5834 coords=154..1488 length=445 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    9.4e-07   29.3   0.0      0.032   14.6   0.0    2.3  2  RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+  ------ inclusion threshold ------
+      0.034   13.8   0.1      0.053   13.2   0.1    1.3  1  DUF3289         Protein of unknown function (DUF3289)
+       0.26   11.8   0.8       0.51   10.9   0.0    1.8  2  Hox9_act        Hox9 activation region
+
+
+Domain annotation for each model (and alignments):
+>> RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0     5e-06     0.032       4      41 ..     306     343 ..     303     366 .. 0.73
+   2 !   12.7   0.0   1.8e-05      0.12      88     144 ..     369     427 ..     351     435 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 5e-06
+                     ESSEEEEEEEEETTS-TTEEEEEHHHHTTSEEEEE-ST CS
+  RNA_pol_Rpb1_2   4 vdysaRsvispdpnlkldevgvPisvakkltvpeivte 41 
+                      ++s+R vi  d++l+ d++ +P  + ++l+  ++ ++
+            orf1 306 FEFSSRGVIILDTTLAADQIDMPFPMLMTLMKYKVTHR 343
+                     68**************************9986554433 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 1.8e-05
+                     TSEEEEE-STTCEEEEEESSTTSGGGEEEEEEEEESS..SSEEEEGGGHHHHT--SSS- CS
+  RNA_pol_Rpb1_2  88 gdiverhvkdgdvvllNRqPsLhklsimahrvkvlek..ktlrlnlsvttayNaDFDGD 144
+                      +i+++ v +g  +++ R P+ + +s    +v+ +++   t+ + + v +  NaDFDG+
+            orf1 369 DQILQELVDEGIWLMMIREPTNNIASNCLVKVRAFKHddDTISVSEPVLAGLNADFDGE 427
+                     3577777888888999*****************9998889******************7 PP
+
+>> DUF3289  Protein of unknown function (DUF3289)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.1   8.1e-06     0.053     127     214 ..     191     279 ..     161     307 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 8.1e-06
+  DUF3289 127 lkekilnekssdsslkkikkalkenidwkkevypden..keslteaikdsilPkFnrlkdrfnGlgisvhdiyatkikleslqvkensye 214
+              ++e +l+ k+++ ++  i+ +l+e+     + +p +   ++ + ++ ++  +Pk nr+  ++  ++ s+ d+y ++ +++ l+  ++ + 
+     orf1 191 YEEIVLSCKTKN-NVEDIQMILNEKSMVFTSKIPVYStaFRPVSKTSESFFYPKINRFYAQMCAVTCSLDDMYLKEEQINALNCFQKYWI 279
+              788889999998.9********998777777766655448999***************************************99998886 PP
+
+>> Hox9_act  Hox9 activation region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.2      0.74   4.9e+03     164     179 ..     139     154 ..     121     161 .. 0.50
+   2 ?   10.9   0.0   7.7e-05      0.51      50      98 ..     214     264 ..     197     275 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.74
+  Hox9_act 164 sssseakeeseskeek 179
+                + +e++ee++++e k
+      orf1 139 YTDEEESEENKKEETK 154
+               2223333333333333 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 7.7e-05
+  Hox9_act  50 pscsfqpKspvFstsWspvhp.qssaalpsvYhpYvhqqhv.pasdgrYvr 98 
+               +s+ f +K pv+st+  pv+   +s  +p +   Y++ ++v  + d +Y++
+      orf1 214 KSMVFTSKIPVYSTAFRPVSKtSESFFYPKINRFYAQMCAVtCSLDDMYLK 264
+               7999***************994578889********999995566999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (445 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1141  (0.0581194); expected 392.6 (0.02)
+Passed bias filter:                      676  (0.0344336); expected 392.6 (0.02)
+Passed Vit filter:                        69  (0.00351467); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.37u 0.19s 00:00:00.56 Elapsed: 00:00:00.34
+# Mc/sec: 4262.44
+//
+[ok]

@@ -1,0 +1,228 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029705_006997_3300029705_Ga0224414_10001050_1-76354_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029705_006997_3300029705_Ga0224414_10001050_1-76354_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=152]
+Description: source=IMGVR_UViG_3300029705_006997_3300029705_Ga0224414_10001050_1-76354/40540-42168 coords=3..458 length=152 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      2e-06   27.0   0.5    2.6e-06   26.7   0.5    1.1  1  T4SS-DNA_transf  Type IV secretory system Conjugative DNA tra
+    2.1e-06   27.8   0.1    3.4e-06   27.2   0.1    1.3  1  TraG-D_C         TraM recognition site of TraD and TraG
+    0.00028   20.1   0.0    0.00033   19.9   0.0    1.1  1  TrwB_AAD_bind    Type IV secretion-system coupling protein DN
+  ------ inclusion threshold ------
+      0.085   11.9   0.1        0.1   11.7   0.1    1.1  1  Glyphos_transf   CDP-Glycerol:Poly(glycerophosphate) glycerop
+        0.2   11.4   0.0       0.24   11.2   0.0    1.2  1  SGNH             SGNH domain (fused to AT3 domains)
+
+
+Domain annotation for each model (and alignments):
+>> T4SS-DNA_transf  Type IV secretory system Conjugative DNA transfer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.5   6.5e-10   2.6e-06     259     351 ..      44     142 ..      36     149 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 6.5e-10
+                      XXXXXXXXXXXXXXXXXXXXXXXXXXX.XX.XXXXXXXXXXXXXX.XXXXXXXXXXXXX...XX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXX CS
+  T4SS-DNA_transf 259 rkkvsvyvivnpkdlevvapllrlffnmvv.ellkrklpnkderp.kevlflLDEfpsl...Gk.leileealatiagYgirltlIiQsisqlk 346
+                      +k+ +v+++++p+ +++++ +l l+ ++v  ++ +  + + +++p +++ f+LDE  +l   G  +  +e+ l ++ g + ++tlI Q+++ql+
+             orf1  44 EKPKMVFLVTPPHLMNYAKLILILIKQLVDlNFDQSYMTKSNQKPlYKTRFMLDELGNLqseGHgISGFETMLSIGLGQEQQFTLILQTLQQLR 137
+                      566689***********9999999999775244444444444444166*******999965554599*************************** PP
+
+                      XXXXX CS
+  T4SS-DNA_transf 347 etYgk 351
+                      + Yg+
+             orf1 138 DVYGE 142
+                      ***98 PP
+
+>> TraG-D_C  TraM recognition site of TraD and TraG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.1   8.6e-10   3.4e-06       3      48 ..      93     142 ..      91     148 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 8.6e-10
+  TraG-D_C   3 lfllDEfanlgk....ipdleklistgrsrgislvlilQsiaqleelYgk 48 
+               +f+lDE++nl      i  +e+++s g +++ +++lilQ+++ql+++Yg+
+      orf1  93 RFMLDELGNLQSeghgISGFETMLSIGLGQEQQFTLILQTLQQLRDVYGE 142
+               89********865555899******************************7 PP
+
+>> TrwB_AAD_bind  Type IV secretion-system coupling protein DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.0   8.3e-08   0.00033     205     293 ..      46     143 ..      10     148 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 8.3e-08
+  TrwB_AAD_bind 205 sgwlfi...takeeqrellrallsawldlaikalls..lpesrerrlWfflDElpaLgr....veelkdllaegRkfGgavvlglqsiaqlrevYG 291
+                    ++++f+   ++  ++ +l+  l+  ++dl   +      +++   ++ f+lDEl +L+     ++ ++++l  g      + l lq+ +qlr+vYG
+           orf1  46 PKMVFLvtpPHLMNYAKLILILIKQLVDLNFDQSYMtkSNQKPLYKTRFMLDELGNLQSeghgISGFETMLSIGLGQEQQFTLILQTLQQLRDVYG 141
+                    5666662223455777888899999999998765441344566779***********8545559999999999999999***************** PP
+
+  TrwB_AAD_bind 292 ed 293
+                    e 
+           orf1 142 ES 143
+                    95 PP
+
+>> Glyphos_transf  CDP-Glycerol:Poly(glycerophosphate) glycerophosphotransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   2.6e-05       0.1       8      63 ..      10      62 ..       4     101 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.6e-05
+                    ..G-EEEEEEEEBTTTTBS-HHHHHHHHHHHHH-TTSEEEEEESSGGG----SS-E CS
+  Glyphos_transf  8 rlpldkklvlfesfegkkvsdnpkalfeylrelapkvkivwvvkkdskarlkkgak 63
+                    +  +++++v f   + +k   n+ka+ + + ++a+k k+v+ v+    + l ++ak
+            orf1 10 KTTFKRDTVDFMQAKPEKKRTNAKAIIRTMCRYAEKPKMVFLVTP---PHLMNYAK 62
+                    45599**************************************98...44444444 PP
+
+>> SGNH  SGNH domain (fused to AT3 domains)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   6.1e-05      0.24     128     163 ..      24      60 ..       4     108 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 6.1e-05
+  SGNH 128 rs..qaafaaaleatveelakagkkvvlvgpvPeyvpr 163
+           +   ++++a+a+ +t++++a++ k v+lv p+  ++  
+  orf1  24 KPekKRTNAKAIIRTMCRYAEKPKMVFLVTPPHLMN-Y 60 
+           2244566778***********9999******99542.2 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (152 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       586  (0.0298492); expected 392.6 (0.02)
+Passed bias filter:                      445  (0.0226671); expected 392.6 (0.02)
+Passed Vit filter:                        32  (0.00162999); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.33u 0.20s 00:00:00.53 Elapsed: 00:00:00.37
+# Mc/sec: 1360.51
+//
+Query:       orf2  [L=345]
+Description: source=IMGVR_UViG_3300029705_006997_3300029705_Ga0224414_10001050_1-76354/40540-42168 coords=480..1514 length=345 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     0.0065   16.3  12.7      0.013   15.4   0.1    3.1  3  DUF1390   Protein of unknown function (DUF1390)
+     0.0085   16.2   0.2      0.016   15.3   0.2    1.5  1  RAP       RAP domain
+  ------ inclusion threshold ------
+      0.013   15.7   0.5      0.078   13.2   0.7    2.1  2  DUF5889   Family of unknown function (DUF5889)
+
+
+Domain annotation for each model (and alignments):
+>> DUF1390  Protein of unknown function (DUF1390)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   2.4      0.17   1.1e+03       4      38 ..      51      86 ..      48     111 .. 0.61
+   2 !    7.6   0.5   0.00046         3       9      45 ..     125     162 ..     120     185 .. 0.84
+   3 !   15.4   0.1   1.9e-06     0.013       9      46 ..     196     234 ..     189     272 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.17
+  DUF1390  4 kvklyvCgCGYktlnsgn...AskHkktsCGhemkses 38
+             +  l  C CG +  ++++     kH + sCG++ k + 
+     orf2 51 NKYLCECVCGNHI-EVSQgelVGKHVR-SCGCRHKPKK 86
+             5567778999764.4444011345544.7887666443 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00046
+  DUF1390   9 vCgCGYktlnsgnAskHkkt.sCGhemkseskkfvled 45 
+               C+CG k + ++ A +   t sCG+  k    + + +d
+     orf2 125 ECECGNKITVNSRALRTGATqSCGCLQKQRVSEALTDD 162
+              59******999****999888****9998888777655 PP
+
+  == domain 3  score: 15.4 bits;  conditional E-value: 1.9e-06
+  DUF1390   9 vCgCGYktlnsgnAskHkkt.sCGhemkseskkfvlede 46 
+               C CG +t++ g   k   + sCG+  ks+++++v +  
+     orf2 196 ECDCGNETITFGWSLKCGDNvSCGCAKKSQAERYVEDIL 234
+              379*************98877************997544 PP
+
+>> RAP  RAP domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.2   2.5e-06     0.016       1      40 [.     277     324 ..     277     327 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 2.5e-06
+   RAP   1 IevdGpshy.......ykns.knlt.gktklkhriLsklGykvisipyf 40 
+           Ie+ G +hy         +  ++ + ++ +lk++ + +++y++i+ipy 
+  orf2 277 IECQGEQHYksvewfgGDEAfNR-RqANDILKKNWVLSHNYRLIEIPYT 324
+           9************9754444344.35**********************5 PP
+
+>> DUF5889  Family of unknown function (DUF5889)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0      0.45   2.9e+03      14      34 ..     116     136 ..     115     143 .. 0.85
+   2 ?   13.2   0.7   1.2e-05     0.078       5      75 ..     264     334 ..     260     342 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.45
+  DUF5889  14 kkrlyqfviefdggqkfrsnn 34 
+              k r++ ++ e++ g+k   n 
+     orf2 116 KSRMIRWNCECECGNKITVNS 136
+              5689999*******9998775 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 1.2e-05
+  DUF5889   5 ydfycllvvkkrlyqfviefdggqkfrsnnly....dfqnkhindiikqyylakmnihllrlndklniekeiknf 75 
+              +df    v+k++ y f ie+ g q+++s + +     f+ +  ndi+k+ ++++ n +l+ +   + +  e  n 
+     orf2 264 FDF---AVIKNNSYIF-IECQGEQHYKSVEWFggdeAFNRRQANDILKKNWVLSHNYRLIEIPYTIHLYDEFLNI 334
+              444...4566666666.9**********998744445888999***************99998777777776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (345 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       460  (0.0234311); expected 392.6 (0.02)
+Passed bias filter:                      237  (0.0120721); expected 392.6 (0.02)
+Passed Vit filter:                        24  (0.00122249); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.33u 0.18s 00:00:00.51 Elapsed: 00:00:00.32
+# Mc/sec: 3500.56
+//
+Query:       orf3  [L=138]
+Description: source=IMGVR_UViG_3300029705_006997_3300029705_Ga0224414_10001050_1-76354/40540-42168 coords=1183..770 length=138 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (138 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       324  (0.0165037); expected 392.6 (0.02)
+Passed bias filter:                      235  (0.0119703); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.16s 00:00:00.44 Elapsed: 00:00:00.31
+# Mc/sec: 1473.43
+//
+[ok]

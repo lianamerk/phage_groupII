@@ -1,0 +1,88 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_7000000250_000230_7000000250_SRS016086_WUGC_scaffold_19779_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_7000000250_000230_7000000250_SRS016086_WUGC_scaffold_19779_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=493]
+Description: source=IMGVR_UViG_7000000250_000230_7000000250_SRS016086_WUGC_scaffold_19779/9595-7898 coords=1..1479 length=493 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+        0.1   12.3   0.0       0.34   10.5   0.0    1.7  2  ECH_2     Enoyl-CoA hydratase/isomerase
+
+
+Domain annotation for each model (and alignments):
+>> ECH_2  Enoyl-CoA hydratase/isomerase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   1.7e-05      0.34     146     230 ..      56     141 ..      42     146 .. 0.80
+   2 ?   -1.5   0.0     0.077   1.5e+03     149     236 ..     358     443 ..     347     474 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 1.7e-05
+            HHHHHHHH---B-HHHHHHTTS--EE--GGGHHHHHHHHHTT.........--------......----SHHHHHHHHHHHT.-S- CS
+  ECH_2 146 lGlylalTGarlkgadalaaglathyvpseklealeeaLaelessd.eeaveelleelaeeaeeeeeeselaekreaIdrlfsads 230
+            l ++l+lT +++k ++  ++g  t   + ++++ l +++ + + ++ +e+++++ ++l ++++++ ++++++  ++++d++f +++
+   orf1  56 LSEFLGLTDKEIKPKEHWYIGYNTLGYDIQMIDYLLKSVLANRVQTtTETLRKFSDTLINDTARRVNTKDYEMYANQVDAAFLNET 141
+            689*******************************9998877655544666666666666666666667888889999999997665 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.077
+            HHHHH---B-HHHHHHTTS--EE--GGGHHHHHHHHHTT........--------.......----SHHHHHHHHHHHT.-S.-TTTHHH CS
+  ECH_2 149 ylalTGarlkgadalaaglathyvpseklealeeaLaelessdeeaveelleelae.eaeeeeeeselaekreaIdrlfsad.sveeive 236
+            y   ++  ++ga++++a+l +     +k+++l+e+   ++   + +v+++l +l + +++++ ++ +++   ++I + ++ + +v+ei++
+   orf1 358 YANFSSGGIHGAEIFYAQLEQDR---RKIAELREKYVYISRIPSGEVSQALLNLIKaQSRTQYKDYPVS-LSHEIPKFMKLTeQVDEILD 443
+            55566666777777777766644...4445555554444433444555544444430333333345554.67777777765546777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (493 residues searched)
+Target model(s):                       19632Query:       orf2  [L=113]
+Description: source=IMGVR_UViG_7000000250_000230_7000000250_SRS016086_WUGC_scaffold_19779/8799-7215 coords=1142..804 length=113 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (113 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       268  (0.0136512); expected 392.6 (0.02)
+Passed bias filter:                      229  (0.0116646); expected 392.6 (0.02)
+Passed Vit filter:                        17  (0.000865933); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.20s 00:00:00.49 Elapsed: 00:00:00.34
+# Mc/sec: 1082.52
+//
+[ok]
+32  (3329936 nodes)
+Passed MSV filter:                       375  (0.0191015); expected 392.6 (0.02)
+Passed bias filter:                      236  (0.0120212); expected 392.6 (0.02)
+Passed Vit filter:                        10  (0.000509372); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.34
+# Mc/sec: 1194.04
+//
+[ok]

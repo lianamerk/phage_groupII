@@ -1,0 +1,50 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300032038_008734_3300032038_Ga0326512_10005427_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300032038_008734_3300032038_Ga0326512_10005427_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=122]
+Description: source=IMGVR_UViG_3300032038_008734_3300032038_Ga0326512_10005427/2645-4228 coords=359..724 length=122 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.052   12.4   0.0      0.064   12.1   0.0    1.0  1  CENP-I    Mis6
+
+
+Domain annotation for each model (and alignments):
+>> CENP-I  Mis6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   3.3e-06     0.064     293     381 ..      16     104 ..       6     109 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 3.3e-06
+  CENP-I 293 srkrkwntqlvipasssnnlnkevgekelslvdllstdesfpveqlqtfpqllenihrlelpsqmgsvlknslll.hylncvkdesvllr 381
+               krk+  +lv+  +s  +++k+ +ek  +++    +de f     +  +   en ++  lp +   vl++ +   +ylnc  de ++lr
+    orf1  16 KEKRKKIEELVLNTMSLIDKTKSNTEK-YEKFFKSMNDEQFSKWINKFIKDPDENFYMELLPYKNEPVLQDLVNAgKYLNCPLDEYIYLR 104
+             468899999*****9999999988888.555555568888987666666777888888889********99775438************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (122 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1960  (0.099837); expected 392.6 (0.02)
+Passed bias filter:                      960  (0.0488998); expected 392.6 (0.02)
+Passed Vit filter:                        95  (0.00483904); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.29u 0.19s 00:00:00.48 Elapsed: 00:00:00.33
+# Mc/sec: 1212.78
+//
+[ok]

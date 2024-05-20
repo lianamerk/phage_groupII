@@ -1,0 +1,90 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      nanz_upstream.fna
+# target sequence database:        data/genomes/groupII_millard/millard_hit_genomes.fna
+# output directed to file:         nanz.out
+# sequence reporting threshold:    E-value <= 0.001
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Nanz59475-59903  [M=429]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+   4.6e-129  429.7  26.5  OQ555808  59476  59903 
+    3.1e-08   33.8   8.4  MT836484  12049  12296 
+
+
+Annotation for each hit  (and alignments):
+>> OQ555808  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  429.7  26.5  4.6e-129         2       429 .]     59476     59903 ..     59475     59903 ..     62663    1.00
+
+  Alignment:
+  score: 429.7 bits
+  Nanz59475-59903     2 cgaaagcccctgctacggcgggggcttttgtcgtgtacgcccagcatgggcattcgcttggaggtgtgagtcctctggaggtgaaggtgg 91   
+                        cgaaagcccctgctacggcgggggcttttgtcgtgtacgcccagcatgggcattcgcttggaggtgtgagtcctctggaggtgaaggtgg
+         OQ555808 59476 CGAAAGCCCCTGCTACGGCGGGGGCTTTTGTCGTGTACGCCCAGCATGGGCATTCGCTTGGAGGTGTGAGTCCTCTGGAGGTGAAGGTGG 59565
+                        899*************************************************************************************** PP
+
+  Nanz59475-59903    92 tttaactccgagtcgatggcaactgcgtcactgtgaggtggggtgggaaggaagccggagacgaagtcctgcaccgagggacacgaaccg 181  
+                        tttaactccgagtcgatggcaactgcgtcactgtgaggtggggtgggaaggaagccggagacgaagtcctgcaccgagggacacgaaccg
+         OQ555808 59566 TTTAACTCCGAGTCGATGGCAACTGCGTCACTGTGAGGTGGGGTGGGAAGGAAGCCGGAGACGAAGTCCTGCACCGAGGGACACGAACCG 59655
+                        ****************************************************************************************** PP
+
+  Nanz59475-59903   182 catagaaggcatgccagttggggtgagccagcatgagatggtgaagcccgttccaccgaaacggctggtgtgtaaatgcggcggcggtag 271  
+                        catagaaggcatgccagttggggtgagccagcatgagatggtgaagcccgttccaccgaaacggctggtgtgtaaatgcggcggcggtag
+         OQ555808 59656 CATAGAAGGCATGCCAGTTGGGGTGAGCCAGCATGAGATGGTGAAGCCCGTTCCACCGAAACGGCTGGTGTGTAAATGCGGCGGCGGTAG 59745
+                        ****************************************************************************************** PP
+
+  Nanz59475-59903   272 gacgaaagtgaatgttcttatctggggagatctgtcccagtgcgtcggcgttggtgtcggagcgacatcgttcgtgagggcggtgttgat 361  
+                        gacgaaagtgaatgttcttatctggggagatctgtcccagtgcgtcggcgttggtgtcggagcgacatcgttcgtgagggcggtgttgat
+         OQ555808 59746 GACGAAAGTGAATGTTCTTATCTGGGGAGATCTGTCCCAGTGCGTCGGCGTTGGTGTCGGAGCGACATCGTTCGTGAGGGCGGTGTTGAT 59835
+                        ****************************************************************************************** PP
+
+  Nanz59475-59903   362 ggggcagaagtcagcagaggtcgtagtaccagcgggaatgtgatcgtgatggctgggaagggctgaac 429  
+                        ggggcagaagtcagcagaggtcgtagtaccagcgggaatgtgatcgtgatggctgggaagggctgaac
+         OQ555808 59836 GGGGCAGAAGTCAGCAGAGGTCGTAGTACCAGCGGGAATGTGATCGTGATGGCTGGGAAGGGCTGAAC 59903
+                        ****************************************************************9986 PP
+
+>> MT836484  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   33.8   8.4   3.1e-08       144       395 ..     12049     12296 ..     12029     12316 ..     13522    0.77
+
+  Alignment:
+  score: 33.8 bits
+  Nanz59475-59903   144 agccggagacgaagtcctgcaccgagggacacgaaccgcatagaaggcatgccagttggggtgagccagcatgagatggtgaagcccg.t 232  
+                         gccg ag c aag  ctg  ccga g aca  aa cgcata aaggc  g cag   gg  gag c gca  a a g   aag cc  t
+         MT836484 12049 CGCCGCAGCCAAAGATCTGAGCCGACGAACAGAAATCGCATACAAGGCGGGGCAGAGCGGACGAGACTGCAACACAAGTCAAAGTCCCaT 12138
+                        4789999999*****************************************************************999999998766515 PP
+
+  Nanz59475-59903   233 tccaccgaaacggctggtgtgtaaatgcggcggcggta..ggacgaaagtgaatgtt.cttatctggggagatctgtcccagtgcgtcgg 319  
+                         c acc   ac  ctg    gtaaatgcggcggc   a  g a gaa g  a tgt  cttat  ggggagatctgt    g  cg    
+         MT836484 12139 ACTACCCGGAC-TCTGCCACGTAAATGCGGCGGCTACAtgGAATGAAGGCTATTGTAcCTTATGCGGGGAGATCTGTGTGGGAACGC--- 12224
+                        55555544444.57888899*************98655215688999999999998526899************9985544433332... PP
+
+  Nanz59475-59903   320 cgttggtgtcggagcgacatcgttcgtgagggcggtgttgatggggcagaagtcagcagaggtcgtagtaccagcg 395  
+                            g      ga   a   c t c   a ggc   g tga     cagaagtcag    g  c tagtaccag g
+         MT836484 12225 -ACCG---CAAGATGTAACCCATGCTGCAAGGCATGGCTGAACCCACAGAAGTCAGTCTGGACCATAGTACCAGAG 12296
+                        .1111...11112222222344445555677788888888888899999999999999999999999999998754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (429 nodes)
+Target sequences:                         36  (7758246 residues searched)
+Residues passing SSV filter:          112531  (0.0145); expected (0.02)
+Residues passing bias filter:         102492  (0.0132); expected (0.02)
+Residues passing Vit filter:            4800  (0.000619); expected (0.003)
+Residues passing Fwd filter:            4101  (0.000529); expected (3e-05)
+Total number of hits:                      2  (8.71e-05)
+# CPU time: 0.39u 0.01s 00:00:00.40 Elapsed: 00:00:00.08
+# Mc/sec: 37549.12
+//
+[ok]

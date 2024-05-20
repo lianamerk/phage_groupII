@@ -1,0 +1,59 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_2718218474_000001_2718218474_2718229301_243682-275129_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_2718218474_000001_2718218474_2718229301_243682-275129_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=335]
+Description: source=IMGVR_UViG_2718218474_000001_2718218474_2718229301_243682-275129/3447-1479 coords=401..1405 length=335 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   1.3e-101  339.3   6.0   1.5e-101  339.1   6.0    1.0  1  Virulence_RhuM  Virulence protein RhuM family
+
+
+Domain annotation for each model (and alignments):
+>> Virulence_RhuM  Virulence protein RhuM family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  339.1   6.0  7.7e-106  1.5e-101       2     249 ..      64     314 ..      63     317 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 339.1 bits;  conditional E-value: 7.7e-106
+  Virulence_RhuM   2 vvkkfrtvakegkreverevkfYnLdaiiavGyrvkskratqFRkWatevlkeyiikGfvldderlkn.kalgkdyfdellerirdiRasEkrfy 95 
+                     vv++f+++a++gk   ++ ++ YnLd iiavGyrv+sk+at FR Wat+vlk++iikGf+ld erlkn k++gkdyf+elle+ir+iRasE+rfy
+            orf1  64 VVSTFEVTAADGK---NYPTQLYNLDTIIAVGYRVNSKKATLFRVWATKVLKDFIIKGFALDSERLKNgKKFGKDYFNELLEKIREIRASERRFY 155
+                     78999*******6...******************************************************************************* PP
+
+  Virulence_RhuM  96 qkvtdiya.tsiDYdkkaeatkeFfatvqnklhyavtgktaaeliveradaekenmglttwkga...kvrksdvtiaknYLseeelkelnrivsa 186
+                     qk+tdiya +s+DYd+++e+tk+F+a+vqnkl++a+ g taaeli++r+d++k++mglttwk+    k++ksdv+iak         eln+ivs+
+            orf1 156 QKITDIYAeCSADYDPNSEITKQFYAKVQNKLYWAIYGLTAAELICSRVDHKKPHMGLTTWKDGpgkKIHKSDVSIAKXXXXXXXXXELNHIVSM 250
+                     **************************************************************76666**************************** PP
+
+  Virulence_RhuM 187 yldlaelqakrrkeltmedwaekldkflelndkeiLkdaGkisaeeakekaekeyekfk.kkrk 249
+                     yld+aelqak+++ ++m+dwaekld    +nd+e+LkdaGk+sae ak+ ae eyek++  ++k
+            orf1 251 YLDYAELQAKKNRLMKMQDWAEKLDXXXXFNDYEVLKDAGKVSAEVAKALAEGEYEKYRvIQDK 314
+                     ***********************************************************55554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (335 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       858  (0.0437042); expected 392.6 (0.02)
+Passed bias filter:                      460  (0.0234311); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.39u 0.17s 00:00:00.56 Elapsed: 00:00:00.36
+# Mc/sec: 3058.00
+//
+[ok]

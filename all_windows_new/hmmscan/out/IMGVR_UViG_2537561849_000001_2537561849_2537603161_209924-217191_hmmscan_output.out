@@ -1,0 +1,113 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2537561849_000001_2537561849_2537603161_209924-217191_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2537561849_000001_2537561849_2537603161_209924-217191_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=495]
+Description: source=IMGVR_UViG_2537561849_000001_2537561849_2537603161_209924-217191/4907-3323 coords=1..1485 length=495 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.2e-38  133.0   0.5    2.4e-38  132.0   0.5    1.5  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+     0.0095   16.2   0.1      0.031   14.6   0.1    1.9  1  HNH       HNH endonuclease
+  ------ inclusion threshold ------
+       0.13   12.4   0.0       0.31   11.2   0.0    1.6  1  Sdh5      Flavinator of succinate dehydrogenase
+        1.9    8.9   4.0         25    5.4   0.3    2.7  2  TTRAP     Putative transposon-transfer assisting protein
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.0   0.5   4.9e-42   2.4e-38       8     222 .]       1     228 [.       1     228 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 132.0 bits;  conditional E-value: 4.9e-42
+            -EEE......-THHHHCTB--.........-------HHHH................HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET.......... CS
+  RVT_1   8 syRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldav...edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvp.tklinliks 107
+            + Rp++++++++++++++ ++ L++++e ++ ++++gfrp+rst++a+   + l     +++++ +++++D++++Fd+v++++ll++l ++++  ++++ +i++
+   orf1   1 KKRPLGIPTMRDRLIQQMFKQVLEPICEAKFYKHSYGFRPNRSTHHAMarcQFLI----NRGGYSHVVDIDIQGFFDNVNHSKLLKQLYNIGITdKRVLTIISK 100
+            57********************************************996443333....569*****************************9861556778888 PP
+
+            ................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T.............................TEEECTTEEEEEESSHHHHHHHHHHHH CS
+  RVT_1 108 flstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra.......................kgvtllrYaDDililskskeelqelleave 188
+            +l+ +          +++   +kg+pqG++lSPll+n+++n+l+  +++++                       k  +++rYaDD+ i++++++++ ++  ave
+   orf1 101 MLKAPI---------KGEGIPTKGTPQGGILSPLLSNVVLNDLDWWISSQWeniktrkphtvqtknyrlskaklKRMYIVRYADDFKIFTNNHQSATKIFHAVE 195
+            885555.........4677889********************************************************************************** PP
+
+            HHHHH.TT--BEGGG-EEE......ESSEEETTEEE CS
+  RVT_1 189 ewlke.sglkinpeKtklvlftv.kseevkyLGvtl 222
+             +lk+  +l +++eK++++   + k+++ ++LG+ +
+   orf1 196 GYLKNqLNLDVSKEKSTIT---NlKRKSSDFLGFSI 228
+            ****999************...779********975 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.1   6.3e-06     0.031      12      36 ..     425     449 ..     414     459 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 6.3e-06
+           E--EEEESS-TTTT--BSGGGEEEE CS
+   HNH  12 dalevdHiipisqggaddieNlqll 36 
+           d+++++H++p+  gg+d+++Nl+ +
+  orf1 425 DEAHCHHKVPKGMGGTDEFNNLIIV 449
+           789*******************986 PP
+
+>> Sdh5  Flavinator of succinate dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   6.3e-05      0.31      17      50 ..     447     480 ..     439     489 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 6.3e-05
+           HTTTTHHHHHTTT--HHHHHHHHHHHTS--HHHH CS
+  Sdh5  17 llLgrFadkhletlseeeldaferLLdleDpdLl 50 
+           +++ +F+++ ++  +ee ++++ r+L+l+D++L 
+  orf1 447 IIVYEFVHRLIHATNEETIRTYMRILQLNDKQLK 480
+           67889**************************996 PP
+
+>> TTRAP  Putative transposon-transfer assisting protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.4   0.3     0.005        25       9      52 ..     362     402 ..     361     409 .. 0.73
+   2 ?    3.7   0.4     0.017        81       4      51 ..     442     486 ..     440     488 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.4 bits;  conditional E-value: 0.005
+            HHHH--SHHHHHHHHHHHS.TTTS.-HHHHHHHHHHHHHHTT--H CS
+  TTRAP   9 isiYnegsRkglieeltam.lkyLedeelreLaesvlaKLkaltd 52 
+            i+ Y  ++R++li++l+    +++     + L  s++ K  + td
+   orf1 362 ICNYTRKGRQKLIKSLKGNiANEM----QKMLLSSTIGKSMEYTD 402
+            799************985425555....33456677777666666 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.017
+            HHHHHHHHH--SHHHHHHHHHHHSTTTS.-HHHHHHHHHHHHHHTT-- CS
+  TTRAP   4 eEinLisiYnegsRkglieeltamlkyLedeelreLaesvlaKLkalt 51 
+            e  nLi++Y+   R     + ++++ y+    + +L ++ l+K+++l+
+   orf1 442 EFNNLIIVYEFVHRLIHATNEETIRTYM---RILQLNDKQLKKINKLR 486
+            4468888888888877777777889999...9************9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (495 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1365  (0.0695293); expected 392.6 (0.02)
+Passed bias filter:                      544  (0.0277099); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.37u 0.18s 00:00:00.55 Elapsed: 00:00:00.35
+# Mc/sec: 4695.38
+//
+[ok]

@@ -1,0 +1,75 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      LC727904.fna
+# target sequence database:        cdiff_region.fna
+# output directed to file:         cdiff_LC727904.out
+# MSA of all hits saved to file:   cdiff_LC727904.aout
+# hits tabular output:             cdiff_LC727904.tblout
+# sequence reporting threshold:    E-value <= 10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       contig_1  [M=60207]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    2.7e-09   16.0  19.9  cdiff_region   8426   7973 
+
+
+Annotation for each hit  (and alignments):
+>> cdiff_region  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   16.0  19.9   2.7e-09      5534      6005 ..      8426      7973 ..      8448      7953 ..     19591    0.78
+
+  Alignment:
+  score: 16.0 bits
+      contig_1 5534 tgatcgaactcattcagcatgatgttcgataatagcggcgatataacaccgccctgtggcacaccttcactggccgcccgaaagagaccgacatc 5628
+                      atc aa tc tt agca  a  tt g taa ag gg ga a aa acc cc tgtgg    cctt   t g     c aa g           
+  cdiff_region 8426 CAATCTAATTCGTTTAGCACCACATTAGCTAAAAGAGGAGAAAGAATACCACCTTGTGGGGTTCCTTTGGTTGATTTTCCAATGCC--------- 8341
+                    557788999999************************************************99999987666665555555544432......... PP
+
+      contig_1 5629 gatatgtcccgccttgatggttttccacagcagagtcatgaaacgtgcgtcactgatcctgcggcgtacagc....cttcatcagcagtcgatga 5719
+                      t     c gcctt a   tt tc aca  a  g  at aa      gtc c  a   t c   gt cag     ctt a ca    tc atga
+  cdiff_region 8340 TTTTACCTCTGCCTTAAGCATTCTCGACAATATTGAAATAAATGTCTTGTCTCGAA-TTTTCATTGTCCAGAgttgCTTAAGCAATTTTCCATGA 8247
+                    22223344679999999999*******99998888777766655555566655444.3444556666666651111445555666667899**** PP
+
+      contig_1 5720 tgtacggtgtcgaagtaactggacaggtcgccttcaatcacccagcgtccccgggtttcaccacagtctgtgagctgtaatttcaccgtgcggat 5814
+                    t tac  tgtc aag a c     a  tc    tc a  ac  ag g    c   ttt    a  gtc     gctg aat tc c       at
+  cdiff_region 8246 TTTACATTGTCAAAGAAGCCCTTAATATCAATGTCCACTACATAGTGAAATCC--TTT---AAATGTCCA-TTGCTGAAATATCGCT------AT 8164
+                    *************9998776655555555555555555555555554332221..111...112222222.3478888888888776......56 PP
+
+      contig_1 5815 cgcgtggtggacactgcgctcaggccggaagccatatgagagcgtatgaaaatcactctcccatatcggctccatcgccatcagcatggcccgct 5909
+                     gc tggtg   act c  tc gg cg aa ccata ga  gc tatg aa t     tcc a at gg tc a    c  c   atg    gct
+  cdiff_region 8163 GGCATGGTGCGAACTTCTTTCTGGTCGAAATCCATAAGAATGCTTATGGAATTTTGCTTCCAAAATTGGTTCAAGGATCTGCTTTATGCATTGCT 8069
+                    6899***********************************************99999999999*********9998877777777889999999** PP
+
+      contig_1 5910 gaacaatacgatcccgcaacgcggggatacccagtggtcgcagtttgccgttgcttttagggatgtaaacccgtctggcgggcaagggctggtag 6004
+                    g ac a  c atcc   a  g  gggat cc ag ggtc    ttt cc tt    tt gg at t  ac c tctg  gg     gg tg  ag
+  cdiff_region 8068 GTACTAATCTATCCTCAATTGTTGGGATTCCTAGCGGTCTGGTTTTACCATTTGGCTTTGGAATCTCGACTCTTCTGATGGAGTGAGGTTGAAAG 7974
+                    ***************999**********************99999****99999999999***************99998877666666666555 PP
+
+      contig_1 6005 t 6005
+                    t
+  cdiff_region 7973 T 7973
+                    4 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60207 nodes)
+Target sequences:                          1  (39182 residues searched)
+Residues passing SSV filter:           39182  (1); expected (0.02)
+Residues passing bias filter:          39182  (1); expected (0.02)
+Residues passing Vit filter:           19591  (0.5); expected (0.003)
+Residues passing Fwd filter:           19591  (0.5); expected (3e-05)
+Total number of hits:                      1  (0.0116)
+# CPU time: 12.95u 0.28s 00:00:13.22 Elapsed: 00:00:13.26
+# Mc/sec: 177.88
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: cdiff_LC727904.aout
+[ok]

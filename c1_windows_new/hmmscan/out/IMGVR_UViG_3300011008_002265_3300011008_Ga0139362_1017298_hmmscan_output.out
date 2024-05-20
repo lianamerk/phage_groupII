@@ -1,0 +1,154 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300011008_002265_3300011008_Ga0139362_1017298_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300011008_002265_3300011008_Ga0139362_1017298_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=190]
+Description: source=IMGVR_UViG_3300011008_002265_3300011008_Ga0139362_1017298/1-1138 coords=1..570 length=190 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-05   23.8   0.0    7.2e-05   23.2   0.0    1.3  1  Helicase_C  Helicase conserved C-terminal domain
+  ------ inclusion threshold ------
+       0.02   15.1   0.0      0.029   14.6   0.0    1.3  1  WLM         WLM domain
+      0.089   12.9   0.0        6.3    7.0   0.0    2.3  2  YfjS_YafY   Lipoprotein YfjS/YafY domain
+       0.14   12.5   0.0       0.31   11.3   0.0    1.5  1  PurS        Phosphoribosylformylglycinamidine (FGAM) synthase
+
+
+Domain annotation for each model (and alignments):
+>> Helicase_C  Helicase conserved C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   1.5e-08   7.2e-05      29     111 .]      52     136 ..      30     136 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 1.5e-08
+                 HHH..HHHHHHHTTSCEEEESTTSTHHHHHHHHHHHHTTSSS.EEEESGGGTSSSTSTTECEEEESSECSSHHHHHHHHTTSSSTT CS
+  Helicase_C  29 lek..vklllekkgikvavlhgelpqnereeileqfnkgesd.vLiatdvaerGidipkvnlVinfdlprnvtsyiqriGRtgRag 111
+                 ++k  +kll +++g+++ ++  +   +eree +++  +   + ++   + +e+G+d+++ ++ i++++ ++  ++ q++ R +R++
+        orf1  52 ISKdvLKLL-TEQGFHTEIMSEKVRPDEREEWVQKRLASGMQvLITNPSLVETGLDLNSFTTLIFYSMGYKLFTLRQASRRSWRIN 136
+                 333534666.6678****************99998887777725566799*********************************985 PP
+
+>> WLM  WLM domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.0   5.9e-06     0.029      11      46 ..      38      73 ..      27      93 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 5.9e-06
+   WLM 11 kkpekeaalellkriakdvqpimkkhkfkVglLtEl 46
+          +  ++++a++ l+ri+kdv  ++++++f+ ++++E 
+  orf1 38 HAGNEKEAKQRLSRISKDVLKLLTEQGFHTEIMSEK 73
+          567899***************************993 PP
+
+>> YfjS_YafY  Lipoprotein YfjS/YafY domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.7   0.0     0.013        63      10      38 ..      68      96 ..      58     114 .. 0.72
+   2 ?    7.0   0.0    0.0013       6.3      39      81 ..     136     178 ..     124     181 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.7 bits;  conditional E-value: 0.013
+  YfjS_YafY 10 dvvsrk..ddiaeewvkkdafgaeqykvlkt 38
+               +++s+k   d  eewv+k   ++ q+    t
+       orf1 68 EIMSEKvrPDEREEWVQKRLASGMQVL--IT 96
+               6777652258899******99987654..34 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.0013
+  YfjS_YafY  39 rkspegceagsyyylvdmeektvqpllaalcladnitlsfrek 81 
+                +++    e   +yy   m++k+++ + + l +a  i+ +f e+
+       orf1 136 NQTAPKVEVYMFYYASTMQHKAMKLMASKLAVAGLIEGNFTEE 178
+                566666778889***********999999****9999888775 PP
+
+>> PurS  Phosphoribosylformylglycinamidine (FGAM) synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   6.4e-05      0.31      29      65 ..      21      57 ..      13      60 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 6.4e-05
+          HTTEEEEEEEEEEEEEEE-SSHHHHHHHHHHHHHHTT CS
+  PurS 29 yeevedVrvgKyieleleaedeeeaeeeveemceklL 65
+           ++ + V  gKy+ + ++a +e+ea++++ ++++++L
+  orf1 21 KKGTNGVLKGKYLVFGIHAGNEKEAKQRLSRISKDVL 57
+          566788999************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (190 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       699  (0.0356051); expected 392.6 (0.02)
+Passed bias filter:                      527  (0.0268439); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.34u 0.19s 00:00:00.53 Elapsed: 00:00:00.35
+# Mc/sec: 1775.33
+//
+Query:       orf2  [L=111]
+Description: source=IMGVR_UViG_3300011008_002265_3300011008_Ga0139362_1017298/1-1138 coords=779..447 length=111 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (111 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       254  (0.0129381); expected 392.6 (0.02)
+Passed bias filter:                      184  (0.00937245); expected 392.6 (0.02)
+Passed Vit filter:                         7  (0.000356561); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.14s 00:00:00.45 Elapsed: 00:00:00.31
+# Mc/sec: 1185.36
+//
+Query:       orf3  [L=98]
+Description: source=IMGVR_UViG_3300011008_002265_3300011008_Ga0139362_1017298/1-1138 coords=294..1 length=98 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (98 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       323  (0.0164527); expected 392.6 (0.02)
+Passed bias filter:                      288  (0.0146699); expected 392.6 (0.02)
+Passed Vit filter:                        19  (0.000967808); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.15s 00:00:00.43 Elapsed: 00:00:00.30
+# Mc/sec: 1059.96
+//
+[ok]

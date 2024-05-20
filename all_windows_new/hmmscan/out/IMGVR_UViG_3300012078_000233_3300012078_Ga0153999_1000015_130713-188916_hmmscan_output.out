@@ -1,0 +1,162 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300012078_000233_3300012078_Ga0153999_1000015_130713-188916_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300012078_000233_3300012078_Ga0153999_1000015_130713-188916_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=218]
+Description: source=IMGVR_UViG_3300012078_000233_3300012078_Ga0153999_1000015_130713-188916/4576-2845 coords=137..790 length=218 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.5e-14   51.7   0.0    1.2e-13   51.2   0.0    1.2  1  N6_Mtase  N-6 DNA Methylase
+      0.007   16.2   0.0      0.017   14.9   0.0    1.5  1  dCache_3  Double sensory domain of two-component sensor kinas
+  ------ inclusion threshold ------
+      0.032   13.8   1.2        0.5    9.9   0.1    2.1  2  AviRa     RRNA methyltransferase AviRa
+
+
+Domain annotation for each model (and alignments):
+>> N6_Mtase  N-6 DNA Methylase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.2   0.0   1.8e-17   1.2e-13      17     119 ..     107     207 ..      88     213 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 51.2 bits;  conditional E-value: 1.8e-17
+  N6_Mtase  17 faeeegksaGefyTPrevsklivellepksg..esvyDpacGsgglliqaekvlkeedgktkelsiyGqeknettyrLakmNlllhgieykkvkirlgdtl 115
+                a+ + ++ G+++TP  v +l++el+++ s+  e+v Dp+cG+g+ll+     ++ e+++++++ ++  ++++t+   + + + lhg+++      +g+tl
+      orf1 107 VASLTENKDGQVFTPDYVAQLMSELVNTTSDiqETVSDPCCGTGALLLGHIARVR-EKDNKQSIRMHAIDLDRTALLCTFIQCGLHGVNGV---FIVGNTL 203
+               577777888*****************766543389*****************996.7888899**********9999999*********99...7899999 PP
+
+  N6_Mtase 116 ekdk 119
+               +++ 
+      orf1 204 TNEV 207
+               9875 PP
+
+>> dCache_3  Double sensory domain of two-component sensor kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   2.6e-06     0.017      47      95 ..      59     106 ..      53     119 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2.6e-06
+  dCache_3  47 dreqlerlldslfnnlgleqivlldadgtvllrlvepstlgdslslfrl 95 
+               +++++++ + +++n + ++qivl+++  ++l++l+e +++ d+l++++ 
+      orf1  59 RVSEIHERITEIKNKYSEKQIVLFTKALEILGELHE-RQTKDWLGQLTG 106
+               68999****************************999.788888888876 PP
+
+>> AviRa  RRNA methyltransferase AviRa
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.1     0.009        59      76     140 ..      33      98 ..      30     126 .. 0.79
+   2 ?    9.9   0.1   7.6e-05       0.5      51      69 ..     138     154 ..     120     184 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.009
+  AviRa  76 kikavvgsDvdeevlelarkN.lsLLtkeglekreeelkelaeeyekkshaealesaerleellaa 140
+            ++++vv+  v+ ++ ++a  N  +L + + +++r++e+k++++e +   +++ale   +l+e++++
+   orf1  33 NLNNVVADWVNLSAYTMALVNgANLRRVSEIHERITEIKNKYSEKQIVLFTKALEILGELHERQTK 98 
+            678899999999999999888345556788999*****9999999999999999999999988733 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 7.6e-05
+  AviRa  51 egltlyDpCCGgaylltvl 69 
+             + t+ DpCCG++ ll  l
+   orf1 138 IQETVSDPCCGTGALL--L 154
+            226899*****98776..3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (218 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       681  (0.0346883); expected 392.6 (0.02)
+Passed bias filter:                      518  (0.0263855); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.29u 0.18s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 2282.19
+//
+Query:       orf2  [L=100]
+Description: source=IMGVR_UViG_3300012078_000233_3300012078_Ga0153999_1000015_130713-188916/4576-2845 coords=1140..1439 length=100 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.4e-30  105.5   1.3    1.7e-30  105.3   1.3    1.0  1  SSB              Single-strand binding protein family
+    2.3e-05   24.4   0.1    6.6e-05   23.0   0.0    1.7  2  tRNA_anti-codon  OB-fold nucleic acid binding domain
+  ------ inclusion threshold ------
+       0.02   15.3   0.1      0.026   14.9   0.1    1.4  1  tRNA_anti_2      OB-fold nucleic acid binding domain
+
+
+Domain annotation for each model (and alignments):
+>> SSB  Single-strand binding protein family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.3   1.3   2.6e-34   1.7e-30       1      89 [.       7      93 ..       7      97 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 105.3 bits;  conditional E-value: 2.6e-34
+          EEEEEEEEEESSSEEEEEETTSEEEEEEEEEEEEEEEETTCSEEEEEEEEEEEEEHHHHHHHHHH--TT-EEEEEEEEEEEEEECTTSS CS
+   SSB  1 vnkvilvGrlgkdpelrqtesGravarftlatnrrfkdqegesdeetefhrvvvfgklaevvaeylkkGslvyveGrlqtrkyedqegq 89
+          +n+v+lvGr++kd+el++t++++ava+f+la+nr+fk+  ++++++++f+++v+++++ae++a+  kkG+l++++Gr+qtr+ye+q+g+
+  orf2  7 INNVVLVGRVTKDVELKYTPQNQAVATFSLAVNRQFKN--ANGERQADFINCVIWRQQAENLANWAKKGALIGITGRIQTRNYENQQGR 93
+          69********************************9998..***********************************************96 PP
+
+>> tRNA_anti-codon  OB-fold nucleic acid binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.29   1.9e+03       1       9 [.      10      18 ..      10      39 .. 0.75
+   2 !   23.0   0.0     1e-08   6.6e-05      28      63 ..      52      87 ..      42      95 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.29
+                     EEEEEEEEE CS
+  tRNA_anti-codon  1 VtvaGrvts 9 
+                     V+++Grvt+
+             orf2 10 VVLVGRVTK 18
+                     566677764 PP
+
+  == domain 2  score: 23.0 bits;  conditional E-value: 1e-08
+                     EEEEEEEETHHHHHHHTTS-TTSEEEEEEEEEECTT CS
+  tRNA_anti-codon 28 griqvvlfreeatklaenlkeGdvvrvtGrvkrrkg 63
+                     + i++v++r++a++la+  k+G ++++tGr+++r+ 
+             orf2 52 DFINCVIWRQQAENLANWAKKGALIGITGRIQTRNY 87
+                     579******************************943 PP
+
+>> tRNA_anti_2  OB-fold nucleic acid binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   0.1     4e-06     0.026      49      80 ..      53      84 ..       2      93 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 4e-06
+  tRNA_anti_2 49 kisavifrsraarlkftledGmkVlvagrvsv 80
+                  i++vi+r++a++l+   ++G+ + ++gr++ 
+         orf2 53 FINCVIWRQQAENLANWAKKGALIGITGRIQT 84
+                 39************999************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (100 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       619  (0.0315302); expected 392.6 (0.02)
+Passed bias filter:                      438  (0.0223105); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.26u 0.16s 00:00:00.42 Elapsed: 00:00:00.27
+# Mc/sec: 1190.51
+//
+[ok]

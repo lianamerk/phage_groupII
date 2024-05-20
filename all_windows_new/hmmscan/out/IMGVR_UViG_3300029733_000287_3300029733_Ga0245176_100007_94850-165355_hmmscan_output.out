@@ -1,0 +1,157 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029733_000287_3300029733_Ga0245176_100007_94850-165355_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029733_000287_3300029733_Ga0245176_100007_94850-165355_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=212]
+Description: source=IMGVR_UViG_3300029733_000287_3300029733_Ga0245176_100007_94850-165355/45072-46656 coords=3..638 length=212 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.3e-08   33.2   9.4    6.1e-05   23.4   3.1    3.1  2  fn3              Fibronectin type III domain
+    0.00028   21.6  18.6      0.068   14.0  11.4    2.2  2  Pur_ac_phosph_N  Purple acid Phosphatase, N-terminal domain
+  ------ inclusion threshold ------
+       0.27   11.2   7.0       0.44   10.6   1.3    2.6  2  Tissue_fac       Tissue factor
+
+
+Domain annotation for each model (and alignments):
+>> fn3  Fibronectin type III domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.4   3.1   9.3e-09   6.1e-05      26      82 ..       7      68 ..       2      71 .. 0.79
+   2 !   11.4   0.4   5.1e-05      0.33       2      79 ..      94     190 ..      93     194 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 23.4 bits;  conditional E-value: 9.3e-09
+          SSSTEEEEEEEEEETTSTS.....TEEEEEECSTSSEEEEESSSTTEEEEEEEEEEETSEEE CS
+   fn3 26 gggpitgYeveyrekgsee.....ewneftvprtttsvtltgLkpgteYevrVqavngggeg 82
+          +++ +tgY+v+y++ ++ +      +++   ++ ++s t+++L   ++Y vrV++++++  g
+  orf1  7 RNSGVTGYQVQYSTASNFKgaktiTKKNTKTKAKSYSTTVKNLSGAKKYYVRVRTYKTVKVG 68
+          68889**********999966555333333444467********************998665 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 5.1e-05
+           CECEEEEEEESSSEEEEEEE-CSSSSSTEEEEEEEEEETTSTS...................TEEEEE.....ECSTSS.EEEEESSSTTEEEEEEEEEEETS CS
+   fn3   2 aPsnlsvsevtstsltvsWeppkdgggpitgYeveyrekgsee...................ewneft.....vprttt.svtltgLkpgteYevrVqavngg 79 
+           aP+++++s+    +l  sW++     +  +gY+++y+ +++                     ++++ +      +  ++ s+t   Lk gt+Y+ rV+++ ++
+  orf1  94 APTGFKLSAPKYKKLKGSWNKV----SGASGYQLQYSRDSDYTgsqkdkdlttwymnnflanPDKNDSyagiiTT--SNlSCTAASLKGGTKYTARVRSYRTV 190
+           6777788888888888888888....6678899999777776667888888877555555552222223333123..3349*****************99876 PP
+
+>> Pur_ac_phosph_N  Purple acid Phosphatase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0  11.4     1e-05     0.068      19      94 .]       4      86 ..       1      86 [. 0.79
+   2 !   12.3   0.6   3.5e-05      0.23      19      83 ..     111     188 ..      95     202 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 1e-05
+  Pur_ac_phosph_N 19 sWytpdkvtssvvrygtssdelektaeatsstystaeetsgyshkatltgLepdttYyYrvgsdeg............gwsevysfrT 94
+                     +++ ++ vt  +v+y+t+s+ +  +   +      +++t+  s++ t+++L   ++Yy+rv++ ++            +ws v  ++T
+             orf1  4 NYNRNSGVTGYQVQYSTASNFKGAKTITKK-----NTKTKAKSYSTTVKNLSGAKKYYVRVRTYKTvkvgkkkvtyysNWSTVKAVTT 86
+                     67788888999*******988755443332.....3457899*******************888766777788898888999888877 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 3.5e-05
+  Pur_ac_phosph_N  19 sWytpdkvtssvvrygtssdelektaeatsstystaee..............tsgyshkatltgLepdttYyYrvgsde 83 
+                      sW+  + ++  +++y+ +sd + ++ + + +t   + +               ++ + ++t+ +L+ +t+Y+ rv+s +
+             orf1 111 SWNKVSGASGYQLQYSRDSDYTGSQKDKDLTTWYMN-NflanpdkndsyagiITTSNLSCTAASLKGGTKYTARVRSYR 188
+                      89999999999********99777777666665433.358888888888888999999*****************9875 PP
+
+>> Tissue_fac  Tissue factor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   1.3   6.7e-05      0.44      49      99 ..      10      62 ..       4      68 .. 0.81
+   2 ?    3.3   0.4     0.012        77      47     100 ..     115     188 ..      74     193 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 6.7e-05
+                TTEEEEEEEE...ETTTSSEEEEEEEECESSSEEECTCCGTTTTSEEEEEEEEE CS
+  Tissue_fac 49 esvvYtVqyk...mykseqwknvedCtniteteCDLteetsdltetyyarVraa 99
+                  + Y+Vqy+   ++k +++  + + t+++++++  t +  +  ++yy+rVr++
+        orf1 10 GVTGYQVQYStasNFKGAKTITK-KNTKTKAKSYSTTVKNLSGAKKYYVRVRTY 62
+                5578******8775555555555.689*************************86 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.012
+                 SSTTEEEEEEEE...ETTTS......................SEEEEEEEECESSSEEECTCCGTTTTSEEEEEEEEEE CS
+  Tissue_fac  47 spesvvYtVqyk...mykse......................qwknvedCtniteteCDLteetsdltetyyarVraas 100
+                  +  + Y++qy+                              +  +    + +++++C  t +  +   +y+arVr+++
+        orf1 115 VSGASGYQLQYSrdsD---YtgsqkdkdlttwymnnflanpdKNDSYAGIITTSNLSC--TAASLKGGTKYTARVRSYR 188
+                 4556667777774431...233445666676666666666532222223344444444..6666667788999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (212 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1368  (0.0696822); expected 392.6 (0.02)
+Passed bias filter:                      422  (0.0214955); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.33
+# Mc/sec: 2133.23
+//
+Query:       orf2  [L=100]
+Description: source=IMGVR_UViG_3300029733_000287_3300029733_Ga0245176_100007_94850-165355/45072-46656 coords=1176..877 length=100 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (100 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       504  (0.0256724); expected 392.6 (0.02)
+Passed bias filter:                      317  (0.0161471); expected 392.6 (0.02)
+Passed Vit filter:                        11  (0.00056031); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.14s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1144.35
+//
+Query:       orf3  [L=148]
+Description: source=IMGVR_UViG_3300029733_000287_3300029733_Ga0245176_100007_94850-165355/45072-46656 coords=446..3 length=148 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (148 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       325  (0.0165546); expected 392.6 (0.02)
+Passed bias filter:                      229  (0.0116646); expected 392.6 (0.02)
+Passed Vit filter:                        11  (0.00056031); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.25u 0.16s 00:00:00.41 Elapsed: 00:00:00.28
+# Mc/sec: 1714.15
+//
+[ok]

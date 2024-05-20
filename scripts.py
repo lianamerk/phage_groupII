@@ -7,6 +7,37 @@ import holoviews as hv
 import iqplot
 import subprocess
 
+def extract_hit_df_easy(filename, filt = True):
+    initial = 0
+    colspecs = []
+
+    with open(filename, 'r') as infile:
+        data = infile.readlines()
+        for i in data[1:2]:
+            widths = [len(col)+1 for col in i.split()]
+            # print(i.split())
+
+    for n in range(0, len(widths)):
+        if n == len(widths)-1:
+            colspecs.append((initial, -1))
+        else:
+            colspecs.append((initial, initial + widths[n]))
+        initial +=  widths[n]
+
+    hit_df = pd.read_fwf(filename, skipfooter=10, skiprows=2, colspecs = colspecs, names=['target_name', 'accession', 'query_name', 'accession_2', 'mdl', \
+                                                        'mdl_from', 'mdl_to', 'seq_from', 'seq_to', 'strand', 'trunc', 'pass', 'gc', 'bias', \
+                                                        'score', 'E-value', 'inc', 'description_of_target'])
+    if filt == True:
+        hit_df = hit_df.loc[hit_df['E-value'] < 0.01]
+        
+    # Some are on +, some -, make a stard and end to make comparing easier later
+    hit_df['start'] = hit_df[['seq_from','seq_to']].min(axis=1)
+    hit_df['end'] = hit_df[['seq_from','seq_to']].max(axis=1)
+
+    hit_df['length'] = hit_df['end'] - hit_df['start']
+    
+    return hit_df
+
 
 def extract_hit_df(filename, filt = True):
     initial = 0
@@ -54,7 +85,6 @@ def extract_hit_df(filename, filt = True):
     hit_df['desc'] = hit_df['desc'].str.replace(',', '')
     hit_df['host'] = hit_df['desc'].str.split(' ').str[0]
     hit_df['name'] = hit_df['desc'].str.split(' ').str[1]
-
     
     return hit_df
 

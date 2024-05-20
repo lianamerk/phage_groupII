@@ -1,0 +1,94 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_2920886010_000003_2920886010_2920886021_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_2920886010_000003_2920886010_2920886021_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=335]
+Description: source=IMGVR_UViG_2920886010_000003_2920886010_2920886021/12106-14074 coords=401..1405 length=335 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   5.5e-110  366.7   6.3   6.7e-110  366.4   6.3    1.1  1  Virulence_RhuM  Virulence protein RhuM family
+  ------ inclusion threshold ------
+        1.2   10.0  10.2       0.29   12.0   0.8    3.6  4  CsgA            Minor curli fiber component A
+
+
+Domain annotation for each model (and alignments):
+>> Virulence_RhuM  Virulence protein RhuM family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  366.4   6.3  6.8e-114  6.7e-110       2     249 ..      64     314 ..      63     317 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 366.4 bits;  conditional E-value: 6.8e-114
+  Virulence_RhuM   2 vvkkfrtvakegkreverevkfYnLdaiiavGyrvkskratqFRkWatevlkeyiikGfvldderlkn.kalgkdyfdellerirdiRasEkrfy 95 
+                     vv++f+++a++gk   ++ ++ YnLd iiavGyrv+sk+at FR Wat+vlk++iikGf+ld erlkn k++gkdyf+elle+ir+iRasE+rfy
+            orf1  64 VVSTFEVTAADGK---NYPTQLYNLDTIIAVGYRVNSKKATLFRVWATKVLKDFIIKGFALDSERLKNgKKFGKDYFNELLEKIREIRASERRFY 155
+                     78999*******6...******************************************************************************* PP
+
+  Virulence_RhuM  96 qkvtdiya.tsiDYdkkaeatkeFfatvqnklhyavtgktaaeliveradaekenmglttwkga...kvrksdvtiaknYLseeelkelnrivsa 186
+                     qk+tdiya +s+DYd+++e+tk+F+a+vqnkl++a+ g taaeli++r+d++k++mglttwk+    k++ksdv+iaknYL+eeel+eln+ivs+
+            orf1 156 QKITDIYAeCSADYDPNSEITKQFYAKVQNKLYWAIYGLTAAELICSRVDHKKPHMGLTTWKDGpgkKIHKSDVSIAKNYLTEEELSELNHIVSM 250
+                     **************************************************************76666**************************** PP
+
+  Virulence_RhuM 187 yldlaelqakrrkeltmedwaekldkflelndkeiLkdaGkisaeeakekaekeyekfk.kkrk 249
+                     yld+aelqak+++ ++m+dwaekld+fl +nd+e+Lkd Gk+sae ak+ ae eyek++  ++k
+            orf1 251 YLDYAELQAKKNRLMKMQDWAEKLDAFLLFNDYEVLKDDGKVSAEVAKALAEGEYEKYRvIQDK 314
+                     ***********************************************************55554 PP
+
+>> CsgA  Minor curli fiber component A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.1      0.26   2.5e+03       7      30 ..     136     159 ..     133     174 .. 0.69
+   2 ?    1.4   0.1     0.065   6.4e+02      10      34 ..     164     188 ..     160     191 .. 0.87
+   3 ?   12.0   0.8     3e-05      0.29      43      81 ..     235     273 ..     222     275 .. 0.85
+   4 ?   -0.3   0.1      0.21     2e+03      17      50 ..     288     321 ..     284     328 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.26
+  CsgA   7 YLrEvLsnyteedeegkeiykkle 30 
+           Y  E+L    e     ++ y+k++
+  orf1 136 YFNELLEKIREIRASERRFYQKIT 159
+           566666666666666666666665 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.065
+  CsgA  10 EvLsnyteedeegkeiykkleekey 34 
+           E  ++y  ++e++k+ y k+++k y
+  orf1 164 ECSADYDPNSEITKQFYAKVQNKLY 188
+           66788999999**********9988 PP
+
+  == domain 3  score: 12.0 bits;  conditional E-value: 3e-05
+  CsgA  43 dLsekEvefLnkiLeeeikyakeeqdekRakeLnevyEl 81 
+            L+e+E + Ln+i++  ++ya+ +  ++R +++++  E 
+  orf1 235 YLTEEELSELNHIVSMYLDYAELQAKKNRLMKMQDWAEK 273
+           59***************************9999886665 PP
+
+  == domain 4  score: -0.3 bits;  conditional E-value: 0.21
+  CsgA  17 eedeegkeiykkleekeykseeefvkdLsekEve 50 
+           ++ +++ e+ k l e+ey++ +   ++L+e++ +
+  orf1 288 DDGKVSAEVAKALAEGEYEKYRVIQDKLHESDFD 321
+           5567778999999999999988888888877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (335 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1206  (0.0614303); expected 392.6 (0.02)
+Passed bias filter:                      644  (0.0328036); expected 392.6 (0.02)
+Passed Vit filter:                        53  (0.00269967); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.36u 0.19s 00:00:00.55 Elapsed: 00:00:00.35
+# Mc/sec: 3153.50
+//
+[ok]

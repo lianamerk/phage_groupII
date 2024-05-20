@@ -1,0 +1,569 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.5 (Sep 2023)
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         ../BUCT083.cm
+# target sequence database:              /n/eddy_lab/users/lmerk/phage_groupII/data/genomes/groupII_millard/millard_hit_genomes.fna
+# output directed to file:               BUCT_millard.out
+# MSA of significant hits saved to file: BUCT_millard.aout
+# tabular output of hits:                BUCT_millard.tblout
+# verbose output mode:                   on
+# sequence reporting threshold:          E-value <= 100
+# number of worker threads:              64 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       BUCT083  [CLEN=669]
+Hit scores:
+ rank     E-value  score  bias  sequence   start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------- ------ ------   --- ----- ----  -----------
+  (1) !  2.7e-220  706.2   1.5  ON107264   85329  85937 +  cm    no 0.44  -
+  (2) !   2.2e-73  241.5   3.8  MT836071   22019  21439 -  cm    no 0.45  -
+  (3) !   2.3e-39  133.9   3.7  MN270258   80509  80999 +  cm    no 0.42  -
+  (4) !   2.3e-39  133.9   3.7  MN270259   80545  81035 +  cm    no 0.42  -
+  (5) !   5.9e-33  113.6   0.1  ON107264   87558  87820 +  cm    no 0.42  -
+  (6) !   9.9e-21   74.9   0.0  MT836071   19652  19524 -  cm    no 0.48  -
+  (7) !   7.9e-06   27.8   0.0  KT887559    2748   2846 +  cm    no 0.63  -
+  (8) !   7.9e-06   27.8   0.0  NC_030940   2748   2846 +  cm    no 0.63  -
+  (9) !   9.6e-06   27.5   3.3  MW749003   25233  25011 -  cm    no 0.36  -
+ (10) !   1.1e-05   27.3   0.0  AP008983  114705 114669 -  cm    no 0.54  -
+ (11) !   1.1e-05   27.3   0.0  NC_007581 114705 114669 -  cm    no 0.54  -
+ (12) !   1.8e-05   26.6   0.1  MZ422438  163970 163856 -  cm    no 0.33  -
+ (13) !   2.3e-05   26.3   0.0  MZ422438  120805 120841 +  cm    no 0.46  -
+ (14) !   2.5e-05   26.2   0.0  MZ422438   51030  50994 -  cm    no 0.46  -
+ (15) !   3.5e-05   25.7   0.0  MW248466  112620 112656 +  cm    no 0.51  -
+ (16) !     8e-05   24.6   0.0  MN091626   50607  50643 +  cm    no 0.49  -
+ (17) !   0.00021   23.3   0.0  MZ422438  137094 137058 -  cm    no 0.54  -
+ (18) !    0.0029   19.7   0.0  KY695241       1     59 +  cm    5' 0.51  -
+
+
+Hit alignments:
+>> ON107264  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (1) !  2.7e-220  706.2   1.5  cm        1      669 []       85329       85937 + .. 0.96    no 0.44    no       -   18.95    0.03    1 loc    669      133818
+
+                                                                                                                   NC
+                 ::::{,,,,,{{{{{--{{{{{{{{{{{-{{,,<<<<<________>>>>><<<<<<<________>>>>>>>(((((,<<<<<<---<<<<---<< CS
+   BUCT083     1 AGUUgGUGCGCCCauAAgGgCauauGuuUGaAUuuGuCGAUAGCAAGaCaaCaGaucaAGUUGCAAugauCuGuCauCAuCCaaCUUAcCCGGGAaG 97   
+                 AGUUGGUGCGCCCAUAA:G:CAUAUGUUUGAAUUUGUCGAUAGCAAGACAACAGAU:AAGUUGCAAU:AUCUGUCAUCAUCCAACUUA:CCGGGAAG
+  ON107264 85329 AGUUGGUGCGCCCAUAAGGGCAUAUGUUUGAAUUUGUCGAUAGCAAGACAACAGAUUAAGUUGCAAUGAUCUGUCAUCAUCCAACUUAUCCGGGAAG 85425
+                 ************************************************************************************************* PP
+
+                                                                                                                   NC
+                 ____>>--->>>>----------->>>>>>,,,<<<<<-<<<<<<<<________>>>>>-->>>-->>>>>,,))))),,[[[[[[[----[[[[[ CS
+   BUCT083    98 GAAACuGAACGGgGAGUGUAGCAUGuuGGaAAAGcCauAaGuuGgCuAGAUACCAaGcCaCGaCuGAauGgCAAGauGaGAuauGuGGAUAAGGauG 194  
+                 GAAACUGAACGG:GAGUGUAGCAUGUUGGAAAAG:CAUAAGUUG:CUAGAUACCAAG:CACGACUGAAUG:CAAGAUGAGAUAUGUGGAUAAGGAUG
+  ON107264 85426 GAAACUGAACGGGGAGUGUAGCAUGUUGGAAAAGUCAUAAGUUGGCUAGAUACCAAGUCACGACUGAAUGGCAAGAUGAGAUAUGUGGAUAAGGAUG 85522
+                 ************************************************************************************************* PP
+
+                                                                                                                   NC
+                 ,<<<<______>>>>,,,,,,,,((((-((((((,,,,<<<<-----<<<<<<<_______________>>>>>>>>>>>,,,,,<<<<<<<<-<<< CS
+   BUCT083   195 AaaGCUACACUGCuuGAAUGACAGuCCGaGuCguCAAAaCuGCCGUCuauaaCGGAAGGUAUCCAUUAACGuuauaCaGuCAUAGgGaGgaaGAaGc 291  
+                 AAAGCUACACUGCUUGAAUGACAGUCCGAGUC:UCAAAACUGCCGUCUAUAACGGAAGGUAUCCAUUAACGUUAUACAGUCAUAG:GAG:AAGAAG:
+  ON107264 85523 AAAGCUACACUGCUUGAAUGACAGUCCGAGUCGUCAAAACUGCCGUCUAUAACGGAAGGUAUCCAUUAACGUUAUACAGUCAUAGGGAGGAAGAAGU 85619
+                 ************************************************************************************************* PP
+
+                                                                                                                   NC
+                 ___>>>--->>>>>>>>,,,,,,,,,,)))))))))),,,<<<_____>>>,,,,,,<<<____>>>,]]]]]----]]]]]]],,,,,,,,}}}}} CS
+   BUCT083   292 AUAgCuGAGCuucCuCcAAGCAACUCAacGaCuGGaCAAUCCCGAUAAGGGUUAAAGGgCGAACGcCACauCCGACACCaCauaAAGCUAUGuCaaC 388  
+                 AUA:CUGAGCUU:CUC:AAGCAACUCAA:GACUGGACAAUCCCGAUAAGGGUUAAAGG:CGAACG:CACAUCCGACACCACAUAAAGCUAUGUCAAC
+  ON107264 85620 AUAGCUGAGCUUUCUCUAAGCAACUCAAUGACUGGACAAUCCCGAUAAGGGUUAAAGGGCGAACGUCACAUCCGACACCACAUAAAGCUAUGUCAAC 85716
+                 ************************************************************************************************* PP
+
+                                                                                                                   NC
+                 }}}}}}}}--}}}}},,((((((---(((((,,<<<<<___>>>>>,,,<<<<____>>>>,,,,,,)))))--)))))),,,,<<<<<<------< CS
+   BUCT083   389 auauGcCcAAauGGGGAuuaCCuAAAuCGGaAUGCCugAUAcaGGCUAUGGauAUCGauCCUGAAUAuCCGaCAaGGuaaCGGAGuCuCCGUAGUAG 485  
+                 AUAUG:C:AAAUGGGGAUUACCUAAAUCGGAAUGCCU:AUA:AGGCUAUGGAUAUCGAUCCUGAAUAUCCGACAAGGUAACGGAGUCUCCGUAGUAG
+  ON107264 85717 AUAUGUCUAAAUGGGGAUUACCUAAAUCGGAAUGCCUGAUAUAGGCUAUGGAUAUCGAUCCUGAAUAUCCGACAAGGUAACGGAGUCUCCGUAGUAG 85813
+                 ************************************************************************************************* PP
+
+                                                                                                        vv         NC
+                 <<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<-<<<<<<__________>>>>>>-->>>>,,,,,,,<<<<<<<<<<<<.<<__ CS
+   BUCT083   486 cCuGGgGcaGGGAAAGCCugCcACaUGgCGAAGGGaGaCAGCucGuCcaguUUAAUACAACacugGaAGgaGCGCGAGGAaagCCGuacaCG.CcGA 581  
+                 :CUGG:G:AGGGAAAGCCU:C:ACAUG:CGAAGGGAGACAGCU:GUC:A:UUUAAUACAACA:U:GAAG:AGCGCGAGG :        ::G ::GA
+  ON107264 85814 UCUGGGGUAGGGAAAGCCUGCUACAUGGCGAAGGGAGACAGCUUGUCUAGUUUAAUACAACAUUGGAAGGAGCGCGAGGCU--------CUGuGAGA 85902
+                 *****************************************************************************9652........22212333 PP
+
+                          vv                               NC
+                 __>>>>>-->>>>>>>>>,,<<~~~~~~>>,,,,,,,}::: CS
+   BUCT083   582 GAgGCGuACguaCGGcuuGGgG*[53]*CcACUAUUAcCAU 669  
+                   ::C::ACGU      :G ::      ::    UU CCA 
+  ON107264 85903 AGUCCAGACGU------AGUGU*[ 6]*AUUUAGUUUCCAA 85937
+                 33334444433......24444...5..467788999**** PP
+
+>> MT836071  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (2) !   2.2e-73  241.5   3.8  cm        1      669 []       22019       21439 - .. 0.87    no 0.45    no       -   24.11    0.07    1 loc    669       25949
+
+                                     v                                                                         v   NC
+                 ::::{,,,,,{{{{{--.{{{{{{{{{{{-{{,,<<<<<________>>>>><<<<<<<________..>>>>>>>(((((,<<<<<<---<<<<-- CS
+   BUCT083     1 AGUUgGUGCGCCCauAA.gGgCauauGuuUGaAUuuGuCGAUAGCAAGaCaaCaGaucaAGUUGCAA..ugauCuGuCauCAuCCaaCUUAcCCGGG 94   
+                   U :GUGCG:CCA:AA :G C::AU::U :AAU:U:UC  U GCAAGA:A::AGA::A G U CAA  U::UCU:: ::CA:C::A:U A CC  G
+  MT836071 22019 GAUGCGUGCGUCCAGAAuGGUCGCAUAGU-AAAUAUCUCUGUGGCAAGAGAUUAGAAUAGGAUACAAuaUGUUCUACUCCCAACUGAAUAAGCCCCG 21924
+                 ***************98355899999999.788******************************99865599************************** PP
+
+                             v                                  v  v        v  v                                   NC
+                 -<<____>>--->>>>----------->>>>>>,,,<<<<<-<<<.<<<<<________>>>>>-->>>-->>>>>,,))))),,.[[[[[[[---- CS
+   BUCT083    95 AaGGAAACuGAACGGgGAGUGUAGCAUGuuGGaAAAGcCauAaGu.uGgCuAGAUACCAaGcCaCGaCuGAauGgCAAGauGaGA.uauGuGGAUAA 189  
+                 A::GAAA:: AA GG GA    AGCAU:U::G:AAA:C:::A:GU U GC A  U  CA GC AC AC:G :::G: AG:: : A :A:::::AUAA
+  MT836071 21923 AGCGAAAGCAAAAGGUGAAAACAGCAUUUCAGUAAAACGGAAUGUgUGGCUAACUGUCAUGCGAC-ACAGUUCCGUGAGGGGGAAaGACAGAUAUAA 21828
+                 *********************************************999*************9999.9**************99755*********** PP
+
+                                                  vv v       v v      v                            v v v           NC
+                 [[[[[,<<<<______>>>>,,,,,,,,((((-((((((,,,,<<<<-----<<<<<<<_____.__..________>>>>>>>>>>>,~~~~~~,, CS
+   BUCT083   190 GGauGAaaGCUACACUGCuuGAAUGACAGuCCGaGuCguCAAAaCuGCCGUCuauaaCGGAAGG.UA..UCCAUUAACGuuauaCaGuC*[33]*AA 310  
+                 GGAUGAA::CU CA UG::U AA GA AG :C     G:CA AA :   G C: :::CGGAA G  A  U  AU  ACG::: : : U       AA
+  MT836071 21827 GGAUGAAGCCUGCAUUGGUUCAACGAUAGUUCAG--CGGCAUAAGGCGUGGCGUGGGCGGAAAGgCAguUAUAUCUACGCCCUCUCGUG*[34]*AA 21705
+                 *****************************97754..45566666555567777777777765541441144455556666666655554...8..55 PP
+
+                           v vv                                                                         v          NC
+                 ,,,,,,,,)))))))).)),,,<<<_____>>>,,,,,,<.<<____>>>,]]]]]----]]]]]]],,,,,,,..,}}}}}}}}}}}.}}--}}}} CS
+   BUCT083   311 GCAACUCAacGaCuGG.aCAAUCCCGAUAAGGGUUAAAGG.gCGAACGcCACauCCGACACCaCauaAAGCUAU..GuCaaCauauGc.CcAAauGG 402  
+                 G  A   A:C  C G:  CA U::CGAUAAG::  AAA G :CGAA G:C CAUCCGACA:::::U:  GC A   GU:A::AU::G  C:AA:UGG
+  MT836071 21704 GGUAUCAACCA-C-GAcGCACUUGCGAUAAGCAAGAAAAGaACGAAAGUCGCAUCCGACAAUCUGUCGUGCCAAuaGUUACUAUGCGUgCUAACUGG 21610
+                 55555555444.3.4448999************988877637****************************9875236999999999955******** PP
+
+                         v             vv   vv                               v                                v    NC
+                 },,((((((---(((((,,<<<<<___>>>>>,,,<<<<____>>>>,,,,,,)))))--)))))),,,,<<<<<<------<<<<<-<<<<<<___ CS
+   BUCT083   403 GGAuuaCCuAAAuCGGaAUGCCugAUAcaGGCUAUGGauAUCGauCCUGAAUAuCCGaCAaGGuaaCGGAGuCuCCGUAGUAGcCuGGgGcaGGGAA 499  
+                 :GAUU:CC AAAUCGG:AUGCC    A+ GGCUAUG :UA  GA: CUGAAUA:CCGACA GG:AACGGAG::UCCGUAGUAG:CUG :::AG GAA
+  MT836071 21609 AGAUUGCCUAAAUCGGGAUGCCA---AAAGGCUAUGGGUAAAGACUCUGAAUACCCGACAUGGCAACGGAGCUUCCGUAGUAGUCUGAGCAAGGGAA 21516
+                 **********************3...334******************************************************************** PP
+
+                   v                            v vvvv          vvvv v                               NC
+                 __>>>>>>->>->>>---->>>>>>,<<<<-<<<<<<__________>>>>>>-->>>>,~~~~~~~~~~~~,,,,,,,}::: CS
+   BUCT083   500 AGCCugCcACaUGgCGAAGGGaGaCAGCucGuCcaguUUAAUACAACacugGaAGgaGCG*[40]**[59]*ACUAUUAcCAU 669  
+                 AG CU:::ACAUG:CGAAGGGA::CAG:U:GU +A+UUUAAUACAA         :A:CG            A UAU A: A 
+  MT836071 21515 AGACUUGUACAUGGCGAAGGGAAGCAGUUGGU-AAUUUUAAUACAA--------ACAACG*[10]**[ 5]*AUUAUGAGAAA 21439
+                 **************************999974.4555666666654........499997...7.....8..*********** PP
+
+>> MN270258  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (3) !   2.3e-39  133.9   3.7  cm        1      669 []       80509       80999 + .. 0.81    no 0.42    no       -   63.61    0.46    1 loc    669      110666
+
+                                  v                                                                         v      NC
+                 ::::{,,,,,{{{{{--{{{{{{{{{{{-{{,,<<<<<________>>>>><<<<<<<________>>>>>>>(((((,<<<<<<---<<<<---<< CS
+   BUCT083     1 AGUUgGUGCGCCCauAAgGgCauauGuuUGaAUuuGuCGAUAGCAAGaCaaCaGaucaAGUUGCAAugauCuGuCauCAuCCaaCUUAcCCGGGAaG 97   
+                 AG U:GUGCGC:: UAA :G:A:A::U: :A  U:::: A AG   ::::A:A:::::    G A :::::U:::A:CA:C:AACU ACC  G  :G
+  MN270258 80509 AGAUAGUGCGCUGUUAAGCGUAAAAAUG-UAUCUCCCUCACAG---AGGGAUAUUAUUGAAAGUA-AAUAAUAGGAACAACUAACUAACCUAGCGGG 80600
+                 ***************************9.6999****988766...***********98887775.89***************************** PP
+
+                          v                           v  vv                    vv   v             v vv         v v NC
+                 ____>>--->>>>----------->>>>>>,,,<<<<<-<<<<<<<<________>>>>>-->>>-->>>>>,,))))),,[[[[[[[----[[[[[ CS
+   BUCT083    98 GAAACuGAACGGgGAGUGUAGCAUGuuGGaAAAGcCauAaGuuGgCuAGAUACCAaGcCaCGaCuGAauGgCAAGauGaGAuauGuGGAUAAGGauG 194  
+                 GAAAC: AA  GGGA   UAGCAUGUU:G:AAAGC::  A+  :GC:AG UAC A:GC:  G  UG  ::GCAAG:U::G  A  :   UA GG U+
+  MN270258 80601 GAAACCCAAAGGGGACAAUAGCAUGUUAGUAAAGCGGAUAAGGAGCGAGUUACAACGCUUUGA-UGUGCCGCAAGUUCCGUAAC-C---UAUGG-UU 80691
+                 ****************************************99******************996.7999***********85444.3...55555.55 PP
+
+                                              vv  vv      vvv                                    vvv               NC
+                 ,<<<<______>>>>,,,,,,,,.((((-((((((..,,,,<<<<-----<<<<<<<_______________>>>>>>>>>>>,,,,,<<<<<<    CS
+   BUCT083   195 AaaGCUACACUGCuuGAAUGACA.GuCCGaGuCgu..CAAAaCuGCCGUCuauaaCGGAAGGUAUCCAUUAACGuuauaCaGuCAUAGgGaGga    285  
+                 AA:GCUA ACUGC:UGAA   CA  UC:G  U:    CAAA   : CG C  :A:CGGAA GUA C    A CG:U:  :     UA ::::G:
+  MN270258 80692 AAGGCUAAACUGCUUGAACCUCAaUUCUGACUAGGugCAAA-GCAUCGCC--CAUCGGAAAGUAACUGAGACCGAUG--UUACUGUAUAUUCGU    80780
+                 9*****************99887367778555322223444.34456666..6779999*****9999999999776..555555665555554    PP
+
+                                       vv  vv                              v v         vv v                     v  NC
+                 ~~~~~~>>>>>>,,,,,,,,,,)))))))))),,,<<<_____>>>,,,,,~~~~~~,]]]]]----]]]]]]],,,,,,,,}}}}}}}}}.}}}}- CS
+   BUCT083   286 *[17]*ucCuCcAAGCAACUCAacGaCuGGaCAAUCCCGAUAAGGGUUAAA*[11]*ACauCCGACACCaCauaAAGCUAUGuCaaCauau.GcCcA 397  
+                       :C::::AA    CU    :A  :GA    ::CGAUAAG::U AA         A+CC A    :  U      A GU::A::U:U :C: A
+  MN270258 80781 *[14]*ACGAAUAACUUUCUACAGUAAAAGAGC-AUACGAUAAGUAUGAAU*[15]*G-AACCUAAG--GGUUACUAGAACGUACAUUUUUaACGAA 80890
+                 ...4..455555555554444433333344433.48999999999887664...5..4.55555555..344444566789999999999945999* PP
+
+                              v                   v                        v                     v                 NC
+                 -}}}}},,((((((---((((~~~~~~))))--)))))),,,,<<<<<<------<<<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,  CS
+   BUCT083   398 AauGGGGAuuaCCuAAAuCGG*[38]*CCGaCAaGGuaaCGGAGuCuCCGUAGUAGcCuGGgGcaGGGAAAGCCugCcACaUGgCGAAGGGaGaCA  525  
+                  A ::GGAUU:CC AA ::GG      CC:: A GG:AACGGAGUC:CCGUAGUAG:C G :::AGGGAAA CCU:::AC UG:CGAAGGG:GACA
+  MN270258 80891 UAGCAGGAUUGCCUAAGAGGG*[ 4]*CCCUUAUGGUAACGGAGUCACCGUAGUAGUCCGAGCAAGGGAAAUCCUUGUACAUGGCGAAGGGUGACA  80984
+                 ********************9...7..89999***************************************************************7  PP
+
+                                         NC
+                 ~~~~~~~~~~~~,,,,,,,}::: CS
+   BUCT083   526 *[74]**[59]*ACUAUUAcCAU 669  
+                             A U   A: A 
+  MN270258 80985 *[ 2]**[ 2]*AUUUCGAUUAG 80999
+                 ...*.....*..9999******* PP
+
+>> MN270259  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (4) !   2.3e-39  133.9   3.7  cm        1      669 []       80545       81035 + .. 0.81    no 0.42    no       -   63.61    0.46    1 loc    669      106491
+
+                                  v                                                                         v      NC
+                 ::::{,,,,,{{{{{--{{{{{{{{{{{-{{,,<<<<<________>>>>><<<<<<<________>>>>>>>(((((,<<<<<<---<<<<---<< CS
+   BUCT083     1 AGUUgGUGCGCCCauAAgGgCauauGuuUGaAUuuGuCGAUAGCAAGaCaaCaGaucaAGUUGCAAugauCuGuCauCAuCCaaCUUAcCCGGGAaG 97   
+                 AG U:GUGCGC:: UAA :G:A:A::U: :A  U:::: A AG   ::::A:A:::::    G A :::::U:::A:CA:C:AACU ACC  G  :G
+  MN270259 80545 AGAUAGUGCGCUGUUAAGCGUAAAAAUG-UAUCUCCCUCACAG---AGGGAUAUUAUUGAAAGUA-AAUAAUAGGAACAACUAACUAACCUAGCGGG 80636
+                 ***************************9.6999****988766...***********98887775.89***************************** PP
+
+                          v                           v  vv                    vv   v             v vv         v v NC
+                 ____>>--->>>>----------->>>>>>,,,<<<<<-<<<<<<<<________>>>>>-->>>-->>>>>,,))))),,[[[[[[[----[[[[[ CS
+   BUCT083    98 GAAACuGAACGGgGAGUGUAGCAUGuuGGaAAAGcCauAaGuuGgCuAGAUACCAaGcCaCGaCuGAauGgCAAGauGaGAuauGuGGAUAAGGauG 194  
+                 GAAAC: AA  GGGA   UAGCAUGUU:G:AAAGC::  A+  :GC:AG UAC A:GC:  G  UG  ::GCAAG:U::G  A  :   UA GG U+
+  MN270259 80637 GAAACCCAAAGGGGACAAUAGCAUGUUAGUAAAGCGGAUAAGGAGCGAGUUACAACGCUUUGA-UGUGCCGCAAGUUCCGUAAC-C---UAUGG-UU 80727
+                 ****************************************99******************996.7999***********85444.3...55555.55 PP
+
+                                              vv  vv      vvv                                    vvv               NC
+                 ,<<<<______>>>>,,,,,,,,.((((-((((((..,,,,<<<<-----<<<<<<<_______________>>>>>>>>>>>,,,,,<<<<<<    CS
+   BUCT083   195 AaaGCUACACUGCuuGAAUGACA.GuCCGaGuCgu..CAAAaCuGCCGUCuauaaCGGAAGGUAUCCAUUAACGuuauaCaGuCAUAGgGaGga    285  
+                 AA:GCUA ACUGC:UGAA   CA  UC:G  U:    CAAA   : CG C  :A:CGGAA GUA C    A CG:U:  :     UA ::::G:
+  MN270259 80728 AAGGCUAAACUGCUUGAACCUCAaUUCUGACUAGGugCAAA-GCAUCGCC--CAUCGGAAAGUAACUGAGACCGAUG--UUACUGUAUAUUCGU    80816
+                 9*****************99887367778555322223444.34456666..6779999*****9999999999776..555555665555554    PP
+
+                                       vv  vv                              v v         vv v                     v  NC
+                 ~~~~~~>>>>>>,,,,,,,,,,)))))))))),,,<<<_____>>>,,,,,~~~~~~,]]]]]----]]]]]]],,,,,,,,}}}}}}}}}.}}}}- CS
+   BUCT083   286 *[17]*ucCuCcAAGCAACUCAacGaCuGGaCAAUCCCGAUAAGGGUUAAA*[11]*ACauCCGACACCaCauaAAGCUAUGuCaaCauau.GcCcA 397  
+                       :C::::AA    CU    :A  :GA    ::CGAUAAG::U AA         A+CC A    :  U      A GU::A::U:U :C: A
+  MN270259 80817 *[14]*ACGAAUAACUUUCUACAGUAAAAGAGC-AUACGAUAAGUAUGAAU*[15]*G-AACCUAAG--GGUUACUAGAACGUACAUUUUUaACGAA 80926
+                 ...4..455555555554444433333344433.48999999999887664...5..4.55555555..344444566789999999999945999* PP
+
+                              v                   v                        v                     v                 NC
+                 -}}}}},,((((((---((((~~~~~~))))--)))))),,,,<<<<<<------<<<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,  CS
+   BUCT083   398 AauGGGGAuuaCCuAAAuCGG*[38]*CCGaCAaGGuaaCGGAGuCuCCGUAGUAGcCuGGgGcaGGGAAAGCCugCcACaUGgCGAAGGGaGaCA  525  
+                  A ::GGAUU:CC AA ::GG      CC:: A GG:AACGGAGUC:CCGUAGUAG:C G :::AGGGAAA CCU:::AC UG:CGAAGGG:GACA
+  MN270259 80927 UAGCAGGAUUGCCUAAGAGGG*[ 4]*CCCUUAUGGUAACGGAGUCACCGUAGUAGUCCGAGCAAGGGAAAUCCUUGUACAUGGCGAAGGGUGACA  81020
+                 ********************9...7..89999***************************************************************7  PP
+
+                                         NC
+                 ~~~~~~~~~~~~,,,,,,,}::: CS
+   BUCT083   526 *[74]**[59]*ACUAUUAcCAU 669  
+                             A U   A: A 
+  MN270259 81021 *[ 2]**[ 2]*AUUUCGAUUAG 81035
+                 ...*.....*..9999******* PP
+
+>> ON107264  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (5) !   5.9e-33  113.6   0.1  cm        1      669 []       87558       87820 + .. 0.69    no 0.42    no       -   54.67    0.40    1 loc    669      133818
+
+                           v         v   vvvvv   vvvvv    v       v                       vvvvv  vvvvv     vv      NC
+                 ::::{,,,,,{{~~~~~~~}},,((((((---(((((,,<<<<<___>>>>>,,,<<<<____>>>>,,,,,,)))))--)))))),,,,<<<<<<- CS
+   BUCT083     1 AGUUgGUGCGCC*[389]*GGGAuuaCCuAAAuCGGaAUGCCugAUAcaGGCUAUGGauAUCGauCCUGAAUAuCCGaCAaGGuaaCGGAGuCuCCG 479  
+                 AG U:  GCG+                          A :: U A A A :: A :G:UA  GA:C:U     ++C+ACA ++ A            
+  ON107264 87558 AGAUGUAGCGAU*[ 17]*G-----------------AAAACUUAAAGACUUAAAAGGUA-AGACCUUAUGGGAACAACACAUGA------------ 87634
+                 **********75....4..0.................44555555555555555555554.345555544433222333222222............ PP
+
+                            vv             vv               vv                                                     NC
+                 -----<<<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<~~~~~~>>>>,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>> CS
+   BUCT083   480 UAGUAGcCuGGgGcaGGGAAAGCCugCcACaUGgCGAAGGGaGaCAGCuc*[25]*gaGCGCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCG 595  
+                    U  C::G   :AG  AAA  CU:   C: :G G AG    AC G:::      :::C  G GGAAA:CCGUA:ACGC:GAGA:GCGUAC:UACG
+  ON107264 87635 ---UUGCAAGACAAAGGAAAACUCUUGCUCUAUGUGUAG----ACUGUCA*[28]*UGACAAGUGGAAAGCCGUAUACGCUGAGAGGCGUACGUACG 87746
+                 ...235555544444444444444444445555555554....2255554...5..566777778******************************** PP
+
+                                                                                            NC
+                 >>>>,,<<<<<<<<<<<<<<---<<<-<<<<<____>>>>>-->>>-->>>>>>>>>>->>>>,,,,,,,}::: CS
+   BUCT083   596 GcuuGGgGGagaGCacccGgAAACCuAGCauaGUAAuauGCCAaGGCGcCggguGCucAuCCcACUAUUAcCAU 669  
+                 G:UUGG:GGA:AGCA:::G:AAACCUAGCAUAGUAAUAUGCCAAGGCG:C:::UGCU:AUCC:ACUAUUA:CAU
+  ON107264 87747 GUUUGGGGGAGAGCAUUUGGAAACCUAGCAUAGUAAUAUGCCAAGGCGUCGGGUGCUUAUCCUACUAUUAUCAU 87820
+                 ************************************************************************** PP
+
+>> MT836071  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (6) !   9.9e-21   74.9   0.0  cm      525      658 ..       19652       19524 - .. 0.96    no 0.48    no       -    2.86    0.00    1 loc    669       25949
+
+                   v   vvvv              vvvv    v                                                v                NC
+                 ,<<<<-<<<<<<__________>>>>>>-->>>>,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<<<<<<<---<<< CS
+   BUCT083   525 AGCucGuCcaguUUAAUACAACacugGaAGgaGCGCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGGgGGagaGCacccGgAAACCu 621  
+                 AG U:     :UUUAA A AA A:UG+ A :A C    GGAAA:CCG:A:AC:::GAGA:::GUAC:U:CGG:UUGG:GG: :G:A:::G:AAACCU
+  MT836071 19652 AGCUAU----GUUUAACAGAAAAUUGACAUUACC-AACGGAAAGCCGAAUACAUGGAGACAUGUACGUUCGGUUUGGAGGCAGGUAUGGGGAAACCU 19561
+                 *98888....6789999*****9*9999988866.5789********************************************************** PP
+
+                     v      v                   v      NC
+                 -<<<<<____>>>>>-->>>-->>>>>>>>>>->>>> CS
+   BUCT083   622 AGCauaGUAAuauGCCAaGGCGcCggguGCucAuCCc 658  
+                 A:C: :G AA: :G:CAAGGCG:C:::U:C: A:CC:
+  MT836071 19560 AUCGCCGAAAGACGACAAGGCGUCCCAUACCGAGCCU 19524
+                 ************************************* PP
+
+>> KT887559  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (7) !   7.9e-06   27.8   0.0  cm      526      658 ..        2748        2846 + .. 0.84    no 0.63    no       -    9.43    0.05    1 loc    669       32637
+
+                   v                     v                                              v                           NC
+                <<<<-<<<<<<_~~~~~>>>>>>-->>>>,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<<<<<<<---<<<-<<<<<_ CS
+   BUCT083  526 GCucGuCcaguU*[9]*acugGaAGgaGCGCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGGgGGagaGCacccGgAAACCuAGCauaG 628 
+                GC:CGU ::::      :::: AA  :GC       :A:CCGUA::CG :GA A: CG:AC:UACGG:U:   GG:G:G:A::          G:::AG
+  KT887559 2748 GCCCGUUAGGGG*[1]*CUUUGAAA-GGCU-----UGAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGGGAUG----------GGCCAG 2826
+                ****98777763..3..56666665.5775.....4********************************************988..........555666 PP
+
+                                             v NC
+                ___>>>>>-->>>-->>>>>>>>>>->>>> CS
+   BUCT083  629 UAAuauGCCAaGGCGcCggguGCucAuCCc 658 
+                 AAU:::C          ::U:C:CA:CC 
+  KT887559 2827 CAAUGGCC----------CAUCCCCACCCG 2846
+                77766555..........779********* PP
+
+>> NC_030940  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (8) !   7.9e-06   27.8   0.0  cm      526      658 ..        2748        2846 + .. 0.84    no 0.63    no       -    9.43    0.05    1 loc    669       32637
+
+                    v                     v                                              v                          NC
+                 <<<<-<<<<<<_~~~~~>>>>>>-->>>>,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<<<<<<<---<<<-<<<<< CS
+    BUCT083  526 GCucGuCcaguU*[9]*acugGaAGgaGCGCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGGgGGagaGCacccGgAAACCuAGCaua 627 
+                 GC:CGU ::::      :::: AA  :GC       :A:CCGUA::CG :GA A: CG:AC:UACGG:U:   GG:G:G:A::          G:::A
+  NC_030940 2748 GCCCGUUAGGGG*[1]*CUUUGAAA-GGCU-----UGAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGGGAUG----------GGCCA 2825
+                 ****98777763..3..56666665.5775.....4********************************************988..........55566 PP
+
+                                               v NC
+                 ____>>>>>-->>>-->>>>>>>>>>->>>> CS
+    BUCT083  628 GUAAuauGCCAaGGCGcCggguGCucAuCCc 658 
+                 G AAU:::C          ::U:C:CA:CC 
+  NC_030940 2826 GCAAUGGCC----------CAUCCCCACCCG 2846
+                 677766555..........779********* PP
+
+>> MW749003  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (9) !   9.6e-06   27.5   3.3  cm        1      669 []       25233       25011 - .. 0.74    no 0.36    no       -  112.13    1.01    1 loc    669      252262
+
+                                                                        vv             vv                     vv   NC
+                 ::::{,,,,,{{{{{--{{{{{~~~~~~~}}}}}--}}}}},,(~~~~~~),,,,<<<<<<------<<<<<..-<<<<<<_____>>>>>>->>-> CS
+   BUCT083     1 AGUUgGUGCGCCCauAAgGgCa*[369]*uGcCcAAauGGGGAu*[61]*aCGGAGuCuCCGUAGUAGcCuG..GgGcaGGGAAAGCCugCcACaUG 512  
+                  GU :G G  :C:AUA ::G::       ::C::A AU:G: A:      : G A  ::CC UAGUAG::++   ::::G   AA  C::::    :
+  MW749003 25233 CGUCAGAGAUUCUAUAUAAGAG*[ 15]*CUCUUAUAUAGAAAG*[ 1]*CAGCA--GACCAUAGUAGUUAUgaAGAUGGGU-AACUCCAUUG--GA 25139
+                 *****************99998....7..8999**********6...8..45555..6799*********874334444443.3334545555..5* PP
+
+                           vv      v v  v          v  v v                                                          NC
+                 >>---->>>>>>,<<<<-<<<<<<__________>>>>>>-->>>>,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,.<<<<<<< CS
+   BUCT083   513 gCGAAGGGaGaCAGCucGuCcaguUUAAUACAACacugGaAGgaGCGCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGG.gGGagaG 608  
+                 :CGAAGGG::A+A        A:+ UAAUA A   :U             GGAA::CC UA::CG :GA A: CG:AC:UA GG::UG  G:G:::G
+  MW749003 25138 GCGAAGGGUCAUA-----GUCAAAAUAAUAUAU--UUUGAU---------GGAACGCCUUAUGCGGUGAAAGUCGCACGUAGGGUGUGAaGUGGGGG 25058
+                 ******9987777.....333444566666653..333333.........478**********************************9758888888 PP
+
+                 v   v            v   v                    NC
+                 <<<<<<<--~~~~~~>>>>>>>>>>->>>>,,,,,,,}::: CS
+   BUCT083   609 CacccGgAA*[26]*cCggguGCucAuCCcACUAUUAcCAU 669  
+                  A::+G:        :C ::U C::A:C:C  UA  A:  U
+  MW749003 25057 AAAAAGAGG*[13]*UC-UUUACCUAUCACUAUAGAAUAUU 25011
+                 665544333...3..33.346699998888899******** PP
+
+>> AP008983  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (10) !   1.1e-05   27.3   0.0  cm      563      599 ..      114705      114669 - .. 1.00    no 0.54    no       -    0.91    0.00    1 loc    669      185683
+
+                                                        NC
+                  ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083    563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599   
+                  GGAAA:CCGUA::CG :GA A: CG:AC:UACGG:UU
+  AP008983 114705 GGAAAGCCGUAUGCGGUGAAAGUCGCACGUACGGUUU 114669
+                  ************************************* PP
+
+>> NC_007581  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (11) !   1.1e-05   27.3   0.0  cm      563      599 ..      114705      114669 - .. 1.00    no 0.54    no       -    0.91    0.00    1 loc    669      185683
+
+                                                         NC
+                   ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+    BUCT083    563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599   
+                   GGAAA:CCGUA::CG :GA A: CG:AC:UACGG:UU
+  NC_007581 114705 GGAAAGCCGUAUGCGGUGAAAGUCGCACGUACGGUUU 114669
+                   ************************************* PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (12) !   1.8e-05   26.6   0.1  cm      526      658 ..      163970      163856 - .. 0.81    no 0.33    no       -   15.34    0.08    1 loc    669      223580
+
+                                                                                                   v              NC
+                  <<<<-<<<<<<__________>>>>>>-->>>>,,,,.,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<<<<<<<---< CS
+   BUCT083    526 GCucGuCcaguUUAAUACAACacugGaAGgaGCGCGA.GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGGgGGagaGCacccGgAAAC 619   
+                  ::U: U:C    UAA   AA    G:AA :A::  GA GGAAA:CCGUA:::G::GA A::C::AC:UACGG:UUGG::::        GGAAA:
+  MZ422438 163970 AUUUAUUC----UAA-GUAAU---GAAAUAAAUUUGAuGGAAAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUUGGACUGG------GGGAAAA 163890
+                  77777765....443.34444...67777777777764789***************************************96......5789999 PP
+
+                         v     v                    v      NC
+                  <<-<<<<<_.___>>>>>-->>>-->>>>>>>>>>->>>> CS
+   BUCT083    620 CuAGCauaG.UAAuauGCCAaGGCGcCggguGCucAuCCc 658   
+                  ::A::A:   UA  :U::  :::  CC         ::::
+  MZ422438 163889 AGAAUACGUuUAUAGUAUAUCUUUACCU------AUCAGU 163856
+                  9999999651555799999999999775......459*** PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (13) !   2.3e-05   26.3   0.0  cm      563      599 ..      120805      120841 + .. 1.00    no 0.46    no       -    2.73    0.02    1 loc    669      223580
+
+                                                        NC
+                  ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083    563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599   
+                  GGAA::C:GUA:ACG::GA A::CGUAC:UAC:G::U
+  MZ422438 120805 GGAACGCUGUAUACGAUGAAAGUCGUACGUACAGUGU 120841
+                  ************************************* PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (14) !   2.5e-05   26.2   0.0  cm      563      599 ..       51030       50994 - .. 1.00    no 0.46    no       -    3.25    0.02    1 loc    669      223580
+
+                                                       NC
+                 ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083   563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599  
+                 GGAAA:CCGUA:::G::GA A::C::AC:UACGG:UU
+  MZ422438 51030 GGAAAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUU 50994
+                 ************************************* PP
+
+>> MW248466  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (15) !   3.5e-05   25.7   0.0  cm      563      599 ..      112620      112656 + .. 1.00    no 0.51    no       -    1.82    0.01    1 loc    669      266637
+
+                                                        NC
+                  ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083    563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599   
+                  GGAA::C:GUA::CG::GA A::CG:AC:UAC:G::U
+  MW248466 112620 GGAACGCUGUAUGCGAUGAAAGUCGCACGUACAGUGU 112656
+                  ************************************* PP
+
+>> MN091626  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (16) !     8e-05   24.6   0.0  cm      563      599 ..       50607       50643 + .. 1.00    no 0.49    no       -    0.48    0.00    1 loc    669      268748
+
+                                                       NC
+                 ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083   563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599  
+                 GGAAA:CCGUA:::G :GA A: C::AC:UACGG:UU
+  MN091626 50607 GGAAAGCCGUAUGAGGUGAAAGUCUCACGUACGGUUU 50643
+                 ************************************* PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (17) !   0.00021   23.3   0.0  cm      563      599 ..      137094      137058 - .. 1.00    no 0.54    no       -    2.80    0.01    1 loc    669      223580
+
+                                                        NC
+                  ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+   BUCT083    563 GGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuu 599   
+                  GGAA::CCGUA:::G :GA A: C::AC:UACGG::U
+  MZ422438 137094 GGAACGCCGUAUGAGGUGAAAGUCUCACGUACGGUGU 137058
+                  ************************************* PP
+
+>> KY695241  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (18) !    0.0029   19.7   0.0  cm      559      669 ~]           1          59 + ~. 0.92    5' 0.51    no       -    3.60    0.04    2 loc    669       11696
+
+                                                                 v        v       ?    NC
+               ~~~~~~~,,,,,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<~~~~~~>>,,,,,,,}::: CS
+   BUCT083   1 <[558]*GCGAGGAaagCCGuacaCGCcGAGAgGCGuACguaCGGcuuGGgG*[53]*CcACUAUUAcCAU 669
+                         AG  :A:CCGUA:::G :GA A: C::AC:UACGG:U: G :      : ACUAUUACC  
+  KY695241   1 <[  0]*-GCAGAGGAGCCGUAUGAGGUGAAAGUCUCACGUACGGUUCUGCA*[ 2]*UUACUAUUACCCA 59 
+               ........667888**********************************8855...5..56*********** PP
+
+
+
+Hit alignment statistics summary:
+---------------------------------
+                                      matrix size (Mb)             alignment time (secs)       
+                                  -------------------------  ----------------------------------
+category                  # alns  minimum  average  maximum  minimum  average  maximum    total  ntaumod  novrflw
+---------------------  ---------  -------  -------  -------  -------  -------  -------  -------  -------  -------
+reported                      18     0.48    21.70   112.13     0.00     0.15     1.01     2.72       18        0
+included                      18     0.48    21.70   112.13     0.00     0.15     1.01     2.72       18        0
+removed duplicates             0        -        -        -        -        -        -        -        -        -
+all (except HMM only)         18     0.48    21.70   112.13     0.00     0.15     1.01     2.72       18        0
+HMM only                       0        -        -        -        -        -        -        -        -        -
+
+
+Internal CM pipeline statistics summary: (full sequences)
+----------------------------------------
+Query model(s):                                                  1  (669 consensus positions)
+Target sequences:                                               36  (7758246 residues searched)
+Windows   passing  local HMM SSV           filter:            2647  (0.3167); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:             109  (0.01433); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:              45  (0.005341); expected (0.005)
+Windows   passing glocal HMM Forward       filter:              23  (0.003857); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:              21  (0.003455); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:              21  (0.001998); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              17  (0.0009844); expected (0.0001)
+Total       non-truncated CM hits reported:                     17  (0.000433)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (5' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (669 consensus positions)
+Target sequences re-searched for truncated hits:                36  (60192 residues re-searched)
+Windows   passing  local HMM SSV           filter:               6  (0.06715); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               1  (0.003522); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               1  (0.003522); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               1  (0.003522); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               1  (0.003522); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               1  (0.002293); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               1  (0.002293); expected (0.0001)
+Total        5' truncated CM hits reported:                      1  (0.0009802)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (3' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (669 consensus positions)
+Target sequences re-searched for truncated hits:                36  (60192 residues re-searched)
+Windows   passing  local HMM SSV           filter:               6  (0.08217); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               1  (0.01389); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               1  (0.01389); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total        3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (full sequences short enough to contain a 5' and 3' truncated hit)
+----------------------------------------
+Query model(s):                                                  1  (669 consensus positions)
+Target sequences re-searched for truncated hits:                 0  (0 residues re-searched)
+Windows   passing  local HMM SSV           filter:               0  (0); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total 5' and 3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (standard and truncated passes)
+----------------------------------------
+Query model(s):                                                  1  (669 consensus positions)
+Target sequences:                                               36  (7758246 residues searched)
+Target sequences re-searched for truncated hits:                36  (120384 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2659  (0.313); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:             111  (0.01425); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:              47  (0.005393); expected (0.005)
+Windows   passing glocal HMM Forward       filter:              24  (0.003825); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:              22  (0.003429); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:              22  (0.001985); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              18  (0.0009868); expected (0.0001)
+Total CM hits reported:                                         18  (0.0004413); includes 1 truncated hit(s)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+# CPU time: 27.32u 0.83s 00:00:28.15 Elapsed: 00:00:04.60
+# Alignment of 18 hits satisfying inclusion thresholds saved to: BUCT_millard.aout
+//
+[ok]

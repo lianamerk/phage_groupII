@@ -1,0 +1,157 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300027864_000888_3300027864_Ga0209755_10045565_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300027864_000888_3300027864_Ga0209755_10045565_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=274]
+Description: source=IMGVR_UViG_3300027864_000888_3300027864_Ga0209755_10045565/682-2756 coords=3..824 length=274 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.1e-06   27.1   3.3     0.0023   18.2   0.2    2.4  2  Vma12     Endoplasmic reticulum-based factor for assembly of 
+    0.00074   19.4   4.9      0.014   15.2   0.3    2.6  3  Rh5       Rh5 coiled-coil domain
+     0.0026   16.7  10.6     0.0052   15.7   1.0    2.1  2  DUF2207   Predicted membrane protein (DUF2207)
+  ------ inclusion threshold ------
+       0.11   13.2   0.0       0.37   11.4   0.0    1.8  1  OTU       OTU-like cysteine protease
+
+
+Domain annotation for each model (and alignments):
+>> Vma12  Endoplasmic reticulum-based factor for assembly of V-ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.2   4.7e-07    0.0023      36     122 ..      37     123 ..      18     138 .. 0.77
+   2 !    9.5   0.3   0.00022       1.1      67     136 ..     168     253 ..     145     256 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 4.7e-07
+  Vma12  36 ereYkrlirkvdtsqksgktdspspsd...deltaqelkevkrqlilvlNiliSvvavafavwialrsartp..slpvRvllslfaallVgv 122
+            + e++++ r+++++ ++ kt+++   +   d  ++ +l++v  q i+vl ++  +++v+f + + ++ ++ +    p R++l+l++   + v
+   orf1  37 RSEFNKIKRNMESEYNTLKTKNE---KylnD--MESKLQNVLPQTITVLGVFTAIIVVFFGGMSLVNLFQDMytISPHRFFLGLIGMGHIIV 123
+            56777777776655555555552...12212..478999******************************8888888********87555554 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00022
+  Vma12  67 aqelkevkrqlilvl.NiliSvvavafavwialrsartp...............slpvRvllslfaallVgvAEvvvyakylrkve 136
+            +q  k vk+ +  +  Nili  + ++++ w+ l+++                     v  ++s++ +++ +++  +vy ++ ++++
+   orf1 168 SQYQKLVKKYPYIIYpNILILLLETVIFSWWFLERYLWYimvfdnpiissllyfVSVVLGFFSVLSSVIFLLSNGAVYDRKKNMIK 253
+            4667788899888867*****************98755568999999997776533344467888889999999999988888876 PP
+
+>> Rh5  Rh5 coiled-coil domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.3   2.9e-06     0.014       5      74 ..       7      76 ..       3      82 .. 0.88
+   2 !    5.7   0.1    0.0023        12     188     225 ..     157     193 ..     143     197 .. 0.80
+   3 ?   -1.8   0.0      0.45   2.2e+03     225     243 ..     244     262 ..     240     265 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 2.9e-06
+   Rh5  5 idkvskkikkikeeCenkkkeLineveklenPlynfekrnysndynsykksktnfvnClkkkfkklekki 74
+          i+++ ++++++  + ++k++ L  + +  +  ++n+ krn++++yn +k++ +++ n +++k++++ +++
+  orf1  7 IASMGENAANTSSSMYDKISRLTGQFVINQRSEFNKIKRNMESEYNTLKTKNEKYLNDMESKLQNVLPQT 76
+          5667778888899999999999999999999*******************************99987665 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.0023
+   Rh5 188 kkknktykdelineikklaehysifkyntenlenLEsv 225
+           + k  +++ +  ++++kl+++y  ++y    +  LE+v
+  orf1 157 ERK-CKNCKNSCSQYQKLVKKYPYIIYPNILILLLETV 193
+           333.67899999***************98888888988 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.45
+   Rh5 225 vyktkkevLnnvlkklgkl 243
+           vy  kk++++++l+ l ++
+  orf1 244 VYDRKKNMIKSILSGLLSI 262
+           8999999999999988765 PP
+
+>> DUF2207  Predicted membrane protein (DUF2207)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   1.0   1.1e-06    0.0052     340     421 ..      36     131 ..       3     139 .. 0.65
+   2 !    5.9   3.2     0.001       5.1     327     421 ..     147     271 ..     132     274 .] 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.1e-06
+  DUF2207 340 kakkfkkalqkwqsavkk...kergyfdkkgkkklkslsalglvl.illglilillallllvll..........lsfalilllilliiaiivllff 421
+              ++++f+k +++++s+++    k+++y +++++k ++ l  + +vl ++ ++i+++++ ++lv l           +f+++++++ +i+++++l++f
+     orf1  36 QRSEFNKIKRNMESEYNTlktKNEKYLNDMESKLQNVLPQTITVLgVFTAIIVVFFGGMSLVNLfqdmytisphRFFLGLIGMGHIIVNFLFLMMF 131
+              45666666666666666677799999999988888766444444303344444444444444448******9998888888888888888888887 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.001
+  DUF2207 327 fkelkktlklsskkakkfkkalqkwqsavkk.................kergyfdkkg............kkklkslsalglvlillglilillallllvll 399
+              f+ ++++ ++++ k k+ k++++++q+ vkk                   + +f +++            ++ l+ +          +++l+++++     l
+     orf1 147 FELISENGNTER-KCKNCKNSCSQYQKLVKKypyiiypnilillletvIFSWWFLERYlwyimvfdnpiiSSLLYFV----------SVVLGFFSV-----L 232
+              667777777777.8889999999999999998888888888888888755566666643322222221111111111..........111122222.....1 PP
+
+  DUF2207 400 .................lsfalilllilliiaiivllff 421
+                               +++ +il+ +l i+ i v++++
+     orf1 233 ssvifllsngavydrkkNMIKSILSGLLSIVLISVFFII 271
+              222234555666888996666666666666666666665 PP
+
+>> OTU  OTU-like cysteine protease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   7.4e-05      0.37      35     120 ..      30     181 ..       8     184 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 7.4e-05
+           HHHHHTSSHHCCHHHHCCHHHHHHHTTSTTHHHH...............................................................HHHHHHHH CS
+   OTU  35 aeylrehseelelfleeeeegylkeiektaawgg...............................................................eieifala 76 
+           ++ ++++++e++ +  ++e++y     k+ ++ +                                                                + +f+l+
+  orf1  30 GQFVINQRSEFNKIKRNMESEYNTLKTKNEKYLNdmesklqnvlpqtitvlgvftaiivvffggmslvnlfqdmytisphrfflgligmghiivnflFLMMFMLS 134
+           4555555555555555555554444444444433344444444577788888888888888888888888888999999999999999999999999999***** PP
+
+           HHCTS-EEE.....ETTSSSSEEEE-TT-EEE--TTS-GGGS-SS-EEE CS
+   OTU  77 hiLrrpIiV.....lksesgeelvglkfegvylplekdkslclkypihl 120
+            +L+rp+ V     l se+g++  +   ++  + ++  ++l+ kyp  +
+  orf1 135 RLLERPVSVdcdfeLISENGNTERK--CKNCKNSCSQYQKLVKKYPYII 181
+           *********9998877777776655..5555588888888888888755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (274 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1891  (0.0963223); expected 392.6 (0.02)
+Passed bias filter:                      799  (0.0406989); expected 392.6 (0.02)
+Passed Vit filter:                       101  (0.00514466); expected 19.6 (0.001)
+Passed Fwd filter:                         7  (0.000356561); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.38u 0.19s 00:00:00.57 Elapsed: 00:00:00.34
+# Mc/sec: 2649.84
+//
+Query:       orf2  [L=113]
+Description: source=IMGVR_UViG_3300027864_000888_3300027864_Ga0209755_10045565/682-2756 coords=1875..1537 length=113 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (113 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       283  (0.0144152); expected 392.6 (0.02)
+Passed bias filter:                      219  (0.0111553); expected 392.6 (0.02)
+Passed Vit filter:                        14  (0.000713121); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.27u 0.15s 00:00:00.42 Elapsed: 00:00:00.29
+# Mc/sec: 1270.67
+//
+[ok]

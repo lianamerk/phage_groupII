@@ -1,0 +1,323 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300005264_001498_3300005264_Ga0073581_103247_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300005264_001498_3300005264_Ga0073581_103247_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=137]
+Description: source=IMGVR_UViG_3300005264_001498_3300005264_Ga0073581_103247/14474-12803 coords=259..669 length=137 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    0.00033   20.9   1.6    0.00051   20.3   1.5    1.4  1  Gp49             Phage derived protein Gp49-like (DUF891)
+      0.002   18.7   0.8     0.0038   17.8   0.6    1.7  2  HigB-like_toxin  RelE-like toxin of type II toxin-antitoxin s
+     0.0056   16.1   0.4     0.0076   15.7   0.4    1.1  1  Peptidase_C101   Peptidase family C101
+  ------ inclusion threshold ------
+      0.033   14.8   0.1      0.076   13.6   0.0    1.6  2  IL17R_fnIII_D2   Interleukin 17 receptor D
+
+
+Domain annotation for each model (and alignments):
+>> Gp49  Phage derived protein Gp49-like (DUF891)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   1.5     1e-07   0.00051      12      90 .]      48     133 ..      31     133 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 1e-07
+  Gp49  12 kkilaaldlleeggpd..lgkplvkklg...ggiwElRprsaggiiRvlyafdpgr...kvilLhafqKktqktpkkeiekAekrlk 90 
+           +k+ + l+ l+e   +   +k  ++ l+   ++++ ++++ +++ iRvl++f  ++    +ilL  f+ k++k + k+i +A++rlk
+  orf1  48 RKFRMRLKFLAERRQNcfQKKDWFENLKgntSDVYSMKFK-GEKNIRVLFTFFSEKssdYAILLASFEEKNKKDYIKAIGIAKERLK 133
+           677777888877774445788888888888899******5.556********877766699************************97 PP
+
+>> HigB-like_toxin  RelE-like toxin of type II toxin-antitoxin system HigB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0         1     5e+03      63      79 ..      13      29 ..       8      38 .. 0.70
+   2 !   17.8   0.6   7.8e-07    0.0038      18      80 ..      39     100 ..      16     111 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 1
+  HigB-like_toxin 63 lySirvNkqyrlifkfk 79
+                     +y +  N +y +  +++
+             orf1 13 IYPLDFNPNYIMAHYLQ 29
+                     67788888888777663 PP
+
+  == domain 2  score: 17.8 bits;  conditional E-value: 7.8e-07
+  HigB-like_toxin  18 hrkiqsklakvlrrklealdaaedekdlrapkglklekLkgdlkklySirvN..kqyrlifkfka 80 
+                      +++++ k+ +++r++l++l  ae  ++    k   +e+Lkg+  ++yS++    k+ r+ f+f +
+             orf1  39 KSGYKEKFIRKFRMRLKFL--AERRQNCFQ-KKDWFENLKGNTSDVYSMKFKgeKNIRVLFTFFS 100
+                      47899999**********9..455555555.5677**************9852268999999844 PP
+
+>> Peptidase_C101  Peptidase family C101
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   0.4   1.5e-06    0.0076      65     150 ..      23     109 ..      17     112 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.5e-06
+  Peptidase_C101  65 klpkwlqeedvlklpekleakeelikqwkfakelskkkkdaveklkeylellkkkwkelselkskeeres.lceelfsdeeeeykll 150
+                      ++++lq +++ +l ek  +ke++i++++++ ++  ++++++ + k++ e lk + + + ++k k e++  +  + fs+++++y +l
+            orf1  23 IMAHYLQMDELKELLEKSGYKEKFIRKFRMRLKFLAERRQNCFQKKDWFENLKGNTSDVYSMKFKGEKNIrVLFTFFSEKSSDYAIL 109
+                     57899*****************************88888888889******************999998615567779999999987 PP
+
+>> IL17R_fnIII_D2  Interleukin 17 receptor D
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0       1.2   5.9e+03      41      51 ..      58      68 ..      48      82 .. 0.67
+   2 ?   13.6   0.0   1.5e-05     0.076      16      52 ..      89     123 ..      78     136 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 1.2
+  IL17R_fnIII_D2 41 lsenksCfeev 51
+                     + +++Cf++ 
+            orf1 58 AERRQNCFQKK 68
+                    45566777765 PP
+
+  == domain 2  score: 13.6 bits;  conditional E-value: 1.5e-05
+  IL17R_fnIII_D2  16 aeqlrvsftlwne.stryqillesfplsenksCfeevk 52 
+                     ++++rv ft ++e s+ y ill+sf ++++k   +++k
+            orf1  89 EKNIRVLFTFFSEkSSDYAILLASFEEKNKK---DYIK 123
+                     67899***998764899********555554...3333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (137 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       898  (0.0457416); expected 392.6 (0.02)
+Passed bias filter:                      458  (0.0233293); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.35u 0.17s 00:00:00.52 Elapsed: 00:00:00.36
+# Mc/sec: 1257.75
+//
+Query:       orf2  [L=128]
+Description: source=IMGVR_UViG_3300005264_001498_3300005264_Ga0073581_103247/14474-12803 coords=673..1056 length=128 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.3e-14   52.8   0.0    6.2e-14   51.9   0.0    1.4  1  HTH_3          Helix-turn-helix
+    3.3e-06   27.2   0.1      6e-06   26.4   0.1    1.4  1  HTH_19         Helix-turn-helix domain
+    1.5e-05   25.5   0.0    2.5e-05   24.7   0.0    1.3  1  HTH_26         Cro/C1-type HTH DNA-binding domain
+    6.8e-05   23.2   0.0    8.1e-05   23.0   0.0    1.2  1  HTH_31         Helix-turn-helix domain
+     0.0027   17.7   0.1     0.0043   17.0   0.1    1.4  1  HTH_37         Helix-turn-helix domain
+  ------ inclusion threshold ------
+      0.012   15.5   0.0      0.026   14.5   0.0    1.5  1  HTH_25         Helix-turn-helix domain
+      0.015   15.9   0.0       0.02   15.6   0.0    1.2  1  DUF6626        Family of unknown function (DUF6626)
+      0.027   14.1   0.0      0.052   13.2   0.0    1.5  1  Sigma70_r4     Sigma-70, region 4
+      0.081   13.2   0.0       0.21   11.9   0.0    1.6  2  Phage_CI_repr  Bacteriophage CI repressor helix-turn-helix do
+      0.093   12.9   0.1       0.17   12.0   0.1    1.5  2  AGS_C          Adenylyl/Guanylyl and SMODS C-terminal sensor 
+
+
+Domain annotation for each model (and alignments):
+>> HTH_3  Helix-turn-helix
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.9   0.0   3.2e-17   6.2e-14       5      53 ..      42      90 ..      39      92 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 51.9 bits;  conditional E-value: 3.2e-17
+           HHHTTCHHHHHHHHHTSSHHHHHHHHTTSSGSBHHHHHHHHHHHTSEHH CS
+  HTH_3  5 RkqlglsqeeLAeklGvsrstisriEnGernPsletlkklakaLgvsld 53
+           R  +g+ q e++++lGvs+s +s++E+G+ nP++e l+kl+k L++ ++
+   orf2 42 RISRGMNQSEFSQLLGVSQSMVSKLESGDYNPTVEQLYKLSKKLNLQFE 90
+           889******************************************9876 PP
+
+>> HTH_19  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.4   0.1     3e-09     6e-06       8      54 ..      42      87 ..      38      95 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 26.4 bits;  conditional E-value: 3e-09
+  HTH_19  8 ReelgltqeelasrlgisrsqisaiEngkrevpsaetllkiaealgi 54
+            R+ +g++q e ++ lg+s+s+ s++E+g + +p+ e l+k+ ++l++
+    orf2 42 RISRGMNQSEFSQLLGVSQSMVSKLESGDY-NPTVEQLYKLSKKLNL 87
+            889***************************.***********99987 PP
+
+>> HTH_26  Cro/C1-type HTH DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.7   0.0   1.3e-08   2.5e-05       8      55 ..      44      90 ..      42      94 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 24.7 bits;  conditional E-value: 1.3e-08
+  HTH_26  8 drgisaseLargtgisaatlsrlvkgkperlsldtLdkiCdaLgcqpg 55
+             rg+++se+++ +g+s++ +s+l +g   +++ + L k+ + L+ q++
+    orf2 44 SRGMNQSEFSQLLGVSQSMVSKLESGD-YNPTVEQLYKLSKKLNLQFE 90
+            69*************************.6***************9986 PP
+
+>> HTH_31  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.0   0.0   4.1e-08   8.1e-05      10      56 ..      42      87 ..       5      91 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 23.0 bits;  conditional E-value: 4.1e-08
+  HTH_31 10 ReraGLsqeevArrlgvsaswlsrlEqGrrgrpspavlealaralgl 56
+            R  +G+ q e  ++lgvs+s +s+lE G    p+ ++l +l   l+l
+    orf2 42 RISRGMNQSEFSQLLGVSQSMVSKLESGDY-NPTVEQLYKLSKKLNL 87
+            5678**************************.5****99888766665 PP
+
+>> HTH_37  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   2.2e-06    0.0043      22      78 ..      37      92 ..      30      94 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 2.2e-06
+            HHHHHHHHCT--HHHHHHHHT--HHHHHHHHTT--TT--HHHHHHHHHHTTEEEEEE CS
+  HTH_37 22 aiaeliekreLsqseaaellgiaqPkvsaLlkgklsrfsldkLlellealGqkveIv 78
+            +i + +  r++ qse  +llg+ q+ vs+L+ g+ +  ++++L +l ++l+ + eI 
+    orf2 37 KIFDNRISRGMNQSEFSQLLGVSQSMVSKLESGDYN-PTVEQLYKLSKKLNLQFEII 92
+            56666778999********************98875.58999999999999998885 PP
+
+>> HTH_25  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   0.0   1.3e-05     0.026       5      36 ..      41      72 ..      40      80 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.3e-05
+            HHHTTT--HHHHHHHSS--HHHHHHHHCT--T CS
+  HTH_25  5 aRearglsleevaertkirerylealEeddfd 36
+             R +rg+   e ++ + ++++++  lE++d++
+    orf2 41 NRISRGMNQSEFSQLLGVSQSMVSKLESGDYN 72
+            599***************************97 PP
+
+>> DUF6626  Family of unknown function (DUF6626)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.6   0.0     1e-05      0.02      15      63 ..      47      94 ..      36     124 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 1e-05
+  DUF6626 15 aseeeFskkWLgkserYlrtLrfskrepSvealatlaskLqlyaerlak 63
+              +++eFs+  Lg s++ ++ L + + +p ve l  l++kL+l  e + +
+     orf2 47 MNQSEFSQ-LLGVSQSMVSKLESGDYNPTVEQLYKLSKKLNLQFEIILQ 94
+             5899**96.7******************************976555544 PP
+
+>> Sigma70_r4  Sigma-70, region 4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   2.6e-05     0.052      18      42 ..      44      68 ..      37      69 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 2.6e-05
+                TST--HHHHHHHHTS-HHHHHHHHH CS
+  Sigma70_r4 18 geelTleEigerlgiSrerVrqiek 42
+                 ++++++E ++ lg+S++ V+ +e+
+        orf2 44 SRGMNQSEFSQLLGVSQSMVSKLES 68
+                589*******************996 PP
+
+>> Phage_CI_repr  Bacteriophage CI repressor helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0      0.87   1.7e+03      12      39 ..      21      49 ..      20      53 .. 0.75
+   2 ?   11.9   0.0    0.0001      0.21      14      55 ..      48      90 ..      44      96 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.87
+                   -SSCHHHHCCT.T--HHHHHHHHHSSS-- CS
+  Phage_CI_repr 12 vkmqkeLAdlL.giakssvstwvrRdffP 39
+                   +k+++eL d L +ia + + ++++R+ + 
+           orf2 21 IKEDFELDDMLyNIAIKIFDNRISRGMNQ 49
+                   57788888876589988899999888765 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 0.0001
+                   SCHHHHCCTT--HHHHHHHHHSSS--.HHHHHHHHHHH---HH CS
+  Phage_CI_repr 14 mqkeLAdlLgiakssvstwvrRdffP.gdvvvtcaletdtsLe 55
+                   +q+e ++lLg+++s vs + + d++P  +++ +++++++++ e
+           orf2 48 NQSEFSQLLGVSQSMVSKLESGDYNPtVEQLYKLSKKLNLQFE 90
+                   58899*********************99999999999888776 PP
+
+>> AGS_C  Adenylyl/Guanylyl and SMODS C-terminal sensor domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0       1.2   2.3e+03       5      29 ..      19      43 ..      16      72 .. 0.66
+   2 ?   12.0   0.1   8.6e-05      0.17      25      70 ..      63     109 ..      37     125 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 1.2
+  AGS_C  5 efieplfpvd.iryeieidcevtqng 29
+           e+i++ f++d + y+i i+  + ++ 
+   orf2 19 ESIKEDFELDdMLYNIAIKI-FDNRI 43
+           56667776444777777777.55544 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 8.6e-05
+  AGS_C  25 vtqngerslreylsksellkkgkslkFki.vetlnvpepykvkWkvl 70 
+            v++ +++ ++ ++++ + l+k+ +l+F+i  ++l +++++++ W + 
+   orf2  63 VSKLESGDYNPTVEQLYKLSKKLNLQFEIiLQELPLEKKANIIWERN 109
+            4455567889999999*************98999999*******865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (128 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       910  (0.0463529); expected 392.6 (0.02)
+Passed bias filter:                      501  (0.0255196); expected 392.6 (0.02)
+Passed Vit filter:                        55  (0.00280155); expected 19.6 (0.001)
+Passed Fwd filter:                        10  (0.000509372); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 1330.52
+//
+Query:       orf3  [L=142]
+Description: source=IMGVR_UViG_3300005264_001498_3300005264_Ga0073581_103247/14474-12803 coords=1047..1472 length=142 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.058   13.7   0.5        3.6    8.0   0.2    2.1  2  DUF2812   Protein of unknown function (DUF2812)
+
+
+Domain annotation for each model (and alignments):
+>> DUF2812  Protein of unknown function (DUF2812)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   0.2   0.00018       3.6      16      56 ..      17      56 ..       5      60 .. 0.82
+   2 ?    4.1   0.0     0.003        60      43      78 ..      81     116 ..      74     124 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00018
+  DUF2812 16 GwrlkkigllgytFekgepkeyryrvdflkekskeeseeyl 56
+             G + kk+++  y  e  +pk+y + +df    + ee+e+y+
+     orf3 17 GHKAKKMSF-VYPKEGLDPKKYDFNIDFEVVHTDEERENYF 56
+             666677775.48888899*************9999999997 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.003
+  DUF2812  43 flkekskeeseeylelleesGweyvakskellifrk 78 
+              f ++k   e+++ +++l+ +G+ ++++ ++l+i+  
+     orf3  81 FVGNKAAYEFKDFVKMLKYNGVATLSQISRLQIMNM 116
+              677889999*********************999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (142 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       454  (0.0231255); expected 392.6 (0.02)
+Passed bias filter:                      284  (0.0144662); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.15s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 1464.09
+//
+[ok]

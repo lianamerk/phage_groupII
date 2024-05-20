@@ -1,0 +1,297 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=275]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=160..984 length=275 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    2.9e-35  121.1   0.1    4.3e-35  120.6   0.1    1.3  1  TraG-D_C         TraM recognition site of TraD and TraG
+    2.7e-33  115.6   0.2    3.4e-33  115.3   0.2    1.0  1  T4SS-DNA_transf  Type IV secretory system Conjugative DNA tra
+    1.2e-15   57.5   0.0    1.5e-15   57.2   0.0    1.2  1  TrwB_AAD_bind    Type IV secretion-system coupling protein DN
+  ------ inclusion threshold ------
+      0.072   13.8   0.0       0.14   12.9   0.0    1.4  1  ArdA             Antirestriction protein (ArdA)
+
+
+Domain annotation for each model (and alignments):
+>> TraG-D_C  TraM recognition site of TraD and TraG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.6   0.1   8.7e-39   4.3e-35       1     125 [.      89     207 ..      89     208 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 120.6 bits;  conditional E-value: 8.7e-39
+  TraG-D_C   1 pvlfllDEfanlgkipdleklistgrsrgislvlilQsiaqleelYgkegaetilgncntkvflgvndeetaeelSellGeetveartesssksgsggsse 101
+               +v++llDEfan+g+ip++ kli+t+rsr+is+ +ilQs +ql+++Y k++a+ti gnc+  +flg+++++t++e+Se lG+et++  ++s+++s+    ++
+      orf1  89 HVRCLLDEFANIGQIPKFDKLIATIRSREISAAIILQSQSQLKTIY-KDAADTITGNCDSMIFLGGKEKSTLKEISEVLGKETIDLYNTSETRSN----NN 184
+               699*******************************************.79***********************************99777666655....34 PP
+
+  TraG-D_C 102 sssssssqekkrpLltpdelrrlp 125
+               s+   ++q+++++L++ del+ ++
+      orf1 185 SYG-LNYQKVGKELMSQDELAVMD 207
+               555.566677**********9986 PP
+
+>> T4SS-DNA_transf  Type IV secretory system Conjugative DNA transfer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.3   0.2     7e-37   3.4e-33     223     443 ..       7     225 ..       4     245 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 115.3 bits;  conditional E-value: 7e-37
+                      THHHHHHHHHHCCCCGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXXXXX.XXXXXXXXXXXXXX CS
+  T4SS-DNA_transf 223 trsSvlgtakselalyadplvrnatSksdFdlrdlrrkkvsvyvivnpkdlevvapllrlffnmvvellkrklpnkder.pkevlflLDEfpsl 315
+                      t  S+l +  + la++  ++ r+++S ++ +l+ l+++k+ ++vi++  d +    ++ + ++m+  l  ++++  ++r p++v  lLDEf+++
+             orf1   7 TAKSILISCGARLAPFDIAELRELMSYDEMELDTLGDRKTALFVIISDTDDTFNFIVAIMYSQMFNLLCDKADDVYNGRlPVHVRCLLDEFANI 100
+                      66799999***************************************999988766666666666666666666666653788*********** PP
+
+                      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXX.XXX CS
+  T4SS-DNA_transf 316 GkleileealatiagYgirltlIiQsisqlketYgkegaksilsnsavvivfaasndeetaeyiSkllGktTvekestskstdakgksrsrsis 409
+                      G+++++ + +ati+  +i+ ++I Qs sqlk +Y +  a++i +n +  ++f    ++ t + iS++lGk T+    ts+ t ++ +s   +++
+             orf1 101 GQIPKFDKLIATIRSREISAAIILQSQSQLKTIYKD-AADTITGN-CDSMIFLGGKEKSTLKEISEVLGKETIDLYNTSE-TRSNNNSYGLNYQ 191
+                      **********************************75.47888888.55555555555***********************.88888889999** PP
+
+                      XXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXX CS
+  T4SS-DNA_transf 410 ekqRaLltPdevlrmdddeeivlikgqkPikakk 443
+                      ++++ L+  de+  md  + i+ + g  P  + k
+             orf1 192 KVGKELMSQDELAVMDGGKCILQLRGVRPFLSDK 225
+                      **********************999999987766 PP
+
+>> TrwB_AAD_bind  Type IV secretion-system coupling protein DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.2   0.0     3e-19   1.5e-15     248     375 ..      92     215 ..      23     229 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 57.2 bits;  conditional E-value: 3e-19
+  TrwB_AAD_bind 248 fflDElpaLgrveelkdllaegRkfGgavvlglqsiaqlrevYGedaaqsilslvgtklilrvsdaetAeeiaellGdrevereteslsygannsr 343
+                     +lDE++++g+++++++l a++R+  +   + lqs +ql+ +Y +daa +i +++ + ++l  ++++t +ei+e+lG++ ++  + s ++++nns 
+           orf1  92 CLLDEFANIGQIPKFDKLIATIRSREISAAIILQSQSQLKTIY-KDAADTITGNCDSMIFLGGKEKSTLKEISEVLGKETIDLYNTSETRSNNNSY 186
+                    579****************************************.56*******************************************9999887 PP
+
+  TrwB_AAD_bind 344 dgvslsrqrevrrlVlasellnlprlegylkl 375
+                        l+ q+  ++l+ ++el+ +   +++l+l
+           orf1 187 G---LNYQKVGKELMSQDELAVMDGGKCILQL 215
+                    6...8888888999999999888766666655 PP
+
+>> ArdA  Antirestriction protein (ArdA)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   2.8e-05      0.14      57     160 ..      94     209 ..      88     211 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 2.8e-05
+  ArdA  57 lgeyesidelnelaklleeleehgeafaawvahfgdleevedafeeeylgeydsle...........dyAeelveelgllkgeeeipeslenY.fDyeayarDle 149
+           l+e+++i ++ ++ kl++ +   +   a+++++ ++l+ + ++  + ++g+ ds++           +  e l +e+  l + +e   + ++Y ++y++++++l 
+  orf1  94 LDEFANIGQIPKFDKLIATIRSREISAAIILQSQSQLKTIYKDAADTITGNCDSMIflggkekstlkEISEVLGKETIDLYNTSETRSNNNSYgLNYQKVGKELM 198
+           78999999999999888888876445555666777********************************666666666665555566666777999*********** PP
+
+  ArdA 150 lsgdvvvtdeG 160
+           ++++  v+d G
+  orf1 199 SQDELAVMDGG 209
+           ***99999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (275 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       468  (0.0238386); expected 392.6 (0.02)
+Passed bias filter:                      333  (0.0169621); expected 392.6 (0.02)
+Passed Vit filter:                        25  (0.00127343); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.33
+# Mc/sec: 2697.22
+//
+Query:       orf2  [L=126]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=845..1222 length=126 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (126 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       466  (0.0237368); expected 392.6 (0.02)
+Passed bias filter:                      336  (0.0171149); expected 392.6 (0.02)
+Passed Vit filter:                        22  (0.00112062); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.16s 00:00:00.44 Elapsed: 00:00:00.30
+# Mc/sec: 1381.40
+//
+Query:       orf3  [L=93]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=963..1241 length=93 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-21   75.6   0.7    3.5e-21   74.9   0.7    1.3  1  Maff2       Maff2 family
+  ------ inclusion threshold ------
+       0.15   11.6   2.3        1.1    8.9   1.0    2.6  3  UCR_Fe-S_N  Ubiquitinol-cytochrome C reductase Fe-S subunit T
+
+
+Domain annotation for each model (and alignments):
+>> Maff2  Maff2 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.9   0.7   3.6e-25   3.5e-21       1      43 [.      51      93 .]      51      93 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 74.9 bits;  conditional E-value: 3.6e-25
+  Maff2  1 mefftqaidvlqvlvialGaGlgvwGvvnlleGyGndnPGaks 43
+           m+f++qa++vlq+lvialGaGl+vwGvvnl+eGyGndn  ++s
+   orf3 51 MAFINQAVTVLQTLVIALGAGLAVWGVVNLMEGYGNDNRATRS 93
+           99************************************88775 PP
+
+>> UCR_Fe-S_N  Ubiquitinol-cytochrome C reductase Fe-S subunit TAT signal
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0      0.25   2.5e+03       7      16 ..      21      30 ..      17      32 .. 0.75
+   2 ?    0.7   0.0      0.04   3.9e+02      10      16 ..      45      51 ..      42      56 .. 0.86
+   3 ?    8.9   1.0   0.00011       1.1      24      39 ..      67      82 ..      63      83 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.25
+                XXXX-HHHHH CS
+  UCR_Fe-S_N  7 deptRRDFLy 16
+                + ++RR  L+
+        orf3 21 EAEQRRGLLF 30
+                5678998887 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.04
+                X-HHHHH CS
+  UCR_Fe-S_N 10 tRRDFLy 16
+                +RR FL+
+        orf3 45 SRRKFLM 51
+                6999996 PP
+
+  == domain 3  score: 8.9 bits;  conditional E-value: 0.00011
+                HHHHHHHHHHHHHTTS CS
+  UCR_Fe-S_N 24 AVGaaaaawPlidqmn 39
+                A Ga++a+w  ++ m+
+        orf3 67 ALGAGLAVWGVVNLME 82
+                89**********9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (93 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       644  (0.0328036); expected 392.6 (0.02)
+Passed bias filter:                      458  (0.0233293); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.30u 0.16s 00:00:00.46 Elapsed: 00:00:00.32
+# Mc/sec: 952.13
+//
+Query:       orf4  [L=125]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=1065..691 length=125 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (125 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       479  (0.0243989); expected 392.6 (0.02)
+Passed bias filter:                      372  (0.0189487); expected 392.6 (0.02)
+Passed Vit filter:                        29  (0.00147718); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.14s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1421.19
+//
+Query:       orf5  [L=213]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=675..37 length=213 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (213 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       401  (0.0204258); expected 392.6 (0.02)
+Passed bias filter:                      324  (0.0165037); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 2151.39
+//
+Query:       orf6  [L=103]
+Description: source=IMGVR_UViG_3300029613_000243_3300029613_Ga0245150_102502/1-1495 coords=310..2 length=103 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (103 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       567  (0.0288814); expected 392.6 (0.02)
+Passed bias filter:                      412  (0.0209861); expected 392.6 (0.02)
+Passed Vit filter:                        20  (0.00101874); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.15s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1175.85
+//
+[ok]

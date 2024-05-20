@@ -1,0 +1,128 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300048041_000006_3300048041_Ga0497331_004910_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300048041_000006_3300048041_Ga0497331_004910_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=254]
+Description: source=IMGVR_UViG_3300048041_000006_3300048041_Ga0497331_004910/1548-1 coords=1..762 length=254 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.6e-12   47.6   0.0    5.7e-12   45.9   0.0    1.9  2  Peptidase_S74   Chaperone of endosialidase
+    8.5e-05   22.8   1.3    0.00016   21.9   1.3    1.6  1  End_tail_spike  Catalytic domain of bacteriophage endosialida
+
+
+Domain annotation for each model (and alignments):
+>> Peptidase_S74  Chaperone of endosialidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.9   0.0   5.8e-16   5.7e-12       1      55 [.     148     198 ..     148     201 .. 0.89
+   2 ?   -1.7   0.0      0.42   4.1e+03      10      24 ..     233     251 ..     227     252 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 45.9 bits;  conditional E-value: 5.8e-16
+                    -TTTTBSS-EC-.HHH.HHHHCT---EEE-BCCHHHHHGGGGS-BEEE--HHHHHHH CS
+  Peptidase_S74   1 SDrRlKtnIrpl.eda.lakvlklrpvtYrykdesirkskdsgrrevGfIAQeveav 55 
+                    SDr  K  I+ l e+   a+v++l+pv+Y+y+      s+ sgr+++G+I Qeve+ 
+           orf1 148 SDRTEKNTIAALnETKaVAFVMALNPVSYKYN------SGTSGRTHYGMISQEVEDT 198
+                    9********99965525**************6......689*************986 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.42
+                    EC-.HHH...HHHHCT--- CS
+  Peptidase_S74  10 rpl.eda...lakvlklrp 24 
+                     pl +++   +++v++l++
+           orf1 233 SPLiKTVqylTNRVNQLEG 251
+                    5565555666999999986 PP
+
+>> End_tail_spike  Catalytic domain of bacteriophage endosialidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   1.3   1.6e-08   0.00016      90     160 .]      78     147 ..      44     147 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 1.6e-08
+                     EESSSSSSGGGB-EEEEEBTTSSSTTEEEEE-SEEEEESS-EEESSSSSS-BSBTTB-BS-BEESS--EEE CS
+  End_tail_spike  90 vsGGegtsssdGalitlyGsnsstsrravynasehlfqsadvlPyldnvvalGgpsnrfttvylgsdpivt 160
+                      sG    +s++  +i   Gs    s+ av  + + + + +d+ P++dn+  lG ++ r++ +y +s +i t
+            orf1  78 SSGQMNFTSTTYPQIYGNGSVLQLSNSAVSSG-GVVIEGGDFRPATDNQLNLGMSTKRWAQIYSTSSTIST 147
+                     55666667777777777788888888888655.67899******************************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (254 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       828  (0.042176); expected 392.6 (0.02)
+Passed bias filter:                      477  (0.0242971); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.35u 0.19s 00:00:00.54 Elapsed: 00:00:00.36
+# Mc/sec: 2331.27
+//
+Query:       orf2  [L=94]
+Description: source=IMGVR_UViG_3300048041_000006_3300048041_Ga0497331_004910/1548-1 coords=750..1031 length=94 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (94 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1015  (0.0517013); expected 392.6 (0.02)
+Passed bias filter:                      459  (0.0233802); expected 392.6 (0.02)
+Passed Vit filter:                        31  (0.00157905); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.18s 00:00:00.49 Elapsed: 00:00:00.33
+# Mc/sec: 929.55
+//
+Query:       orf3  [L=99]
+Description: source=IMGVR_UViG_3300048041_000006_3300048041_Ga0497331_004910/1548-1 coords=998..1294 length=99 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (99 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1790  (0.0911777); expected 392.6 (0.02)
+Passed bias filter:                     1093  (0.0556744); expected 392.6 (0.02)
+Passed Vit filter:                        73  (0.00371842); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.20s 00:00:00.51 Elapsed: 00:00:00.34
+# Mc/sec: 960.25
+//
+[ok]

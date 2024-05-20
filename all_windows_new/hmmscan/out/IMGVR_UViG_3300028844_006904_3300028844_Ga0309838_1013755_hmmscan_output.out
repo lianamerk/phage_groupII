@@ -1,0 +1,111 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300028844_006904_3300028844_Ga0309838_1013755_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300028844_006904_3300028844_Ga0309838_1013755_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=461]
+Description: source=IMGVR_UViG_3300028844_006904_3300028844_Ga0309838_1013755/7678-9254 coords=1..1383 length=461 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.5e-27   95.5   0.0      1e-26   94.0   0.0    1.8  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+    0.00086   19.4   0.0     0.0025   18.0   0.0    1.9  1  GIIM      Group II intron, maturase-specific domain
+  ------ inclusion threshold ------
+      0.091   13.4   0.0       0.22   12.2   0.0    1.6  1  CAAP1     Caspase activity and apoptosis inhibitor 1
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.0   0.0   1.5e-30     1e-26      69     222 .]       2     183 ..       1     183 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 94.0 bits;  conditional E-value: 1.5e-30
+            -EEEEEEBCCGCCCSBB-GGGGGGG-EEET.........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T................. CS
+  RVT_1  69 klllklDlkkaFdsvpleellrkltafkvptklinliksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra.............. 158
+            +++l+ D+k++Fd++++++ll+ +    ++     +++++l ++ + +r +++ +k + +++g+pqG+vlSP+l+n++++ l + +++ +              
+   orf1   2 HYVLEADIKGFFDNISHDWLLKNIPM-DTK-----VLQAML-SAGIIMRSDEQPAKDSDTSAGTPQGGVLSPVLANIVLDGLQKAIHEGMyptqklytdkkggf 98 
+            799******************99887.344.....889999.6667999999999*********************************99************** PP
+
+            ...........................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGGG-EEE.....ESSEEETTEEE CS
+  RVT_1 159 ........................kgvtllrYaDDililskskeelqelleaveewlkesglkinpeKtklvlftvkseevkyLGvtl 222
+                                     g +++rYaDD+++ ++++ +++ + ++v e+l++ gl++n+eKt +++    ++ +++LG ++
+   orf1  99 tyfykktnkrdakrgnrivrkqyaAGYKVVRYADDFIVCCRGERRAHDVKKIVNEFLSDRGLELNEEKTVVTS---VADGFDFLGWNF 183
+            ************************************************************************8...9********875 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   0.0   3.8e-07    0.0025       3      43 ..     202     245 ..     200     280 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 3.8e-07
+  GIIM   3 rfkrkireltkrs..skgvsleelirklnpiirGWanYyrlv.v 43 
+           ++ +k++el+kr   ++   l++l  k+n + rGW++Y++ + +
+  orf1 202 AHEAKLKELLKRGipNSRIELADLFMKINVVKRGWMAYHKGCdN 245
+           5667778887775223558899******************9944 PP
+
+>> CAAP1  Caspase activity and apoptosis inhibitor 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   3.3e-05      0.22      16      39 ..     259     282 ..     257     285 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 3.3e-05
+  CAAP1  16 eqlFsvlkekklkkllPdiLKkis 39 
+            + +F+ lk  k ++l+Pd++Kk  
+   orf1 259 DKCFKYLKHTKTRMLVPDFIKKHL 282
+            68*******************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (461 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       594  (0.0302567); expected 392.6 (0.02)
+Passed bias filter:                      494  (0.025163); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.39u 0.18s 00:00:00.57 Elapsed: 00:00:00.36
+# Mc/sec: 4184.38
+//
+Query:       orf2  [L=91]
+Description: source=IMGVR_UViG_3300028844_006904_3300028844_Ga0309838_1013755/7678-9254 coords=477..205 length=91 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (91 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       585  (0.0297983); expected 392.6 (0.02)
+Passed bias filter:                      296  (0.0150774); expected 392.6 (0.02)
+Passed Vit filter:                        14  (0.000713121); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.15s 00:00:00.46 Elapsed: 00:00:00.31
+# Mc/sec: 967.01
+//
+[ok]

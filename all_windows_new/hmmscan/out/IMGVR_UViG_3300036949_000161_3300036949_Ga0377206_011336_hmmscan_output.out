@@ -1,0 +1,153 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300036949_000161_3300036949_Ga0377206_011336_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300036949_000161_3300036949_Ga0377206_011336_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=310]
+Description: source=IMGVR_UViG_3300036949_000161_3300036949_Ga0377206_011336/56-1696 coords=180..1109 length=310 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-06   27.2   0.4    8.8e-06   25.9   0.4    1.7  1  ROS_MUCR    ROS/MUCR transcriptional regulator protein
+  ------ inclusion threshold ------
+        0.1   12.7   0.4       0.27   11.5   0.2    1.7  1  Epiplasmin  Epiplasmin protein
+       0.22   11.6  10.8       0.68   10.0   3.1    2.9  2  zf-FCS      MYM-type Zinc finger with FCS sequence motif
+       0.82    9.9   4.7        4.5    7.6   4.7    2.2  1  zf-MYND     MYND finger
+
+
+Domain annotation for each model (and alignments):
+>> ROS_MUCR  ROS/MUCR transcriptional regulator protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   0.4   1.8e-09   8.8e-06      68      98 ..      26      55 ..      21      73 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 1.8e-09
+  ROS_MUCR 68 vcledGkklKtLkrhLktahgltpeeYrakw 98
+              +c+++Gk++K+L  hL  +h+l+++eY +k+
+      orf1 26 TCIICGKTCKVLGNHL-IEHKLSAKEYYDKY 55
+              8***************.*************9 PP
+
+>> Epiplasmin  Epiplasmin protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.2   5.4e-05      0.27      45      79 ..     135     169 ..     126     176 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 5.4e-05
+  Epiplasmin  45 qteyiPqviqQuery:       orf2  [L=129]
+Description: source=IMGVR_UViG_3300036949_000161_3300036949_Ga0377206_011336/548-2132 coords=621..1007 length=129 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+     0.0042   16.6   0.0     0.0061   16.1   0.0    1.2  1  FtsK_SpoIIIE  FtsK/SpoIIIE family
+  ------ inclusion threshold ------
+      0.083   13.0   0.4        1.4    9.0   0.1    2.1  2  TraG-D_C      TraM recognition site of TraD and TraG
+
+
+Domain annotation for each model (and alignments):
+>> FtsK_SpoIIIE  FtsK/SpoIIIE family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   6.3e-07    0.0061     190     240 ..      48     107 ..      39     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 6.3e-07
+                   ---EEEEEEC-HHHHHHHHHHH.............HHHHHHHHHHHCGGGTEEEEEEES- CS
+  FtsK_SpoIIIE 190 krpslvvivderieLrlaapkds.........svlvedaivRlarkgraaglHlllatqr 240
+                   + p l+ +vde +eL    + +          ++ +++ i+ +++ gr+ag+H +l+tqr
+          orf2  48 EMPRLLIVVDEIAELTGKSGIKTtegkaedalKDEIISNIQSITQLGRSAGIHCILCTQR 107
+                   67899999*******9777666666677778888888999999999*************9 PP
+
+>> TraG-D_C  TraM recognition site of TraD and TraG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   0.0     0.014   1.4e+02      71      86 ..      55      70 ..      21      82 .. 0.69
+   2 ?    9.0   0.1   0.00015       1.4      16      38 ..      85     107 ..      81     112 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.014
+  TraG-D_C 71 taeelSellGeetvea 86
+              + +e++el+G+  +++
+      orf2 55 VVDEIAELTGKSGIKT 70
+              4566666666666653 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 0.00015
+  TraG-D_C  16 pdleklistgrsrgislvlilQs 38 
+                +++ + + grs+gi+++l +Q 
+      orf2  85 SNIQSITQLGRSAGIHCILCTQR 107
+               6899999***************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (129 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       689  (0.0350958); expected 392.6 (0.02)
+Passed bias filter:                      540  (0.0275061); expected 392.6 (0.02)
+Passed Vit filter:                        45  (0.00229218); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.31u 0.19s 00:00:00.50 Elapsed: 00:00:00.34
+# Mc/sec: 1240.16
+//
+[ok]
+alignments):
+>> FtsK_SpoIIIE  FtsK/SpoIIIE family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   6.3e-07    0.0061     190     240 ..      48     107 ..      39     109 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 6.3e-07
+                   ---EEEEEEC-HHHHHHHHHHH.............HHHHHHHHHHHCGGGTEEEEEEES- CS
+  FtsK_SpoIIIE 190 krpslvvivderieLrlaapkds.........svlvedaivRlarkgraaglHlllatqr 240
+                   + p l+ +vde +eL    + +          ++ +++ i+ +++ gr+ag+H +l+tqr
+          orf2  48 EMPRLLIVVDEIAELTGKSGIKTtegkaedalKDEIISNIQSITQLGRSAGIHCILCTQR 107
+                   67899999*******9777666666677778888888999999999*************9 PP
+
+>> TraG-D_C  TraM recognition site of TraD and TraG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   0.0     0.014   1.4e+02      71      86 ..      55      70 ..      21      82 .. 0.69
+   2 ?    9.0   0.1   0.00015       1.4      16      38 ..      85     107 ..      81     112 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.014
+  TraG-D_C 71 taeelSellGeetvea 86
+              + +e++el+G+  +++
+      orf2 55 VVDEIAELTGKSGIKT 70
+              4566666666666653 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 0.00015
+  TraG-D_C  16 pdleklistgrsrgislvlilQs 38 
+                +++ + + grs+gi+++l +Q 
+      orf2  85 SNIQSITQLGRSAGIHCILCTQR 107
+               6899999***************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (129 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       689  (0.0350958); expected 392.6 (0.02)
+Passed bias filter:                      540  (0.0275061); expected 392.6 (0.02)
+Passed Vit filter:                        45  (0.00229218); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.31u 0.18s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 1305.73
+//
+[ok]

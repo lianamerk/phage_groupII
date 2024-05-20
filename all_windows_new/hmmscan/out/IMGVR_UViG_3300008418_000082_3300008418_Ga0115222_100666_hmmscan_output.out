@@ -1,0 +1,158 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300008418_000082_3300008418_Ga0115222_100666_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300008418_000082_3300008418_Ga0115222_100666_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=405]
+Description: source=IMGVR_UViG_3300008418_000082_3300008418_Ga0115222_100666/15230-16823 coords=163..1377 length=405 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.021   15.7   0.1         18    6.3   0.0    3.8  4  CP12      CP12 domain
+      0.032   14.7   0.7        0.1   13.1   0.7    1.9  1  DUF4379   Probable Zinc-ribbon domain
+        1.1    9.3   3.5          4    7.6   3.5    2.0  1  DUF723    Protein of unknown function (DUF723)
+
+
+Domain annotation for each model (and alignments):
+>> CP12  CP12 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0       1.4   9.2e+03      47      63 ..      70      86 ..      67      89 .. 0.78
+   2 ?    6.3   0.0    0.0028        18      40      65 ..     155     180 ..     134     184 .. 0.73
+   3 ?    1.6   0.0     0.083   5.4e+02      49      66 ..     187     204 ..     177     206 .. 0.78
+   4 ?    3.0   0.0     0.[ok]
+ 1.9e+02      45      65 ..     229     249 ..     209     253 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 1.4
+          HTTTTCHHHHHHHSTTS CS
+  CP12 47 kkektsLeeYCeenPea 63
+          k++ t  e+Y  +nP +
+  orf1 70 KRKATWVERYGVDNPMK 86
+          667889999*99**976 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.0028
+           HHHHHH...HHTTTTCHHHHHHHSTTSTT CS
+  CP12  40 aahqra...kkkektsLeeYCeenPeaaE 65 
+           ++   +   ++ +ktsLe+Y  e+P + E
+  orf1 155 QS---DivkERARKTSLEHYGVEHPMQSE 180
+           33...33324778************8876 PP
+
+  == domain 3  score: 1.6 bits;  conditional E-value: 0.083
+           TTTCHHHHHHHSTTSTTT CS
+  CP12  49 ektsLeeYCeenPeaaEc 66 
+           + t Le+Y  +nP + E 
+  orf1 187 KATCLERYGVDNPMKNES 204
+           5799*********99885 PP
+
+  == domain 4  score: 3.0 bits;  conditional E-value: 0.029
+           HHHTTTTCHHHHHHHSTTSTT CS
+  CP12  45 akkkektsLeeYCeenPeaaE 65 
+           ++k + t+Le+Y  e+P++ +
+  orf1 229 KNKIRMTNLERYGVEYPAQND 249
+           347789***********9876 PP
+
+>> DUF4379  Probable Zinc-ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.7   1.6e-05       0.1      20      56 .]      32      66 ..      19      66 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.6e-05
+  DUF4379 20 vtpgskkkvwWkCakCgheWeasvsnRtkgsskCPkC 56
+             + ++ ++kv  +C++ +  +e+++s++ +g++ CPkC
+     orf1 32 IYKNANTKVTIICPE-HGAFEQTPSHHYNGQG-CPKC 66
+             4456799********.99**********9999.**** PP
+
+>> DUF723  Protein of unknown function (DUF723)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   3.5   0.00061         4      24      59 ..      33      66 ..      10      67 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.00061
+  DUF723 24 FegvakPvvinCPlHGnvtystykalikSkyGCPeC 59
+            ++  +  v+i CP HG  +     +      GCP+C
+    orf1 33 YKNANTKVTIICPEHGAFEQTP--SHHYNGQGCPKC 66
+            55667789********866543..33345789**99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (405 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       812  (0.041361); expected 392.6 (0.02)
+Passed bias filter:                      471  (0.0239914); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.34u 0.16s 00:00:00.50 Elapsed: 00:00:00.31
+# Mc/sec: 4225.22
+//
+Query:       orf2  [L=120]
+Description: source=IMGVR_UViG_3300008418_000082_3300008418_Ga0115222_100666/15230-16823 coords=1034..675 length=120 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (120 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       374  (0.0190505); expected 392.6 (0.02)
+Passed bias filter:                      268  (0.0136512); expected 392.6 (0.02)
+Passed Vit filter:                        16  (0.000814996); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.13s 00:00:00.41 Elapsed: 00:00:00.27
+# Mc/sec: 1428.42
+//
+Query:       orf3  [L=112]
+Description: source=IMGVR_UViG_3300008418_000082_3300008418_Ga0115222_100666/15230-16823 coords=671..336 length=112 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (112 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       308  (0.0156887); expected 392.6 (0.02)
+Passed bias filter:                      232  (0.0118174); expected 392.6 (0.02)
+Passed Vit filter:                        19  (0.000967808); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.14s 00:00:00.42 Elapsed: 00:00:00.29
+# Mc/sec: 1271.04
+//
+[ok]

@@ -1,0 +1,105 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2636416172_000002_2636416172_2636618903_290787-304488_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2636416172_000002_2636416172_2636618903_290787-304488_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=304]
+Description: source=IMGVR_UViG_2636416172_000002_2636416172_2636618903_290787-304488/4472-2863 coords=89..1000 length=304 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.1e-27   95.3   0.8    3.3e-27   94.7   0.8    1.3  1  Peptidase_M23  Peptidase family M23
+  ------ inclusion threshold ------
+      0.053   13.6   0.3        1.7    8.8   0.0    2.3  2  RnfC_N         RnfC Barrel sandwich hybrid domain
+
+
+Domain annotation for each model (and alignments):
+>> Peptidase_M23  Peptidase family M23
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.7   0.8   3.4e-31   3.3e-27       3      90 ..      38     136 ..      36     142 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 94.7 bits;  conditional E-value: 3.4e-31
+                    ESSEEEEETTT-EEEESSSEEEEEEEEETTTEEEEEEEE.ETT..EEEEEEEESEES..S-TTEEE-TTCEEEEEBSTSSCSSSEEEEEEEE.... CS
+  Peptidase_M23   3 hkGidiaapkgtpVlAaadGtVvfagksegyGnvviidh.gdg..ystlyahlskis..vkegqkVkaGqvIGtvgstgrstgphLhfeirk.... 89 
+                    h+G+d+a +   p++Aaa+G+V  + +s++yG++++i h  dg  ++t+yah+ + s  vkeg++V +Gq+IG +g+tg+s+g+hLhfe++k    
+           orf1  38 HHGVDLAEAGDHPIYAAASGKVSRSYPSSSYGECIMIVHtIDGviWETVYAHMRSGSrtVKEGDYVTQGQTIGVMGNTGQSSGQHLHFELHKgrwd 133
+                    9**************************99**********745567**********7778********************************94555 PP
+
+                    ..T CS
+  Peptidase_M23  90 ..n 90 
+                      +
+           orf1 134 inK 136
+                    544 PP
+
+>> RnfC_N  RnfC Barrel sandwich hybrid domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   0.0     0.015   1.4e+02      60      79 ..      45      61 ..      35      80 .. 0.70
+   2 ?    8.8   0.0   0.00017       1.7      44      62 ..      95     113 ..      84     121 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.015
+  RnfC_N 60 eaeglvsapvhasvSGtVka 79
+            ea +    p++a  SG+V +
+    orf1 45 EAGDH---PIYAAASGKVSR 61
+            44444...9********974 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.00017
+  RnfC_N  44 piVkvgdkVlkGqkiaeae 62 
+               Vk+gd+V++Gq i+ + 
+    orf1  95 RTVKEGDYVTQGQTIGVMG 113
+             57*************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (304 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       443  (0.0225652); expected 392.6 (0.02)
+Passed bias filter:                      354  (0.0180318); expected 392.6 (0.02)
+Passed Vit filter:                        37  (0.00188468); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.37u 0.20s 00:00:00.57 Elapsed: 00:00:00.36
+# Mc/sec: 2781.86
+//
+Query:       orf2  [L=98]
+Description: source=IMGVR_UViG_2636416172_000002_2636416172_2636618903_290787-304488/4472-2863 coords=1593..1300 length=98 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (98 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       275  (0.0140077); expected 392.6 (0.02)
+Passed bias filter:                      237  (0.0120721); expected 392.6 (0.02)
+Passed Vit filter:                        12  (0.000611247); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.31u 0.16s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 1014.10
+//
+[ok]

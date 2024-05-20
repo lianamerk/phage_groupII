@@ -1,0 +1,52 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             IS1203_first.faa
+# target sequence database:        LC727904.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       IS1203  [L=108]
+Description: first
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    8.8e-72  230.2   1.0    9.7e-72  230.0   1.0    1.0  1  BHHJFJ_00065  IS3 family IS1203 transposase ORF A
+
+
+Domain annotation for each sequence (and alignments):
+>> BHHJFJ_00065  IS3 family IS1203 transposase ORF A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  230.0   1.0   1.2e-73   9.7e-72       1     108 []       1     108 []       1     108 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 230.0 bits;  conditional E-value: 1.2e-73
+        IS1203   1 mtkntrfspevrqrairmvlesqdeydsqwaaicsiapkigctpetlrvwvrqherdtggsdgglttaerqrlkelerenrelrrsndilrqasayf 97 
+                   mtkntrfspevrqrairmvlesqdeydsqwaaicsiapkigctpetlrvwvrqherdtgg dgglt+aerqrlkelerenrelrrsndilrqasayf
+  BHHJFJ_00065   1 MTKNTRFSPEVRQRAIRMVLESQDEYDSQWAAICSIAPKIGCTPETLRVWVRQHERDTGGGDGGLTSAERQRLKELERENRELRRSNDILRQASAYF 97 
+                   8************************************************************************************************ PP
+
+        IS1203  98 pkaefdrlwkk 108
+                    kaefdrlwkk
+  BHHJFJ_00065  98 AKAEFDRLWKK 108
+                   **********8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (108 nodes)
+Target sequences:                         82  (17582 residues searched)
+Passed MSV filter:                         5  (0.0609756); expected 1.6 (0.02)
+Passed bias filter:                        5  (0.0609756); expected 1.6 (0.02)
+Passed Vit filter:                         1  (0.0121951); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0121951); expected 0.0 (1e-05)
+Initial search space (Z):                 82  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 148.71
+//
+[ok]

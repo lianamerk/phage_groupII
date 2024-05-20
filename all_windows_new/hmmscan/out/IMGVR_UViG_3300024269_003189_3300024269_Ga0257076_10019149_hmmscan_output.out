@@ -1,0 +1,126 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300024269_003189_3300024269_Ga0257076_10019149_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300024269_003189_3300024269_Ga0257076_10019149_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=479]
+Description: source=IMGVR_UViG_3300024269_003189_3300024269_Ga0257076_10019149/12171-10587 coords=1..1437 length=479 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.4e-31  109.8   0.0    2.6e-31  109.0   0.0    1.4  1  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+      6e-05   23.3   0.4    0.00067   19.9   0.1    2.3  2  HNH              HNH endonuclease
+  ------ inclusion threshold ------
+      0.091   12.7   0.0       0.22   11.5   0.0    1.6  1  Acetyltransf_18  Acetyltransferase (GNAT) domain
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.0   0.0     4e-35   2.6e-31      40     222 .]       4     214 ..       1     214 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 109.0 bits;  conditional E-value: 4e-35
+            -----HHHH..............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...........................TEEEEESB--ST-TTHH CS
+  RVT_1  40 enqpgfrpgrstldav.edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinli.ksflstrsfsvrv.ngeeskgryekkglpqGsvlSP 140
+            +n+ gfrp +s +da+   + ++  +++  ++++++D+k++Fd+v++++l+r ++++++++k++ +i +++l   ++ +++ ng   + ++++kg+pqG++lSP
+   orf1   4 PNSKGFRPDKSAEDAIaSFMYNI--NRRHMTYVVDVDIKGFFDNVNHSKLMRLVWKMGIHDKQVLVIlRKML---KAPIQLpNG---QIIPSEKGTPQGGILSP 99 
+            7899************8555555..56788*****************************9988775527777...444577555...9**************** PP
+
+            HHHHHHHHHHHTT-T........................................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEGGG-EEE... CS
+  RVT_1 141 llfnlfmnellrelrkra..................................kgvtllrYaDDililskskeelqelleaveewlke.sglkinpeKtklvlft 209
+            ll+n++++el+  l++++                                  k+++++rYaDD+ i++++ke ++++  a+ +wlke   l i++eK+k++   
+   orf1 100 LLANIYLHELDIWLSSQWermptkheyreppgrngdktrskacralrkgsklKEIHHVRYADDFKIVCSTKEVAERIFIATTQWLKEeLMLDISDEKSKIT--- 200
+            **************************************************************************************989***********9... PP
+
+            ...ESSEEETTEEE CS
+  RVT_1 210 v.kseevkyLGvtl 222
+               +e  ++LG+++
+   orf1 201 DvLEEYTEFLGFKI 214
+            44788899999875 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0     0.095   6.2e+02       4      21 ..     142     159 ..     140     165 .. 0.75
+   2 !   19.9   0.1     1e-07   0.00067       4      36 ..     399     433 ..     397     438 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.095
+           SS-B-SSEE--EEEESS- CS
+   HNH   4 CgrkfhksdalevdHiip 21 
+           C    ++s+ +e++H+  
+  orf1 142 CRALRKGSKLKEIHHVRY 159
+           66666677789****976 PP
+
+  == domain 2  score: 19.9 bits;  conditional E-value: 1e-07
+           SS-B-SSE..E--EEEESS-TTTT--BSGGGEEEE CS
+   HNH   4 Cgrkfhks..dalevdHiipisqggaddieNlqll 36 
+           C  +++    d+ e++Hi p+ +gg+d++eN++ l
+  orf1 399 CAITGKLLlmDEIEGHHINPRYKGGTDEYENIAIL 433
+           5555554466899*******************976 PP
+
+>> Acetyltransf_18  Acetyltransferase (GNAT) domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   3.4e-05      0.22      55     111 ..     165     221 ..     164     226 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 3.4e-05
+  Acetyltransf_18  55 lvAeneeiAeaLikalvanaegkiridvpeenealialleslgfekvfecarMvkgg 111
+                      +v++++e+Ae+++ a  +  ++++++d+ +e+++++++le++     f+ + M kgg
+             orf1 165 IVCSTKEVAERIFIATTQWLKEELMLDISDEKSKITDVLEEYTEFLGFKIKAMPKGG 221
+                      799*************************************99887777777777755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (479 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       684  (0.0348411); expected 392.6 (0.02)
+Passed bias filter:                      505  (0.0257233); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.35u 0.19s 00:00:00.54 Elapsed: 00:00:00.34
+# Mc/sec: 4659.79
+//
+Query:       orf2  [L=116]
+Description: source=IMGVR_UViG_3300024269_003189_3300024269_Ga0257076_10019149/12171-10587 coords=1238..891 length=116 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (116 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       589  (0.030002); expected 392.6 (0.02)
+Passed bias filter:                      200  (0.0101874); expected 392.6 (0.02)
+Passed Vit filter:                        14  (0.000713121); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.12s 00:00:00.41 Elapsed: 00:00:00.28
+# Mc/sec: 1355.43
+//
+[ok]

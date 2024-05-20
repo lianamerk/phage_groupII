@@ -1,0 +1,77 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300002163_000500_3300002163_JGI24707J26582_10011051_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300002163_000500_3300002163_JGI24707J26582_10011051_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=349]
+Description: source=IMGVR_UViG_3300002163_000500_3300002163_JGI24707J26582_10011051/4631-3047 coords=337..1383 length=349 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+  ------ inclusion threshold ------
+       0.09   11.3   0.2       0.12   10.9   0.2    1.1  1  SKN1_KRE6_Sbg1  Beta-glucan synthesis-associated protein SKN1
+        1.6    9.0   4.5        2.7    8.2   0.1    2.8  3  DUF1573         Protein of unknown function (DUF1573)
+
+
+Domain annotation for each model (and alignments):
+>> SKN1_KRE6_Sbg1  Beta-glucan synthesis-associated protein SKN1/KRE6/Sbg1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.2   1.2e-05      0.12     206     275 ..     156     222 ..     146     270 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.2e-05
+  SKN1_KRE6_Sbg1 206 LpgkgevsGlWPglWtmGnLgRpGylatteGvWPYsY.dsCDvGitpnqssadGlsylpGqrlsaCtCkge 275
+                     L+ k ++ G   glWt+   ++  y + t+G W Y++  +C+ G++   ++++    l   + ++C C+ e
+            orf1 156 LSVKRDLVGKTFGLWTVLEKSKDHYISPTNGRWYYTWiCECECGTVRPVTEQS----LVTNKTTSCGCTTE 222
+                     55555666667799***********************889*****99888764....55678888888876 PP
+
+>> DUF1573  Protein of unknown function (DUF1573)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.4       1.2   1.2e+04      42      69 ..      57      85 ..      53      92 .. 0.60
+   2 ?    1.7   0.0     0.028   2.8e+02      37      48 ..     143     154 ..     135     166 .. 0.86
+   3 ?    8.2   0.1   0.00027       2.7      32      46 ..     207     221 ..     199     240 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 1.2
+  DUF1573 42 CgCttpeypke.piapGesgkikvtfnak 69
+             C+C +   +++  ++ G + + kv   ++
+     orf1 57 CECGNYVLTRAtNLKRGHTSSCKVCNRSE 85
+             66665555444257777777777755555 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.028
+  DUF1573  37 nvktsCgCttpe 48 
+              n++ sCgC + e
+     orf1 143 NITYSCGCYKHE 154
+              7899****9876 PP
+
+  == domain 3  score: 8.2 bits;  conditional E-value: 0.00027
+  DUF1573  32 plvitnvktsCgCtt 46 
+              + ++tn +tsCgCtt
+     orf1 207 QSLVTNKTTSCGCTT 221
+              5578999*******8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (349 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       559  (0.0284739); expected 392.6 (0.02)
+Passed bias filter:                      329  (0.0167584); expected 392.6 (0.02)
+Passed Vit filter:                        31  (0.00157905); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.33
+# Mc/sec: 3429.54
+//
+[ok]

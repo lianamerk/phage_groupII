@@ -1,0 +1,113 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2848385391_000005_2848385391_2848385391_1952381-1989530_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2848385391_000005_2848385391_2848385391_1952381-1989530_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=155]
+Description: source=IMGVR_UViG_2848385391_000005_2848385391_2848385391_1952381-1989530/3083-1392 coords=1032..1496 length=155 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+      5e-14   52.3  11.7    8.3e-14   51.5  11.7    1.4  1  GIIM       Group II intron, maturase-specific domain
+    0.00012   22.3   1.8    0.00021   21.5   1.7    1.5  1  DUF3701    Phage integrase protein
+  ------ inclusion threshold ------
+       0.12   12.6   0.4       0.26   11.5   0.1    1.7  2  HbpS-like  Haem degrading protein HbpS-like
+
+
+Domain annotation for each model (and alignments):
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.5  11.7   1.3e-17   8.3e-14       1      76 [.      54     128 ..      54     138 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 51.5 bits;  conditional E-value: 1.3e-17
+  GIIM   1 vkrfkrkireltkrsskgvsleelirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkkrrral 76 
+           +k++++++r + +++++ ++l++l++++n+ +rGW nYy+ ++ +++ + + +y+++r  +w++rk+k+  r++++
+  orf1  54 MKHMRQTVRGWKLHRQTLKTLADLAQQCNSTTRGWWNYYGAFYQTAMRKLV-RYLDQRFEQWARRKYKTLLRHKRR 128
+           699***************************************999998777.*****************5544444 PP
+
+>> DUF3701  Phage integrase protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   1.7   3.2e-08   0.00021      27      86 ..      65     125 ..      45     133 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 3.2e-08
+  DUF3701  27 rLaaagiktLaeLvarvnrrgkrWwrsvprlGqarArrieafLaehaetlgra.laavaaa 86 
+              +L+++ +ktLa+L + +n+  + Ww+      q+  r+++++L++  e  +r+  +   ++
+     orf1  65 KLHRQTLKTLADLAQQCNSTTRGWWNYYGAFYQTAMRKLVRYLDQRFEQWARRkYKTLLRH 125
+              89******************************************96555544404444444 PP
+
+>> HbpS-like  Haem degrading protein HbpS-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0      0.36   2.3e+03      49      70 ..      51      72 ..      41      95 .. 0.72
+   2 ?   11.5   0.1     4e-05      0.26      49      79 ..     112     141 ..      97     154 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.36
+               HHHHHHHHHHHHHHSS-HHHHH CS
+  HbpS-like 49 edwaerKartaarfgkstaalg 70
+                d ++  ++t++ ++   + l+
+       orf1 51 NDAMKHMRQTVRGWKLHRQTLK 72
+               5677788888888885555554 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 4e-05
+                HHHHHHHHHHHHHHSS-HHHHHHH..TTTH- CS
+  HbpS-like  49 edwaerKartaarfgkstaalgeklkeeeya 79 
+                e+wa+rK +t +r+++ + ++ +k+k +ey 
+       orf1 112 EQWARRKYKTLLRHKRRSMEWLRKMK-NEYP 141
+                79**********************99.5665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (155 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1099  (0.05598); expected 392.6 (0.02)
+Passed bias filter:                      646  (0.0329055); expected 392.6 (0.02)
+Passed Vit filter:                        57  (0.00290342); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.34u 0.21s 00:00:00.55 Elapsed: 00:00:00.37
+# Mc/sec: 1366.01
+//
+Query:       orf2  [L=160]
+Description: source=IMGVR_UViG_2848385391_000005_2848385391_2848385391_1952381-1989530/3083-1392 coords=1641..1162 length=160 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (160 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       396  (0.0201711); expected 392.6 (0.02)
+Passed bias filter:                      271  (0.013804); expected 392.6 (0.02)
+Passed Vit filter:                        20  (0.00101874); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.19s 00:00:00.51 Elapsed: 00:00:00.34
+# Mc/sec: 1538.75
+//
+[ok]

@@ -1,0 +1,130 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300012087_000020_3300012087_Ga0153959_1000635_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300012087_000020_3300012087_Ga0153959_1000635_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=133]
+Description: source=IMGVR_UViG_3300012087_000020_3300012087_Ga0153959_1000635/3226-4802 coords=155..553 length=133 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.1e-09   38.4   0.5    2.1e-09   38.4   0.5    1.8  2  LAGLIDADG_1  LAGLIDADG endonuclease
+  ------ inclusion threshold ------
+      0.053   13.6   0.1       0.11   12.6   0.1    1.5  1  H2TH         Formamidopyrimidine-DNA glycosylase H2TH domain
+      0.071   13.5   0.0       0.13   12.6   0.0    1.4  1  Big_6        Bacterial Ig domain
+
+
+Domain annotation for each model (and alignments):
+>> LAGLIDADG_1  LAGLIDADG endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.4      0.71   4.7e+03      90      90 ..      24      24 ..       3      56 .. 0.55
+   2 !   38.4   0.5   3.2e-13   2.1e-09       2      66 ..      70     132 ..      69     133 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.71
+                 T CS
+  LAGLIDADG_1 90 s 90
+                  
+         orf1 24 L 24
+                 1 PP
+
+  == domain 2  score: 38.4 bits;  conditional E-value: 3.2e-13
+                  HHHHHHHEEEEEEEEETTTTTTSEEEEEEEEEEEEGGGHHHHHHHHHHHTECEEEEETTTE.EEEE CS
+  LAGLIDADG_1   2 aGFiDgdGsfsitvtkskskktslkvqlefqielkkkdesllekikeylglgsikkrkkdk.yvsy 66 
+                  +G +D++G+fs++++k++    + k++l +++++k+    +l  +++y+g+g+i++++k++ +++y
+         orf1  70 TGIVDSEGNFSVSIQKTN---NKPKISLVLKVTQKEHSKGILLDLQNYFGCGNIYIDNKKEnAYKY 132
+                  799***************...45667899*****************************98755554 PP
+
+>> H2TH  Formamidopyrimidine-DNA glycosylase H2TH domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   1.7e-05      0.11      11      45 ..      91     123 ..      82     125 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.7e-05
+           -HHHHHHHHHT--SBHHHHHHCTTTSCS--HHHHH CS
+  H2TH  11 tvdalaerlkkkkrkiktlLLDqklvaGlGNiyad 45 
+           +++ + +  +k+++  k +LLD ++  G GNiy d
+  orf1  91 KISLVLKVTQKEHS--KGILLDLQNYFGCGNIYID 123
+           56666677777777..9****************99 PP
+
+>> Big_6  Bacterial Ig domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   2.1e-05      0.13      39      71 ..      70     101 ..      66     109 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 2.1e-05
+  Big_6  39 tgtvdadGeFsvtlepaqaagetlsvtatDaag 71 
+            tg+vd++G+Fsv+++++ ++  ++s++++ ++ 
+   orf1  70 TGIVDSEGNFSVSIQKT-NNKPKISLVLKVTQK 101
+            89************965.566666666654444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (133 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       785  (0.0399857); expected 392.6 (0.02)
+Passed bias filter:                      334  (0.017013); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.27u 0.16s 00:00:00.43 Elapsed: 00:00:00.31
+# Mc/sec: 1422.52
+//
+Query:       orf2  [L=104]
+Description: source=IMGVR_UViG_3300012087_000020_3300012087_Ga0153959_1000635/3226-4802 coords=799..1110 length=104 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      8e-16   59.0   0.2    1.2e-15   58.4   0.2    1.2  1  LAGLIDADG_1  LAGLIDADG endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> LAGLIDADG_1  LAGLIDADG endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.4   0.2   6.1e-20   1.2e-15       4      97 ..       4     104 .]       3     104 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 58.4 bits;  conditional E-value: 6.1e-20
+                  HHHHHEEEEEEEEETT.TTTTSEEEEEEEEEEEEGGGHHHHHHHHHHHTECEEEEETTTE.....EEEEEE-S.HHHHHHTHHHHHHHST-SSTHHHH CS
+  LAGLIDADG_1   4 FiDgdGsfsitvtksk.skktslkvqlefqielkkkdesllekikeylglgsikkrkkdk.....yvsyiisn.sskslkilipyfdkypllssKyld 94 
+                  FiDg+Gsf+  ++++  + k++l++ + ++i++++ d+ ll+  ++++g+g++k +         + s i+++ ++++++ + ++fdkypll+ Kyld
+         orf2   4 FIDGEGSFQFGISNTVnRGKAYLSLAPTLEIAQSNHDVLLLNAFIQFFGCGYLKPKYDIYdldavKNSRIVNRfIINQHSVVTEFFDKYPLLTRKYLD 101
+                  9********999999877899999*************************77776443322244454455555568899******************** PP
+
+                  HHH CS
+  LAGLIDADG_1  95 yld 97 
+                  yld
+         orf2 102 YLD 104
+                  *97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (104 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       419  (0.0213427); expected 392.6 (0.02)
+Passed bias filter:                      348  (0.0177262); expected 392.6 (0.02)
+Passed Vit filter:                        18  (0.00091687); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.26u 0.14s 00:00:00.40 Elapsed: 00:00:00.27
+# Mc/sec: 1269.10
+//
+[ok]

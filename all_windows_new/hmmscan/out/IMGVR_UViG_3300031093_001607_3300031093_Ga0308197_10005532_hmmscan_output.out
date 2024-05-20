@@ -1,0 +1,145 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300031093_001607_3300031093_Ga0308197_10005532_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300031093_001607_3300031093_Ga0308197_10005532_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=253]
+Description: source=IMGVR_UViG_3300031093_001607_3300031093_Ga0308197_10005532/477-2051 coords=3..761 length=253 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-24   85.8  12.3    6.9e-12   45.2   0.4    3.3  3  NUMOD3      NUMOD3 motif
+    2.4e-09   37.4   0.0    4.6e-09   36.5   0.0    1.5  1  GIY-YIG     GIY-YIG catalytic domain
+  ------ inclusion threshold ------
+      0.027   14.5   0.0      0.049   13.7   0.0    1.4  1  Phage_NinH  Phage NinH protein
+       0.06   13.7   0.0       0.11   12.8   0.0    1.4  1  HTH_17      Helix-turn-helix domain
+       0.13   12.5   0.0       0.28   11.4   0.0    1.6  1  HTH_22      HTH domain
+
+
+Domain annotation for each model (and alignments):
+>> NUMOD3  NUMOD3 motif
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.2   0.4   1.8e-15   6.9e-12       4      37 .]     129     162 ..     126     162 .. 0.94
+   2 !   22.5   0.7   2.2e-08   8.6e-05      17      37 .]     162     182 ..     161     182 .. 0.95
+   3 !   39.0   0.5   1.5e-13   5.9e-10       1      27 [.     170     196 ..     170     199 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 45.2 bits;  conditional E-value: 1.8e-15
+  NUMOD3   4 hseEtKaKiskAlkGennpnyGKkhseeTkkkis 37 
+             h +Et+ K+s+A++G nnp+ GK+hs+e+k++is
+    orf1 129 HLPETRVKMSEAKTGVNNPMSGKSHSPESKALIS 162
+             558******************************8 PP
+
+  == domain 2  score: 22.5 bits;  conditional E-value: 2.2e-08
+  NUMOD3  17 kGennpnyGKkhseeTkkkis 37 
+             +G n+++ GK+hs eT+ kis
+    orf1 162 SGANHHMSGKSHSNETRVKIS 182
+             699*****************8 PP
+
+  == domain 3  score: 39.0 bits;  conditional E-value: 1.5e-13
+  NUMOD3   1 GrkhseEtKaKiskAlkGennpnyGKk 27 
+             G+ hs+Et+ Kis+Al+G nnp+yGK 
+    orf1 170 GKSHSNETRVKISDALTGPNNPMYGKV 196
+             899***********************6 PP
+
+>> GIY-YIG  GIY-YIG catalytic domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.0   1.2e-12   4.6e-09       2      67 ..      20      91 ..      19     105 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 36.5 bits;  conditional E-value: 1.2e-12
+             -EEEEEEETTT--EEEEEESSHHHHHHHH....HHHHHHT--S-H.S.STEEEEEEEE----HHH.HHHHHH CS
+  GIY-YIG  2 ggiYiirskenkliYvGstknlekRlkqH....nsgkkakatrkk.gkkpfeliileifptksea.lelEkk 67
+              g+Y i++   + +YvGs+ nl +Rl++H    n + +  ++++k g ++f +i++e+ + +s+  l+ E+k
+     orf1 20 SGVYCIICLITGAVYVGSSINLAERLNDHiiegNTNVRLQNAITKyGLEHFVFIVVEFVEPDSSScLSEEAK 91
+             59***************************8666555555555555*************99887765444444 PP
+
+>> Phage_NinH  Phage NinH protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.0   1.2e-05     0.049       2      38 ..     202     238 ..     201     249 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 1.2e-05
+  Phage_NinH   2 tfsvktiPdmLveayGnqtevarrLkCsrntvrkyld 38 
+                 t  v  i ++Lv ++  q   a+ L+ s  tvr y++
+        orf1 202 TVNVNSIDNVLVRSFSSQVACAKWLNVSEFTVRNYIK 238
+                 78999******************************96 PP
+
+>> HTH_17  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0   2.9e-05      0.11       8      41 ..     223     252 ..     219     253 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 2.9e-05
+  HTH_17   8 AelLgvsrsTvyrlirrGelpaakiGrrwriprs 41 
+             A+ L+vs+ Tv+++i++G+  + k    ++i rs
+    orf1 223 AKWLNVSEFTVRNYIKSGKV-FRKQ---YLIVRS 252
+             699****************9.8888...888666 PP
+
+>> HTH_22  HTH domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0     7e-05      0.28      46      63 .]     221     238 ..     217     238 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 7e-05
+  HTH_22  46 kvAekLgvSraTvYrYLr 63 
+              +A+ L+vS++Tv +Y++
+    orf1 221 ACAKWLNVSEFTVRNYIK 238
+             69**************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (253 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       551  (0.0280664); expected 392.6 (0.02)
+Passed bias filter:                      451  (0.0229727); expected 392.6 (0.02)
+Passed Vit filter:                        37  (0.00188468); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.29u 0.21s 00:00:00.50 Elapsed: 00:00:00.33
+# Mc/sec: 2528.04
+//
+Query:       orf2  [L=90]
+Description: source=IMGVR_UViG_3300031093_001607_3300031093_Ga0308197_10005532/477-2051 coords=1182..1451 length=90 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (90 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       196  (0.0099837); expected 392.6 (0.02)
+Passed bias filter:                      150  (0.00764059); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.27u 0.13s 00:00:00.40 Elapsed: 00:00:00.28
+# Mc/sec: 1038.27
+//
+[ok]

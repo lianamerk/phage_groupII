@@ -1,0 +1,973 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.5 (Sep 2023)
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         ../cluster1_millard_final.cm
+# target sequence database:              /n/eddy_lab/users/lmerk/phage_groupII/data/genomes/groupII_millard/millard_hit_genomes.fna
+# MSA of significant hits saved to file: g2_intron.aout
+# tabular output of hits:                g2_intron.tblout
+# verbose output mode:                   on
+# sequence reporting threshold:          E-value <= 0.01
+# allowing truncated sequences anywhere: on
+# number of worker threads:              64 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cluster1_millard_final  [CLEN=489]
+Hit scores:
+ rank     E-value  score  bias  sequence   start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------- ------ ------   --- ----- ----  -----------
+  (1) !    5e-120  403.3   0.9  ON107264   85334  85935 +  cm    no 0.44  -
+  (2) !    5e-109  367.2   5.5  MN270258   80514  81047 +  cm    no 0.42  -
+  (3) !    5e-109  367.2   5.5  MN270259   80550  81083 +  cm    no 0.42  -
+  (4) !  9.9e-102  343.3   3.0  MT836071   22014  21436 -  cm    no 0.45  -
+  (5) !   7.7e-13   51.7   0.0  MK448731   14175  14377 +  cm    no 0.41  -
+  (6) !   7.7e-13   51.7   0.0  MK448781   11809  12011 +  cm    no 0.41  -
+  (7) !   7.7e-13   51.7   0.0  MK448888   12147  12349 +  cm    no 0.41  -
+  (8) !   2.7e-10   43.4   2.1  MW749003   25236  25019 -  cm    no 0.37  -
+  (9) !   7.1e-10   42.0   0.0  MT836602    5136   5577 +  cm    no 0.43  -
+ (10) !   3.3e-09   39.8   0.0  MN270258   82672  82908 +  cm    no 0.43  -
+ (11) !   3.3e-09   39.8   0.0  MN270259   82708  82944 +  cm    no 0.43  -
+ (12) !   9.3e-09   38.3   0.0  KT887559    2627   2848 +  cm    no 0.61  -
+ (13) !   9.3e-09   38.3   0.0  NC_030940   2627   2848 +  cm    no 0.61  -
+ (14) !   1.4e-08   37.8   2.0  MN091626   50477  50691 +  cm    no 0.35  -
+ (15) !   3.7e-08   36.4   0.1  AP008983  114818 114667 -  cm 5'&3' 0.39  -
+ (16) !   3.7e-08   36.4   0.1  NC_007581 114818 114667 -  cm 5'&3' 0.39  -
+ (17) !   6.5e-08   35.6   0.1  MT836071   19781  19522 -  cm    no 0.45  -
+ (18) !   1.1e-07   34.9   0.0  ON107264   87563  87811 +  cm    no 0.43  -
+ (19) !   6.4e-07   32.3   0.4  MZ422438   51114  50992 -  cm 5'&3' 0.33  -
+ (20) !     9e-07   31.8   0.0  MZ422438  120721 120849 +  cm 5'&3' 0.42  -
+ (21) !   1.6e-06   31.0   0.2  LC680885  193397 193532 +  cm    no 0.35  -
+ (22) !   1.1e-05   28.2   0.0  MZ422438  163937 163904 -  cm    no 0.44  -
+ (23) !   1.3e-05   28.0   0.2  MZ422438  137204 137009 -  cm    no 0.37  -
+ (24) !   1.3e-05   28.0   0.0  KY695241       1     50 +  cm    5' 0.54  -
+ (25) !     5e-05   26.1   0.0  MW248466  112575 112692 +  cm    no 0.36  -
+ (26) !   0.00083   22.1   0.0  MT836027    7075   7044 -  cm    no 0.66  -
+
+
+Hit alignments:
+>> ON107264  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (1) !    5e-120  403.3   0.9  cm        1      489 []       85334       85935 + .. 0.96    no 0.44    no       -   16.52    0.05    1 loc    489      133818
+
+                                                                                                                   NC
+                               :::::[[[[[--[[[[[[[[[[[.[[,,<<<<<_____...>>>>><<<<<<<_______.>>>>>>>(((((,<<<<<<--- CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAugug.gaauuccccuauaG...ggggauagaauaggaugcA.uauucuaccccCAaCugacUaA 78   
+                               GUGCGCCCA:AA:G:C::AUGU: GAAUU:::C AUAG   G:::A:AGA::A+G+UGCA U::UCU::C::CA:C::ACU+A
+                ON107264 85334 GUGCGCCCAUAAGGGCAUAUGUUuGAAUUUGUCGAUAGcaaGACAACAGAUUAAGUUGCAaUGAUCUGUCAUCAUCCAACUUA 85416
+                               **********************99*********************************************************** PP
+
+                                                                                                                   NC
+                               <<<<---<<____>>--->>>>----------->>>>>>,,,<<<<<-<-<<<<<<________>>>>>-.>.>-->>>>>,, CS
+  cluster1_millard_final    79 cCccggaGgGAAAcCaAAggGgGAaaauAGCAUgucaGuAAAgcgGuaaguugGCgAguUaccAcGCcac.a.uGuaCcgcaA 159  
+                               :CC:GGA:GGAAAC: AA:GG:GA + UAGCAUGU::G:AAAG:::UAAGUUG:C:AG+UACCA:G:CAC A UG+A:::CAA
+                ON107264 85417 UCCGGGAAGGAAACUGAACGGGGAGUGUAGCAUGUUGGAAAAGUCAUAAGUUGGCUAGAUACCAAGUCACgAcUGAAUGGCAA 85499
+                               **********************************************************************99*********** PP
+
+                                                                                                                   NC
+                               ))))),,(((.(...---((.(,,<<<<______>>>>,,,,,,,,<<<<--..<<<----.<<<-----..<<<<<______ CS
+  cluster1_millard_final   160 Ggggggagac.c...UAaGG.UgAaggCUacAcUGcuugAAcgacAguccga..cggCAaA.cggucGuC..cggCGGAAaGu 232  
+                               G::G:GA:A: :   UAAGG UGAA:GCUACACUGC:UGAA+GACAGUCCGA  C::CAAA C:G CGUC  :::CGGAA GU
+                ON107264 85500 GAUGAGAUAUgUggaUAAGGaUGAAAGCUACACUGCUUGAAUGACAGUCCGAguCGUCAAAaCUGCCGUCuaUAACGGAAGGU 85582
+                               **********98****************************************9999999999********************* PP
+
+                                                                                                                   NC
+                               _________>>>>>..>>>--.................................---------->>>.-.>>>>,.,<<<___ CS
+  cluster1_millard_final   233 AucuauuaaCGccg..ccguu.................................AAguuacuaaccg.c.ggaca.uugCGAU 277  
+                               AUC AUUAACG:::  C:GU                                  AAG +ACU A::G C GGACA U::CGAU
+                ON107264 85583 AUCCAUUAACGUUAuaCAGUCauagggaggaagaaguauagcugagcuuucucuAAGCAACUCAAUGaCuGGACAaUCCCGAU 85665
+                               *******************99*******************************************999658************* PP
+
+                                                                                                                   NC
+                               __>>>,,,,,...........,.)-))----..)-))),,,,,,,,]]]]]]]]]]]]]--]]]]],,<<<<<<---<<<<.. CS
+  cluster1_millard_final   278 AAGcaugAAa...........g.AuCCgAca..gugucaugcuAuGuccacaUgcgccgAAgugggGAuUgCCuAAAucGG.. 344  
+                               AAG::U+AAA           + AUCCGACA  : :U:A+GCUAUGUC:ACAU::G:C:AA:UGGGGAUU:CCUAAAUCGG  
+                ON107264 85666 AAGGGUUAAAgggcgaacgucAcAUCCGACAccACAUAAAGCUAUGUCAACAUAUGUCUAAAUGGGGAUUACCUAAAUCGGaa 85748
+                               ********************956*********999**********************************************99 PP
+
+                                                                                                                   NC
+                               ...............................____.....>>>>-->>>>>>,,,,<<<<<<------<<<<<-<<<<<<___ CS
+  cluster1_millard_final   345 ...............................aaGa.....CCgauAaGGcAacGGAGccuCCGUAGUAGuCuGagcaaGgGAA 391  
+                                                                       CCGA+AAGG:AACGGAG:CUCCGUAGUAGUCUG G::AGGGAA
+                ON107264 85749 ugccugauauaggcuauggauaucgauccug----aauauCCGACAAGGUAACGGAGUCUCCGUAGUAGUCUGGGGUAGGGAA 85827
+                               9999999999999988888877766665544....35567******************************************* PP
+
+                                                                                                          vvv      NC
+                               __>>>>>>->>->>>---->>>>>>,<<<<-....<<_..........>>--..-->>>>,....,<<<<<<<<<<<<<<___ CS
+  cluster1_millard_final   392 AgcCuuguACaUGgCGAAGGGaggCAgCucg....guu..........acUG..AggaGcu....GgAgCcguaugcggcGAA 454  
+                               AGCCU::UACAUGGCGAAGGGAG:CAGCU:G    :U           A:UG  AG:AGC+    G   C::U:U   G:GAA
+                ON107264 85828 AGCCUGCUACAUGGCGAAGGGAGACAGCUUGucuaGU-uuaauacaacAUUGgaAGGAGCGcgagG---CUCUGU---GAGAA 85903
+                               *******************************877644.589999*9996666779*****997744...******...***** PP
+
+                                  vvv                              NC
+                               _>>>>>-->>>>>>>>>,,<<<<<<_>>->>>>:: CS
+  cluster1_millard_final   455 AgccgcACguacgGuUcgucGgggguccAccCgAc 489  
+                                :CC++ACG:A::G   +U::::::U::A:::: C
+                ON107264 85904 GUCCAGACGUAGUG---UUGAACAAUUUAGUUUCC 85935
+                               **************...789*************** PP
+
+>> MN270258  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (2) !    5e-109  367.2   5.5  cm        1      489 []       80514       81047 + .. 0.92    no 0.42    no       -   16.45    0.07    1 loc    489      110666
+
+                                           v                                                                    v  NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,<<<<<_____>>>>><<<<<<<_______>>>>>>>(((((,<<<<<<---<<<<- CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaauuccccuauaGggggauagaauaggaugcAuauucuaccccCAaCugacUaAcCccg 83   
+                               GUGCGC::::AA :G:::A::UG:A++UCCC: A+AG:GGGAUA::AU:G+A+G+A:AU::UA::::CAACU:ACUAACC: G
+                MN270258 80514 GUGCGCUGUUAAGCGUAAAAAUGUAUCUCCCUCACAGAGGGAUAUUAUUGAAAGUAAAUAAUAGGAACAACUAACUAACCUAG 80596
+                               *********************************************************************************** PP
+
+                                            v                           v                            v             NC
+                               --<<____>>--->>>>----------->>>>>>,,,<<<<<-<-<<<<<<________>>>>>-.>>-->>>>>,,))))), CS
+  cluster1_millard_final    84 gaGgGAAAcCaAAggGgGAaaauAGCAUgucaGuAAAgcgGuaaguugGCgAguUaccAcGCcac.auGuaCcgcaAGggggg 165  
+                                +GGGAAACC AA :GGGA AAUAGCAUGU:AGUAAAGCGG +A+:::GCGAGUUAC+ACGC::+ :UGU CCGCAAG::::G
+                MN270258 80597 CGGGGAAACCCAAAGGGGACAAUAGCAUGUUAGUAAAGCGGAUAAGGAGCGAGUUACAACGCUUUgAUGUGCCGCAAGUUCCG 80679
+                               *****************************************************************99**************** PP
+
+                                v                                           vvv       vv                           NC
+                               ,((((---(((,,<<<<______>>>>,,,,,,,,.<<<<--...<<<...----<<<-----<<<<<_______________ CS
+  cluster1_millard_final   166 agaccUAaGGUgAaggCUacAcUGcuugAAcgacA.guccga...cgg...CAaAcggucGuCcggCGGAAaGuAucuauuaa 241  
+                               + A:CUA+GGU+AAGGCUA+ACUGCUUGAAC +CA :UC:GA         CAAA  :UCG CC::CGGAAAGUA+CU++ A 
+                MN270258 80680 UAACCUAUGGUUAAGGCUAAACUGCUUGAACCUCAaUUCUGAcua-G-gugCAAAGCAUCGCCCAUCGGAAAGUAACUGAGAC 80760
+                               ******************************************774.3.368******************************** PP
+
+                                     vv                                          vvv                               NC
+                               >>>>>>>>--..............................---------->>>.-.>>>>,,<<<_____>>>,,,,,..... CS
+  cluster1_millard_final   242 CGccgccguu..............................AAguuacuaaccg.c.ggacauugCGAUAAGcaugAAa..... 287  
+                               CG::G:  +U                              AA UU+CUA + + + :GA: +U:CGAUAAG:AUGAA+     
+                MN270258 80761 CGAUGUUACUguauauucguuguugugauuuuggacgaauAACUUUCUACAGUaAaAGAGCAUACGAUAAGUAUGAAUaaagg 80843
+                               *****888888999*********************************999777436*************************** PP
+
+                                                      v                     v                                      NC
+                               ..........,)-))----)-))),,,,,,,,]]]]]]]]].]]]]--]]]]],,<<<<<<---<<<<____>>>>-->>>>> CS
+  cluster1_millard_final   288 ..........gAuCCgAcagugucaugcuAuGuccacaUgc.gccgAAgugggGAuUgCCuAAAucGGaaGaCCgauAaGGcA 359  
+                                         GA+CC+A++G :U  U+ +A GU:CA::U:: :C: A ::::GGAUU:CC:AA ::GG+AGACC::UA:GG:A
+                MN270258 80844 aaugagugagGAACCUAAGGGUUACUAGAACGUACAUUUUUaACGAAUAGCAGGAUUGCCUAAGAGGGGAGACCCUUAUGGUA 80926
+                               ********977******************************99**************************************** PP
+
+                                                                                            v            v         NC
+                               >,,,,<<<<<<------<<<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<-<<_>>--..-->>>>,,<<< CS
+  cluster1_millard_final   360 acGGAGccuCCGUAGUAGuCuGagcaaGgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucgguuacUG..AggaGcuGgAg 440  
+                               ACGGAG:C:CCGUAGUAGUC:GAGCAAGGGAAA+CCUUGUAC:UGGCGAAGGG:G:CA    G:U A:U   A +   +G   
+                MN270258 80927 ACGGAGUCACCGUAGUAGUCCGAGCAAGGGAAAUCCUUGUACAUGGCGAAGGGUGACA----GGUAAUUUcgAUU---AG--- 80999
+                               **********************************************************....3333333322442...23... PP
+
+                                       v        v                                                              NC
+                               <<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<.........................._....>>->>>>:: CS
+  cluster1_millard_final   441 CcguaugcggcGAAAgccgcACguacgGuUcgucGgggg..........................u....ccAccCgAc 489  
+                                       +                      ++:::::G                               C:A::::A 
+                MN270258 81000 --------U----------------------UAGAAAGGauuaggugcgugggaugcguacagcc-aaaaCUAUUUUAA 81047
+                               ........1......................3344444466666666666666665666555554.455599******* PP
+
+>> MN270259  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (3) !    5e-109  367.2   5.5  cm        1      489 []       80550       81083 + .. 0.92    no 0.42    no       -   16.45    0.05    1 loc    489      106491
+
+                                           v                                                                    v  NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,<<<<<_____>>>>><<<<<<<_______>>>>>>>(((((,<<<<<<---<<<<- CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaauuccccuauaGggggauagaauaggaugcAuauucuaccccCAaCugacUaAcCccg 83   
+                               GUGCGC::::AA :G:::A::UG:A++UCCC: A+AG:GGGAUA::AU:G+A+G+A:AU::UA::::CAACU:ACUAACC: G
+                MN270259 80550 GUGCGCUGUUAAGCGUAAAAAUGUAUCUCCCUCACAGAGGGAUAUUAUUGAAAGUAAAUAAUAGGAACAACUAACUAACCUAG 80632
+                               *********************************************************************************** PP
+
+                                            v                           v                            v             NC
+                               --<<____>>--->>>>----------->>>>>>,,,<<<<<-<-<<<<<<________>>>>>-.>>-->>>>>,,))))), CS
+  cluster1_millard_final    84 gaGgGAAAcCaAAggGgGAaaauAGCAUgucaGuAAAgcgGuaaguugGCgAguUaccAcGCcac.auGuaCcgcaAGggggg 165  
+                                +GGGAAACC AA :GGGA AAUAGCAUGU:AGUAAAGCGG +A+:::GCGAGUUAC+ACGC::+ :UGU CCGCAAG::::G
+                MN270259 80633 CGGGGAAACCCAAAGGGGACAAUAGCAUGUUAGUAAAGCGGAUAAGGAGCGAGUUACAACGCUUUgAUGUGCCGCAAGUUCCG 80715
+                               *****************************************************************99**************** PP
+
+                                v                                           vvv       vv                           NC
+                               ,((((---(((,,<<<<______>>>>,,,,,,,,.<<<<--...<<<...----<<<-----<<<<<_______________ CS
+  cluster1_millard_final   166 agaccUAaGGUgAaggCUacAcUGcuugAAcgacA.guccga...cgg...CAaAcggucGuCcggCGGAAaGuAucuauuaa 241  
+                               + A:CUA+GGU+AAGGCUA+ACUGCUUGAAC +CA :UC:GA         CAAA  :UCG CC::CGGAAAGUA+CU++ A 
+                MN270259 80716 UAACCUAUGGUUAAGGCUAAACUGCUUGAACCUCAaUUCUGAcua-G-gugCAAAGCAUCGCCCAUCGGAAAGUAACUGAGAC 80796
+                               ******************************************774.3.368******************************** PP
+
+                                     vv                                          vvv                               NC
+                               >>>>>>>>--..............................---------->>>.-.>>>>,,<<<_____>>>,,,,,..... CS
+  cluster1_millard_final   242 CGccgccguu..............................AAguuacuaaccg.c.ggacauugCGAUAAGcaugAAa..... 287  
+                               CG::G:  +U                              AA UU+CUA + + + :GA: +U:CGAUAAG:AUGAA+     
+                MN270259 80797 CGAUGUUACUguauauucguuguugugauuuuggacgaauAACUUUCUACAGUaAaAGAGCAUACGAUAAGUAUGAAUaaagg 80879
+                               *****888888999*********************************999777436*************************** PP
+
+                                                      v                     v                                      NC
+                               ..........,)-))----)-))),,,,,,,,]]]]]]]]].]]]]--]]]]],,<<<<<<---<<<<____>>>>-->>>>> CS
+  cluster1_millard_final   288 ..........gAuCCgAcagugucaugcuAuGuccacaUgc.gccgAAgugggGAuUgCCuAAAucGGaaGaCCgauAaGGcA 359  
+                                         GA+CC+A++G :U  U+ +A GU:CA::U:: :C: A ::::GGAUU:CC:AA ::GG+AGACC::UA:GG:A
+                MN270259 80880 aaugagugagGAACCUAAGGGUUACUAGAACGUACAUUUUUaACGAAUAGCAGGAUUGCCUAAGAGGGGAGACCCUUAUGGUA 80962
+                               ********977******************************99**************************************** PP
+
+                                                                                            v            v         NC
+                               >,,,,<<<<<<------<<<<<-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<-<<_>>--..-->>>>,,<<< CS
+  cluster1_millard_final   360 acGGAGccuCCGUAGUAGuCuGagcaaGgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucgguuacUG..AggaGcuGgAg 440  
+                               ACGGAG:C:CCGUAGUAGUC:GAGCAAGGGAAA+CCUUGUAC:UGGCGAAGGG:G:CA    G:U A:U   A +   +G   
+                MN270259 80963 ACGGAGUCACCGUAGUAGUCCGAGCAAGGGAAAUCCUUGUACAUGGCGAAGGGUGACA----GGUAAUUUcgAUU---AG--- 81035
+                               **********************************************************....3333333322442...23... PP
+
+                                       v        v                                                              NC
+                               <<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<.........................._....>>->>>>:: CS
+  cluster1_millard_final   441 CcguaugcggcGAAAgccgcACguacgGuUcgucGgggg..........................u....ccAccCgAc 489  
+                                       +                      ++:::::G                               C:A::::A 
+                MN270259 81036 --------U----------------------UAGAAAGGauuaggugcgugggaugcguacagcc-aaaaCUAUUUUAA 81083
+                               ........1......................3344444466666666666666665666555554.455599******* PP
+
+>> MT836071  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (4) !  9.9e-102  343.3   3.0  cm        1      489 []       22014       21436 - .. 0.94    no 0.45    no       -   17.46    0.06    1 loc    489       25949
+
+                                              v                                                                    NC
+                               :::::[[[[[--.[[[[[[[[[[[[[,,<<<<<_____...>>>>><<<<<<<_______...>>>>>>>(((((,<<<<<<- CS
+  cluster1_millard_final     1 GUgCgcccacAA.cggcgcAuguggaauuccccuauaG...ggggauagaauaggaugcA...uauucuaccccCAaCugacU 76   
+                               GUGCG:CCA:AA :G CGCAU::::AAU::C:CU+U+G   G:G::UAGAA:AGGAU+CA   U:UUCUAC:CCCAACUGA:U
+                MT836071 22014 GUGCGUCCAGAAuGGUCGCAUAGUAAAUAUCUCUGUGGcaaGAGAUUAGAAUAGGAUACAauaUGUUCUACUCCCAACUGAAU 21932
+                               ***********************************************************99********************** PP
+
+                                    v              v                                  v  v        v  v             NC
+                               --<<<<---<<____>>--->>>>----------->>>>>>,,,<<<<<-<-<.<<<<<________>>>>>->.>-->>>>> CS
+  cluster1_millard_final    77 aAcCccggaGgGAAAcCaAAggGgGAaaauAGCAUgucaGuAAAgcgGuaagu.ugGCgAguUaccAcGCcaca.uGuaCcgc 157  
+                               AA:CC  GAG:GAAA:CAAA GG:GAAAA+AGCAU:UCAGUAAA:CGG:A:GU U GC A+ U++CA GC ACA :GU:CCG:
+                MT836071 21931 AAGCCCCGAGCGAAAGCAAAAGGUGAAAACAGCAUUUCAGUAAAACGGAAUGUgUGGCUAACUGUCAUGCGACAcAGUUCCGU 21849
+                               *********************************************************************************** PP
+
+                                                                                      v         v                  NC
+                               ,,))))),,.(((.(...---((.(,,<<<<______>>>>,,,,,,,,<<<<--<<<----.<<<-----..<<<<<_____ CS
+  cluster1_millard_final   158 aAGggggga.gac.c...UAaGG.UgAaggCUacAcUGcuugAAcgacAguccgacggCAaA.cggucGuC..cggCGGAAaG 231  
+                               +AGGG:G+A GAC :   UAAGG UGAAG:CU+CA+UG:UU AACGA+AG::C++ GGCA+A  G  +G C  :GGCGGAAAG
+                MT836071 21848 GAGGGGGAAaGACaGauaUAAGGaUGAAGCCUGCAUUGGUUCAACGAUAGUUCAGCGGCAUAaGGCGUGGCguGGGCGGAAAG 21766
+                               ********99***99***********************************************99999***************9 PP
+
+                                                 v                                                    v            NC
+                               .__..________>>>>>>>>--....................................---------->>>->>.>>,.,<< CS
+  cluster1_millard_final   232 .uA..ucuauuaaCGccgccguu....................................AAguuacuaaccgcgg.aca.uug 273  
+                                +A  U+UAU +ACGCC: C +                                     AAG UA++AACC CG: :CA UUG
+                MT836071 21765 gCAguUAUAUCUACGCCCUCUCGugguacucaauuccaaagcauuaggaauaugggcaaAAGGUAUCAACCACGAcGCAcUUG 21683
+                               8888899***********8888889********************************************************** PP
+
+                                                                                              v                    NC
+                               <_____>>>,,,,,............,.)-))----..)-))),,,,,,,..,]]]]]]]]]]].]]--]]]]],,<<<<<<- CS
+  cluster1_millard_final   274 CGAUAAGcaugAAa............g.AuCCgAca..gugucaugcuAu..GuccacaUgcgc.cgAAgugggGAuUgCCuA 338  
+                               CGAUAAGCA+GAAA            G AUCCGACA  :UGUC UGC A+  GU::::AUGCG  C:AA:UGG:GAUUGCC:A
+                MT836071 21682 CGAUAAGCAAGAAAagaacgaaagucGcAUCCGACAauCUGUCGUGCCAAuaGUUACUAUGCGUgCUAACUGGAGAUUGCCUA 21600
+                               *************************966*********************99******************************** PP
+
+                                                                                                                   NC
+                               --<<<<............................____.......>>>>-->>>>>>,,,,<<<<<<------<<<<<-<<<< CS
+  cluster1_millard_final   339 AAucGG............................aaGa.......CCgauAaGGcAacGGAGccuCCGUAGUAGuCuGagcaa 386  
+                               AAUCGG                                       CCGA+A:GGCAACGGAGC:UCCGUAGUAGUCUGAGCAA
+                MT836071 21599 AAUCGGgaugccaaaaggcuauggguaaagacuc----ugaauacCCGACAUGGCAACGGAGCUUCCGUAGUAGUCUGAGCAA 21521
+                               *********9999999999988888776655554....4446678************************************** PP
+
+                                v     v                                 v   v                     v                NC
+                               <<_____>>>>>>->>->>>---->>>>>>,<<<<-....<<_..>>--..-->>>>,,.<<<<<<<<<<<<<<____.>>>> CS
+  cluster1_millard_final   387 GgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucg....guu..acUG..AggaGcuG.gAgCcguaugcggcGAAA.gccg 459  
+                               G GAAAG CUUGUACAUGGCGAAGGGA:GCAG:U:G    :    A:U   A+:A:C+G         U:::G:GA A :C::
+                MT836071 21520 GGGAAAGACUUGUACAUGGCGAAGGGAAGCAGUUGGuaauU--uuAAUAcaAACAACGGa--------UAAUGUGAGAgACAU 21448
+                               ************************************75543..34555565899999994........777777997656777 PP
+
+                                   v                              NC
+                               >-->>>>>>>>>,,<<<<<<...._>>->>>>:: CS
+  cluster1_millard_final   460 cACguacgGuUcgucGgggg....uccAccCgAc 489  
+                               :A G+                   U        C
+                MT836071 21447 UAUGA---------------gaaaU-------CC 21436
+                               77774...............33323.......** PP
+
+>> MK448731  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (5) !   7.7e-13   51.7   0.0  cm        1      489 []       14175       14377 + .. 0.76    no 0.41    no       -   40.61    0.33    1 loc    489       35793
+
+                                    vv                                                                        vv   NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~~~~~~~~~~~~~~~~~~~~,,,,,,,,]]]]]]]]]]]]]--]]]]],, CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[15]**[21]**[101]**[137]*augcuAuGuccacaUgcgccgAAgugggGA 331  
+                               GU+C ++:AC AC:::::A:                                              :U:::::GAAGU:  GA
+                MK448731 14175 GUACUAUAACUACUUUGGAC-------*[ 3]**[ 3]**[  0]**[  0]*-------------GUUUAAGGAAGUU--GA 14215
+                               *******************8..........8.....8.............................8************..** PP
+
+                               v                                         v       vvv                       vv v    NC
+                               <<<<<<---<<<<.....__.........__>>>>-->>>>>>,,,,<<<<<<------<<<~~~~~~->>>---->>.>>>> CS
+  cluster1_millard_final   332 uUgCCuAAAucGG.....aa.........GaCCgauAaGGcAacGGAGccuCCGUAGUAGuC*[23]*UGgCGAAGGG.aggC 416  
+                                U:CC:A AUC                  GA  GAUA:GG:A    A ::   GU    G C       G CGAAG++  :: 
+                MK448731 14216 GUACCAAUAUC--aauga--ugauagucaGA--GAUAUGGUAGAUAACUU---GUGAAUGGC*[ 5]*CGUCGAAGAAaGAAG 14288
+                               ***********..55554..44455555577..**********8655443...444444444...3..355666662202233 PP
+
+                                                                  v    v                 v                         NC
+                               ,<<<<-<<_>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................... CS
+  cluster1_millard_final   417 AgCucgguuacUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................... 479  
+                               A      :U:         +G :AGCCGU:U::GG   AA CC::ACG:ACGGUU:G+ G:G:G                   
+                MK448731 14289 A-----UAUUG--------GGaAAGCCGUGUAAGGGA-AAACCUUACGCACGGUUUGACGAGGGguuucugaggagauggcuc 14357
+                               3.....22222........467***********9976.66799***********************99998888877776665 PP
+
+                                                 v   NC
+                               ._..........>>->>>>:: CS
+  cluster1_millard_final   480 .u..........ccAccCgAc 489  
+                                           C:AC:C AC
+                MK448731 14358 a-aaucagcgacCUACUCUAC 14377
+                               5.5566677788********* PP
+
+>> MK448781  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (6) !   7.7e-13   51.7   0.0  cm        1      489 []       11809       12011 + .. 0.76    no 0.41    no       -   40.61    0.45    1 loc    489       40382
+
+                                    vv                                                                        vv   NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~~~~~~~~~~~~~~~~~~~~,,,,,,,,]]]]]]]]]]]]]--]]]]],, CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[15]**[21]**[101]**[137]*augcuAuGuccacaUgcgccgAAgugggGA 331  
+                               GU+C ++:AC AC:::::A:                                              :U:::::GAAGU:  GA
+                MK448781 11809 GUACUAUAACUACUUUGGAC-------*[ 3]**[ 3]**[  0]**[  0]*-------------GUUUAAGGAAGUU--GA 11849
+                               *******************8..........8.....8.............................8************..** PP
+
+                               v                                         v       vvv                       vv v    NC
+                               <<<<<<---<<<<.....__.........__>>>>-->>>>>>,,,,<<<<<<------<<<~~~~~~->>>---->>.>>>> CS
+  cluster1_millard_final   332 uUgCCuAAAucGG.....aa.........GaCCgauAaGGcAacGGAGccuCCGUAGUAGuC*[23]*UGgCGAAGGG.aggC 416  
+                                U:CC:A AUC                  GA  GAUA:GG:A    A ::   GU    G C       G CGAAG++  :: 
+                MK448781 11850 GUACCAAUAUC--aauga--ugauagucaGA--GAUAUGGUAGAUAACUU---GUGAAUGGC*[ 5]*CGUCGAAGAAaGAAG 11922
+                               ***********..55554..44455555577..**********8655443...444444444...3..355666662202233 PP
+
+                                                                  v    v                 v                         NC
+                               ,<<<<-<<_>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................... CS
+  cluster1_millard_final   417 AgCucgguuacUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................... 479  
+                               A      :U:         +G :AGCCGU:U::GG   AA CC::ACG:ACGGUU:G+ G:G:G                   
+                MK448781 11923 A-----UAUUG--------GGaAAGCCGUGUAAGGGA-AAACCUUACGCACGGUUUGACGAGGGguuucugaggagauggcuc 11991
+                               3.....22222........467***********9976.66799***********************99998888877776665 PP
+
+                                                 v   NC
+                               ._..........>>->>>>:: CS
+  cluster1_millard_final   480 .u..........ccAccCgAc 489  
+                                           C:AC:C AC
+                MK448781 11992 a-aaucagcgacCUACUCUAC 12011
+                               5.5566677788********* PP
+
+>> MK448888  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (7) !   7.7e-13   51.7   0.0  cm        1      489 []       12147       12349 + .. 0.76    no 0.41    no       -   40.61    0.32    1 loc    489       33765
+
+                                    vv                                                                        vv   NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~~~~~~~~~~~~~~~~~~~~,,,,,,,,]]]]]]]]]]]]]--]]]]],, CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[15]**[21]**[101]**[137]*augcuAuGuccacaUgcgccgAAgugggGA 331  
+                               GU+C ++:AC AC:::::A:                                              :U:::::GAAGU:  GA
+                MK448888 12147 GUACUAUAACUACUUUGGAC-------*[ 3]**[ 3]**[  0]**[  0]*-------------GUUUAAGGAAGUU--GA 12187
+                               *******************8..........8.....8.............................8************..** PP
+
+                               v                                         v       vvv                       vv v    NC
+                               <<<<<<---<<<<.....__.........__>>>>-->>>>>>,,,,<<<<<<------<<<~~~~~~->>>---->>.>>>> CS
+  cluster1_millard_final   332 uUgCCuAAAucGG.....aa.........GaCCgauAaGGcAacGGAGccuCCGUAGUAGuC*[23]*UGgCGAAGGG.aggC 416  
+                                U:CC:A AUC                  GA  GAUA:GG:A    A ::   GU    G C       G CGAAG++  :: 
+                MK448888 12188 GUACCAAUAUC--aauga--ugauagucaGA--GAUAUGGUAGAUAACUU---GUGAAUGGC*[ 5]*CGUCGAAGAAaGAAG 12260
+                               ***********..55554..44455555577..**********8655443...444444444...3..355666662202233 PP
+
+                                                                  v    v                 v                         NC
+                               ,<<<<-<<_>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................... CS
+  cluster1_millard_final   417 AgCucgguuacUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................... 479  
+                               A      :U:         +G :AGCCGU:U::GG   AA CC::ACG:ACGGUU:G+ G:G:G                   
+                MK448888 12261 A-----UAUUG--------GGaAAGCCGUGUAAGGGA-AAACCUUACGCACGGUUUGACGAGGGguuucugaggagauggcuc 12329
+                               3.....22222........467***********9976.66799***********************99998888877776665 PP
+
+                                                 v   NC
+                               ._..........>>->>>>:: CS
+  cluster1_millard_final   480 .u..........ccAccCgAc 489  
+                                           C:AC:C AC
+                MK448888 12330 a-aaucagcgacCUACUCUAC 12349
+                               5.5566677788********* PP
+
+>> MW749003  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (8) !   2.7e-10   43.4   2.1  cm        1      489 []       25236       25019 - .. 0.81    no 0.37    no       -   12.38    0.11    1 loc    489      252262
+
+                                    v v                                              v v                           NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~,,,]]]]]]]]]]]]]--]]]]],,<<<<<<---<<<<____>>>>--> CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[279]*AuGuccacaUgcgccgAAgugggGAuUgCCuAAAucGGaaGaCCgauAa 355  
+                               G +CG C :: A::::::AU::G::A        AU ::C::AU::::::A :: G                           
+                MW749003 25236 GAACGUCAGAGAUUCUAUAUAAGAGAA*[ 10]*AUACUCUUAUAUAGAAAGUCAGCA------------------------- 25176
+                               *******99999999999999999987....8..556999999999999999986533......................... PP
+
+                                        vv             vv                     vv            vv         v   v       NC
+                               >>>>>,,,,<<<<<<------<<<<<..-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<-..<<_..>>--.-- CS
+  cluster1_millard_final   356 GGcAacGGAGccuCCGUAGUAGuCuG..agcaaGgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucg..guu..acUG.Ag 431  
+                                          ::CC UAGUAGU:++  AG:::G   AA  C:::U    :GCGAAGGG::++A :::   :    +:U    
+                MW749003 25175 -----------GACCAUAGUAGUUAUgaAGAUGGG-UAACUCCAUUG--GAGCGAAGGGUCAUAGUCAAaaU--aaUAUAuUU 25109
+                               ...........69***********66655555554.44545656666..59**********99999998533..445555457 PP
+
+                                                                                                                   NC
+                               >>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<......................_.........>> CS
+  cluster1_millard_final   432 gaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg......................u.........cc 482  
+                               ::: +G ::GCC UAUGCG::GAAA::CGCACGUA GGU::G+:G:G:G                                C:
+                MW749003 25108 UGAUGGaACGCCUUAUGCGGUGAAAGUCGCACGUAGGGUGUGAAGUGGGggaaaaagaggagauuauauca-aaucuuuacCU 25027
+                               8999999**************************************99779999999888888777666555.55666777766 PP
+
+                                        NC
+                               -.>>>>:: CS
+  cluster1_millard_final   483 A.ccCgAc 489  
+                               A C:C:A+
+                MW749003 25026 AuCACUAU 25019
+                               6599**** PP
+
+>> MT836602  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       cyksc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ------ ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (9) !   7.1e-10   42.0   0.0  cm        1      489 []        5136        5577 + ..   18.3    no 0.43    no       -  231.07    1.05    1 loc    489       16695
+
+                                          v       v vv                                                            v NC
+                              :::::[[[[[--[[[[[[[[[[[[[,,<~~~~~~><<<<<<<_______.>>>>>>>~~~~~~~,,(((.(..---((..(,,<< CS
+  cluster1_millard_final    1 GUgCgcccacAAcggcgcAuguggaauu*[13]*auagaauaggaugcA.uauucua*[101]*gagac.c..UAaGG..UgAag 180 
+                              GU C ::: :AA ::C:CAU U   ++U      A A:::::++AU+ A :::::U        ++GA: C   A+GG  UGA: 
+                MT836602 5136 GUCCUAAGGGAAAUACACAUAUCCUUCU*[30]*AUAUCCCCAAAUAAAaGGGGAUG*[  9]*AUGAUgCggAAUGGuaUGAUU 5246
+
+                              v        vv                v                v                     v                   NC
+                              <<______>>>>,,,,,,,,<<<<--<<<----<<<-----.<<<<<_______..________>>>>>>>>--........... CS
+  cluster1_millard_final  181 gCUacAcUGcuugAAcgacAguccgacggCAaAcggucGuC.cggCGGAAaGuA..ucuauuaaCGccgccguu........... 251 
+                               CU C +UG  :GAA   +       : :C +A:G:  G    : :G AA G A  ++      C: : :C:U            
+                MT836602 5247 ACUUCCUUGACAGAAAUCUU------AUUCGUAUGAAAGAAaGUUUGAAAGGAAggAAAUCCCUCAUAUUCAUGugggaaagaca 5325
+
+                                              v         v       v                                                   NC
+                              .....---------->>>->>>>,,<<<_____>>>,,,,,............................................ CS
+  cluster1_millard_final  252 .....AAguuacuaaccgcggacauugCGAUAAGcaugAAa............................................ 287 
+                                   AA   + U  : :     AU: :GA AA: :++AA                                             
+                MT836602 5326 gaaccAAUGCUGUCCAUU-----AUGUGGAGAACCCAUAACcaaagacacaccguggcgcacggugaugcugaacguggauggua 5405
+
+                                                      vv v        v                                                 NC
+                              ,)-))----.)-))),,,,,,,,]]]]]]]]].]]]]--]]]]],,<<<<<<---<<<<____>>>>-->>>>>>~~~~~~,<<< CS
+  cluster1_millard_final  288 gAuCCgAca.gugucaugcuAuGuccacaUgc.gccgAAgugggGAuUgCCuAAAucGGaaGaCCgauAaGGcAa*[56]*AgCu 420 
+                               AUCC A+  G :UC UGC+ +    A AUG: G:: A : ::: A    C:A A:: GA GAC ::+A:G          AGC 
+                MT836602 5406 UAUCCAAACuGCAUCUUGCACAUGAAACAUGUuGUAAAUCUCUUAA----CAAGAAAGGAGGACUUUCAUG----*[ 0]*AGCG 5476
+
+                              v v            v    v                                         v                       NC
+                              <-<<_.........>>---->>>>,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................. CS
+  cluster1_millard_final  421 cgguu.........acUGAggaGcuGgAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................. 479 
+                               G UU         A UGA+  GCU GAGCCGUAUG::::GAAA::::CA GUACGGUUC+U GGG:G                 
+                MT836602 5477 UGCUUcauagaaguAUUGAAUUGCUUGAGCCGUAUGAUGGGAAACUAUCAUGUACGGUUCUUAGGGGGgaaagcgcccguaaggg 5561
+
+                                           v   NC
+                              ......_>>->>>>:: CS
+  cluster1_millard_final  480 ......uccAccCgAc 489 
+                                     C:ACCC A+
+                MT836602 5562 ugccgaCCUACCCGAU 5577
+
+>> MN270258  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (10) !   3.3e-09   39.8   0.0  cm        1      489 []       82672       82908 + .. 0.69    no 0.43    no       -   72.94    0.82    1 loc    489      110666
+
+                                    vv                                                                             NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~,,((((---(((,,~~~~~~,,,,,,,,~~~~~~~~~~~~,,,,,,)-) CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[137]*gagaccUAaGGUgA*[14]*gAAcgacA*[69]**[13]*ugAAagAuC 291  
+                               G +C   CACAA:GG::                                                                  
+                MN270258 82672 GAACAAACACAAUGGGA----------*[  1]*--------------*[ 2]*--------*[ 2]**[ 1]*--------- 82694
+                               ************99987..............7...................9.............9.....7........... PP
+
+                                                                   vv  v        vvvv                       vvvv    NC
+                               )----)-))),,,,,,,,]]]]]]]]]]]]]--]]]]],,<<<<<<---<<<<...................____>>>>--> CS
+  cluster1_millard_final   292 CgAcagugucaugcuAuGuccacaUgcgccgAAgugggGAuUgCCuAAAucGG...................aaGaCCgauAa 355  
+                                                         ::CC:AAGUG   A      AAAUC++                              
+                MN270258 82695 --------------------------UUCCAAAGUGGAAAG-----AAAUCAUgucagcaagaugucgaaaa----------- 82735
+                               ..........................79********88883.....33333323455565555555544443........... PP
+
+                                   v        v      vv        vv        v                                        v  NC
+                               >>>>>~~~~~~,<<<<-...<<_.......>>--..-->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<< CS
+  cluster1_millard_final   356 GGcAa*[56]*AgCucg...guu.......acUG..AggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucG 475  
+                                          A: U:              A+UG  A :A :+G GAGCCG:AUG:::CGAAAG:::CA GU:CGGUUCG+ G
+                MN270258 82736 -----*[50]*AAAUACacg---uuuaugaAAUGaaAUUACUGGaGAGCCGGAUGAUGCGAAAGUAUCAUGUCCGGUUCGGUG 82854
+                               ........5..444443443...3346677555543455555688************************************** PP
+
+                                                                                   v   NC
+                               <<<<............................_.............>>->>>>:: CS
+  cluster1_millard_final   476 gggg............................u.............ccAccCgAc 489  
+                               GG:G                                          C:ACCC AC
+                MN270258 82855 GGGGgauaauggaaaaggggucgcaaugacua-ccucgcuaguaucCUACCCUAC 82908
+                               *******9999998888888777776666655.5556666777888********* PP
+
+>> MN270259  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (11) !   3.3e-09   39.8   0.0  cm        1      489 []       82708       82944 + .. 0.69    no 0.43    no       -   72.94    0.63    1 loc    489      106491
+
+                                    vv                                                                             NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~,,((((---(((,,~~~~~~,,,,,,,,~~~~~~~~~~~~,,,,,,)-) CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[137]*gagaccUAaGGUgA*[14]*gAAcgacA*[69]**[13]*ugAAagAuC 291  
+                               G +C   CACAA:GG::                                                                  
+                MN270259 82708 GAACAAACACAAUGGGA----------*[  1]*--------------*[ 2]*--------*[ 2]**[ 1]*--------- 82730
+                               ************99987..............7...................9.............9.....7........... PP
+
+                                                                   vv  v        vvvv                       vvvv    NC
+                               )----)-))),,,,,,,,]]]]]]]]]]]]]--]]]]],,<<<<<<---<<<<...................____>>>>--> CS
+  cluster1_millard_final   292 CgAcagugucaugcuAuGuccacaUgcgccgAAgugggGAuUgCCuAAAucGG...................aaGaCCgauAa 355  
+                                                         ::CC:AAGUG   A      AAAUC++                              
+                MN270259 82731 --------------------------UUCCAAAGUGGAAAG-----AAAUCAUgucagcaagaugucgaaaa----------- 82771
+                               ..........................79********88883.....33333323455565555555544443........... PP
+
+                                   v        v      vv        vv        v                                        v  NC
+                               >>>>>~~~~~~,<<<<-...<<_.......>>--..-->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<< CS
+  cluster1_millard_final   356 GGcAa*[56]*AgCucg...guu.......acUG..AggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucG 475  
+                                          A: U:              A+UG  A :A :+G GAGCCG:AUG:::CGAAAG:::CA GU:CGGUUCG+ G
+                MN270259 82772 -----*[50]*AAAUACacg---uuuaugaAAUGaaAUUACUGGaGAGCCGGAUGAUGCGAAAGUAUCAUGUCCGGUUCGGUG 82890
+                               ........5..444443443...3346677555543455555688************************************** PP
+
+                                                                                   v   NC
+                               <<<<............................_.............>>->>>>:: CS
+  cluster1_millard_final   476 gggg............................u.............ccAccCgAc 489  
+                               GG:G                                          C:ACCC AC
+                MN270259 82891 GGGGgauaauggaaaaggggucgcaaugacua-ccucgcuaguaucCUACCCUAC 82944
+                               *******9999998888888777776666655.5556666777888********* PP
+
+>> KT887559  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (12) !   9.3e-09   38.3   0.0  cm        1      489 []        2627        2848 + .. 0.77    no 0.61    no       -   34.07    0.40    1 loc    489       32637
+
+                                   v                 v  vvvv                     vvvv          v        vv       vv NC
+                              :::::[[[[[--~~~~~~~]]]]],,<<<<<<---<<<<____>>>>-->>>>>>~~~~~~,<<<<-.......<<_......>> CS
+  cluster1_millard_final    1 GUgCgcccacAA*[312]*gugggGAuUgCCuAAAucGGaaGaCCgauAaGGcAa*[56]*AgCucg.......guu......ac 427 
+                              G +CG CCAC A       GUGG GA U C                               AGC: G                ++
+                KT887559 2627 GCACGACCACCA*[ 23]*GUGGAGACUCC-------------------------*[70]*AGCCGGcccguua---gggggcUU 2763
+                              *********976....9..89999996555............................7..5666555554554...44555455 PP
+
+                                  v                                         v                                    v  NC
+                              ---->>>>,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................_........>>->>>>: CS
+  cluster1_millard_final  428 UGAggaGcuGgAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................u........ccAccCgA 488 
+                              UGA+ :GCU GAGCCGUAUGCG::GAAA::CGCACGUACGGUUC+U GGGGG                         CCACCC A
+                KT887559 2764 UGAAAGGCUUGAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGggaugggccagcaaug-gcccauccCCACCCGA 2847
+                              5587788877********************************************99988887776655.55666778******** PP
+
+                                NC
+                              : CS
+  cluster1_millard_final  489 c 489 
+                              C
+                KT887559 2848 C 2848
+                              * PP
+
+>> NC_030940  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (13) !   9.3e-09   38.3   0.0  cm        1      489 []        2627        2848 + .. 0.77    no 0.61    no       -   34.07    0.27    1 loc    489       32637
+
+                                   v                 v  vvvv                     vvvv          v        vv       vv NC
+                              :::::[[[[[--~~~~~~~]]]]],,<<<<<<---<<<<____>>>>-->>>>>>~~~~~~,<<<<-.......<<_......>> CS
+  cluster1_millard_final    1 GUgCgcccacAA*[312]*gugggGAuUgCCuAAAucGGaaGaCCgauAaGGcAa*[56]*AgCucg.......guu......ac 427 
+                              G +CG CCAC A       GUGG GA U C                               AGC: G                ++
+               NC_030940 2627 GCACGACCACCA*[ 23]*GUGGAGACUCC-------------------------*[70]*AGCCGGcccguua---gggggcUU 2763
+                              *********976....9..89999996555............................7..5666555554554...44555455 PP
+
+                                  v                                         v                                    v  NC
+                              ---->>>>,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<................_........>>->>>>: CS
+  cluster1_millard_final  428 UGAggaGcuGgAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg................u........ccAccCgA 488 
+                              UGA+ :GCU GAGCCGUAUGCG::GAAA::CGCACGUACGGUUC+U GGGGG                         CCACCC A
+               NC_030940 2764 UGAAAGGCUUGAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGggaugggccagcaaug-gcccauccCCACCCGA 2847
+                              5587788877********************************************99988887776655.55666778******** PP
+
+                                NC
+                              : CS
+  cluster1_millard_final  489 c 489 
+                              C
+               NC_030940 2848 C 2848
+                              * PP
+
+>> MN091626  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (14) !   1.4e-08   37.8   2.0  cm        1      489 []       50477       50691 + .. 0.72    no 0.35    no       -   55.19    0.47    1 loc    489      268748
+
+                                       v                                                                    v      NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~~~~~~~~~~~~~~~~~~~~,,,,,,,,]]]]]]]]]]]]]--]]]]],, CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[15]**[21]**[101]**[137]*augcuAuGuccacaUgcgccgAAgugggGA 331  
+                               G +CG: : : A:::C::A:                                              :U::G:::A : : :GA
+                MN091626 50477 GAACGUUUGAUAUCUCAUAA-------*[ 2]**[ 2]**[  0]**[  0]*-------------UUAUGAGAAGUAAGAGA 50517
+                               *******************8..........9.....9.............................8**************** PP
+
+                                 vvv                             vvv                     v                      v  NC
+                               <<<<<<---<<<<.....__....__.>>>>-->>>>>>,,,,<<<<<<------<<<<<-<<<<<<_____.>>>>>>->>- CS
+  cluster1_millard_final   332 uUgCCuAAAucGG.....aa....Ga.CCgauAaGGcAacGGAGccuCCGUAGUAGuCuGagcaaGgGAAAg.cCuuguACaU 403  
+                                     AA :::G              C::: A +++              AGUA ::     AAG GAAAG  CUU  A  U
+                MN091626 50518 -----GAAUAUAGuaccg--uugaA-gCUAUGAUAAU-------------AAGUAGUG-----AAGGGAAAGuUCUU--A-GU 50571
+                               .....6777777755444..33333.37777775332.............24444333.....33334444313333..2.23 PP
+
+                                                                                                                   NC
+                               >>>---->>>>>>,<<<<-<<_...........>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,< CS
+  cluster1_millard_final   404 GgCGAAGGGaggCAgCucgguu...........acUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcguc 474  
+                               ::  AA       A:::: ::            ::U  +::::+G :AGCCGUAUG:G::GAAA::C:CACGUACGGUU:G+:
+                MN091626 50572 CAUAAA-------AAUCAUAA-acucucccauaUUUUUAUGAUGGaAAGCCGUAUGAGGUGAAAGUCUCACGUACGGUUUGGU 50646
+                               333333.......44444444.379999999884444444555567************************************* PP
+
+                                                                              NC
+                               <<<<<....................._.........>>-.>>>>:: CS
+  cluster1_millard_final   475 Ggggg.....................u.........ccA.ccCgAc 489  
+                               G:::G                               C:A ::C:A+
+                MN091626 50647 GCAGGggaaaagagguacgcuuagua-uacucuuacCUAuUGCAAU 50691
+                               **988999999988887777766655.55666677777647***** PP
+
+>> AP008983  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (15) !   3.7e-08   36.4   0.1  cm      361      473 ~~      114818      114667 - ~~ 0.91 5'&3' 0.39    no       -   22.10    0.20    5 loc    489      185683
+
+                                                                                       vv    vv                   NC
+                                ~~~~~~~,,,,<<<<<<------<<<<~~~~~~>->>>---->>>>>>,<<<<-.<<_...>>--.-->>>>,,.<<<<<< CS
+  cluster1_millard_final      1 <[360]*cGGAGccuCCGUAGUAGuCu*[21]*aUGgCGAAGGGaggCAgCucg.guu...acUG.AggaGcuG.gAgCcg 443   
+                                         GA ::: C UAGUAG:::      : ::CGAAGG ::: A :::   U      U  A ::: +G :AGCCG
+                AP008983 114818 <[  0]*--GAGGAAUCAUAGUAGCUA*[58]*UAAGCGAAGGGUUCUAGUCAAuAU-aaa-AUAuAUUGAUGGaAAGCCG 114697
+                                .........****************95...9..359*****************9644.575.3334999***999****** PP
+
+                                                                     NC
+                                <<<<<<<<____>>>>>-->>>>>>>>>,,~~~~~~ CS
+  cluster1_millard_final    444 uaugcggcGAAAgccgcACguacgGuUcgu*[16]> 489   
+                                UAUGCG::GAAA::CGCACGUACGGUU:G+      
+                AP008983 114696 UAUGCGGUGAAAGUCGCACGUACGGUUUGG*[ 0]> 114667
+                                ****************************77...... PP
+
+>> NC_007581  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (16) !   3.7e-08   36.4   0.1  cm      361      473 ~~      114818      114667 - ~~ 0.91 5'&3' 0.39    no       -   22.10    0.20    5 loc    489      185683
+
+                                                                                       vv    vv                   NC
+                                ~~~~~~~,,,,<<<<<<------<<<<~~~~~~>->>>---->>>>>>,<<<<-.<<_...>>--.-->>>>,,.<<<<<< CS
+  cluster1_millard_final      1 <[360]*cGGAGccuCCGUAGUAGuCu*[21]*aUGgCGAAGGGaggCAgCucg.guu...acUG.AggaGcuG.gAgCcg 443   
+                                         GA ::: C UAGUAG:::      : ::CGAAGG ::: A :::   U      U  A ::: +G :AGCCG
+               NC_007581 114818 <[  0]*--GAGGAAUCAUAGUAGCUA*[58]*UAAGCGAAGGGUUCUAGUCAAuAU-aaa-AUAuAUUGAUGGaAAGCCG 114697
+                                .........****************95...9..359*****************9644.575.3334999***999****** PP
+
+                                                                     NC
+                                <<<<<<<<____>>>>>-->>>>>>>>>,,~~~~~~ CS
+  cluster1_millard_final    444 uaugcggcGAAAgccgcACguacgGuUcgu*[16]> 489   
+                                UAUGCG::GAAA::CGCACGUACGGUU:G+      
+               NC_007581 114696 UAUGCGGUGAAAGUCGCACGUACGGUUUGG*[ 0]> 114667
+                                ****************************77...... PP
+
+>> MT836071  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (17) !   6.5e-08   35.6   0.1  cm        1      489 []       19781       19522 - .. 0.84    no 0.45    no       -  169.33    1.65    1 loc    489       25949
+
+                                    v                                                                              NC
+                               :::::[[[[[--[[[[[[[[[[[[[,,~~~~~~~,,((((---(((,,~~~~~~,,,,,,,,~~~~~~~~~~~~,,,,,,)-) CS
+  cluster1_millard_final     1 GUgCgcccacAAcggcgcAuguggaau*[137]*gagaccUAaGGUgA*[14]*gAAcgacA*[69]**[13]*ugAAagAuC 291  
+                               GUGC  C::: A                                                                       
+                MT836071 19781 GUGCCACUGAUA---------------*[  2]*--------------*[ 2]*--------*[ 3]**[ 3]*--------- 19760
+                               ****99988866...................7...................9.............9.....6........... PP
+
+                                                                    v           v          v                    v  NC
+                               )----)-))),,,,,,,,]]]]]]]]]]]]]--]]]]],,<<<<<<---<<<<____>>>>-->>>>>>,,,,~~~~~~,<<< CS
+  cluster1_millard_final   292 CgAcagugucaugcuAuGuccacaUgcgccgAAgugggGAuUgCCuAAAucGGaaGaCCgauAaGGcAacGGA*[52]*AgCu 420  
+                                                                :::G   :::C : AA C GAA  C G UA: G::: G A      AG U
+                MT836071 19759 ---------------------------------UCAGAACACUCUGUAAACUGAAAGCAGAUACGGAGUGGAA*[67]*AGCU 19649
+                               .................................7888888999999999999999999999999999986544...9..8888 PP
+
+                                                       v                                               v           NC
+                               <-<<_.........>>--..-->>>>,...,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<......... CS
+  cluster1_millard_final   421 cgguu.........acUG..AggaGcu...G.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg......... 479  
+                               : :UU         A:UG  A :A C+   G :AGCCG:AU:C:::GA A:::G:ACGU:CGGUU:G+:GG: G         
+                MT836071 19648 AUGUUuaacagaaaAUUGacAUUACCAacgGaAAGCCGAAUACAUGGAGACAUGUACGUUCGGUUUGGAGGCAGguaugggga 19566
+                               88776788888888777766777777788779*********************************************999999 PP
+
+                                                                    v        NC
+                               ....................._..............>>->>>>:: CS
+  cluster1_millard_final   480 .....................u..............ccAccCgAc 489  
+                                                                   C A:CC:AC
+                MT836071 19565 aaccuaucgccgaaagacgac-aaggcgucccauacCGAGCCUAC 19522
+                               998888887777776666655.55566667777888********* PP
+
+>> ON107264  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (18) !   1.1e-07   34.9   0.0  cm        1      489 []       87563       87811 + .. 0.80    no 0.43    no       -   29.57    0.24    1 loc    489      133818
+
+                                    v v                 v v  vvv         v    v        vvv     vvvvv            vv NC
+                               :::::[[[[[--[~~~~~~~]--]]]]],,<<<<<<---<<<<____>>>>-->>>>>>,,,,<<<<<<------<<<<<-<< CS
+  cluster1_millard_final     1 GUgCgcccacAAc*[308]*gAAgugggGAuUgCCuAAAucGGaaGaCCgauAaGGcAacGGAGccuCCGUAGUAGuCuGagc 384  
+                                 GCG :  :AA:       :A :  : GA   C :AAA::G+AAGA C::UA: G AAC    ++ +C U  U  : :GA  
+                ON107264 87563 UAGCGAUCGAAAU*[ 14]*AACUUAAAGA---CUUAAAAGGUAAGA-CCUUAUGGGAAC----AACACAUGAUUGCAAGACA 87644
+                               ******9999985....9..4667778899...88899999888885.888998886655....3333456666677788877 PP
+
+                                            vv           vvvvv     v  v                           v    v           NC
+                               <<<<_____>>>>>>->>->>>---->>>>>>,<<<<-.<<_........................>>---->>>>,,.<<<< CS
+  cluster1_millard_final   385 aaGgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucg.guu........................acUGAggaGcuG.gAgC 441  
+                               AAG  AAA  CUU   C:  : G AG       :CU    U                         A UGA  AG:+G :AGC
+                ON107264 87645 AAGGAAAACUCUUGCUCUAUGUGUAG-------ACUGUcAUAgggacuuacacaaugggaaacuaaACUGACAAGUGGaAAGC 87720
+                               77777777788998888877777777.......5776664436677778888888888898888887777888888899**** PP
+
+                                                                                                                   NC
+                               <<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<............................._............... CS
+  cluster1_millard_final   442 cguaugcggcGAAAgccgcACguacgGuUcgucGgggg.............................u............... 480  
+                               CGUAU:CG::GA A::CG:ACGUACGGUU:G+:GG:::                                             
+                ON107264 87721 CGUAUACGCUGAGAGGCGUACGUACGGUUUGGGGGAGAgcauuuggaaaccuagcauaguaauaugc-caaggcgucgggugc 87802
+                               *****************************************99999998888888777776666555.556666677778888 PP
+
+                                         NC
+                               >>->>>>:: CS
+  cluster1_millard_final   481 ccAccCgAc 489  
+                               ::A:CC:AC
+                ON107264 87803 UUAUCCUAC 87811
+                               ********* PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (19) !   6.4e-07   32.3   0.4  cm      368      473 ~~       51114       50992 - ~~ 0.84 5'&3' 0.33    no       -   16.87    0.18    5 loc    489      223580
+
+                                               v                              v       ???    v    vv               NC
+                               ~~~~~~~<<<------<<<<<-<<<<<<_____..>>>>>>->>->>>---->>>>>>,<<<<-...<<_............. CS
+  cluster1_millard_final     1 <[367]*uCCGUAGUAGuCuGagcaaGgGAAAg..cCuuguACaUGgCGAAGGGaggCAgCucg...guu............. 425  
+                                      U:: UAG A : U:A: :A GGAAAG  C U: : :A  :  AAG::AG  A::U                     
+                MZ422438 51114 <[  0]*UUUAUAGAAAUAUAAAUUAGGGAAAGucCUUAGUCUACUAAAAAGAAAGAUACAUAAcag---auuagguuuagau 51042
+                               .......*******************9999996436699*******************966666753...3567778899887 PP
+
+                                 vv     v                                                NC
+                               ..>>--.-->>>>,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,~~~~~~ CS
+  cluster1_millard_final   426 ..acUG.AggaGcuGgAgCcguaugcggcGAAAgccgcACguacgGuUcgu*[16]> 489  
+                                  + G AG A::+ :AGCCGUAUG:G::GAAA::C:CACGUACGGUU:G+      
+                MZ422438 51041 ucCUAGuAG-AUGGAAAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUUGG*[ 0]> 50992
+                               653333333.44455**********************************77...... PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (20) !     9e-07   31.8   0.0  cm      367      479 ~~      120721      120849 + ~~ 0.90 5'&3' 0.42    no       -   57.37    0.58    5 loc    489      223580
+
+                                                   vvv                     vv v          ??         vv            NC
+                                ~~~~~~~<<<<------<<<<<..-<<<<<<_____>>>>>>->>->>>---->>>>>>,<<<<-...<<_.......... CS
+  cluster1_millard_final      1 <[366]*cuCCGUAGUAGuCuG..agcaaGgGAAAgcCuuguACaUGgCGAAGGGaggCAgCucg...guu.......... 425   
+                                       ::C GUAGUA U ++  AGC::  G AA+  ::GU     G GAAG G::  A :::G                
+                MZ422438 120721 <[  0]*GCCUGUAGUAGUGAUgaAGCUCUUGUAAUGAGAGUG--GAGUGAAGGGGCAUAGUCAGaga---uuauauuaac 120789
+                                .......************755679*****************9..57****************99764...2368888999 PP
+
+                                     vv                                               ??????       NC
+                                .....>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<~~~~~~ CS
+  cluster1_millard_final    426 .....acUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg*[10]> 489   
+                                     A+U   ::: +G ::GC:GUAU:CG::GAAA::CG:ACGUAC:GU::G+ G GGG      
+                MZ422438 120790 caaauAAUCUUUGAUGGaACGCUGUAUACGAUGAAAGUCGUACGUACAGUGUGAAGUGGG*[ 0]> 120849
+                                998774444679999999**************************************9999...... PP
+
+>> LC680885  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (21) !   1.6e-06   31.0   0.2  cm        1      489 []      193397      193532 + .. 0.78    no 0.35    no       -    8.46    0.07    1 loc    489      267055
+
+                                                                          vvv v          v    vvv                 NC
+                                :::::[[[[[--~~~~~~~--]]]]],,~~~~~~~~~~~~,<<<<-<<_.......>>---->>>>,,.<<<<<<<<<<<< CS
+  cluster1_millard_final      1 GUgCgcccacAA*[310]*AAgugggGA*[29]**[56]*AgCucgguu.......acUGAggaGcuG.gAgCcguaugcg 449   
+                                 U+C  ::A:AA       AA:U:: GA                   :        :+U A GA  +G :AGCCGUAUG:G
+                LC680885 193397 AUACAGAUAUAA*[  1]*AAAUAUUGA*[ 5]**[ 6]*-------AGcagaaauUUUUAUGAU-GGaAAGCCGUAUGAG 193462
+                                ***********9....9..68******9...8.....4.........323333443444455444.466************ PP
+
+                                                                                                        NC
+                                <<____>>>>>-->>>>>>>>>,,<<<<<<....................._.........>>-.>>>>:: CS
+  cluster1_millard_final    450 gcGAAAgccgcACguacgGuUcgucGgggg.....................u.........ccA.ccCgAc 489   
+                                :CGAAAG:C:CACGUACGGUU:G+:G:::G                               C:A ::C:A+
+                LC680885 193463 GCGAAAGUCUCACGUACGGUUUGGUGCAGGggaaaagagguacguuuagua-uacucuuacCUAuUGCAAU 193532
+                                ***************************988999999988887777666655.55666677777647***** PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (22) !   1.1e-05   28.2   0.0  cm      438      471 ..      163937      163904 - .. 1.00    no 0.44    no       -    0.15    0.00    1 loc    489      223580
+
+                                                                   NC
+                                <<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+  cluster1_millard_final    438 gAgCcguaugcggcGAAAgccgcACguacgGuUc 471   
+                                :AGCCGUAUG:G::GAAA::C:CACGUACGGUU:
+                MZ422438 163937 AAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUU 163904
+                                ********************************** PP
+
+>> MZ422438  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (23) !   1.3e-05   28.0   0.2  cm        1      489 []      137204      137009 - .. 0.69    no 0.37    no       -   33.98    0.27    1 loc    489      223580
+
+                                      vvvv          vvvv   v                            v          vvvv v         NC
+                                :::::[[[[[--~~~~~~~-]]]]],,<<<<<<---<<<<____>>>>.-->>>>>>,,,~~~~~~,<<<<-<<_...... CS
+  cluster1_millard_final      1 GUgCgcccacAA*[311]*AgugggGAuUgCCuAAAucGGaaGaCCga.uAaGGcAacGG*[53]*AgCucgguu...... 425   
+                                GU+C :             A++  : A U: CUAAAU:  AAGA  :A U AG :A CG              U       
+                MZ422438 137204 GUACUGAU----*[ 19]*AAACACAACUAACUAAAUU--AAGA--AAcUUAGUUAACGA*[25]*-------UGacaaua 137108
+                                *****843........7..4555689999999999988..7777..55245777777752...3.........22333333 PP
+
+                                    v    vvvv                                                                     NC
+                                ...>>---->>>>,,.<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<......................_ CS
+  cluster1_millard_final    426 ...acUGAggaGcuG.gAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggg......................u 480   
+                                   ACUGAG+ +++G ::GCCGUAUG:G::GAAA::C:CACGUACGGU::G+:G:G:G                       
+                MZ422438 137107 uaaACUGAGUGAUGGaACGCCGUAUGAGGUGAAAGUCUCACGUACGGUGUGAAGCGGGggaaaaguuggagauaauauca- 137028
+                                4455555644444778***************************************9779999999888887777666555. PP
+
+                                                    NC
+                                .........>>-.>>>>:: CS
+  cluster1_millard_final    481 .........ccA.ccCgAc 489   
+                                         C:A C:C:A+
+                MZ422438 137027 aauacuuacCUAuCGCUAU 137009
+                                55666777777659***** PP
+
+>> KY695241  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (24) !   1.3e-05   28.0   0.0  cm      434      489 ~]           1          50 + ~. 0.87    5' 0.54    no       -    0.81    0.01    2 loc    489       11696
+
+                                    ??                                        v            v   NC
+                             ~~~~~~~>>,..,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<_>>->>>>:: CS
+  cluster1_millard_final   1 <[433]*Gcu..GgAgCcguaugcggcGAAAgccgcACguacgGuUcgucGgggguccAccCgAc 489
+                                    GC+  GGAGCCGUAUG:G::GAAA::C:CACGUACGGUUC++ :G        C: AC
+                KY695241   1 <[  0]*GCAgaGGAGCCGUAUGAGGUGAAAGUCUCACGUACGGUUCUGCAG--------CUUAC 50 
+                             .......555446**********************************66555........556** PP
+
+>> MW248466  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (25) !     5e-05   26.1   0.0  cm        1      489 []      112575      112692 + .. 0.77    no 0.36    no       -   12.20    0.13    1 loc    489      266637
+
+                                     v                 v               vvvv vv   vv     vvvv                      NC
+                                :::::[[[[[--~~~~~~~]]]]],,~~~~~~~~~~~~,<<<<-<<_..>>--.-->>>>,,.<<<<<<<<<<<<<<____ CS
+  cluster1_millard_final      1 GUgCgcccacAA*[312]*gugggGA*[29]**[56]*AgCucgguu..acUG.AggaGcuG.gAgCcguaugcggcGAAA 455   
+                                G  C  ::::AA       :::: GA                       A+U  A + +++G ::GC:GUAUGCG::GAAA
+                MW248466 112575 GAUCAAAAUAAA*[  2]*UAUUAGA*[ 5]**[ 6]*---------ugAAUUuAUUGAUGGaACGCUGUAUGCGAUGAAA 112640
+                                ******999998....6..8888888...7.....3...........3333222433333677****************** PP
+
+                                                                                      NC
+                                >>>>>-->>>>>>>>>,,<<<<<<............._.....>>-.>>>>:: CS
+  cluster1_millard_final    456 gccgcACguacgGuUcgucGgggg.............u.....ccA.ccCgAc 489   
+                                ::CGCACGUAC:GU::G+:G:G:G                   C:A C:C:A+
+                MW248466 112641 GUCGCACGUACAGUGUGAAGCGGGggaaaaucguaag-auuacCUAuCGCUAU 112692
+                                *********************9779999887776655.5566666659***** PP
+
+>> MT836027  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (26) !   0.00083   22.1   0.0  cm      439      470 ..        7075        7044 - .. 1.00    no 0.66    no       -    0.75    0.01    1 loc    489       13768
+
+                                                               NC
+                              <<<<<<<<<<<<<____>>>>>-->>>>>>>> CS
+  cluster1_millard_final  439 AgCcguaugcggcGAAAgccgcACguacgGuU 470 
+                              :GCCGU:UGCG::GAAA::CGCA G:ACGGU:
+                MT836027 7075 CGCCGUGUGCGGUGAAAGUCGCAUGCACGGUG 7044
+                              ******************************** PP
+
+
+
+Hit alignment statistics summary:
+---------------------------------
+                                      matrix size (Mb)             alignment time (secs)       
+                                  -------------------------  ----------------------------------
+category                  # alns  minimum  average  maximum  minimum  average  maximum    total  ntaumod  novrflw
+---------------------  ---------  -------  -------  -------  -------  -------  -------  -------  -------  -------
+reported                      26     0.15    41.35   231.07     0.00     0.33     1.65     8.63       26        1
+included                      26     0.15    41.35   231.07     0.00     0.33     1.65     8.63       26        1
+removed duplicates            26     0.16    34.54   284.74     0.01     0.27     1.32     6.95       26        1
+all (except HMM only)         52     0.15    37.94   284.74     0.00     0.30     1.65    15.59       52        2
+HMM only                       0        -        -        -        -        -        -        -        -        -
+
+
+Internal CM pipeline statistics summary: (full sequences)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences:                                               36  (7758246 residues searched)
+Windows   passing  local HMM SSV           filter:            4512  (0.5586); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:            2343  (0.307); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             168  (0.02677); expected (0.005)
+Windows   passing glocal HMM Forward       filter:              97  (0.01931); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:              57  (0.01119); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:              70  (0.005295); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              29  (0.001667); expected (0.0001)
+Total       non-truncated CM hits reported:                     21  (0.0007316)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (5' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences re-searched for truncated hits:                36  (57528 residues re-searched)
+Windows   passing  local HMM SSV           filter:              22  (0.2645); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1309); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               2  (0.02331); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               1  (0.009421); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               1  (0.009421); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               1  (0.001582); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               1  (0.001582); expected (0.0001)
+Total        5' truncated CM hits reported:                      1  (0.0008691)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (3' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences re-searched for truncated hits:                36  (57528 residues re-searched)
+Windows   passing  local HMM SSV           filter:               9  (0.1173); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               3  (0.04033); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total        3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (full sequences short enough to contain a 5' and 3' truncated hit)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences re-searched for truncated hits:                 0  (0 residues re-searched)
+Windows   passing  local HMM SSV           filter:               0  (0); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total 5' and 3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (full sequences, allowing truncated hits)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences re-searched for truncated hits:                36  (7758246 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3255  (0.4011); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:            1856  (0.2424); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             168  (0.02677); expected (0.005)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             109  (0.00555); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              28  (0.001129); expected (0.0001)
+Total                     CM hits reported:                      4  (7.167e-05)
+
+CYK    filter stage scan matrix overflows:                       4  (0.0367)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (standard and truncated passes)
+----------------------------------------
+Query model(s):                                                  1  (489 consensus positions)
+Target sequences:                                               36  (7758246 residues searched)
+Target sequences re-searched for truncated hits:                36  (7873302 residues re-searched)
+Windows   passing  local HMM SSV           filter:            7798  (0.4777); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:            4213  (0.2733); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             338  (0.02666); expected (0.005)
+Windows   passing glocal HMM Forward       filter:              98  (0.009617); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:              58  (0.005587); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             180  (0.005389); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              58  (0.001394); expected (0.0001)
+Total CM hits reported:                                         26  (0.0004406); includes 5 truncated hit(s)
+
+CYK    filter stage scan matrix overflows:                       4  (0.02222)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+# CPU time: 241.74u 7.21s 00:04:08.95 Elapsed: 00:00:18.85
+# Alignment of 26 hits satisfying inclusion thresholds saved to: g2_intron.aout
+//
+[ok]
+# Total CPU time:241.84u 7.29s 00:04:09.13 Elapsed: 00:00:19.09

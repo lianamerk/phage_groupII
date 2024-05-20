@@ -1,0 +1,120 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029323_000124_3300029323_Ga0243332_102022_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029323_000124_3300029323_Ga0243332_102022_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=457]
+Description: source=IMGVR_UViG_3300029323_000124_3300029323_Ga0243332_102022/5683-4110 coords=111..1481 length=457 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.2e-39  136.2   0.2    2.5e-39  135.2   0.0    1.6  2  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+     0.0095   16.1   5.7     0.0095   16.1   5.7    3.0  3  GIIM             Group II intron, maturase-specific domain
+  ------ inclusion threshold ------
+       0.06   13.3   0.0      0.089   12.7   0.0    1.5  1  Intein_splicing  Intein splicing domain
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.2   0.0   3.9e-43   2.5e-39       1     222 []     111     342 ..     111     342 .. 0.95
+   2 ?   -3.1   0.0      0.78   5.1e+03      94     132 ..     405     438 ..     394     440 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 135.2 bits;  conditional E-value: 3.9e-43
+            EE-TT.S-EEE......-THHHHCTB--.........-------HHHH..............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET..... CS
+  RVT_1   1 ipKkgpgsyRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldav.edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklin 103
+            ipK + g+ Rp+++ s  +k+++ +++k L  ++e+ + + ++gfrp+r++++a+ e+++++  + +k  ++++ D+k++Fd++++e+ ++ l+    +++l+ 
+   orf1 111 IPKAN-GKKRPLGIASYEDKIVQMAVKKILGAIYEPRFLNCMYGFRPNRGCHEAIkEVYQRI--SYGKISYIVDADIKGFFDHIDHEWMMKFLEWNIQDKNLLW 211
+            8****.*************************************************9666666..66999**********************9999999999999 PP
+
+            ....................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T............TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGG CS
+  RVT_1 104 liksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra......kgvtllrYaDDililskskeelqelleaveewlkesglkinpe 201
+            li+++l    +++ +++   k+ +++kg  qGsv+SP+l+n++m+++l  + k +       +++l+ +aDD++  ++ k+e+++ +++++e++++ gl+++ +
+   orf1 212 LIRKYL----KAGIMEQG--KFEPTEKGSAQGSVMSPMLANIYMHHVLTLWFKLVvkkemqGECFLVNFADDFVAGFQYKSEAERYYKELKERMEKFGLELESS 309
+            9*****....67777554..8*******************************9889****99****************************************** PP
+
+            G-EEE.................ESSEEETTEEE CS
+  RVT_1 202 Ktklvlft...........v.kseevkyLGvtl 222
+            K++l+ f+           + k+e++++LG+t+
+   orf1 310 KSRLIEFGrfaeqnrrargEhKPETFDFLGFTF 342
+            **************9987648**********96 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.78
+            -EEET.........................TEEEEESB- CS
+  RVT_1  94 afkvptklinliksflstrsfsvrvngeeskgryekkgl 132
+            +f+  t++++ +++fl        +n +  ++ y+++g 
+   orf1 405 NFRKITTFLHRVQQFL-----FKAMNRRGCRRAYTWNGF 438
+            4444445555566666.....333355566777777765 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.1         1   6.7e+03       2      17 ..      83      98 ..      83     102 .. 0.71
+   2 ?    2.6   0.1     0.023   1.5e+02      38      71 ..     187     220 ..     184     230 .. 0.86
+   3 !   16.1   5.7   1.5e-06    0.0095       2      66 ..     361     427 ..     360     437 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 1
+  GIIM  2 krfkrkireltkrssk 17
+          k++ r+i++l++r ++
+  orf1 83 KNLDRNIKDLVQRLKN 98
+          6778899999977743 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.023
+  GIIM  38 YyrlvvakrvfskldhyirrrLrrwllrkhkkkk 71 
+           ++ +++   +++ l++ i+ +   wl rk+ k++
+  orf1 187 FFDHIDHEWMMKFLEWNIQDKNLLWLIRKYLKAG 220
+           788888999999*****************98865 PP
+
+  == domain 3  score: 16.1 bits;  conditional E-value: 1.5e-06
+  GIIM   2 krfkrki...reltkrsskgvsleelirklnpiirGWanYyrlv.vakrvfskldhyirrrLrrwllrk 66 
+           k+f +k+   ++++ ++ ++ +++e+i++ln  + G   Yy+ + + +++   l h++++ L + + r+
+  orf1 361 KKFEQKVrayKNWIYDN-RNRPMREIIKELNVKLIGHYRYYGVTwNFRKITTFL-HRVQQFLFKAMNRR 427
+           78999994445699555.89************************7777777777.*****999998887 PP
+
+>> Intein_splicing  Intein splicing domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   1.4e-05     0.089      47     126 ..      21     138 ..       6     379 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.4e-05
+                      E..CEEEEEEETTS-EEEEETT-EEEECCT...TTEEEEEECCC--TT-EEEEEGGGC.CHHHHHHHHHCS--S.................... CS
+                      x..xxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxx.................... RF
+  Intein_splicing  47 k..gelyeiklesgrkikaTpdHkllvvrd...nlkivEkradeLkegdliavpaylk.ekkekleeilkkvkq.................... 114
+                      +  +e++e kl    +i aT +H +++      n++++ ++ +eL  +  + + ++ k e  ++l + +k++ q                    
+             orf1  21 SgtEEIMETKLVRIAEISATTKHPIFTSVYhliNEDMLKQCHKELDGSKAVGIDKVTKdEYGKNLDRNIKDLVQrlknksfkplpslrvyipka 114
+                      244799********************854335789999*************9996555433333443333333333336666666666666666 PP
+
+                      ............HSSEEEEEEEEE CS
+                      ............xxxxxxxxxxxx RF
+  Intein_splicing 115 ............eadvvwdkvksi 126
+                                  e+ +v   vk+i
+             orf1 115 ngkkrplgiasyEDKIVQMAVKKI 138
+                      666666666665333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (457 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       781  (0.039782); expected 392.6 (0.02)
+Passed bias filter:                      563  (0.0286777); expected 392.6 (0.02)
+Passed Vit filter:                        42  (0.00213936); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.39u 0.19s 00:00:00.58 Elapsed: 00:00:00.36
+# Mc/sec: 4154.87
+//
+[ok]

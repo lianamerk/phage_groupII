@@ -1,0 +1,1179 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.5 (Sep 2023)
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         new_cluster2.cm
+# target sequence database:              /n/eddy_lab/data/phage-2023_11/inphared_14Dec2023/14Dec2023_genomes.fa
+# output directed to file:               cluster2_millard.out
+# MSA of significant hits saved to file: cluster2_millard.aout
+# tabular output of hits:                cluster2_millard.tblout
+# verbose output mode:                   on
+# sequence reporting threshold:          E-value <= 100
+# allowing truncated sequences anywhere: on
+# number of worker threads:              64 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       CST_millard  [CLEN=555]
+Hit scores:
+ rank     E-value  score  bias  sequence   start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------- ------ ------   --- ----- ----  -----------
+  (1) !    1e-144  531.9  41.2  MW749003   25613  25019 -  cm    no 0.34  Bacillus phage vB_BspM_Internexus, complete genome.
+  (2) !  2.1e-108  403.8  33.9  NC_043027  32192  31700 -  cm    no 0.33  Bacillus virus PBS1, complete genome.
+  (3) !  2.1e-108  403.8  33.9  NC_031039 121998 121506 -  cm    no 0.33  Bacillus phage AR9, complete genome.
+  (4) !  2.1e-108  403.8  33.9  LC680884   78780  79272 +  cm    no 0.33  Bacillus phage PBS1 DNA, complete genome.
+  (5) !  2.1e-108  403.8  33.9  MF360957   32192  31700 -  cm    no 0.33  Bacillus phage PBS1, complete genome.
+  (6) !  2.1e-108  403.8  33.9  KU878088  121998 121506 -  cm    no 0.33  Bacillus phage AR9, complete genome.
+  (7) !  6.3e-108  402.1  78.5  NC_007581 115302 114619 -  cm    no 0.30  Clostridium phage c-st, complete genome.
+  (8) !  6.3e-108  402.1  78.5  AP008983  115302 114619 -  cm    no 0.30  Clostridium phage c-st genomic DNA, complete genome.
+  (9) !   2.8e-78  297.5  51.2  MN091626   50111  50691 +  cm    no 0.32  Staphylococcus phage PALS_2, complete genome.
+ (10) !   1.5e-66  256.0  83.4  MZ422438  164479 163854 -  cm    no 0.29  Listeria phage LPJP1, complete genome.
+ (11) !   2.1e-43  174.4  57.3  MZ422438  120219 120890 +  cm    no 0.33  Listeria phage LPJP1, complete genome.
+ (12) !     4e-42  169.8  53.3  LC680885  191615 192078 +  cm    no 0.29  Staphylococcus phage S6 DNA, complete genome.
+ (13) !   1.4e-41  167.9  96.7  MZ422438   51635  50945 -  cm    no 0.28  Listeria phage LPJP1, complete genome.
+ (14) !   1.4e-40  164.4  22.9  MW248466  111217 111604 +  cm    no 0.35  Staphylococcus phage MarsHill, complete genome.
+ (15) !   6.7e-24  105.5   0.0  NC_043027  30748  30643 -  cm    no 0.36  Bacillus virus PBS1, complete genome.
+ (16) !   6.7e-24  105.5   0.0  NC_031039 120554 120449 -  cm    no 0.36  Bacillus phage AR9, complete genome.
+ (17) !   6.7e-24  105.5   0.0  LC680884   80224  80329 +  cm    no 0.36  Bacillus phage PBS1 DNA, complete genome.
+ (18) !   6.7e-24  105.5   0.0  MF360957   30748  30643 -  cm    no 0.36  Bacillus phage PBS1, complete genome.
+ (19) !   6.7e-24  105.5   0.0  KU878088  120554 120449 -  cm    no 0.36  Bacillus phage AR9, complete genome.
+ (20) !   1.9e-21   96.8   0.1  MZ422438  137168 137009 -  cm    5' 0.36  Listeria phage LPJP1, complete genome.
+ (21) !     3e-19   89.1   0.0  MT836027    7110   6996 -  cm    no 0.49  UNVERIFIED: Bacteriophage sp. clone scaffold_1234 genomic sequence.
+ (22) !   3.5e-18   85.4   0.1  LC680885  193401 193530 +  cm    no 0.36  Staphylococcus phage S6 DNA, complete genome.
+ (23) !   1.2e-14   72.9   0.0  MW248466  112576 112690 +  cm    no 0.36  Staphylococcus phage MarsHill, complete genome.
+ (24) !   0.00013   37.4   0.0  NC_030940   2774   2836 +  cm 5'&3' 0.62  Pseudomonas phage phi3, complete genome.
+ (25) !   0.00013   37.4   0.0  KT887559    2774   2836 +  cm 5'&3' 0.62  Pseudomonas phage phi3, complete genome.
+ (26) !   0.00017   37.0   0.0  ON107264   87712  87759 +  cm 5'&3' 0.58  Bacillus phage BUCT083, complete genome.
+ (27) !    0.0076   31.2   0.0  KY695241       7     40 +  cm    no 0.53  Wolbachia phage sr1WOdamA clone contig3 genomic sequence.
+ (28) !    0.0078   31.2   0.0  MT836071   19619  19583 -  cm    no 0.46  UNVERIFIED: Bacteriophage sp. clone scaffold_1347 genomic sequence.
+ ------ inclusion threshold ------
+ (29) ?     0.016   30.1   0.0  MT836602    5503   5549 +  cm 5'&3' 0.49  UNVERIFIED: Bacteriophage sp. clone scaffold_2602 genomic sequence.
+ (30) ?      0.29   25.7   0.0  MT836484   12179  12371 +  cm 5'&3' 0.53  UNVERIFIED: Bacteriophage sp. clone scaffold_2312 genomic sequence.
+
+
+Hit alignments:
+>> MW749003  Bacillus phage vB_BspM_Internexus, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (1) !    1e-144  531.9  41.2  cm        1      555 []       25613       25019 - .. 1.00    no 0.34    no       -   15.25    0.02    1 loc    555      252262
+
+                                                                                                                   NC
+                    :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<.<< CS
+  CST_millard     1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg.cc 91   
+                    GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: ::
+     MW749003 25613 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAuUU 25520
+                    *****************************************************************************************99899 PP
+
+                                                                                                                   NC
+                    <<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<.<<<< CS
+  CST_millard    92 ucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau.guug 177  
+                    UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U :U:G
+     MW749003 25519 UCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUaUUAG 25426
+                    *********8999********************************************************************************* PP
+
+                                                                                                                   NC
+                    <<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.......... CS
+  CST_millard   178 uauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.......... 257  
+                    UA+U CU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG          
+     MW749003 25425 UAAUGCUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuuaguaau 25332
+                    **9999999************************************************************************************* PP
+
+                                                                                                                   NC
+                    .................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,,)))))))) CS
+  CST_millard   258 .................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuAgccUuaac 334  
+                                     CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA:C:UU:AC
+     MW749003 25331 acgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUAUCAUUUAC 25238
+                    ********************************************************************************************** PP
+
+                                                                                  v                                NC
+                    ))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<____>>> CS
+  CST_millard   335 gGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggguaAcccc 428  
+                    GGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:UGG:UAAC:CC
+     MW749003 25237 GGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAUGGGUAACUCC 25145
+                    **************************************************************.******************************* PP
+
+                                    v                                                                              NC
+                    >>>-->>>---->>>>>>,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<< CS
+  CST_millard   429 aguggagcGAAggguCcuAgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggc 522  
+                    A:UGGA:CGAAGGGUC+UAGUCAA::U:AU :A::UUGAUGGAA:GCC:UAUGCG:UGAAAG:CGCACGUA:GGU:UG+AGUGGGGGAAAA:G:
+     MW749003 25144 AUUGGAGCGAAGGGUCAUAGUCAAAAUAAUAUAUUUUGAUGGAACGCCUUAUGCGGUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGA 25051
+                    *****************************99*************************************************************** PP
+
+                       v      v                       NC
+                    -<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard   523 ggacaUaaAugucAaAgccUUACCuAuCacuAu 555  
+                    GGA AU A U UCAAA:C:UUACCUAUCACUAU
+     MW749003 25050 GGAGAUUA-UAUCAAAUCUUUACCUAUCACUAU 25019
+                    ********.9*********************** PP
+
+>> NC_043027  Bacillus virus PBS1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (2) !  2.1e-108  403.8  33.9  cm        1      555 []       32192       31700 - .. 1.00    no 0.33    no       -   12.03    0.02    1 loc    555      252197
+
+                                                                                                                   NC
+                    :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<.<< CS
+  CST_millard     1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg.cc 91   
+                    GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: ::
+    NC_043027 32192 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAuUU 32099
+                    *****************************************************************************************99899 PP
+
+                                                                                                                   NC
+                    <<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<.<<<< CS
+  CST_millard    92 ucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau.guug 177  
+                    UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U :U:G
+    NC_043027 32098 UCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUaUUAG 32005
+                    *********8999********************************************************************************* PP
+
+                                                                                                                   NC
+                    <<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.......... CS
+  CST_millard   178 uauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.......... 257  
+                    UA+UACU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG          
+    NC_043027 32004 UAGUACUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuuaguaau 31911
+                    ********************************************************************************************** PP
+
+                                                                                                                   NC
+                    .................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,,)))))))) CS
+  CST_millard   258 .................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuAgccUuaac 334  
+                                     CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA:C:UU:AC
+    NC_043027 31910 acgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUAUCAUUUAC 31817
+                    ********************************************************************************************** PP
+
+                                                                                  v                                NC
+                    ))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<____>>> CS
+  CST_millard   335 gGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggguaAcccc 428  
+                    GGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:UGG:UAAC:CC
+    NC_043027 31816 GGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAUGGGUAACUCC 31724
+                    **************************************************************.******************************* PP
+
+                                    v                       NC
+                    >>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard   429 aguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555  
+                    A:UGGA:CGAAGGGUC+UA                  A 
+    NC_043027 31723 AUUGGAGCGAAGGGUCAUA*[ 2]**[ 1]**[ 0]*AG 31700
+                    ******************8...*.....*........** PP
+
+>> NC_031039  Bacillus phage AR9, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (3) !  2.1e-108  403.8  33.9  cm        1      555 []      121998      121506 - .. 1.00    no 0.33    no       -   12.03    0.04    1 loc    555      251042
+
+                                                                                                                  NC
+                     :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<. CS
+  CST_millard      1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg. 89    
+                     GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: 
+    NC_031039 121998 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAu 121907
+                     *****************************************************************************************998 PP
+
+                                                                                                                  NC
+                     <<<<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<. CS
+  CST_millard     90 ccucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau. 173   
+                     ::UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U 
+    NC_031039 121906 UUUCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUa 121815
+                     99*********8999***************************************************************************** PP
+
+                                                                                                                  NC
+                     <<<<<<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.... CS
+  CST_millard    174 guuguauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.... 257   
+                     :U:GUA+UACU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG    
+    NC_031039 121814 UUAGUAGUACUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuu 121723
+                     ******************************************************************************************** PP
+
+                                                                                                                  NC
+                     .......................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,, CS
+  CST_millard    258 .......................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuA 326   
+                                            CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA
+    NC_031039 121722 aguaauacgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUA 121631
+                     ******************************************************************************************** PP
+
+                                                                                           v                      NC
+                     ))))))))))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<< CS
+  CST_millard    327 gccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcu 418   
+                     :C:UU:ACGGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:U
+    NC_031039 121630 UCAUUUACGGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAU 121540
+                     **********************************************************************.********************* PP
+
+                                               v                       NC
+                     <<<____>>>>>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard    419 ggguaAccccaguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555   
+                     GG:UAAC:CCA:UGGA:CGAAGGGUC+UA                  A 
+    NC_031039 121539 GGGUAACUCCAUUGGAGCGAAGGGUCAUA*[ 2]**[ 1]**[ 0]*AG 121506
+                     ****************************8...*.....*........** PP
+
+>> LC680884  Bacillus phage PBS1 DNA, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (4) !  2.1e-108  403.8  33.9  cm        1      555 []       78780       79272 + .. 1.00    no 0.33    no       -   12.03    0.03    1 loc    555      252136
+
+                                                                                                                   NC
+                    :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<.<< CS
+  CST_millard     1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg.cc 91   
+                    GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: ::
+     LC680884 78780 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAuUU 78873
+                    *****************************************************************************************99899 PP
+
+                                                                                                                   NC
+                    <<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<.<<<< CS
+  CST_millard    92 ucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau.guug 177  
+                    UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U :U:G
+     LC680884 78874 UCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUaUUAG 78967
+                    *********8999********************************************************************************* PP
+
+                                                                                                                   NC
+                    <<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.......... CS
+  CST_millard   178 uauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.......... 257  
+                    UA+UACU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG          
+     LC680884 78968 UAGUACUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuuaguaau 79061
+                    ********************************************************************************************** PP
+
+                                                                                                                   NC
+                    .................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,,)))))))) CS
+  CST_millard   258 .................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuAgccUuaac 334  
+                                     CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA:C:UU:AC
+     LC680884 79062 acgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUAUCAUUUAC 79155
+                    ********************************************************************************************** PP
+
+                                                                                  v                                NC
+                    ))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<____>>> CS
+  CST_millard   335 gGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggguaAcccc 428  
+                    GGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:UGG:UAAC:CC
+     LC680884 79156 GGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAUGGGUAACUCC 79248
+                    **************************************************************.******************************* PP
+
+                                    v                       NC
+                    >>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard   429 aguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555  
+                    A:UGGA:CGAAGGGUC+UA                  A 
+     LC680884 79249 AUUGGAGCGAAGGGUCAUA*[ 2]**[ 1]**[ 0]*AG 79272
+                    ******************8...*.....*........** PP
+
+>> MF360957  Bacillus phage PBS1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (5) !  2.1e-108  403.8  33.9  cm        1      555 []       32192       31700 - .. 1.00    no 0.33    no       -   12.03    0.02    1 loc    555      252197
+
+                                                                                                                   NC
+                    :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<.<< CS
+  CST_millard     1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg.cc 91   
+                    GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: ::
+     MF360957 32192 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAuUU 32099
+                    *****************************************************************************************99899 PP
+
+                                                                                                                   NC
+                    <<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<.<<<< CS
+  CST_millard    92 ucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau.guug 177  
+                    UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U :U:G
+     MF360957 32098 UCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUaUUAG 32005
+                    *********8999********************************************************************************* PP
+
+                                                                                                                   NC
+                    <<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.......... CS
+  CST_millard   178 uauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.......... 257  
+                    UA+UACU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG          
+     MF360957 32004 UAGUACUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuuaguaau 31911
+                    ********************************************************************************************** PP
+
+                                                                                                                   NC
+                    .................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,,)))))))) CS
+  CST_millard   258 .................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuAgccUuaac 334  
+                                     CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA:C:UU:AC
+     MF360957 31910 acgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUAUCAUUUAC 31817
+                    ********************************************************************************************** PP
+
+                                                                                  v                                NC
+                    ))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<____>>> CS
+  CST_millard   335 gGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggguaAcccc 428  
+                    GGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:UGG:UAAC:CC
+     MF360957 31816 GGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAUGGGUAACUCC 31724
+                    **************************************************************.******************************* PP
+
+                                    v                       NC
+                    >>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard   429 aguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555  
+                    A:UGGA:CGAAGGGUC+UA                  A 
+     MF360957 31723 AUUGGAGCGAAGGGUCAUA*[ 2]**[ 1]**[ 0]*AG 31700
+                    ******************8...*.....*........** PP
+
+>> KU878088  Bacillus phage AR9, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (6) !  2.1e-108  403.8  33.9  cm        1      555 []      121998      121506 - .. 1.00    no 0.33    no       -   12.03    0.02    1 loc    555      251042
+
+                                                                                                                  NC
+                     :::::[[[[[[[<<<<<---<<<<<<_>>>>>>--->>>>><<<<<<____>>>>>>,,((((((((((,,,,,,,,,<<..>>,<<<<-<. CS
+  CST_millard      1 GUAUGugacgUUcccccAuAggcauuuaaugccaAAggggguagauuUUAuaaucuaAACuguuaAggcGAAuAAguAgg..ccAcgaccg. 89    
+                     GUAUGUGACGUUC:CC:AUA::CAUUUAAUG::AAA:GG:GUAGAUUUUAUAAUCUAAACUGU:AA:G:GAA+AAGUA::  ::A:GACC: 
+     KU878088 121998 GUAUGUGACGUUCUCCUAUAAGCAUUUAAUGUGAAAUGGAGUAGAUUUUAUAAUCUAAACUGUAAAUGAGAACAAGUAAAagAUAUGACCAu 121907
+                     *****************************************************************************************998 PP
+
+                                                                                                                  NC
+                     <<<<___>>>>>...>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______...>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<. CS
+  CST_millard     90 ccucAuugaggc...gucgcUAA.AcUCCcgcAugCauauauuuuAaAcuA...aaaauauauGuaUgAAGucgGGUGAAGuCAcccgaau. 173   
+                     ::UCAUUGA:::   GUC:CUAA ACUCC::CAUGCA::UAUUUUAAACUA   AAAAUA::UGUAUGAAGU::GGUGAAGUCA:C:GA:U 
+     KU878088 121906 UUUCAUUGAAGAcuuGUCGCUAAuACUCCUACAUGCAUCUAUUUUAAACUAuauAAAAUAUUUGUAUGAAGUUAGGUGAAGUCAUCUGAAUa 121815
+                     99*********8999***************************************************************************** PP
+
+                                                                                                                  NC
+                     <<<<<<_____....>>>>>>->>-->>>--->>>,,,<<<<<<<---<<<<-----------<<<<<----<<<<<<<<<<<<<<<<.... CS
+  CST_millard    174 guuguauUAcU....uacaacUauAUgggGUGGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuuuAuccuaUaUAagcucagg.... 257   
+                     :U:GUA+UACU    UAC:A:UA:AU:G:GUGGGC+GUGCU:U:AUAUG:UGAGGAACACGAACC:UUUUAU:CUAUAUAA::UCAGG    
+     KU878088 121814 UUAGUAGUACUauaaUACUAAUAGAUAGGGUGGGCGGUGCUAUAAUAUGAUGAGGAACACGAACCUUUUUAUACUAUAUAAAUUCAGGguuu 121723
+                     ******************************************************************************************** PP
+
+                                                                                                                  NC
+                     .......................>>>>----------------------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,, CS
+  CST_millard    258 .......................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuA 326   
+                                            CCUGAUUGU+AAGUGUGGUACAAUAGAA::UUAUAUAG:+CAGA:GGCA:CUAAGU:A:AGC+AUACUA
+     KU878088 121722 aguaauacgguacuggugaacgaCCUGAUUGUAAAGUGUGGUACAAUAGAAGUUUAUAUAGGGCAGAAGGCAUCUAAGUUAUAGCUAUACUA 121631
+                     ******************************************************************************************** PP
+
+                                                                                           v                      NC
+                     ))))))))))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<< CS
+  CST_millard    327 gccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcu 418   
+                     :C:UU:ACGGAACGUCAGAGAU:CUAUAUAAGA::AAUUAUAGUU::UACUCUUAUAUAG:AAGUCAG+A GACCAUAGUAG:UAUGAAG:U
+     KU878088 121630 UCAUUUACGGAACGUCAGAGAUUCUAUAUAAGAGAAAUUAUAGUUGAUACUCUUAUAUAGAAAGUCAGCA-GACCAUAGUAGUUAUGAAGAU 121540
+                     **********************************************************************.********************* PP
+
+                                               v                       NC
+                     <<<____>>>>>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard    419 ggguaAccccaguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555   
+                     GG:UAAC:CCA:UGGA:CGAAGGGUC+UA                  A 
+     KU878088 121539 GGGUAACUCCAUUGGAGCGAAGGGUCAUA*[ 2]**[ 1]**[ 0]*AG 121506
+                     ****************************8...*.....*........** PP
+
+>> NC_007581  Clostridium phage c-st, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (7) !  6.3e-108  402.1  78.5  cm        1      555 []      115302      114619 - .. 0.95    no 0.30    no       -   22.76    0.07    1 loc    555      185683
+
+                                                                                                                  NC
+                     :::::[[[[[[[<<<<<---...<<<<<<_...>>>>>>---.>>>>><<<<<<.____.>>>>>>,,((((((((((,,,,,,,,,<<... CS
+  CST_millard      1 GUAUGugacgUUcccccAuA...ggcauuu...aaugccaAA.ggggguagauu.UUAu.aaucuaAACuguuaAggcGAAuAAguAgg... 80    
+                     GUAUGU::::UU:C::CAUA   :::AUUU   AAU:::AAA G::G:UAGAU: UUAU :AUCUAAACU::UAA::C+AAU A +AG:   
+    NC_007581 115302 GUAUGUCGUUUUUCUGCAUAuaaAGUAUUUuauAAUAUUAAAaGCAGAUAGAUAaUUAUuUAUCUAAACUAAUAAAACAAAUUAUAAGGuga 115211
+                     ********************99*******99**********88************************************************* PP
+
+                                                                                                                  NC
+                     ............>>,<<<<-<<<<<___>>>>>>>>>,,,,,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,, CS
+  CST_millard     81 ............ccAcgaccgccucAuugaggcgucgcUAAAcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUG 160   
+                                 :CAC:ACC:::::A++:::::GU:GCUAAAC CC:::AUGC:UA:A::U:A+A  A:A::U:UA:GUAU:AAGU::GGU+
+    NC_007581 115210 aaauccuuuucaUCACAACCGUUAUAAAGUGAUGUUGCUAAACCCCGUUAUGCUUAUAAAUAAUAGCAUAUUUGUAGGUAUAAAGUACGGUA 115119
+                     ******************************************************************************************** PP
+
+                                                                                                                  NC
+                     ,,<<<-..<<<--<<<<<<<<_____>>>>>>->>-->>>--->>>,,,.......<<<<<<<---<<<<-----------<<<<<-...-- CS
+  CST_millard    161 AAGuCA..cccgaauguuguauUAcUuacaacUauAUgggGUGGgCagu.......gcuuugAUAUGgugAGGAAcACGAAcCcuuu...uA 240   
+                     A GUCA  ::C+ AUGUU:U:UUA+U:A:AACUAUAUG::GUGGGCA         :CUUU:A AUGGU:AGGAA+ACGAA:CCUU     A
+    NC_007581 115118 AGGUCAuaAUCUGAUGUUAUGUUAUUUAUAACUAUAUGAUGUGGGCAUCcuuaaaaACUUUGACAUGGUUAGGAAUACGAAUCCUUGguuGA 115027
+                     ***********************************************99*************************************99999* PP
+
+                                                                                                                  NC
+                     -<<<<<<<<<<<<<<<<.....................>>>>--------.............................------------- CS
+  CST_millard    241 uccuaUaUAagcucagg.....................ccugauugUuaA.............................gUGugguacAAUa 282   
+                      :::AUAUAAG:U:A::                     ::U: ++GUUAA                                U+GU   AUA
+    NC_007581 115026 AGUAAUAUAAGUUAAUAuaguuauucgccuauuagcuaUAUUCAAGUUAAauuuaauggauuauguaaugauuauaaug-GUUAGUUAUAUA 114936
+                     **************************************88888888888866666666666666666666666655553.334444555555 PP
+
+                                                                                                                  NC
+                     -->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,......,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<______ CS
+  CST_millard    283 gaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacu......AgccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUA 368   
+                       A:CUUAUAU:::ACAGAGG::ACCUAA+U:AAAG:AA+AC+      AG::UUA::GGAA::::AGAGAUC:U:UA:::G :GA    UA
+    NC_007581 114935 AUAACUUAUAUUAUACAGAGGAAACCUAAAUUAAAGUAAAACAagggauAGUUUUAUUGGAAAGCGAGAGAUCUUUUAAUUGGAGAGGGCUA 114844
+                     55****************************************9************************************************* PP
+
+                                                                                                                  NC
+                     __>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<......................................_ CS
+  CST_millard    369 guuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggg......................................u 422   
+                     ++UC:++ ++:::UA:A:GAAGUCAGA:G:A:CAUAGUAGCUAU+A+:::::G                                       
+    NC_007581 114843 UAUCUAUGAAAAUUAAAAGAAGUCAGAGGAAUCAUAGUAGCUAUAAUAAGUAGccguuagugacuauuugcaguaaugcaagaaggaggauA 114752
+                     ****************************************************************9999999999999988888887777644 PP
+
+                                                                                                                  NC
+                     ___>>>>>>-->>>---->>>>>>,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<< CS
+  CST_millard    423 aAccccaguggagcGAAggguCcuAgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggG 514   
+                     AA+C:::::++AGCGAAGG:U:C:AGUCAAU:U:A+ :A:AUUGAUGGAAAGCCGUAUGCG:UGAAAG:CGCACGUACGGUUUGGA:UGGGG
+    NC_007581 114751 AAACUACUUUAAGCGAAGGGUUCUAGUCAAUAUAAAAUAUAUUGAUGGAAAGCCGUAUGCGGUGAAAGUCGCACGUACGGUUUGGACUGGGG 114660
+                     455********************************99******************************************************* PP
+
+                                                               NC
+                     <--<<<<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard    515 GAAAAggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555   
+                     GAAAAG::GGA:AUAAAU:UCAAA::CUUACCUAUCA:UAU
+    NC_007581 114659 GAAAAGUUGGAGAUAAAUCUCAAAGACUUACCUAUCAGUAU 114619
+                     ***************************************** PP
+
+>> AP008983  Clostridium phage c-st genomic DNA, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (8) !  6.3e-108  402.1  78.5  cm        1      555 []      115302      114619 - .. 0.95    no 0.30    no       -   22.76    0.05    1 loc    555      185683
+
+                                                                                                                  NC
+                     :::::[[[[[[[<<<<<---...<<<<<<_...>>>>>>---.>>>>><<<<<<.____.>>>>>>,,((((((((((,,,,,,,,,<<... CS
+  CST_millard      1 GUAUGugacgUUcccccAuA...ggcauuu...aaugccaAA.ggggguagauu.UUAu.aaucuaAACuguuaAggcGAAuAAguAgg... 80    
+                     GUAUGU::::UU:C::CAUA   :::AUUU   AAU:::AAA G::G:UAGAU: UUAU :AUCUAAACU::UAA::C+AAU A +AG:   
+     AP008983 115302 GUAUGUCGUUUUUCUGCAUAuaaAGUAUUUuauAAUAUUAAAaGCAGAUAGAUAaUUAUuUAUCUAAACUAAUAAAACAAAUUAUAAGGuga 115211
+                     ********************99*******99**********88************************************************* PP
+
+                                                                                                                  NC
+                     ............>>,<<<<-<<<<<___>>>>>>>>>,,,,,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,, CS
+  CST_millard     81 ............ccAcgaccgccucAuugaggcgucgcUAAAcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUG 160   
+                                 :CAC:ACC:::::A++:::::GU:GCUAAAC CC:::AUGC:UA:A::U:A+A  A:A::U:UA:GUAU:AAGU::GGU+
+     AP008983 115210 aaauccuuuucaUCACAACCGUUAUAAAGUGAUGUUGCUAAACCCCGUUAUGCUUAUAAAUAAUAGCAUAUUUGUAGGUAUAAAGUACGGUA 115119
+                     ******************************************************************************************** PP
+
+                                                                                                                  NC
+                     ,,<<<-..<<<--<<<<<<<<_____>>>>>>->>-->>>--->>>,,,.......<<<<<<<---<<<<-----------<<<<<-...-- CS
+  CST_millard    161 AAGuCA..cccgaauguuguauUAcUuacaacUauAUgggGUGGgCagu.......gcuuugAUAUGgugAGGAAcACGAAcCcuuu...uA 240   
+                     A GUCA  ::C+ AUGUU:U:UUA+U:A:AACUAUAUG::GUGGGCA         :CUUU:A AUGGU:AGGAA+ACGAA:CCUU     A
+     AP008983 115118 AGGUCAuaAUCUGAUGUUAUGUUAUUUAUAACUAUAUGAUGUGGGCAUCcuuaaaaACUUUGACAUGGUUAGGAAUACGAAUCCUUGguuGA 115027
+                     ***********************************************99*************************************99999* PP
+
+                                                                                                                  NC
+                     -<<<<<<<<<<<<<<<<.....................>>>>--------.............................------------- CS
+  CST_millard    241 uccuaUaUAagcucagg.....................ccugauugUuaA.............................gUGugguacAAUa 282   
+                      :::AUAUAAG:U:A::                     ::U: ++GUUAA                                U+GU   AUA
+     AP008983 115026 AGUAAUAUAAGUUAAUAuaguuauucgccuauuagcuaUAUUCAAGUUAAauuuaauggauuauguaaugauuauaaug-GUUAGUUAUAUA 114936
+                     **************************************88888888888866666666666666666666666655553.334444555555 PP
+
+                                                                                                                  NC
+                     -->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,......,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<______ CS
+  CST_millard    283 gaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacu......AgccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUA 368   
+                       A:CUUAUAU:::ACAGAGG::ACCUAA+U:AAAG:AA+AC+      AG::UUA::GGAA::::AGAGAUC:U:UA:::G :GA    UA
+     AP008983 114935 AUAACUUAUAUUAUACAGAGGAAACCUAAAUUAAAGUAAAACAagggauAGUUUUAUUGGAAAGCGAGAGAUCUUUUAAUUGGAGAGGGCUA 114844
+                     55****************************************9************************************************* PP
+
+                                                                                                                  NC
+                     __>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<......................................_ CS
+  CST_millard    369 guuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggg......................................u 422   
+                     ++UC:++ ++:::UA:A:GAAGUCAGA:G:A:CAUAGUAGCUAU+A+:::::G                                       
+     AP008983 114843 UAUCUAUGAAAAUUAAAAGAAGUCAGAGGAAUCAUAGUAGCUAUAAUAAGUAGccguuagugacuauuugcaguaaugcaagaaggaggauA 114752
+                     ****************************************************************9999999999999988888887777644 PP
+
+                                                                                                                  NC
+                     ___>>>>>>-->>>---->>>>>>,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<< CS
+  CST_millard    423 aAccccaguggagcGAAggguCcuAgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggG 514   
+                     AA+C:::::++AGCGAAGG:U:C:AGUCAAU:U:A+ :A:AUUGAUGGAAAGCCGUAUGCG:UGAAAG:CGCACGUACGGUUUGGA:UGGGG
+     AP008983 114751 AAACUACUUUAAGCGAAGGGUUCUAGUCAAUAUAAAAUAUAUUGAUGGAAAGCCGUAUGCGGUGAAAGUCGCACGUACGGUUUGGACUGGGG 114660
+                     455********************************99******************************************************* PP
+
+                                                               NC
+                     <--<<<<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard    515 GAAAAggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555   
+                     GAAAAG::GGA:AUAAAU:UCAAA::CUUACCUAUCA:UAU
+     AP008983 114659 GAAAAGUUGGAGAUAAAUCUCAAAGACUUACCUAUCAGUAU 114619
+                     ***************************************** PP
+
+>> MN091626  Staphylococcus phage PALS_2, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (9) !   2.8e-78  297.5  51.2  cm        1      555 []       50111       50691 + .. 0.86    no 0.32    no       -   23.04    0.08    1 loc    555      268748
+
+                                                                                                             v     NC
+                    :::::[[[[[[[<<<<<---..<<<<<<_...>>>>>>--..-.>>>>><<<<<<.____.>>>>>>,,((((((((((,,,,,,,,,<<.... CS
+  CST_millard     1 GUAUGugacgUUcccccAuA..ggcauuu...aaugccaA..A.ggggguagauu.UUAu.aaucuaAACuguuaAggcGAAuAAguAgg.... 80   
+                    GU UG::ACGUU:C:C:A A  ::CA:U    A:UG:: A  A :G:G::::AU: UU   :AU:::AACU:UU:AG::GAAUAAG A:     
+     MN091626 50111 GUGUGAAACGUUACACAAGAaaGACAAUGaagAUUGUUGAggAuUGUGUGGCAUAaUUUAuUAUGCCAACUUUUUAGUUGAAUAAGCAGUaucu 50204
+                    *****************99988888888899*888888885669************55555**************************987**** PP
+
+                      v     v  vv       vv v                           v        v                         v        NC
+                    ..>>,<<<<-<<<<<___>>>>>>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,,<<<-.<<<- CS
+  CST_millard    81 ..ccAcgaccgccucAuugaggcgucgcUAA.AcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGAAGuCA.cccg 170  
+                       :A::A+ :  : AU+ :  : U:: UAA ACUCCCGCA:G:AUA:::: :      : ::::UAU:U:UGAAG CGGGUGAA: CA :   
+     MN091626 50205 acCUAUAAAGAUACGAUAUGCUA-UUAAUAAuACUCCCGCAUGUAUAAGAAGU------GAUUUUUAUAUGUGAAGCCGGGUGAAGUCAcU--- 50288
+                    77556666555555555555444.55555556*********************......*****************************753... PP
+
+                                                    v                                          v          v        NC
+                    -<<<<<<<<_____>>>>>>->>-->>>--->>>,,,.<<<<<<<---<<<<-----------<<<<<-...---<<<<<<<<<<<<<<<<... CS
+  CST_millard   171 aauguuguauUAcUuacaacUauAUgggGUGGgCagu.gcuuugAUAUGgugAGGAAcACGAAcCcuuu...uAuccuaUaUAagcucagg... 257  
+                     AU:UU      +U   AA:UAU    :GUGG :AG  :::U::AUAUGGU:AGGAACACGAAC::UUU   +AU :::U:UA::: :::    
+     MN091626 50289 -AUAUU------UU---AAUUAU----AGUGGUUAGGgAAAUGUAUAUGGUUAGGAACACGAACUAUUUaugAAUGUCCUUUAUAUAUUAGuau 50368
+                    .44444......45...444444....37778887769**********************************9*********99954444456* PP
+
+                                                                                       v          v                NC
+                    ............................>>>>-----------------------............>>>>>>>>>>>>--->>>>>>>>>--- CS
+  CST_millard   258 ............................ccugauugUuaAgUGugguacAAUaga............agcuUAuAuaggaCAgagGgcacCUAA 311  
+                                                 :::++ GUUA                             :::UA:A::: ACAGA::G:ACCUAA
+     MN091626 50369 uaaauguaggcuuaauacuaugauuuaaUUAAUAGGUUAUUAA------------aucucuuaacggAAUAUAAAGGGAACAGAUAGAACCUAA 50450
+                    **********999996555544443333222222222222222............23344666666699************************* PP
+
+                                                      v                                               v            NC
+                    ->>>>>>>,,,,,,..,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<<<<<<-- CS
+  CST_millard   312 GUcaaagcaauacu..AgccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaagGaccAu 403  
+                    GU::A:::A+U+    A::CU:AA:GGAACGU:: A+AUC::AUA:           U +U          :UAU::GAAGU AGA::GA::AU
+     MN091626 50451 GUACAUUUAUUUACcuAGACUAAAAGGAACGUUUGAUAUCUCAUAA-----------UUUU----------UUAUGAGAAGUAAGAGAGAAUAU 50523
+                    ********99988789****************************87...........2233..........78********************* PP
+
+                          v          v      v       v                                                              NC
+                    ----<<<-----<<<<<<____..>>>>>>-->>>---->>>>>>,<<<<<<<<<__................_>>>>>>>>>,,,<<<<<<<< CS
+  CST_millard   404 AGUAgcuAUgAagcuggguaAc..cccaguggagcGAAggguCcuAgucaauuugau................ucaaauugauGGAaaGCCguA 479  
+                    AGUA:C  UGAAGCU:    A+    :AGUG+ G:GAA+::UC::AGUCA:::::AU                U:::::UGAUGGAAAGCCGUA
+     MN091626 50524 AGUACCGUUGAAGCUAUGAUAAuaAGUAGUGAAGGGAAAGUUCUUAGUCAUAAAAAUcauaaacucucccauaUUUUUAUGAUGGAAAGCCGUA 50617
+                    ****************8755441236*****************************98899*************9******************** PP
+
+                                                                vv        vv                     NC
+                    <<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard   480 UGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555  
+                    UG:G:UGAAAG:C:CACGUACGGUUUGG:G::GGGGAAAAG::G  :A    U:++A+A::CUUACCUAU::C:AU
+     MN091626 50618 UGAGGUGAAAGUCUCACGUACGGUUUGGUGCAGGGGAAAAGAGG--UACGCUUAGUAUACUCUUACCUAUUGCAAU 50691
+                    ********************************************..9999999999******************** PP
+
+>> MZ422438  Listeria phage LPJP1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (10) !   1.5e-66  256.0  83.4  cm        1      555 []      164479      163854 - .. 0.92    no 0.29    no       -   27.54    0.10    1 loc    555      223580
+
+                                                                                                                v NC
+                     :::::[[[[[[[<<<<<---<<<<<<_.....>>>>>>--.-.>>>>><<<<<<.____.....>>>>>>,,((((((((((,,,,,,,,,< CS
+  CST_millard      1 GUAUGugacgUUcccccAuAggcauuu.....aaugccaA.A.ggggguagauu.UUAu.....aaucuaAACuguuaAggcGAAuAAguAg 79    
+                     GU  G::ACGUU:::C:  A:::::U      A:::::A  A :G::::A:::U U        A:::U:AACU:UU:A:::GAAUAAG   
+     MZ422438 164479 GUGCGAAACGUUAUGCAGAAAGAUAUGuaaaaAUAUUGAGgAuUGCAUGAUUAUaUAUGcguauAUAAUUAACUCUUUAAAUGAAUAAGCUG 164388
+                     *****************99955555555889755555555569***********8654478899***************************7 PP
+
+                                v       v  v   v  v                            v        v                         NC
+                     <.........>>,<<<<-<<<<<___>>>>>>>>>,,,,,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,, CS
+  CST_millard     80 g.........ccAcgaccgccucAuugaggcgucgcUAAAcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGAA 162   
+                     :         : A::A: : C:  ++ :G ::U:: U A  U:CC:CA:GCAUAU::: U      A :::AUAUGU:UGAAG :GG:UGAA
+     MZ422438 164387 UgacuaaccuAAAUAAUAGUCAUGAAUUGCUAUUAAUGAUAUUCCACAUGCAUAUUGAGU------AAUUAAUAUGUGUGAAGCUGGAUGAA 164302
+                     7*********89************************************************......************************** PP
+
+                                                                                                         v        NC
+                     <<<-<<<--<<<<<<.<<_____>>>>>>->>-->>>--->>>,,,...<<<<<<<---<<<<-----------<<<<<-.---<<<<<<<< CS
+  CST_millard    163 GuCAcccgaauguug.uauUAcUuacaacUauAUgggGUGGgCagu...gcuuugAUAUGgugAGGAAcACGAAcCcuuu.uAuccuaUaUA 249   
+                     :UC        G:U: UA+UACUUA:A:C           GG: +    :::U::AUAUGG::AGGAA+ACGAA:C::UU +AU :U:UAUA
+     MZ422438 164301 GUC--------GCUAaUAAUACUUAUAGC-----------GGUUAGgguAGAUGUAUAUGGAUAGGAAUACGAAUCACUUuAAUGAUUUAUA 164229
+                     **9........88877*********9888...........777765688*******************************999********* PP
+
+                                                                                                           v      NC
+                     <<<<<<<<........................................>>>>----------------------->>>>>>>>>>>>--->> CS
+  CST_millard    250 agcucagg........................................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAga 301   
+                     A::: : :                                        : :  +U UUA +  U+ +   A  +A:::UUAUA:A: ACAG:
+     MZ422438 164228 AUAGGCGAaauaaaauuguagucuuuauuagcuaauaugacuaauaggUUGUCAUAUUAUACUUAUAUGUAAGUAUUGUUAUAAAUAACAGG 164137
+                     ***99998**********9999999999888888888888888888886666555555555555555555556669**************** PP
+
+                                                                 v                        v                 v     NC
+                     >>>>>>>---->>>>>>>,,,,,,..,))))))))))]]]]]]]<<--<<<<<<~~~~~~>>>>>>-->>,,,<<<<<<------<<<---- CS
+  CST_millard    302 gGgcacCUAAGUcaaagcaauacu..AgccUuaacgGAAcgucagAgAuccuaU*[29]*AuaggaAGUcAGaagGaccAuAGUAgcuAUgA 414   
+                     :G:::CCUAAGU::A:::A+++    A:::U:AA:GGAACGU:: A+A:CCUAU      AUAGG:AGU AGA::GA:: +AGUA:C AUGA
+     MZ422438 164136 UGGAUCCUAAGUACAUUUAUAUACcuAAUUUAAAGGGAACGUUUGAUACCCUAU*[ 2]*AUAGGGAGUAAGAGAGAAUGAAGUAUCGAUGA 164049
+                     ******************98887789***************************9...4..9******************************* PP
+
+                           v      v       v                    v                                                  NC
+                     -<<<<<<__..__>>>>>>-->>>---->>>>>>,<<<<<<<<<__.............................................. CS
+  CST_millard    415 agcugggua..AccccaguggagcGAAggguCcuAgucaauuugau.............................................. 458   
+                     AGCU::      + ::AGUGG G:GAA+::UC::AGUCAA:U :A+                                              
+     MZ422438 164048 AGCUAUGAUaaUAAAUAGUGGAGAGAAAGUUCUUAGUCAAAUCUAAuuuucauuaauuagaauaguuauuuauuaaguauuuauucuaagua 163957
+                     *****9754442358*****************************97799******************************************* PP
+
+                             v                                                              vvv      vvv          NC
+                     ......_>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>- CS
+  CST_millard    459 ......ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUA 544   
+                           U: A:UUGAUGGAAAGCCGUAUG:GAUGAAAGUC:CACGUACGGUUUGGA:UGGGGGAAAA:G:    :U  A:   A+A:C:UUA
+     MZ422438 163956 augaaaUAAAUUUGAUGGAAAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUUGGACUGGGGGAAAAAGAAUACGUUUAUAGUAUAUCUUUA 163865
+                     ******9************************************************************************************* PP
+
+                                 NC
+                     >>>->>>>>:: CS
+  CST_millard    545 CCuAuCacuAu 555   
+                     CCUAUCA:UAU
+     MZ422438 163864 CCUAUCAGUAU 163854
+                     *********** PP
+
+>> MZ422438  Listeria phage LPJP1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (11) !   2.1e-43  174.4  57.3  cm        1      555 []      120219      120890 + .. 0.86    no 0.33    no       -   73.65    0.56    1 loc    555      223580
+
+                              v v                                              vv          vv  v    v v     v v   NC
+                     :::::[[[[[[[<~~~~~~><<<<<<____>>>>>>.,,((((((((((,,,,,,,,,<<..........>>,<<<<-<<<<<___>>>>>> CS
+  CST_millard      1 GUAUGugacgUUc*[27]*guagauuUUAuaaucua.AACuguuaAggcGAAuAAguAgg..........ccAcgaccgccucAuugaggcg 102   
+                     GUAUG: :C U :      ::AG:UU UA AA:CU: AA::::U:::G:GAAUAA   ++             : A: : C : ++: G ::
+     MZ422438 120219 GUAUGCGCCGUAA*[ 0]*UGAGUUUAUAAAAACUCuAAUCAAUUUUGAGAAUAACGGAAugauagauag--CAAAUAAUCUUGAAACGUUA 120302
+                     *********9994......48888889999888887589***************9877667888786643..24455555555555666666 PP
+
+                      v                       v  v      v  v                      v   v       v      v        v   NC
+                     >>>,,,,.,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,,<<<-<<<--<<<<~~~~~~>>->>-->>>-- CS
+  CST_millard    103 ucgcUAA.AcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGAAGuCAcccgaaugu*[13]*acUauAUgggGU 200   
+                     U :CUAA ACUCC::CA:GCAUAUA U   +A     A UAUAUGU:UGAAGU::GGUGAA UCA ::GAA::        :U:UAU::  U
+     MZ422438 120303 UAUCUAAuACUCCUACAUGCAUAUAUUUAUUAAACGGACUAUAUGUGUGAAGUUAGGUGAAGUCAGUUGAACCA*[38]*AGUGUAUAGACU 120426
+                     66677777*****************998888888899***********************************53...9..578********* PP
+
+                        v                              vv          vv  v   v                                      NC
+                     ->>>,,,<<<<<<<---<<<<-----------<<<<<-..---<<<<<<<<<<<<<<<<................................. CS
+  CST_millard    201 GGgCagugcuuugAUAUGgugAGGAAcACGAAcCcuuu..uAuccuaUaUAagcucagg................................. 257   
+                     GGG  G G:U:U:AUAUGGU:AGGA     A :C  U   +  ::   A: A:: :A:                                  
+     MZ422438 120427 GGGAUGCGUUAUAAUAUGGUAAGGAU----AUUCUUUAaaAGAAUUAGACGAAUCAAUGaauuaaaaccguuaaaaauuaaucuaacagguu 120514
+                     ************************95....44555555543334444444444444444777799999999999999999999999999999 PP
+
+                                                                                             v   v  vv       vv   NC
+                     .............................................>>>>----------------------->>>>>>>>>>>>--->>>>> CS
+  CST_millard    258 .............................................ccugauugUuaAgUGugguacAAUagaagcuUAuAuaggaCAgagGg 304   
+                                                                   :U:+++GUU  +UG   U  AAU    ::U :U   ::A AG  G:
+     MZ422438 120515 aaugaauacuaauagggaugaguaagugagcgguuaugaaaauccUAUUUAAGUU--AUGCUCUUAAAUUAUUAUUAGUGCGGUAGAGUUGG 120604
+                     9999999999999999999999999999999998888888777775555555554..55556666666666677777777777788888899 PP
+
+                                                     v v     v                      v     v            v          NC
+                     >>>>---->>>>>>>,,,,,,,))))))))))]]]]]]]<<--<<<<<<~~~~~~>>>>>>-->>,,,<<<<<<------<<<-----<<<< CS
+  CST_millard    305 cacCUAAGUcaaagcaauacuAgccUuaacgGAAcgucagAgAuccuaU*[29]*AuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcug 419   
+                     :ACCUAAGU:A:A:C+AU CUA:C:::A:::: A G: :G  A::: ::      :: ::: G CAG+A G:C: UAGUA : AUGAAGCU:
+     MZ422438 120605 UACCUAAGUUAUAACUAUGCUAUCAAAAUUGAAAAGGUGGAAACUAGGA*[53]*UCUUAGUGGCAGCA-GCCUGUAGUAGUGAUGAAGCUC 120742
+                     *******************************************998776...8..3557999*******.********************** PP
+
+                                    v          v                                                                  NC
+                     <<__.__>>>>>>-->>>---->>>>>>,<<<<<<<<<__............_>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->> CS
+  CST_millard    420 ggua.AccccaguggagcGAAggguCcuAgucaauuugau............ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGU 498   
+                     :    A+ ::AGUGG : GAAG:G:C+UAGUCA ::::++             :::: UGAUGGAA:GC:GUAU:CGAUGAAAGUCG:ACGU
+     MZ422438 120743 UUGUaAUGAGAGUGGAGUGAAGGGGCAUAGUCAGAGAUUAuauuaaccaaauAAUCUUUGAUGGAACGCUGUAUACGAUGAAAGUCGUACGU 120834
+                     **6669********************************97799********99*************************************** PP
+
+                                                                               NC
+                     >>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard    499 acGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555   
+                     AC:GU:UG+AGUGGGGGAAAA::CGGA:AUAA U:UCAAAG::UUACCUAUCACUAU
+     MZ422438 120835 ACAGUGUGAAGUGGGGGAAAAUCCGGAGAUAA-UUUCAAAGGAUUACCUAUCACUAU 120890
+                     ********************************.9*********************** PP
+
+>> LC680885  Staphylococcus phage S6 DNA, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (12) !     4e-42  169.8  53.3  cm        1      555 []      191615      192078 + .. 0.84    no 0.29    no       -   19.86    0.09    1 loc    555      267055
+
+                                                                                                              v   NC
+                     :::::[[[[[[[<<<<<---..<<<<<<_...>>>>>>--..-.>>>>><<<<<<.____.>>>>>>,,((((((((((,,,,,,,,,<<.. CS
+  CST_millard      1 GUAUGugacgUUcccccAuA..ggcauuu...aaugccaA..A.ggggguagauu.UUAu.aaucuaAACuguuaAggcGAAuAAguAgg.. 80    
+                     GU UG::ACGUU:C:C:A A  ::CA:U    A:UG:: A  A :G:G::::AU: U A  :AU:::AACU:UU:AG::GAAUAAG A:   
+     LC680885 191615 GUGUGAAACGUUACACAAGAaaGACAAUGaagAUUGUUGAggAuUGUGUGGCAUAaUAAAuUAUGCUAACUUUUUAGUUGAAUAAGCAGUau 191706
+                     *****************99988888888899*888888885669***********998889**************************987** PP
+
+                         v     v  vv       vv v                           v        v                              NC
+                     ....>>,<<<<-<<<<<___>>>>>>>>>,,,,.,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,,<<<-. CS
+  CST_millard     81 ....ccAcgaccgccucAuugaggcgucgcUAA.AcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGAAGuCA. 166   
+                          :A::A+ :  : AU+ :  : U:: UAA ACUCCCGCA:G:AUA:A:: :      : ::U:UAU:U:UGAAG CGGGUGAA::CA 
+     LC680885 191707 cuacCUAUAAAGAUACGAUAUGCUA-UUAAUAAuACUCCCGCAUGUAUAAAAAGU------GAUUUUUAUAUGUGAAGCCGGGUGAAGACAc 191791
+                     **77556666555555555555444.55555556*********************......*****************************97 PP
+
+                                                                                                    v             NC
+                     <<<--<<<<<<<<_____>>>>>>->>-->>>--->>>,,,.<<<<<<<---<<<<-----------<<<<<-...---<<<<<<<<<<..< CS
+  CST_millard    167 cccgaauguuguauUAcUuacaacUauAUgggGUGGgCagu.gcuuugAUAUGgugAGGAAcACGAAcCcuuu...uAuccuaUaUAag..c 252   
+                     :    AU:UU      +U   AA:UAU    :GUGG::AG  :::U::AUAUGGU:AGGAACAC AAC::UUU   +AU :::U:UA::  :
+     LC680885 191792 U----AUAUU------UU---AAUUAU----AGUGGUUAGGgAAAUGUAUAUGGUUAGGAACACAAACUAUUUaugAAUGUCCUUUAUAuaU 191866
+                     4....44444......45...555555....4899***9989**********************************9*********999434 PP
+
+                                                                                                     v            NC
+                     <<<<<..................>>>>--------......---------------.............>>>>>>>>>>>>--->>>>>>>> CS
+  CST_millard    253 ucagg..................ccugauugUuaA......gUGugguacAAUaga.............agcuUAuAuaggaCAgagGgcac 307   
+                     U:::                    :::AU  UU A           +  + AU                A:::UA:A::: ACAGA::G:AC
+     LC680885 191867 UAGU-auuaaauguagacuuaau-ACUAUGAUUUAauugau-----AGGUUAUUA-aaucucuuaacggAAUAUAAAGGGAACAGAUAGAAC 191950
+                     4444.599999999999998884.44444444433333333.....222222222.245566777777799********************* PP
+
+                                                           v                                               v      NC
+                     >---->>>>>>>,,,,,,..,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<________>>>----->>>>>>>>>>-->>,,,<< CS
+  CST_millard    308 CUAAGUcaaagcaauacu..AgccUuaacgGAAcgucagAgAuccuaUauaaGaggaauuaUAguuccuacucuuauAuaggaAGUcAGaag 397   
+                     CUAAGU::A:::A+U+    A::CU:AA:GGAACGU:: A+AUC::AUA:           U +U          :UAU::GAAGU AGA::
+     LC680885 191951 CUAAGUACAUUUAUUUACcuAGACUAAAAGGAACGUUUGAUAUCUCAUAA-----------UUUU----------UUAUGAGAAGUAAGAGA 192021
+                     ************99988789****************************87...........2233..........78*************** PP
+
+                                 v          v      v       v                                  NC
+                     <<<<------<<<-----<<<<<<____..>>>>>>-->>>---->>>>>>,~~~~~~~~~~~~~~~~~~:: CS
+  CST_millard    398 GaccAuAGUAgcuAUgAagcuggguaAc..cccaguggagcGAAggguCcuA*[21]**[37]**[48]*Au 555   
+                     GA:: UAGUA:C  UGAAGCU:    A+    :AGUGG G:GAA+::UC::A                  AU
+     LC680885 192022 GAAUGUAGUACCAUUGAAGCUAUGAUAAuaAGUAGUGGAGGGAAAGUUCUUA*[ 2]**[ 1]**[ 0]*AU 192078
+                     **********************8755441236*******************8...*.....*........** PP
+
+>> MZ422438  Listeria phage LPJP1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (13) !   1.4e-41  167.9  96.7  cm        1      555 []       51635       50945 - .. 0.83    no 0.28    no       -   72.69    0.50    1 loc    555      223580
+
+                         v                   v       v                                                             NC
+                    :::::[[[[[[[<<<<<---<<<<<<_......>>>>>>---.>>>>><<<<<<..____....>>>>>>,,((((((((((,,,,,,,,,<<. CS
+  CST_millard     1 GUAUGugacgUUcccccAuAggcauuu......aaugccaAA.ggggguagauu..UUAu....aaucuaAACuguuaAggcGAAuAAguAgg. 80   
+                    GU UG :A:GUUC::C:  A::CAU         AUG::  A :G::G:A::U:  UU U    :A::U:AA:U::UA::::GA +AAG A:: 
+     MZ422438 51635 GUGUGACAUGUUCUACAGAAAUCAUUAuuuuaaUAUGAGGGAuUGUAGGAAUUAuaUUUUuauaUAAUUUAAUUUAUAGACUGAUCAAGGACUu 51542
+                    ********************88887666779776888888889************75555899*****************************9* PP
+
+                                  v  vvv       vvv v                      v  v        v  v                      v  NC
+                    .........>>,<<<<-<<<<<___>>>>>>>>>,,,,,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,,<<< CS
+  CST_millard    81 .........ccAcgaccgccucAuugaggcgucgcUAAAcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGAAGuC 165  
+                             ::A::       : U :   +  :: UAA  U:CC:CA:GCAUA: :: U      A :: :UAUGU:UGAAG :GG:UGAA: C
+     MZ422438 51541 agauaacaaAGAUUCU--AAGAUU-UUCCUGAAAAUAAUAUUCCACAUGCAUAGCAAGU------AAUUACUAUGUGUGAAGCUGGAUGAAGUC 51457
+                    8877777775544322..222222.2333366779999*********************......***************************** PP
+
+                        v                              v      v      v                                             NC
+                    -.<<<--<<<<<<<<_____....>>>>>>->>-->>>--->>>,,,..<<<<<<<---<<<<------.-----<<<<<-........---<< CS
+  CST_millard   166 A.cccgaauguuguauUAcU....uacaacUauAUgggGUGGgCagu..gcuuugAUAUGgugAGGAAc.ACGAAcCcuuu........uAucc 243  
+                    A :: GA U U::U:UUA U    :A::A  A AU :: UGG : G    :U:U:AUAUGG: AG   + AC AA:::U:U        U  ::
+     MZ422438 51456 AaGAAGAUUGUCCUUUUAAUuaaaAAGGAUAAGAUAUCUUGGUUUGGguAGUAUAAUAUGGAUAGAUUUaACUAAUUUUCUauaaugacUUAAU 51363
+                    *9999****888888888878**8888888899**********99878889**************97652799*******98755544444444 PP
+
+                     v    vvvv                                                                                     NC
+                    <<<<<<<<<<<<<<...................................................>>>>--------............----- CS
+  CST_millard   244 uaUaUAagcucagg...................................................ccugauugUuaA............gUGug 274  
+                    : UAUA                                                                                   +UGU 
+     MZ422438 51362 CCUAUAC-------aguaauguauaaauauaucuucuaauaguuauuaaucauugauaauaaccu------------uauuagcuuaucAUGUU 51288
+                    4444444.......555555599999999999999999999999888888666666666666555............33333333322222222 PP
+
+                              vvvv    v                         v                         vvv         vv   vvv     NC
+                    ---------->>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,..,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<_    CS
+  CST_millard   275 guacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacu..AgccUuaacgGAAcgucagAgAuccuaUauaaGaggaa    363  
+                    ++  A   G A+  UAUA :::  A:A::: :CCUAAGU:A:A: A++A    A::::UA::G:AAC:U:     ::C:A:A   G +++A
+     MZ422438 51287 AAGAA---GUAAGAUAUAUGGUCUAGAAAAGUCCUAAGUUAUAUAAUAAACcuAAGUCUAUAGAAACAUGGGAAGAUCCAAAA--GUAUUA    51202
+                    22222...22334466777777899****************998544444467*****************9877777777653..333333    PP
+
+                          vvv      vv         vv                 v                         v                     v NC
+                    ~~~~~~>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<__..__>>>>>>-->>>---->>>>>>,<<<<<<<<< CS
+  CST_millard   364 *[ 7]*uccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcugggua..AccccaguggagcGAAggguCcuAgucaauuug 456  
+                             +A U  U U:U:G:: G  AG+::G:::A+  UA:C+AU+A+::U:::    A+:::A::++ G:GAA+:::C::AGUC:A:U: 
+     MZ422438 51201 *[45]*---AAUUU-UAUUUGGAUUGAAAGCGAGGAUAAGAUACCGAUAAUAUUUAUAGaaAUAUAAAUUA-GGGAAAGUCCUUAGUCUACUAA 51074
+                    ...9.....33333.235677778999***********************888888766557777888776.********************** PP
+
+                                                      v                                                            NC
+                    __..............................._>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<< CS
+  CST_millard   457 au...............................ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAA 519  
+                    A+                                 :A:U:GAUGGAAAGCCGUAUG:GAUGAAAGUC:CACGUACGGUUUGGA:UGGGGGAAAA
+     MZ422438 51073 AAagaaagauacauaacagauuagguuuagauuCCUAGUAGAUGGAAAGCCGUAUGAGAUGAAAGUCUCACGUACGGUUUGGAUUGGGGGAAAA 50980
+                    97799999**********************99989*********************************************************** PP
+
+                           v    v                        NC
+                    <<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard   520 ggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555  
+                    :::GGA: UAA  :UCAAA:::UUACCUAUCA:UAU
+     MZ422438 50979 UUUGGAGAUAA-CUUCAAAAAAUUACCUAUCAAUAU 50945
+                    ***********.7*********************** PP
+
+>> MW248466  Staphylococcus phage MarsHill, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (14) !   1.4e-40  164.4  22.9  cm        1      555 []      111217      111604 + .. 0.88    no 0.35    no       -   12.49    0.19    1 loc    555      266637
+
+                                                                 v                     v                      vv  NC
+                     :::::[[[[[[[<<<<<---<<<<<<_..>>>>>>--->>>>><<<<<<.____........>>>>>>,,((((((((((,,,,,,,,,<<. CS
+  CST_millard      1 GUAUGugacgUUcccccAuAggcauuu..aaugccaAAggggguagauu.UUAu........aaucuaAACuguuaAggcGAAuAAguAgg. 80    
+                     GU  G::::GUU:CCC:AUA:::::UU  A:::::AAA:GGG:U  :UU U  U        AA:  AAACU:U:A::G:GA   A U G  
+     MW248466 111217 GUGCGAAGUGUUUCCCUAUAAGUGCUUaaAGCAUGAAAUGGGAUAGUUUuUAUUuuauauaaAAAUGAAACUUUAAUAGAGAUG-ACUGGUa 111307
+                     **************************999****************9999633334577888799999*************8532.2222223 PP
+
+                        vv vvvv              vvvv                   v    v        v    v                          NC
+                     ...>>,<<<<-<<<<<___>>>>>>>>>.,,,,,,,<<<<<<<<<<<<<<<<<<______>>>>>>>>>>>>>>---->>>>,,,~~~~~~, CS
+  CST_millard     81 ...ccAcgaccgccucAuugaggcgucg.cUAAAcUCCcgcAugCauauauuuuAaAcuAaaaauauauGuaUgAAGucgGGUGA*[43]*a 205   
+                                             GUC+  UA AC CC::CAUGCA: :::: U      A :::: :UGUAUGAAG ::GGU+A       
+     MW248466 111308 acg---------------------GUCAcAUAGACACCUACAUGCAUUGUGAGU------AAUUACUUUGUAUGAAGCUAGGUAA*[ 4]*- 111369
+                     223.....................344405555*********************......**********************987...5... PP
+
+                       vv                                                                                         NC
+                     ,,<<<<<<<---<<<<-----------<<<<<-..---<<<<<<<<<<<<<<<<.......................>>>>----------- CS
+  CST_millard    206 gugcuuugAUAUGgugAGGAAcACGAAcCcuuu..uAuccuaUaUAagcucagg.......................ccugauugUuaAgUG 272   
+                       G U:::AUAUGGUGA GAA+A GAAC: :UU   AU::::U:UAA:: :A:G                       C:U:+UU        
+     MW248466 111370 --GGUCAUAUAUGGUGACGAAUAGGAACUUCUUauGAUGUCCUUUAAAAUGAAGagaguaguuuggaauggugaaauCUUCUUUA------- 111452
+                     ..45999**************************99***************88889999999998888888888888877776554....... PP
+
+                                                                  vv                                   v v        NC
+                     ------------>>>>>>>>>>>>--->>>>>>>>>---->>>>>>>,,,,,,,))))))))))]]]]]]]<<--<<<<<<<<<<--<<<__ CS
+  CST_millard    273 ugguacAAUagaagcuUAuAuaggaCAgagGgcacCUAAGUcaaagcaauacuAgccUuaacgGAAcgucagAgAuccuaUauaaGaggaau 364   
+                              AG  ::UUA:A::::A AG: :GCACCUAAGU:::A  +AUACUA:C::U:A:GGAAC::::GAGAUCC:AUA : G      
+     MW248466 111453 ---------AGUGUUUUAAAGGGUAGAGGGAGCACCUAAGUAUGA--UAUACUAUCUAUUAAGGAACGCUUGAGAUCCAAUAAUUGU----- 111528
+                     .........4449*****************************999..9999******************************854433..... PP
+
+                                   v v               v            v          v    v       v          v            NC
+                     ______>>>----->>>>>>>>>>-->>,,,<<<<<<------<<<-----<<<<<<____>>>>>>-->>>---->>>>>>,~~~~~~    CS
+  CST_millard    365 uaUAguuccuacucuuauAuaggaAGUcAGaagGaccAuAGUAgcuAUgAagcuggguaAccccaguggagcGAAggguCcuA*[21]*    468   
+                         +          : UAU:GGAAGUCAG+A GACCAUAGUAGC  UGAAGCU:: UAA+ ::AGUGG GCGAAGGGUC+UA      
+     MW248466 111529 ---UU---------UAAUAUUGGAAGUCAGCA-GACCAUAGUAGCGUUGAAGCUUUGUAAUAAAAGUGGAGCGAAGGGUCAUA*[ 3]*    111601
+                     ...22.........3348**************.*************************************************8...*..    PP
+
+                                    NC
+                     ~~~~~~~~~~~~:: CS
+  CST_millard    469 *[37]**[48]*Au 555   
+                                 AU
+     MW248466 111602 *[ 1]**[ 0]*AU 111604
+                     ...*........** PP
+
+>> NC_043027  Bacillus virus PBS1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (15) !   6.7e-24  105.5   0.0  cm      447      553 ..       30748       30643 - .. 1.00    no 0.36    no       -    0.30    0.00    1 loc    555      252197
+
+                      vv     v   v     vv                                                          vv    vv        NC
+                    ,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->> CS
+  CST_millard   447 AgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgc 540  
+                    A:  AAUUU ++U AAAUU  :GGAA:GCC:UAUGCGAUGAAAGUCGCACGUA:GGU:UG+AGUGGGGGAAAA:G:GGA AUAAA  UCAAA:C
+    NC_043027 30748 AAAAAAUUUUUAUUAAAUUGAUGGAACGCCUUAUGCGAUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGAGGAGAUAAA-AUCAAAUC 30656
+                    ***********9************************************************************************9.******** PP
+
+                                  NC
+                    >>>->>>->>>>> CS
+  CST_millard   541 cUUACCuAuCacu 553  
+                    :UUACCUAUCACU
+    NC_043027 30655 UUUACCUAUCACU 30643
+                    ************* PP
+
+>> NC_031039  Bacillus phage AR9, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (16) !   6.7e-24  105.5   0.0  cm      447      553 ..      120554      120449 - .. 1.00    no 0.36    no       -    0.30    0.00    1 loc    555      251042
+
+                       vv     v   v     vv                                                          vv    vv      NC
+                     ,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--- CS
+  CST_millard    447 AgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaA 538   
+                     A:  AAUUU ++U AAAUU  :GGAA:GCC:UAUGCGAUGAAAGUCGCACGUA:GGU:UG+AGUGGGGGAAAA:G:GGA AUAAA  UCAAA
+    NC_031039 120554 AAAAAAUUUUUAUUAAAUUGAUGGAACGCCUUAUGCGAUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGAGGAGAUAAA-AUCAAA 120464
+                     ***********9************************************************************************9.****** PP
+
+                                     NC
+                     >>>>>->>>->>>>> CS
+  CST_millard    539 gccUUACCuAuCacu 553   
+                     :C:UUACCUAUCACU
+    NC_031039 120463 UCUUUACCUAUCACU 120449
+                     *************** PP
+
+>> LC680884  Bacillus phage PBS1 DNA, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (17) !   6.7e-24  105.5   0.0  cm      447      553 ..       80224       80329 + .. 1.00    no 0.36    no       -    0.30    0.00    1 loc    555      252136
+
+                      vv     v   v     vv                                                          vv    vv        NC
+                    ,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->> CS
+  CST_millard   447 AgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgc 540  
+                    A:  AAUUU ++U AAAUU  :GGAA:GCC:UAUGCGAUGAAAGUCGCACGUA:GGU:UG+AGUGGGGGAAAA:G:GGA AUAAA  UCAAA:C
+     LC680884 80224 AAAAAAUUUUUAUUAAAUUGAUGGAACGCCUUAUGCGAUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGAGGAGAUAAA-AUCAAAUC 80316
+                    ***********9************************************************************************9.******** PP
+
+                                  NC
+                    >>>->>>->>>>> CS
+  CST_millard   541 cUUACCuAuCacu 553  
+                    :UUACCUAUCACU
+     LC680884 80317 UUUACCUAUCACU 80329
+                    ************* PP
+
+>> MF360957  Bacillus phage PBS1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (18) !   6.7e-24  105.5   0.0  cm      447      553 ..       30748       30643 - .. 1.00    no 0.36    no       -    0.30    0.00    1 loc    555      252197
+
+                      vv     v   v     vv                                                          vv    vv        NC
+                    ,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->> CS
+  CST_millard   447 AgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgc 540  
+                    A:  AAUUU ++U AAAUU  :GGAA:GCC:UAUGCGAUGAAAGUCGCACGUA:GGU:UG+AGUGGGGGAAAA:G:GGA AUAAA  UCAAA:C
+     MF360957 30748 AAAAAAUUUUUAUUAAAUUGAUGGAACGCCUUAUGCGAUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGAGGAGAUAAA-AUCAAAUC 30656
+                    ***********9************************************************************************9.******** PP
+
+                                  NC
+                    >>>->>>->>>>> CS
+  CST_millard   541 cUUACCuAuCacu 553  
+                    :UUACCUAUCACU
+     MF360957 30655 UUUACCUAUCACU 30643
+                    ************* PP
+
+>> KU878088  Bacillus phage AR9, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (19) !   6.7e-24  105.5   0.0  cm      447      553 ..      120554      120449 - .. 1.00    no 0.36    no       -    0.30    0.00    1 loc    555      251042
+
+                       vv     v   v     vv                                                          vv    vv      NC
+                     ,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--- CS
+  CST_millard    447 AgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaA 538   
+                     A:  AAUUU ++U AAAUU  :GGAA:GCC:UAUGCGAUGAAAGUCGCACGUA:GGU:UG+AGUGGGGGAAAA:G:GGA AUAAA  UCAAA
+     KU878088 120554 AAAAAAUUUUUAUUAAAUUGAUGGAACGCCUUAUGCGAUGAAAGUCGCACGUAGGGUGUGAAGUGGGGGAAAAAGAGGAGAUAAA-AUCAAA 120464
+                     ***********9************************************************************************9.****** PP
+
+                                     NC
+                     >>>>>->>>->>>>> CS
+  CST_millard    539 gccUUACCuAuCacu 553   
+                     :C:UUACCUAUCACU
+     KU878088 120463 UCUUUACCUAUCACU 120449
+                     *************** PP
+
+>> MZ422438  Listeria phage LPJP1, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (20) !   1.9e-21   96.8   0.1  cm      409      555 ~]      137168      137009 - ~. 0.92    5' 0.36    no       -    8.59    0.05    5 loc    555      223580
+
+                             v                       v ?    ??????       v v                   v v                NC
+                     ~~~~~~~<<-----<<<<<<____>>>>>>-->>>---->>>>>>,<<<<<<<<<__................_>>>>>>>>>,,,<<<<<< CS
+  CST_millard      1 <[408]*cuAUgAagcuggguaAccccaguggagcGAAggguCcuAgucaauuugau................ucaaauugauGGAaaGCCg 477   
+                            :+A  AA: U::G AA C::A :++ :CGA   GU  U GUCA U : AU                  : A UGAUGGAA:GCCG
+     MZ422438 137168 <[  0]*UAACUAAAUUAAGAAA-CUUAGUUA-ACGACUAGUUAUUGUCAUUAAUAUaucggugacaauauaaACUGAGUGAUGGAACGCCG 137086
+                     .......6666677777777544.67777776.6999999************9998778999999999999997888*************** PP
+
+                                                                 v   v      v     v                 NC
+                     <<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>->>>->>>>>:: CS
+  CST_millard    478 uAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUACCuAuCacuAu 555   
+                     UAUG:G:UGAAAG:C:CACGUACGGU:UG+AG:GGGGGAAAAG: GGA AUAA U UCAAA :CUUACCUAUC:CUAU
+     MZ422438 137085 UAUGAGGUGAAAGUCUCACGUACGGUGUGAAGCGGGGGAAAAGUUGGAGAUAA-UAUCAAAUACUUACCUAUCGCUAU 137009
+                     *****************************************************.9*********************** PP
+
+>> MT836027  UNVERIFIED: Bacteriophage sp. clone scaffold_1234 genomic sequence.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (21) !     3e-19   89.1   0.0  cm      448      553 ..        7110        6996 - .. 0.99    no 0.49    no       -    2.73    0.02    1 loc    555       13768
+
+                       v                     v       v                                v                    vv    vv NC
+                   <<<<<<<<<__.........._>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>> CS
+  CST_millard  448 gucaauuugau..........ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAug 533 
+                   :U:: UU:GA            C:AA ::A:GGA :GCCGU:UGCG:UGAAAG:CGCA G:ACGGU: GGAGUGGGGGAAAAG:C GA AU AA  
+     MT836027 7110 AUUGUUUAGACaaugaaaaauACUAACCGAUGGAACGCCGUGUGCGGUGAAAGUCGCAUGCACGGUGGGGAGUGGGGGAAAAGCCCGAGAUGAA-A 7016
+                   *********967899******9***********************************************************************9.* PP
+
+                                        NC
+                   >>--->>>>>->>>->>>>> CS
+  CST_millard  534 ucAaAgccUUACCuAuCacu 553 
+                   UCA AG:CUUACCUAUCACU
+     MT836027 7015 UCAGAGGCUUACCUAUCACU 6996
+                   ******************** PP
+
+>> LC680885  Staphylococcus phage S6 DNA, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (22) !   3.5e-18   85.4   0.1  cm      447      553 ..      193401      193530 + .. 0.98    no 0.36    no       -    4.03    0.02    1 loc    555      267055
+
+                       v                                          v                                               NC
+                     ,<<<<<<<<<__........................._>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<< CS
+  CST_millard    447 Agucaauuugau.........................ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGgg 513   
+                     AG :A::: :A+                         U: :::U: UGGAAAGCCGUAUG:G::GAAA::C:CACGUACGGUUUGG:G::GG
+     LC680885 193401 AGAUAUAAGAAAuauugauaaaauauuagagcagaaaUUUUUAUGAUGGAAAGCCGUAUGAGGCGAAAGUCUCACGUACGGUUUGGUGCAGG 193492
+                     **********97799**********************9****************************************************** PP
+
+                               vv        vv                   NC
+                     <<--<<<<<-<<<<____>>>>--->>>>>->>>->>>>> CS
+  CST_millard    514 GGAAAAggcggacaUaaAugucAaAgccUUACCuAuCacu 553   
+                     GGAAAAG::G  :A    U:++A+A::CUUACCUAU::C:
+     LC680885 193493 GGAAAAGAGG--UACGUUUAGUAUACUCUUACCUAUUGCA 193530
+                     **********..8888889999****************** PP
+
+>> MW248466  Staphylococcus phage MarsHill, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (23) !   1.2e-14   72.9   0.0  cm      448      553 ..      112576      112690 + .. 0.94    no 0.36    no       -    3.32    0.01    1 loc    555      266637
+
+                          v v                            v v                                                      NC
+                     <<<<<<<<<__......................._>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<- CS
+  CST_millard    448 gucaauuugau.......................ucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGA 516   
+                     :UCAA : :A+                        : : UUGA:GGAA:GC:GUAUGCGAUGAAAGUCGCACGUAC:GU:UG+AG:GGGGGA
+     MW248466 112576 AUCAAAAUAAAacuauuagaaaagauauuuuugaAUUUAUUGAUGGAACGCUGUAUGCGAUGAAAGUCGCACGUACAGUGUGAAGCGGGGGA 112667
+                     ****98888867899******************9788889**************************************************** PP
+
+                          v                v               NC
+                     -<<<<<-<<<<____>>>>--->>>>>->>>->>>>> CS
+  CST_millard    517 AAAggcggacaUaaAugucAaAgccUUACCuAuCacu 553   
+                     AAA::                A ::UUACCUAUC:CU
+     MW248466 112668 AAAUCGU--------------AAGAUUACCUAUCGCU 112690
+                     *999864..............468999********** PP
+
+>> NC_030940  Pseudomonas phage phi3, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (24) !   0.00013   37.4   0.0  cm      469      544 ~~        2774        2836 + ~~ 0.97 5'&3' 0.62    no       -    1.81    0.02    5 loc    555       32637
+
+                                                                 ????????                                    NC
+                   ~~~~~~~,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>-~~~~~~ CS
+  CST_millard    1 <[468]*GGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUA*[11]> 555 
+                             :AGCCGUAUGCG UGAAAG CGCACGUACGGUU:  AG GGGGGA ::G:C G          CAA G:C::A      
+    NC_030940 2774 <[  0]*---GAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGGGAUGGGCCAG----------CAAUGGCCCA*[ 0]> 2836
+                   ..........************************************************99997..........8899999***...... PP
+
+>> KT887559  Pseudomonas phage phi3, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (25) !   0.00013   37.4   0.0  cm      469      544 ~~        2774        2836 + ~~ 0.97 5'&3' 0.62    no       -    1.81    0.02    5 loc    555       32637
+
+                                                                 ????????                                    NC
+                   ~~~~~~~,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<<<<<-<<<<____>>>>--->>>>>-~~~~~~ CS
+  CST_millard    1 <[468]*GGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAAAggcggacaUaaAugucAaAgccUUA*[11]> 555 
+                             :AGCCGUAUGCG UGAAAG CGCACGUACGGUU:  AG GGGGGA ::G:C G          CAA G:C::A      
+     KT887559 2774 <[  0]*---GAGCCGUAUGCGUUGAAAGGCGCACGUACGGUUCUUAGGGGGGGAUGGGCCAG----------CAAUGGCCCA*[ 0]> 2836
+                   ..........************************************************99997..........8899999***...... PP
+
+>> ON107264  Bacillus phage BUCT083, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (26) !   0.00017   37.0   0.0  cm      467      514 ~~       87712       87759 + ~~ 0.94 5'&3' 0.58    no       -    1.05    0.10    5 loc    555      133818
+
+                           ??                                       ???????       NC
+                    ~~~~~~~>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<~~~~~~ CS
+  CST_millard     1 <[466]*auGGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggG*[41]> 555  
+                            UGGAAAGCCGUAU:CG:UGA AG:CG:ACGUACGGUUUGG G  G G      
+     ON107264 87712 <[  0]*GUGGAAAGCCGUAUACGCUGAGAGGCGUACGUACGGUUUGGGGGAGAG*[ 0]> 87759
+                    .......***************************************877777666...... PP
+
+>> KY695241  Wolbachia phage sr1WOdamA clone contig3 genomic sequence.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (27) !    0.0076   31.2   0.0  cm      472      505 ..           7          40 + .. 1.00    no 0.53    no       -    0.50    0.00    2 loc    555       11696
+
+                                                     NC
+                  <<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+  CST_millard 472 aaGCCguAUGcGauGAAAguCgCACGUacGGUuu 505
+                  :AGCCGUAUG:G:UGAAAG:C:CACGUACGGUU:
+     KY695241   7 GAGCCGUAUGAGGUGAAAGUCUCACGUACGGUUC 40 
+                  ********************************** PP
+
+>> MT836071  UNVERIFIED: Bacteriophage sp. clone scaffold_1347 genomic sequence.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (28) !    0.0078   31.2   0.0  cm      469      505 ..       19619       19583 - .. 1.00    no 0.46    no       -    0.19    0.00    1 loc    555       25949
+
+                                                          NC
+                    ,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>> CS
+  CST_millard   469 GGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuu 505  
+                    GGAAAGCCG:AU:C:::GA A:::G:ACGU:CGGUUU
+     MT836071 19619 GGAAAGCCGAAUACAUGGAGACAUGUACGUUCGGUUU 19583
+                    ************************************* PP
+
+>> MT836602  UNVERIFIED: Bacteriophage sp. clone scaffold_2602 genomic sequence.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (29) ?     0.016   30.1   0.0  cm      469      518 ~~        5503        5549 + ~~ 0.86 5'&3' 0.49    no       -    1.11    0.01    5 loc    555       16695
+
+                                                                 ????????  ?       NC
+                   ~~~~~~~,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>>>>,,<<<<<<<<--<~~~~~~ CS
+  CST_millard    1 <[468]*GGAaaGCCguAUGcGauGAAAguCgCACGUacGGUuuGgaguGggGGAAA*[37]> 555 
+                             :AGCCGUAUG::::GAAA::::CA GUACGGUU:  AG GGGG AA       
+     MT836602 5503 <[  0]*---GAGCCGUAUGAUGGGAAACUAUCAUGUACGGUUCUUAGGGGGGAAAG*[ 0]> 5549
+                   ..........**********************************6665555555444...... PP
+
+>> MT836484  UNVERIFIED: Bacteriophage sp. clone scaffold_2312 genomic sequence.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+ (30) ?      0.29   25.7   0.0  cm      311      502 ~~       12179       12371 + ~~ 0.91 5'&3' 0.53    no       -  125.32    2.12    5 loc    555       13522
+
+                             ???????       ??????????                                                    v         NC
+                    ~~~~~~~-->>>>>>>,,,,,,,)))))))))).]]]]]]]<<--<<<<<<~~~~~~>>>>>>-->>,,,.<<<<<<------<<<-----<<< CS
+  CST_millard     1 <[310]*AGUcaaagcaauacuAgccUuaacgG.AAcgucagAgAuccuaU*[29]*AuaggaAGUcAGa.agGaccAuAGUAgcuAUgAagcu 418  
+                           A+U AA GC+AU+ UA C U   CGG        GAGAUC::::      ::::GAAGUCAG   :GACCAUAGUA:C   GAA:::
+     MT836484 12179 <[  0]*AAUGAAGGCUAUUGUACCUUAUGCGGg-------GAGAUCUGUG*[49]*CACAGAAGUCAGUcUGGACCAUAGUACCAGAGAAGUC 12301
+                    .......99***********************93.......******9987...9..5789********84699******************** PP
+
+                                   v                                     ???         v      v                  NC
+                    <<<____>>>>>>-->>>---->>>>>>,<<<<<<<<<___>>>>>>>>>,,,<<<<<<<<<<<<<<____>>>>>-->>>>>>~~~~~~ CS
+  CST_millard   419 ggguaAccccaguggagcGAAggguCcuAgucaauuugauucaaauugauGGAaaGCCguAUGcGauGAAAguCgCACGUacGG*[53]> 555  
+                    G   AA+  C::: G G:GAAGGGUC:        : G+U C :      G AA  C  :AUGC: :GAA : :GC  GU:  G      
+     MT836484 12302 GGUGAAAGUCGACAGAGGGAAGGGUCUGG------CGGUUGCUG------GUAAUACAGCAUGCCAGGAAUCGGGC--GUGUUG*[ 0]> 12371
+                    **************************999......666666666......99************************..******...... PP
+
+
+
+Hit alignment statistics summary:
+---------------------------------
+                                      matrix size (Mb)             alignment time (secs)       
+                                  -------------------------  ----------------------------------
+category                  # alns  minimum  average  maximum  minimum  average  maximum    total  ntaumod  novrflw
+---------------------  ---------  -------  -------  -------  -------  -------  -------  -------  -------  -------
+reported                      30     0.19    16.74   125.32     0.00     0.14     2.12     4.18       30        0
+included                      28     0.19    13.42    73.65     0.00     0.07     0.56     2.04       28        0
+removed duplicates            28     0.23    21.40   125.88     0.00     0.11     0.95     3.15       28        0
+all (except HMM only)         58     0.19    18.99   125.88     0.00     0.13     2.12     7.33       58        0
+HMM only                       0        -        -        -        -        -        -        -        -        -
+
+
+Internal CM pipeline statistics summary: (full sequences)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences:                                            29015  (3539010710 residues searched)
+Windows   passing  local HMM SSV           filter:         1198012  (0.3416); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:          409756  (0.128); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           87554  (0.02549); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1086  (0.0003336); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:             311  (9.945e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:             189  (6.954e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:             162  (5.932e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:             208  (3.869e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              36  (5.105e-06); expected (0.0001)
+Total       non-truncated CM hits reported:                     23  (2.48e-06)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (5' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences re-searched for truncated hits:             29015  (48571110 residues re-searched)
+Windows   passing  local HMM SSV           filter:              90  (0.001253); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:              47  (0.0006335); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:               8  (0.0001264); expected (0.15)
+Windows   passing  local HMM Forward       filter:               1  (1.307e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               1  (1.307e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (1.307e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (1.307e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (1.379e-06); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (1.379e-06); expected (0.0001)
+Total        5' truncated CM hits reported:                      1  (7e-07)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (3' terminal sequence regions)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences re-searched for truncated hits:             29015  (48571110 residues re-searched)
+Windows   passing  local HMM SSV           filter:              88  (0.001138); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:              29  (0.0003787); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:               9  (9.537e-05); expected (0.15)
+Windows   passing  local HMM Forward       filter:               3  (4.527e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               3  (4.527e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (1.204e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (1.204e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (8.256e-06); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total        3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (full sequences short enough to contain a 5' and 3' truncated hit)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences re-searched for truncated hits:                 0  (0 residues re-searched)
+Windows   passing  local HMM SSV           filter:               0  (0); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:               0  (0); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:               0  (0); expected (0.15)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total 5' and 3' truncated CM hits reported:                      0  (0)
+
+CYK    filter stage scan matrix overflows:                       0  (0)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (full sequences, allowing truncated hits)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences re-searched for truncated hits:             29015  (3539010710 residues re-searched)
+Windows   passing  local HMM SSV           filter:            7679  (0.002195); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:            2792  (0.0008593); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:             760  (0.0002303); expected (0.15)
+Windows   passing  local HMM Forward       filter:             322  (0.0001013); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:             311  (9.945e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:             232  (2.628e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              59  (5.061e-06); expected (0.0001)
+Total                     CM hits reported:                      6  (1.622e-07)
+
+CYK    filter stage scan matrix overflows:                       4  (0.01724)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+Internal CM pipeline statistics summary: (standard and truncated passes)
+----------------------------------------
+Query model(s):                                                  1  (555 consensus positions)
+Target sequences:                                            29015  (3539010710 residues searched)
+Target sequences re-searched for truncated hits:             29015  (3636152930 residues re-searched)
+Windows   passing  local HMM SSV           filter:         1205869  (0.1696); expected (0.15)
+Windows   passing  local HMM Viterbi       filter:          412624  (0.06357); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           88331  (0.01269); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1412  (0.0002149); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:             626  (9.849e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:             191  (3.447e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:             164  (2.943e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:             442  (3.211e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              96  (5.023e-06); expected (0.0001)
+Total CM hits reported:                                         30  (1.393e-06); includes 7 truncated hit(s)
+
+CYK    filter stage scan matrix overflows:                       4  (0.00905)
+Inside final  stage scan matrix overflows:                       0  (0)
+
+# CPU time: 1129.45u 23.49s 00:19:12.94 Elapsed: 00:00:42.05
+# Alignment of 28 hits satisfying inclusion thresholds saved to: cluster2_millard.aout
+//
+[ok]

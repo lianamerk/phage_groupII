@@ -1,0 +1,77 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300035440_000690_3300035440_Ga0372844_007724_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300035440_000690_3300035440_Ga0372844_007724_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=112]
+Description: source=IMGVR_UViG_3300035440_000690_3300035440_Ga0372844_007724/1724-150 coords=1135..1470 length=112 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    7.2e-08   32.6   0.9      1e-07   32.1   0.9    1.2  1  HNH       HNH endonuclease
+    0.00012   22.0   0.2    0.00018   21.5   0.2    1.2  1  HNH_5     HNH endonuclease
+  ------ inclusion threshold ------
+      0.065   13.3   0.1       0.12   12.5   0.1    1.4  1  HNH_4     HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.9   1.5e-11     1e-07       1      45 [.      63     107 ..      63     109 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 32.1 bits;  conditional E-value: 1.5e-11
+           -SSSS-B-SSEE--EEEESS-TTTT--BSGGGEEEE-HHHHHHHH CS
+   HNH   1 CeyCgrkfhksdalevdHiipisqggaddieNlqllCksCHnkkh 45 
+           C  C++    +++   +H ip+s+gg+ +  N+++++k+CH++ +
+  orf1  63 CFVCKELLLPNEQIDLHHLIPKSEGGTFSHRNIVPVHKTCHDTIT 107
+           77899999999******************************9876 PP
+
+>> HNH_5  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.2   2.7e-08   0.00018       1      42 [.      63     105 ..      63     109 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 2.7e-08
+  HNH_5   1 CiyCgke.ipeeelseeHIipeslGGklkisnlqtlCkkCNsk 42 
+            C +C++   p+e++   H+ip+s GG+ +  n++ + k+C++ 
+   orf1  63 CFVCKELlLPNEQIDLHHLIPKSEGGTFSHRNIVPVHKTCHDT 105
+            99***99999******************************975 PP
+
+>> HNH_4  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   1.8e-05      0.12      16      45 ..      73     102 ..      65     105 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.8e-05
+  HNH_4  16 tkeydiDHilPrsrsfdDsvsNkvLvlrsa 45 
+            ++++d+ H++P+s +   s+ N v v++ +
+   orf1  73 NEQIDLHHLIPKSEGGTFSHRNIVPVHKTC 102
+            689***********************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (112 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       431  (0.021954); expected 392.6 (0.02)
+Passed bias filter:                      273  (0.0139059); expected 392.6 (0.02)
+Passed Vit filter:                        20  (0.00101874); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.31u 0.20s 00:00:00.51 Elapsed: 00:00:00.37
+# Mc/sec: 1007.32
+//
+[ok]

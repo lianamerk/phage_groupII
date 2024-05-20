@@ -1,0 +1,157 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300013018_000054_3300013018_Ga0163223_101984_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300013018_000054_3300013018_Ga0163223_101984_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=491]
+Description: source=IMGVR_UViG_3300013018_000054_3300013018_Ga0163223_101984/2861-1265 coords=1..1473 length=491 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.9e-31  108.1   0.3      4e-20   72.4   0.0    2.3  2  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    2.1e-13   50.6   1.7      5e-13   49.3   1.7    1.7  1  Intron_maturas2  Type II intron maturase
+     0.0016   17.3   1.3       0.11   11.3   0.1    2.1  2  RdRP_1           Viral RNA-dependent RNA polymerase
+  ------ inclusion threshold ------
+       0.35   11.0   4.3       0.24   11.6   0.5    2.5  2  zf-BED           BED zinc finger
+        5.6    7.3  14.6        1.1    9.6   6.7    3.1  3  HNH              HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.4   0.0     1e-23     4e-20      19     151 ..       1     124 [.       1     144 [. 0.91
+   2 !   33.6   0.1   7.8e-12   3.1e-08     158     221 ..     187     255 ..     169     256 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 72.4 bits;  conditional E-value: 1e-23
+            THHHHCTB--.........-------HHHH.............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET........................ CS
+  RVT_1  19 ykalnkliakrLkdvlekllsenqpgfrpgrstldavedllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinliksflstrsfsvrv.nge 121
+            +k++++++   L+ ++e+++s+ + gfrp+rs+++a+e+++k     ++ k++++ D+k++Fd+++++ l   + +   + ++i+l+++fl    +++ + ++ 
+   orf1   1 DKLVQEVVRMILEAIYEPVFSDTSHGFRPNRSCHTALENITKG---FNGIKWFIEGDIKGCFDNIDHNVLADLIGKKIKDVRFIQLVRKFL----KAGYIeDW- 96 
+            5999*********************************777776...6999**********************9999999999*********....66778455. PP
+
+            ..TEEEEESB--ST-TTHHHHHHHHHHHHH CS
+  RVT_1 122 eskgryekkglpqGsvlSPllfnlfmnell 151
+              k   ++ g+pqG+++SP+l+n++++el+
+   orf1  97 --KYNETYSGTPQGGIVSPILANIYLHELD 124
+            ..8999*********************986 PP
+
+  == domain 2  score: 33.6 bits;  conditional E-value: 7.8e-12
+            ..........TEEECTTEEEEEESS.HHHHHHHHHHHHHHHHH.TT--BEGGG-EEE.....ESSEEETTEE CS
+  RVT_1 158 a......kgvtllrYaDDililsks.keelqelleaveewlke.sglkinpeKtklvlftvkseevkyLGvt 221
+                   k+ +++rYaDD+li +++ k +++++ +++++++ +  ++++++eKt +++   ++++ ++LG+ 
+   orf1 187 PsklqadKKFKYVRYADDFLIGVNGsKADCEKIKSELKSFIGNtLKMELSEEKTLITH---SENKARFLGYD 255
+            1355567899***************7788************9999************9...9********96 PP
+
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.3   1.7   1.3e-16     5e-13       7     100 ..     283     375 ..     277     427 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 49.3 bits;  conditional E-value: 1.3e-16
+  Intron_maturas2   7 naPirkiikk.LakagfvktkkekgkPrsvlr..widledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvrk 97 
+                       +P ++ i++ + ++g++     +g  rs+ r  +++    +I+  y+a  rg++nYY++a+n+ +l  +  y++++sc++TLA K k+ t++k
+             orf1 283 TIPFKDKIESfMFDKGIIRLV--NGEIRSKHRtvLLQITEYEIVSTYNAELRGISNYYRMASNFSKLG-YFAYLMEYSCLRTLAAKRKS-TIAK 372
+                      566665555514466777665..4444444441155666789*************************9.********************.**99 PP
+
+  Intron_maturas2  98 vik 100
+                      +i+
+             orf1 373 IIH 375
+                      986 PP
+
+>> RdRP_1  Viral RNA-dependent RNA polymerase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.1   2.8e-05      0.11     319     404 ..     176     261 ..     170     274 .. 0.73
+   2 !    4.8   0.1    0.0026        10     104     150 ..     386     432 ..     383     448 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 2.8e-05
+             HHHHHCCCHHHHH..HHHHHCTCEEETTEEEEEE-CCCHHCHHHHHHHHHCT.TS-CECTTCCE.SCSTTBSGGGSEECCCCCCCCTTC CS
+  RdRP_1 319 lkslekdepsvcr..fldsylqfityGDDsllavtkdfalvldrlfemlkel.gvtptpakksyeeidsrrepeevsFLkrtfskeqsg 404
+             ++++ k +++     + d++++ ++y DD l++v+   a + ++++ +lk + g t++ + ++ e+   +++ +++ FL+  ++ +  +
+    orf1 176 YNEIRKEMLRTPSklQADKKFKYVRYADDFLIGVNGSKA-DCEKIKSELKSFiGNTLKMELSE-EKTLITHSENKARFLGYDVRVR-RN 261
+             4555555555554005677788799**********9998.78**********99999886666.4555679999****99888764.33 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.0026
+             HCCCHHTT.HCCHHHCCSSSSBECCCCCCCCCCHCEEETCCCCCEE- CS
+  RdRP_1 104 ypylllggkkkdliqelqdggaarvlaealsadaetldpklqkftpk 150
+             +pyl  +g k  ++++ +d++++r+  + +++da ++++ +++f++ 
+    orf1 386 VPYLTAKGEKHLYFAKYMDCKKKRTFSDNIRKDALYYTHNTNSFESR 432
+             699999999999*******************************9973 PP
+
+>> zf-BED  BED zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.3      0.29   1.1e+03      15      34 ..     434     456 ..     421     459 .. 0.69
+   2 ?   11.6   0.5   6.2e-05      0.24       9      28 ..     471     490 ..     465     491 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.29
+             S--EETTTTEE----...SSTHH CS
+  zf-BED  15 kkavCryCgkqlsrg...ggtsn 34 
+             k  vC +Cg + + +   + +++
+    orf1 434 KARVCELCGTTEAKHyeiHHIHR 456
+             5568****988766655555555 PP
+
+  == domain 2  score: 11.6 bits;  conditional E-value: 6.2e-05
+             ---GGSS--EETTTTEE--- CS
+  zf-BED   9 evplkekkavCryCgkqlsr 28 
+             ++ ++++++vCr C+k++ r
+    orf1 471 IARKRKTMVVCRDCHKEIHR 490
+             455799***********987 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.2         2   7.8e+03      38      45 ..      31      38 ..      30      39 .. 0.76
+   2 ?   -3.4   0.0       3.2   1.3e+04      18      33 ..     263     279 ..     263     280 .. 0.75
+   3 ?    9.6   6.7   0.00029       1.1       1      47 []     438     491 .]     438     491 .] 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 2
+          HHHHHHHH CS
+   HNH 38 ksCHnkkh 45
+          +sCH++  
+  orf1 31 RSCHTALE 38
+          79**9865 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 3.2
+           ESS-TTTT--BS.GGGE CS
+   HNH  18 Hiipisqggadd.ieNl 33 
+           Hi+  ++g+++  ++N+
+  orf1 263 HIKRDKRGITKRtLNNM 279
+           88888888888756665 PP
+
+  == domain 3  score: 9.6 bits;  conditional E-value: 0.00029
+           -SSSS-B-SSEE--EEEESS-TTT.T--BS........GGGEEEE-HHHHHHHHHB CS
+   HNH   1 CeyCgrkfhksdalevdHiipisq.ggadd........ieNlqllCksCHnkkhdr 47 
+           Ce Cg +  k+   e++Hi+ +++ +g+              + +C++CH+  h++
+  orf1 438 CELCGTTEAKH--YEIHHIHRLKDlEGKAPwekymiarKRKTMVVCRDCHKEIHRQ 491
+           **********9..**********997777712222222334567899999999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (491 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       956  (0.048696); expected 392.6 (0.02)
+Passed bias filter:                      519  (0.0264364); expected 392.6 (0.02)
+Passed Vit filter:                        54  (0.00275061); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.33u 0.17s 00:00:00.50 Elapsed: 00:00:00.32
+# Mc/sec: 5088.40
+//
+[ok]

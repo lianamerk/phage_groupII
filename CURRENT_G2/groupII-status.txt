@@ -1,0 +1,87 @@
+G2 Introns from the Millard lab phageabase.
+Updated 02.28.24 LNM
+
+1. cmsearch -A g2_intron_millard.aout --tblout g2_intron_millard.tblout --verbose -E 0.01 --cpu 64 /n/eddy_lab/users/lmerk/infernal_builds/g2_introns.cm /n/eddy_lab/data/phage-2023_11/inphared_14Dec2023/14Dec2023_genomes.fa. The g2_introns.cm contains Zasha's Group II Rfam clan with 7 families.
+
+Here’s an example infernal hit:
+
+
+>> NC_007581  Clostridium phage c-st, complete genome.
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc bands     tau   mx Mb seconds pass cfg mdllen      seqlen
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ---- ----- ------- ------- ------- ---- --- ------ -----------
+  (8) !   6.1e-09   61.7   0.0  cm        1       93 []      114704      114619 - .. 0.97    no 0.45   hmm   5e-06    1.81    0.01    1 loc     93      185683
+
+                                                                                                                  NC
+                     ::<<<<<<<<-<<<<<____>>>>>--->>>>>>>>--.<<<<-<<______________________________________>>-->>>> CS
+  Intron_gpII      1 GaGAGCCGuaUGcgggGAAAcccgCACGuaCGGUUCGG.gGGGgGgucauugauucgcaaaUuguuuggacuuggaauugacuacCuACCCc 91    
+                     GA:AGCCGUAUGCG::GAAA::CGCACGUACGGUU:GG ::G:GGG         +  A++U G ++ +A U   AA  + +UACCUA:C::
+    NC_007581 114704 GAAAGCCGUAUGCGGUGAAAGUCGCACGUACGGUUUGGaCUGGGGG---------AAAAGUUGGAGAUAAAUCUCAAAGACUUACCUAUCAG 114622
+                     **************************************999*****.........78899999***************************99 PP
+
+                         NC
+                     .:: CS
+  Intron_gpII     92 .Au 93    
+                      AU
+    NC_007581 114621 uAU 114619
+                     9** PP
+
+All the infernal hits can be found at /n/eddy_lab/users/lmerk/2023/231217_millard_phage/introns
+
+2. In /n/eddy_lab/users/lmerk/2023/231218_intron_genes. Pipeline can be found in which_genes.ipynb with some scripts in scripts.py. Note we see many cases where we have a group-II-D1D4-n hit right before an Intron-gpII. There are also some cases where group-II-D1D4-n overlaps with group-II-D1D4-m, where I keep the lowest E-value. "genomes_wth_groupII.txt" has all the genomes that have group IIs. There actually ended up being some duplicated genomes in Millard database, so the final de-duplicated list is at "actual_genomes.txt". 30 unique genomes with introns. All have 1 intron except Listeria phage LPJP1, has 4. Grab 6 kb up and down, esl-translate, run hmmscan against Pfam-A (from 35). Add the intron hit and the top 3 Pfam hits for a given ORF to the genbank file. Hmmscan outputs in /n/eddy_lab/users/lmerk/2023/231218_intron_genes/gII_intron_6kb_windows. 
+
+3. I annotate all the genomes with group II's both to standardize my analysis and to pick a tool for the wider IMGVR database, which includes no annotations. /n/eddy_lab/users/lmerk/19/bakta.sh runs bakta in my conda env defensefinder, and /n/eddy_lab/users/lmerk/19/pharokka.sh runs pharokka in my conda env pharokka. Bakta does better sometimes, pharokka wins other times. No obvious pattern yet. I also run defensefinder (in my conda env defensefinder as well) to try to get a sense on if I see defense genes near introns.
+
+4. Combine bakta, pharokka, infernal, hmmscan in intron window, and defensefinder outputs into one genbank, located in /n/eddy_lab/users/lmerk/22/triple_annotated. Visualize with snapgene for now, will likely make final figures in dnaplotlib or klinker.
+
+FOR EACH INTRON:
+- Paste the preceding orf into phmmer, find where the homology drops off. You can use a close homolog to see what the next residues should be to help find the end, though look for the UA site just after the Rfam00029 hit, it should be right at the end.
+- Extract .fna. Drop into RNAfold for first pass at structure (http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi). Save the Vienna output for later cm making (note you'll have to fix D5, more below). View in Forna, quickly tug on each stem so it's not compressed at the base. Save as json and png (json can later be loaded in http://rna.tbi.univie.ac.at/forna/, color added, etc). See NC_007851 for coloring.
+If interrupted, extract D1D4, orf, and D5D6 separately. Load D1D4 and D5D6 together into RNAfold.
+
+
+Current Issues:
+- Identification is too manual → usually I get a RF00029 hit (D5/6 region), and sometimes the upstream D1D4 hit. By going through the 30 Millard by hand, I hope some heuristics reveal themselves so I can automate finding start/end for the 12k IMGVR hits. Finding the start site isn't too tedious, the GUGYG "epsilon" (or, for cluster 1 of my data, some are GUAUG. This depends on what epsilon' is in D1) is usually right after homology falls off, since recall the intron binding site of the intron is right before this site. However, the 3' end of the intron is a bit harder since there's only an AU ("gamma") after D6. However, because D5/6 are well-behaved, the current strategy is to find MFE structure and look for the AU right after the D6 stem ends. This is usually right at the end of the RF00029 hit, if there is one.
+- When I add Pfam hits, I currently annotate the whole ORF as the domain it hit, rather than the subsection of domain. Follow up on Tom's idea: add a snapshot of where the hit is in the genbank annotation?
+- RNAfold doesn't get D5 right. There is a way to edit the visual in Forna, but this doesn't directly edit the secondary structure. For now, since I'm first-pass annotating the introns, I'll leave the secondary structures as they are. But, before I build a new cm of phage introns, I will need to edit the D5 dot bracket.
+- Wolbachia endosymbiont introns are right at the start/end of the contigs. Can't reconstruct?
+
+
+Questions:
+- New phage intron cm: 
+	- How diverse should each cm be? Benefits of splitting vs. clumping, how to avoid 13 subgroups like group I's
+	- Ideas for orf vs orfless versions of the intron: Tom's idea to keep the longest ORF in the alignment so Infernal may still find one vs. my idea of splitting up D1D4 and D5D6
+- Some way to visualize phage phylogeny (like figure 3 in G1 archaea paper). I could try to instead visualize host, or create tree of IEP instead. Don't have too many IEP's yet but maybe in the IMGVR dataset?
+- How far outside of intron site does the intron retro home with --> Why do I see RVT or HNH right after* D6 sometimes?
+
+____
+
+dataframe:
+cluster 1 identified as closely related to the phage c-st intron via nhmmer, mainly in D5/D6:
+
+# target name        accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
+#------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
+AP008983             -          cst                  -                2     653  115267  114616  115268  114615  185683    -    6.1e-180  607.2  81.2  Clostridium phage c-st genomic DNA, complete genome.
+NC_007581            -          cst                  -                2     653  115267  114616  115268  114615  185683    -    6.1e-180  607.2  81.2  Clostridium phage c-st, complete genome.
+MW749003             -          cst                  -               84     652   25514   25017   25546   25015  252262    -     1.3e-19   79.7  38.7  Bacillus phage vB_BspM_Internexus, complete genome.
+MZ422438             -          cst                  -              543     650  137114  137009  137134  137004  223580    -     9.2e-11   50.6   5.0  Listeria phage LPJP1, complete genome.
+MT836027             -          cst                  -              539     652    7106    6992    7127    6990   13768    -       2e-09   46.1   4.7  UNVERIFIED: Bacteriophage sp. clone scaffold_1234 genomic sequence.
+MZ422438             -          cst                  -              559     650   51035   50945   51055   50941  223580    -       2e-09   46.1   8.0  Listeria phage LPJP1, complete genome.
+MZ422438             -          cst                  -              527     650  120756  120890  120685  120894  223580    +     1.5e-08   43.3  10.4  Listeria phage LPJP1, complete genome.
+KU878088             -          cst                  -              553     651  120543  120446  120561  120443  251042    -     1.1e-07   40.5   8.6  Bacillus phage AR9, complete genome.
+LC680884             -          cst                  -              553     651   80235   80332   80217   80335  252136    +     1.1e-07   40.5   8.6  Bacillus phage PBS1 DNA, complete genome.
+MF360957             -          cst                  -              553     651   30737   30640   30755   30637  252197    -     1.1e-07   40.5   8.6  Bacillus phage PBS1, complete genome.
+NC_031039            -          cst                  -              553     651  120543  120446  120561  120443  251042    -     1.1e-07   40.5   8.6  Bacillus phage AR9, complete genome.
+NC_043027            -          cst                  -              553     651   30737   30640   30755   30637  252197    -     1.1e-07   40.5   8.6  Bacillus virus PBS1, complete genome.
+MZ422438             -          cst                  -              556     650  163948  163854  163966  163851  223580    -     9.1e-07   37.4   8.4  Listeria phage LPJP1, complete genome.
+#
+# Program:         nhmmer
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      CST_G2.fna
+# Target file:     /n/eddy_lab/data/phage-2023_11/inphared_14Dec2023/14Dec2023_genomes.fa
+# Option settings: nhmmer --tblout CST_G2_millard.tblout -E 1e-6 --cpu 12 CST_G2.fna /n/eddy_lab/data/phage-2023_11/inphared_14Dec2023/14Dec2023_genomes.fa 
+# Current dir:     /net/holy-nfsisilon/ifs/rc_labs/eddy_lab/users/lmerk/22
+# Date:            Mon Feb 26 14:55:10 2024
+# [ok]
+
+

@@ -1,0 +1,90 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300014935_000074_3300014935_Ga0169825_100904_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300014935_000074_3300014935_Ga0169825_100904_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=478]
+Description: source=IMGVR_UViG_3300014935_000074_3300014935_Ga0169825_100904/1587-3 coords=3..1436 length=478 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.2e-31  108.7   0.0    5.7e-31  107.9   0.0    1.4  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+    0.00074   19.8   1.1     0.0019   18.5   1.1    1.7  1  HNH       HNH endonuclease
+  ------ inclusion threshold ------
+      0.065   13.1   0.2       0.15   11.9   0.2    1.6  1  TnpW      Transposon-encoded protein TnpW
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.9   0.0   8.7e-35   5.7e-31      44     222 .]       3     208 ..       1     208 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 107.9 bits;  conditional E-value: 8.7e-35
+            -HHHH.............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...........................TEEEEESB--ST-TTHHHHHHH CS
+  RVT_1  44 gfrpgrstldavedllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvpt.klinliksflstrsfsvrv.ngeeskgryekkglpqGsvlSPllfnl 145
+            gfrp+rs ++a+ ++ +   + +   ++++lD+k++Fd++++ +l+r+++a+++++ kl+ +ik++l+ +     + ng   ++ y ++g+pqG++lSPll+n+
+   orf1   3 GFRPNRSAETAIAQCMRL-IQVQHLYHVVDLDIKGFFDNISHTKLMRQIWALGIRDkKLLCIIKEMLKAPV---VLpNG---EKTYPTRGTPQGGILSPLLANI 99 
+            9***********555554.24477799***************************86157789999994444...55466...799******************* PP
+
+            HHHHHHTT-T.......................................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEGGG-EEE......ESS CS
+  RVT_1 146 fmnellrelrkra.................................kgvtllrYaDDililskskeelqelleaveewlke.sglkinpeKtklvlftv.ksee 214
+            ++nel+  +++++                                 k+ + +rYaDD+ i++ s+e++ ++++a+e wlk+  gl+i+p+K+k+v   + k++ 
+   orf1 100 VLNELDWWIASQWeqmptktkfktrsnaqgteikshayralrrsrlKEMHAVRYADDFKIFCASHEDAVRAYKATELWLKDrLGLEISPDKSKVV---NlKRQY 200
+            ********************************************************************************999************...778999 PP
+
+            EEETTEEE CS
+  RVT_1 215 vkyLGvtl 222
+             ++LG++l
+   orf1 201 SDFLGFKL 208
+            99999975 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   1.1   2.8e-07    0.0019      12      36 ..     407     431 ..     397     441 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 2.8e-07
+           E--EEEESS-TTTT--BSGGGEEEE CS
+   HNH  12 dalevdHiipisqggaddieNlqll 36 
+            + +++H++p+s+gg+d++ Nl+l+
+  orf1 407 HDIHCHHKVPVSNGGSDEYANLILV 431
+           378********************97 PP
+
+>> TnpW  Transposon-encoded protein TnpW
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.2   2.3e-05      0.15       7      28 ..     214     235 ..     209     236 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.3e-05
+  TnpW   7 gtTYvVeahFkesakETiadKi 28 
+           g+ YvV++h +++a + ++dK+
+  orf1 214 GKKYVVRSHMSDKAYKKAHDKV 235
+           789******************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (478 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       950  (0.0483904); expected 392.6 (0.02)
+Passed bias filter:                      545  (0.0277608); expected 392.6 (0.02)
+Passed Vit filter:                        45  (0.00229218); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.36u 0.16s 00:00:00.52 Elapsed: 00:00:00.32
+# Mc/sec: 4848.93
+//
+[ok]

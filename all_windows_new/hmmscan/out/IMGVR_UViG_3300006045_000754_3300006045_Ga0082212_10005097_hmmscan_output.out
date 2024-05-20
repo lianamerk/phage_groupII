@@ -1,0 +1,204 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=337]
+Description: source=IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097/10554-12253 coords=266..1276 length=337 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+     0.0012   18.7   0.1     0.0087   15.9   0.1    2.4  1  Peptidase_M28  Peptidase family M28
+      0.008   15.4   1.0       0.28   10.3   0.0    2.8  3  Peptidase_M42  M42 glutamyl aminopeptidase
+  ------ inclusion threshold ------
+      0.047   13.5   0.5       0.41   10.4   0.5    2.4  1  Peptidase_M20  Peptidase family M20/M25/M40
+
+
+Domain annotation for each model (and alignments):
+>> Peptidase_M28  Peptidase family M28
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1   1.3e-06    0.0087      14     108 ..      43     140 ..      37     210 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.3e-06
+                    EEEEEEE----SST.........TGG...T---T.TTTHHHHHHHHHHHHHCHHGGCCSSCEEEEEEESSSS-S-HHHHHHHHHCCTTCCECEEEE CS
+  Peptidase_M28  14 vlllgAHyDsvgvg.........rgp...ifvGA.dDnAsgvaalLelarvlaasgsrpkrgvrflffdaEEagllGSkafakakpelkkiaavln 96 
+                     +ll AH+D+v  +         +g+     +G+  D+ +gv ++ ++++              +lf   EE g lG++ fa +++ + ++++ ++
+           orf1  43 PILLVAHLDTVHGErvkdifyskDGNrliSPQGIgGDDRCGVHIIFQVIQNARC---------HVLFCEDEETGALGAREFA-KSKIRPEVNYIIE 128
+                    589999999999889999999773335554477744888999999888877664.........79*****************.8899999999999 PP
+
+                    EES-SCTT--EE CS
+  Peptidase_M28  97 lDmvgsggkell 108
+                    +D  g+ +  ++
+           orf1 129 VDRRGADDAVFY 140
+                    999998877665 PP
+
+>> Peptidase_M42  M42 glutamyl aminopeptidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0     0.059   3.8e+02      12      30 ..      40      59 ..      33      77 .. 0.79
+   2 !   10.3   0.0   4.2e-05      0.28     134     190 ..      79     129 ..      58     140 .. 0.83
+   3 ?    1.8   0.0     0.017   1.1e+02     259     290 ..     172     203 ..     160     204 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.059
+                   TSSEEEEEEE--B-.EEEEE CS
+  Peptidase_M42 12 kepkvmiaAHmDei.GlmVk 30
+                    e  ++++AH+D++ G  Vk
+           orf1 40 GEVPILLVAHLDTVhGERVK 59
+                   577899*******9555555 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 4.2e-05
+                    HHHHHHHHHHHHHHHHCTSS-SSEEEEEEESSCTTTSHHHHHHH.HHH--SEEEEEEE CS
+  Peptidase_M42 134 DdragvavllellkelkeeeleadvylvatvqEEvGlrGaktsa.ekikpdiaiavDv 190
+                    Ddr gv ++ +++++        ++++++   EE G  Ga+ +a +ki+p++   ++v
+           orf1  79 DDRCGVHIIFQVIQNA-------RCHVLFCEDEETGALGAREFAkSKIRPEVNYIIEV 129
+                    9***********9986.......6789************9866516788887666655 PP
+
+  == domain 3  score: 1.8 bits;  conditional E-value: 0.017
+                    TTTSEEEEEEEEEBSTTSTTEEEEHHHHHHHH CS
+  Peptidase_M42 259 gegvptalisiptryiHspvevahlddleatv 290
+                    + g+ +a +s + ++ Hs +e ++l  +++t+
+           orf1 172 RLGIAAANLSSGYHNEHSRSEFVDLTEMASTA 203
+                    6799*********************9998875 PP
+
+>> Peptidase_M20  Peptidase family M20/M25/M40
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.5   6.3e-05      0.41       2      85 ..      46     129 ..      45     237 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 6.3e-05
+                    EEEES-BCSTTCGGGSSSTTSEEETTT.EEE...STTTTTTHHHHHHHHHHHHHHHHHTTT-SSEEEEEEESTTSSTTCHHHHHHH.......... CS
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxx.xxx...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.......... RF
+  Peptidase_M20   2 lgsHlDvVpeeetdgwttpfslteedG.kly...GrGaddmkggvlaalealralkdegikpkgtivllfqpdEEggrgGakalle.......... 83 
+                    l +HlD+V  +e    +  f ++  dG +l    G G  d+ +gv ++++++         ++   ++lf  dEE+g  Ga+++++          
+           orf1  46 LVAHLDTVH-GER--VKDIFYSK--DGnRLIspqGIGG-DDRCGVHIIFQVI---------QNARCHVLFCEDEETGALGAREFAKskirpevnyi 126
+                    567777777.444..22234444..2334430113322.3334444444444.........245889********999********5333333332 PP
+
+                    .HH CS
+                    .xx RF
+  Peptidase_M20  84 .gl 85 
+                     ++
+           orf1 127 iEV 129
+                    222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (337 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       628  (0.0319886); expected 392.6 (0.02)
+Passed bias filter:                      603  (0.0307152); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.35u 0.22s 00:00:00.56 Elapsed: 00:00:00.37
+# Mc/sec: 2999.93
+//
+Query:       orf2  [L=128]
+Description: source=IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097/10554-12253 coords=946..563 length=128 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (128 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       335  (0.017064); expected 392.6 (0.02)
+Passed bias filter:                      266  (0.0135493); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.18s 00:00:00.50 Elapsed: 00:00:00.34
+# Mc/sec: 1221.67
+//
+Query:       orf3  [L=108]
+Description: source=IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097/10554-12253 coords=454..131 length=108 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (108 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       190  (0.00967808); expected 392.6 (0.02)
+Passed bias filter:                      167  (0.00850652); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.20s 00:00:00.48 Elapsed: 00:00:00.34
+# Mc/sec: 1033.38
+//
+Query:       orf4  [L=122]
+Description: source=IMGVR_UViG_3300006045_000754_3300006045_Ga0082212_10005097/10554-12253 coords=366..1 length=122 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (122 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       461  (0.0234821); expected 392.6 (0.02)
+Passed bias filter:                      335  (0.017064); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.34
+# Mc/sec: 1192.35
+//
+[ok]
+                  19632  (3329936 nodes)
+Passed MSV filter:                       288  (0.0146699); expected 392.6 (0.02)
+Passed bias filter:                      197  (0.0100346); expected 392.6 (0.02)
+Passed Vit filter:                         9  (0.000458435); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.34
+# Mc/sec: 873.14
+//
+[ok]

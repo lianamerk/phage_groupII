@@ -1,0 +1,309 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=487]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/10550-12191 coords=2..1462 length=487 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      5e-39  132.2  45.6    1.5e-19   69.8  10.6    5.0  5  Big_2           Bacterial Ig-like domain (group 2)
+      0.005   16.5   2.7          1    9.0   0.2    2.3  2  DUF4502         Domain of unknown function (DUF4502)
+  ------ inclusion threshold ------
+      0.011   15.7  31.2      0.055   13.4   2.6    4.6  4  aBig_2          Atrophied bacterial Ig domain
+       0.34   10.0  16.8      0.053   12.7  12.3    1.9  2  DEC-1_N         DEC-1 protein, N-terminal region
+
+
+Domain annotation for each model (and alignments):
+>> Big_2  Bacterial Ig-like domain (group 2)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   6.7   1.7e-13   8.4e-10      11      73 ..      83     155 ..      75     161 .. 0.76
+   2 !   42.5   1.9   9.9e-15   4.8e-11      13      66 ..     179     232 ..     168     245 .. 0.89
+   3 ?   -1.4   2.6      0.49   2.4e+03      16      69 ..     247     302 ..     234     305 .. 0.64
+   4 !   69.8  10.6     3e-23   1.5e-19       2      70 ..     303     371 ..     302     383 .. 0.96
+   5 ?   -2.3   0.0      0.98   4.8e+03      14      30 ..     383     391 ..     372     406 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 38.5 bits;  conditional E-value: 1.7e-13
+            -SEEETT-EEEEEEEEETTTTCE..........-EEEEEESCTSSEEEETTCEEECSSSEEEEEEEEECTTTC CS
+  Big_2  11 evtvkkgatqqltvevtpssasd..........kkvtwtssngsvAtVsatGlVtavaaGkatitatskdgnd 73 
+            +v+ +kg+tqql  e  + ++             +++wtss+++v+tV+atGl+tav aG a++ta +kd+n 
+   orf1  83 NVVMEKGETQQLEIEYGTDDKAEqekiaeaaskLTIEWTSSDEEVVTVDATGLITAVGAGEADVTASAKDVNI 155
+            57777777777765554444444444444444489***********************************885 PP
+
+  == domain 2  score: 42.5 bits;  conditional E-value: 9.9e-15
+            EEETT-EEEEEEEEETTTTCE-EEEEEESCTSSEEEETTCEEECSSSEEEEEEE CS
+  Big_2  13 tvkkgatqqltvevtpssasdkkvtwtssngsvAtVsatGlVtavaaGkatita 66 
+            + +  +++ l +  tp++a+  k  +tss++svAtV+ +GlVtava+G  tit 
+   orf1 179 VTNGENSKNLDAKMTPEDATEVKLAYTSSDESVATVDENGLVTAVADGECTITT 232
+            556778999*******************************************96 PP
+
+  == domain 3  score: -1.4 bits;  conditional E-value: 0.49
+            TT-EEEEEEEEETTTTCE-EEEEEESCTSSEEEE.....TTCEE.ECSSSEEEEEEEEEC CS
+  Big_2  16 kgatqqltvevtpssasdkkvtwtssngsvAtVs.....atGlV.tavaaGkatitatsk 69 
+            + a+  +t e+tp+   +++ t  s   +++tV      a G V  +++a ++++t+t k
+   orf1 247 QEAAAVVTDEETPTEGENSEATADS---ETVTVPdnldaAFGVVpEGLSA-TTKVTVTTK 302
+            5566667888888888886555544...7777765666555555666665.556666655 PP
+
+  == domain 4  score: 69.8 bits;  conditional E-value: 3e-23
+            SSEEEEEEC-SEEETT-EEEEEEEEETTTTCE-EEEEEESCTSSEEEETTCEEECSSSEEEEEEEEECT CS
+  Big_2   2 vtsvtvsptevtvkkgatqqltvevtpssasdkkvtwtssngsvAtVsatGlVtavaaGkatitatskd 70 
+            v+++t+++te ++++g+t++ t++v+p+ a++ +vtw+ss++svAtV+ tG+VtavaaG+atitats d
+   orf1 303 VEGITLDKTEGILNVGNTVTITATVAPEEATNPAVTWSSSDESVATVDETGKVTAVAAGNATITATSED 371
+            899****************************************************************98 PP
+
+  == domain 5  score: -2.3 bits;  conditional E-value: 0.98
+            EETT-EEEEEEEEETTT CS
+  Big_2  14 vkkgatqqltvevtpss 30 
+            v++         +t+++
+   orf1 383 VQQ--------KKTATT 391
+            222........222222 PP
+
+>> DUF4502  Domain of unknown function (DUF4502)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.8   0.0   0.00094       4.6       4     123 ..      33     152 ..      31     162 .. 0.84
+   2 !    9.0   0.2   0.00021         1      14     119 ..     259     367 ..     253     383 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.00094
+  DUF4502   4 rsrdieypsFpdesklklrraglrtvgaaaslskaWlrcGegFqdtsgtksltaekkkiteklleLsprpkketttskstsdlvdivwsssdsdlsdedkte 105
+              +sr + +   p+ +kl++++  +  v aaa+++ +   cG   +     + ++ ek+++ +   e  +  k+e+ +  ++     i w ssd ++   d t 
+     orf1  33 KSRRASTERRPGRRKLNMKKKIMSMVIAAAAMALSLVGCGVDINSIGLPPNVVMEKGETQQLEIEYGTDDKAEQEKIAEAASKLTIEWTSSDEEVVTVDATG 134
+              566777777799999***************************999999999********9999***********99999999999*********99888887 PP
+
+  DUF4502 106 qksqrdsdtgsrtarlqq 123
+                +   ++++ +ta  ++
+     orf1 135 LITAVGAGEADVTASAKD 152
+              766666666666665555 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 0.00021
+  DUF4502  14 pdesklklrraglrtvgaaaslskaWlrcGegFqdtsgtksltaekkkiteklleLsprpkketttsksts...dlvdivwsssdsdlsdedkteqksqrds 112
+              p e +++  +a  +tv  ++ l  a+    eg   t++++ +t+ ++ +++k + +    +++t t+  ++      +++wsssd  ++  d+t +++   +
+     Query:       orf2  [L=95]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/11031-12658 coords=1626..1342 length=95 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (95 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       234  (0.0119193); expected 392.6 (0.02)
+Passed bias filter:                      199  (0.0101365); expected 392.6 (0.02)
+Passed Vit filter:                        12  (0.000611247); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.15s 00:00:00.44 Elapsed: 00:00:00.31
+# Mc/sec: 1012.86
+//
+Query:       orf3  [L=184]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/11031-12658 coords=1475..924 length=184 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (184 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       354  (0.0180318); expected 392.6 (0.02)
+Passed bias filter:                      240  (0.0122249); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.33u 0.15s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1910.86
+//
+Query:       orf4  [L=154]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/11031-12658 coords=1126..665 length=154 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (154 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       813  (0.041412); expected 392.6 (0.02)
+Passed bias filter:                      285  (0.0145171); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 1568.99
+//
+Query:       orf5  [L=145]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/11031-12658 coords=653..219 length=145 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.018   15.2   4.2      0.024   14.9   4.2    1.2  1  DUF2505   Protein of unknown function (DUF2505)
+
+
+Domain annotation for each model (and alignments):
+>> DUF2505  Protein of unknown function (DUF2505)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   4.2   1.2e-06     0.024      26     127 ..      30     124 ..      20     141 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.2e-06
+  DUF2505  26 rlaevgaeeaevtseeveedgvtv.tvtqvvpadklPeavrkvvsgdlkiertetwgpltdgratgtvsasvkgapveltGtltLepegegtrlevegevkv 126
+              ++a++++ e +vt+  v ++g+tv +++ v+p+ + P+++++v++++l+++ t           + + s+++++a  +l+Gt+t+++++  +++  ++ v++
+     orf5  30 TVATLSSLEDQVTAGLVASSGATVaVMVTVLPTLRMPSVLSRVIPSTLVVTVTLVV--------ALSPSGTTPNAASRLSGTVTVSESAVASEFSPSVGVSS 123
+              5677777788887777777755551678999******************9999999........44555555555555555555555333333333333333 PP
+
+  DUF2505 127 k 127
+              +
+     orf5 124 S 124
+              3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (145 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       953  (0.0485432); expected 392.6 (0.02)
+Passed bias filter:                      254  (0.0129381); expected 392.6 (0.02)
+Passed Vit filter:                        16  (0.000814996); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.32
+# Mc/sec: 1486.27
+//
+Query:       orf6  [L=331]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/11031-12658 coords=993..1 length=331 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (331 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       570  (0.0290342); expected 392.6 (0.02)
+Passed bias filter:                      241  (0.0122759); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.16s 00:00:00.48 Elapsed: 00:00:00.31
+# Mc/sec: 3504.47
+//
+[ok]
+:              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.33u 0.17s 00:00:00.50 Elapsed: 00:00:00.31
+# Mc/sec: 1527.43
+//
+Query:       orf4  [L=453]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/10550-12191 coords=1474..116 length=453 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (453 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       523  (0.0266402); expected 392.6 (0.02)
+Passed bias filter:                      183  (0.00932152); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.31
+# Mc/sec: 4796.16
+//
+Query:       orf5  [L=159]
+Description: source=IMGVR_UViG_2051223006_000041_2051223006_mhc6a_MHC6A_contig34076/10550-12191 coords=477..1 length=159 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (159 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       586  (0.0298492); expected 392.6 (0.02)
+Passed bias filter:                      360  (0.0183374); expected 392.6 (0.02)
+Passed Vit filter:                        18  (0.00091687); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.33u 0.15s 00:00:00.48 Elapsed: 00:00:00.31
+# Mc/sec: 1701.38
+//
+[ok]

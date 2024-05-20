@@ -1,0 +1,321 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=103]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=3..311 length=103 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.1e-12   46.4   0.1    4.9e-12   46.1   0.1    1.1  1  Phage_integrase  Phage integrase family
+  ------ inclusion threshold ------
+      0.042   14.3   0.0      0.057   13.9   0.0    1.2  1  DUF3914          Protein of unknown function (DUF3914)
+      0.078   12.8   0.0       0.16   11.9   0.0    1.5  1  Crp              Bacterial regulatory proteins, crp family
+      0.083   11.9   0.0      0.093   11.8   0.0    1.0  1  DUF3435          Protein of unknown function (DUF3435)
+      0.092   13.0   0.0       0.14   12.5   0.0    1.2  1  DUF5601          Domain of unknown function (DUF5601)
+
+
+Domain annotation for each model (and alignments):
+>> Phage_integrase  Phage integrase family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.1   0.1   1.3e-15   4.9e-12     107     170 ..      16      80 ..      10      82 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 46.1 bits;  conditional E-value: 1.3e-15
+                      -HHHHHHHHHHHHHHTT-SSC--CCHHHHHHHHHH.HHHCTTHHHHHHHHTTSSCCHHHHHHHHH CS
+  Phage_integrase 107 srqtvrkafkraveeagiekpltpHtlRhsfataL.leagvdlrvvqkllGHssisttqiYthva 170
+                      s++++++ +k ++   gi+ +lt+H  Rh++a++  l +gv++++v ++lGHs+isttqiY++ +
+             orf1  16 SNSEINRELKIIAHTCGINRRLTFHCGRHTYASEItLSQGVPIETVSRMLGHSQISTTQIYAKIT 80 
+                      56789999************************9975789**********************9976 PP
+
+>> DUF3914  Protein of unknown function (DUF3914)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.0   1.5e-05     0.057       9      51 ..      51      95 ..      45     102 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 1.5e-05
+  DUF3914  9 tlsqptki..tpsnlehntisstkleskkvndpikfdirssekem 51
+             tlsq   i      l h  is+t++ +k  n+ i  d+++ ek +
+     orf1 51 TLSQGVPIetVSRMLGHSQISTTQIYAKITNEKIDEDMKALEKRI 95
+             7888665521456799*************************9986 PP
+
+>> Crp  Bacterial regulatory proteins, crp family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0     4e-05      0.16      16      24 ..      58      66 ..      55      69 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 4e-05
+          HHHHHHHHH CS
+   Crp 16 rETVsRlLg 24
+          +ETVsR+Lg
+  orf1 58 IETVSRMLG 66
+          9*******9 PP
+
+>> DUF3435  Protein of unknown function (DUF3435)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   2.4e-05     0.093     175     246 ..      17      90 ..       6      98 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.4e-05
+  DUF3435 175 astlnsrlkrlgeiagfeepitpYklRrgaakalneSgevseaqrnlilqHassrt...FlkhYlsqkvdkdvqa 246
+               s +n +lk ++   g++  +t ++ R   a ++  S+ v  +  + +l+H++++t   + ++  ++k+d+d++a
+     orf1  17 NSEINRELKIIAHTCGINRRLTFHCGRHTYASEITLSQGVPIETVSRMLGHSQISTtqiY-AKITNEKIDEDMKA 90 
+              678999*********************************************988762215.44558999999987 PP
+
+>> DUF5601  Domain of unknown function (DUF5601)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   3.5e-05      0.14      34      63 ..      69      98 ..      67      99 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 3.5e-05
+  DUF5601 34 rleshplfkgasdeqleqlldgvEKyimtk 63
+             +++++++++ +++e++++ + ++EK i+ +
+     orf1 69 QISTTQIYAKITNEKIDEDMKALEKRITGR 98
+             67899**********************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (103 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       778  (0.0396292); expected 392.6 (0.02)
+Passed bias filter:                      614  (0.0312755); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.31u 0.19s 00:00:00.50 Elapsed: 00:00:00.35
+# Mc/sec: 962.23
+//
+Query:       orf2  [L=382]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=53..1198 length=382 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.5e-15   55.7   2.5    5.5e-15   55.7   2.5    1.8  2  Phage_int_SAM_5  Phage integrase SAM-like domain
+    7.4e-05   23.2   0.0    0.00029   21.3   0.0    2.1  2  Arm-DNA-bind_5   Arm DNA-binding domain
+
+
+Domain annotation for each model (and alignments):
+>> Phage_int_SAM_5  Phage integrase SAM-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.1      0.73   7.1e+03      64      72 ..      96     104 ..      72     113 .. 0.58
+   2 !   55.7   2.5   5.6e-19   5.5e-15       1      95 [.     215     317 ..     215     321 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.73
+                      --HHHHHHH CS
+  Phage_int_SAM_5  64 lsentisky 72 
+                      ++ent +k 
+             orf2  96 NKENTKKKK 104
+                      233333333 PP
+
+  == domain 2  score: 55.7 bits;  conditional E-value: 5.6e-19
+                      SHHHHHHHHTHHHHTTS....-HHHHHHHHHHHHHTTTS-......S---TTT--HHHHHHHHHHHHHTS---HHHHHHHHHHHHHHHHHHHHT CS
+  Phage_int_SAM_5   1 dfldyfkeyieekkkkg....skgtlrnykstlkhlkkFl....kkkditfeeidveflekFeeYLkkkkglsentiskylktlkavlnkAvke 86 
+                      +++++f+e++ee kk+     +k  +  y  +++hl +F+      +d++++ +d +f e+++ +L++++gl++ t++++l ++k++ ++A+++
+             orf2 215 TLMKLFEEHNEEFKKRVgvdrKKEAYDIYVVSYNHLLAFIrkqyDADDVSLRSLDLNFYEAYDLFLRTDRGLQQKTVHQHLYNFKKITKRAFNQ 308
+                      5899************9***9*******************65433388********************************************** PP
+
+                      TS--S-HHH CS
+  Phage_int_SAM_5  87 giikknpyp 95 
+                      g ++++py 
+             orf2 309 GTLRRDPYM 317
+                      *******86 PP
+
+>> Arm-DNA-bind_5  Arm DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.2      0.76   7.4e+03      66      74 ..      89      97 ..      67     110 .. 0.50
+   2 !   21.3   0.0     3e-08   0.00029       1      85 [.     112     202 ..     112     203 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.76
+  Arm-DNA-bind_5 66 eklndivrk 74
+                     k+ ++v+k
+            orf2 89 LKIMNTVNK 97
+                    222222222 PP
+
+  == domain 2  score: 21.3 bits;  conditional E-value: 3e-08
+  Arm-DNA-bind_5   1 vklrkkklnkdGeaplylriykngkrkreslglyitpepwdkk....kqkvkernpntlelneqirqereklndivrklrqkek..saell 85 
+                     +++ + k+++dG + l  r   +g+  ++ ++++++p  w +      ++   + +n+le n++i     k+n +++++  ++   +ael+
+            orf2 112 FYINRTKIRRDGMCQLLCRLSIDGENEQIGTKVSVNPAIWEPGegesGGRAAGKSRNALEVNKAIGLLTGKINGHYNRILESQGfvTAELV 202
+                     578899*************************************6666666699999*******************9999999888888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (382 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       719  (0.0366239); expected 392.6 (0.02)
+Passed bias filter:                      437  (0.0222596); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.35u 0.17s 00:00:00.52 Elapsed: 00:00:00.31
+# Mc/sec: 4018.44
+//
+Query:       orf3  [L=115]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=1114..1458 length=115 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (115 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       377  (0.0192033); expected 392.6 (0.02)
+Passed bias filter:                      279  (0.0142115); expected 392.6 (0.02)
+Passed Vit filter:                        17  (0.000865933); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1174.34
+//
+Query:       orf4  [L=150]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=1071..1520 length=150 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.5e-12   46.2   0.3    6.6e-12   45.7   0.3    1.4  1  Phage_integrase  Phage integrase family
+  ------ inclusion threshold ------
+        0.2   11.7   0.3       0.64   10.1   0.1    1.9  2  Propeptide_C1    Peptidase family C1 propeptide
+
+
+Domain annotation for each model (and alignments):
+>> Phage_integrase  Phage integrase family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.7   0.3   6.7e-16   6.6e-12     119     168 ..      92     144 ..      37     147 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 45.7 bits;  conditional E-value: 6.7e-16
+                      HHHTT-S..SC--CCHHHHHHHHHH.HHHCTTHHHHHHHHTTSSCCHHHHHHH CS
+  Phage_integrase 119 veeagie..kpltpHtlRhsfataL.leagvdlrvvqkllGHssisttqiYth 168
+                      +e agi    ++t+H+ Rh f+t+  l +gv++++v +++GH++i ttqiY+ 
+             orf4  92 CEIAGICgtGHITFHKARHNFGTHItLSQGVPIETVSRMMGHKNITTTQIYAS 144
+                      4446776778**************85789**********************86 PP
+
+>> Propeptide_C1  Peptidase family C1 propeptide
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   0.0         1   9.8e+03      30      36 ..      94     100 ..      93     100 .. 0.80
+   2 ?   10.1   0.1   6.5e-05      0.64      17      36 ..     107     133 ..     107     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 1
+                    HHCCS-B CS
+  Propeptide_C1  30 ikgLlGv 36 
+                    i g +G+
+           orf4  94 IAGICGT 100
+                    6789**8 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 6.5e-05
+                    EE----S.SB......SHHHHHCCS-B CS
+  Propeptide_C1  17 kAgrNFh.nt......tlsyikgLlGv 36 
+                    kA +NF  ++      +++++ +++G 
+           orf4 107 KARHNFGtHItlsqgvPIETVSRMMGH 133
+                    89***9999977777788*******95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (150 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       430  (0.021903); expected 392.6 (0.02)
+Passed bias filter:                      387  (0.0197127); expected 392.6 (0.02)
+Passed Vit filter:                        37  (0.00188468); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.28u 0.18s 00:00:00.46 Elapsed: 00:00:00.31
+# Mc/sec: 1563.77
+//
+Query:       orf5  [L=107]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=2094..1774 length=107 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (107 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       287  (0.014619); expected 392.6 (0.02)
+Passed bias filter:                      196  (0.0099837); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.16s 00:00:00.44 Elapsed: 00:00:00.30
+# Mc/sec: 1161.90
+//
+Query:       orf6  [L=91]
+Description: source=IMGVR_UViG_3300029030_000110_3300029030_Ga0169673_102541/4081-1970 coords=706..434 length=91 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (91 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       243  (0.0123778); expected 392.6 (0.02)
+Passed bias filter:                      227  (0.0115628); expected 392.6 (0.02)
+Passed Vit filter:                        17  (0.000865933); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.15s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1011.33
+//
+[ok]

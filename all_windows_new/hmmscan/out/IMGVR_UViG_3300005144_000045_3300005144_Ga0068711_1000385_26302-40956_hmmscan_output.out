@@ -1,0 +1,130 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300005144_000045_3300005144_Ga0068711_1000385_26302-40956_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300005144_000045_3300005144_Ga0068711_1000385_26302-40956_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=376]
+Description: source=IMGVR_UViG_3300005144_000045_3300005144_Ga0068711_1000385_26302-40956/4423-5998 coords=76..1203 length=376 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    4.6e-23   81.3   0.5    8.3e-23   80.5   0.5    1.4  1  SiaC       SiaC family regulatory phosphoprotein
+  ------ inclusion threshold ------
+      0.031   13.4   0.0      0.039   13.1   0.0    1.3  1  PHO4       Phosphate transporter family
+      0.067   12.7   5.3       0.13   11.7   5.3    1.5  1  OST3_OST6  OST3 / OST6 family, transporter family
+       0.34   11.2   1.7       0.69   10.2   1.7    1.5  1  DUF6264    Family of unknown function (DUF6264)
+
+
+Domain annotation for each model (and alignments):
+>> SiaC  SiaC family regulatory phosphoprotein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.5   0.5   1.7e-26   8.3e-23       3     119 ..     260     373 ..     258     375 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 80.5 bits;  conditional E-value: 1.7e-26
+  SiaC   3 atkstPevdfdaetgrleisGesypenaaeFYepvldwleayleeekkkkievnlkLeYfntssskalldllelLeeaaekgkkvevnWyydeddedmlelgeef 107
+           at ++P ++f+ ++g+l i+G+s+ e+a++FY ++++w+e+y +++  kk+evn++Le +n  s ++ll+ll+++ e++  ++k+ +nW yd +de  +e   +f
+  orf1 260 ATIKSPMINFS-TNGILLIEGKSIMEDAKAFYYKLYEWMEEYCKNPA-KKTEVNINLELINGDSINYLLRLLRKITEINVPKHKLLINWKYDAEDEFSKEQIVNF 362
+           67899*****6.689******************************99.******************************999************************ PP
+
+  SiaC 108 kedfealpfeli 119
+           ++ ++  p++ i
+  orf1 363 SQLLST-PIKAI 373
+           *99977.88766 PP
+
+>> PHO4  Phosphate transporter family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   7.9e-06     0.039     108     197 ..      61     170 ..       3     370 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 7.9e-06
+           GGB-HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTTTS-HHHHHHHHHHHHHHHHHHHHHHHHHHHTS---HHHHHHHHHHHHHHHH................ CS
+  PHO4 108 eavkwgklvkivlswvlsPllggiiaallfllvkrlvlrkdklknalkalpvlvlvtiailafsilfkglkklalelktlaekllvvlv................ 196
+           +  + +  +k   ++  +P+ + i+++++++++ +++l+k +++ +lk + + +l++iai+a +il + l+ ++++l + ++k +v +                 
+  orf1  61 NIFNVNRYIKTEGALSHAPMYSKIASICFIVVFLVTILFKYAFNIELKNINYWYLIIIAIVAWIILSNILRDRKTKLLSDFSKSVVKYKiikkydndpkwatyly 165
+           334446667777777888888888888888888888888555555566666666666666666665554444444444333333322223344555555555555 PP
+
+           ....H CS
+  PHO4 197 ....a 197
+               +
+  orf1 166 fnnsE 170
+           55550 PP
+
+>> OST3_OST6  OST3 / OST6 family, transporter family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   5.3   2.7e-05      0.13     133     192 ..      65     122 ..      62     128 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.7e-05
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXHHHHHH-SHHHHHHHHHHHH CS
+  OST3_OST6 133 isertgvkipikrppnyskiiitallvlllvlllklkrklllkilksktlwavlsllvil 192
+                +++ ++++  + + p yski++++++v++lv++l+++  ++   lk+ + w ++ ++++ 
+       orf1  65 VNRYIKTEGALSHAPMYSKIASICFIVVFLVTILFKYAFNI--ELKNINYWYLIIIAIVA 122
+                6777889999999***********************99999..36777777777777664 PP
+
+>> DUF6264  Family of unknown function (DUF6264)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   1.7   0.00014      0.69     120     170 ..      77     128 ..      33     131 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 0.00014
+  DUF6264 120 alstlgivaavvlvvlwvlaallslr.rlrrgrlafWvPlvaGvvatvvvvv 170
+               +     +a++  +v++++++l+  +  +  + + +W  +++++va ++++ 
+     orf1  77 HAPMYSKIASICFIVVFLVTILFKYAfNIELKNINYWYLIIIAIVAWIILSN 128
+              4556678999*************9874789999***************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (376 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1505  (0.0766606); expected 392.6 (0.02)
+Passed bias filter:                      498  (0.0253667); expected 392.6 (0.02)
+Passed Vit filter:                        60  (0.00305623); expected 19.6 (0.001)
+Passed Fwd filter:                         7  (0.000356561); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.44u 0.16s 00:00:00.60 Elapsed: 00:00:00.37
+# Mc/sec: 3328.31
+//
+Query:       orf2  [L=111]
+Description: source=IMGVR_UViG_3300005144_000045_3300005144_Ga0068711_1000385_26302-40956/4423-5998 coords=407..75 length=111 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (111 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       329  (0.0167584); expected 392.6 (0.02)
+Passed bias filter:                      247  (0.0125815); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.17s 00:00:00.45 Elapsed: 00:00:00.31
+# Mc/sec: 1167.34
+//
+[ok]

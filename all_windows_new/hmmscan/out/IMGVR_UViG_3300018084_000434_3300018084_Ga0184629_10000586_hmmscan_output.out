@@ -1,0 +1,98 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300018084_000434_3300018084_Ga0184629_10000586_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300018084_000434_3300018084_Ga0184629_10000586_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=424]
+Description: source=IMGVR_UViG_3300018084_000434_3300018084_Ga0184629_10000586/1634-3211 coords=211..1482 length=424 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-53  181.8   2.2    3.4e-52  177.3   0.1    2.7  3  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+    1.1e-07   31.9   7.4    1.1e-07   31.9   7.4    2.0  2  GIIM      Group II intron, maturase-specific domain
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.4   0.0     0.005        49      61     109 ..       6      53 ..       1      72 [. 0.67
+   2 !  177.3   0.1   3.5e-56   3.4e-52       1     222 []      75     299 ..      75     299 .. 0.94
+   3 ?   -1.6   0.3      0.18   1.8e+03       7      37 ..     362     387 ..     358     395 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.005
+            .HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET........... CS
+  RVT_1  61 alkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinliksfl 109
+            + +++ k++ ++kl ++ aF +v+ ++  + +  ++++   ++  +++l
+   orf1   6 IFNEQPKSQPISKLQVQEAFKRVKANKGASGVDGVTIEAV-TKNTRKYL 53 
+            567899******************9999888888888733.33333333 PP
+
+  == domain 2  score: 177.3 bits;  conditional E-value: 3.5e-56
+            EE-TT.S-EEE......-THHHHCTB--.........-------HHHH.............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...... CS
+  RVT_1   1 ipKkgpgsyRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldavedllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinl 104
+            ipK + g++Rp+++++v +++ +++ia  L++++ek++s++++g+rp++s +da+e+++       k+ ++++lD+k++Fd++++e ll+ ++ ++ +++++ +
+   orf1  75 IPKGD-GKMRPLGIPTVVDRVAQQVIATELEQIVEKHFSPSSFGYRPNKSAHDAIEQCRIN---SMKYSWVIDLDIKGFFDNIDHELLLKAVQFYTQEKHILMY 174
+            8****.***********************************************99555444...4899************************************ PP
+
+            ....................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T.......TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGGG-EEE CS
+  RVT_1 105 iksflstrsfsvrv.ngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra.kgvtllrYaDDililskskeelqelleaveewlkesglkinpeKtklv 206
+            +k++l+ +   v++ +g  + +++e kg+pqG+v+SP+l+n+fm+ ++ ++ +++ +   + rYaDDi++++k+ +++  l++a++e+l++++l++n+eK+k+v
+   orf1 175 VKRWLNAP---VQLaDG--TIKHPEGKGTPQGGVISPVLANIFMDIVFDRWITQTsPTTPFERYADDIVLHCKNIKQALGLMQAIKERLRDCKLELNQEKSKIV 273
+            *****444...477444..499*******************************999************************************************ PP
+
+            ...............ESSEEETTEEE CS
+  RVT_1 207 lft.........v.kseevkyLGvtl 222
+            ++          + + +++++LG+t+
+   orf1 274 YCRsnqkrqppfKvRYQKFDFLGYTF 299
+            *99*****998537**********96 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 0.18
+            S-EEE......-THHHHCTB--......... CS
+  RVT_1   7 gsyRpisllsvdykalnkliakrLkdvlekl 37 
+            g++R+       +++l k+++ rL++ ++++
+   orf1 362 GKFRMS-----EMRKLFKVLHLRLTKWIRNK 387
+            688888.....99999999999999985443 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   0.0       1.9   1.8e+04      53      62 ..     252     261 ..     244     269 .. 0.63
+   2 !   31.9   7.4   1.1e-11   1.1e-07       5      71 ..     327     392 ..     323     403 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 1.9
+  GIIM  53 hyirrrLrrw 62 
+           + i++rLr +
+  orf1 252 QAIKERLRDC 261
+           4455555543 PP
+
+  == domain 2  score: 31.9 bits;  conditional E-value: 1.1e-11
+  GIIM   5 krkireltkrsskgvsleelirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkk 71 
+            ++++e+  ++  ++++ ++++ l   +rGW+nYy+++ ++++ +   + ++ rL +w++ k+++ +
+  orf1 327 VKELQEMNFHRWVQFPISKIAELLRLKLRGWINYYGKFRMSEMRKLF-KVLHLRLTKWIRNKYRRFR 392
+           566777777888999****************************7666.****************933 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (424 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       794  (0.0404442); expected 392.6 (0.02)
+Passed bias filter:                      620  (0.0315811); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.34u 0.17s 00:00:00.51 Elapsed: 00:00:00.32
+# Mc/sec: 4308.68
+//
+[ok]

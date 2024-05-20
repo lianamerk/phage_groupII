@@ -1,0 +1,318 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300022523_000339_3300022523_Ga0242663_1000509_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300022523_000339_3300022523_Ga0242663_1000509_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=234]
+Description: source=IMGVR_UViG_3300022523_000339_3300022523_Ga0242663_1000509/1697-123 coords=283..984 length=234 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.5e-11   43.4   9.2    5.3e-08   32.8   2.2    2.6  2  NUMOD3        NUMOD3 motif
+    7.1e-09   35.9   0.0    3.1e-07   30.6   0.0    2.4  2  GIY-YIG       GIY-YIG catalytic domain
+    0.00096   19.5   0.4     0.0022   18.3   0.4    1.7  1  NUMOD1        NUMOD1 domain
+  ------ inclusion threshold ------
+      0.033   13.8   0.0      0.088   12.4   0.0    1.7  1  HTH_Tnp_ISL3  Helix-turn-helix domain of transposase family I
+      0.052   13.5   0.0      0.096   12.6   0.0    1.5  1  SurA_N_3      SurA N-terminal domain
+      0.076   13.4   0.0       0.15   12.4   0.0    1.5  1  HTH_17        Helix-turn-helix domain
+       0.12   12.4   0.0        0.3   11.2   0.0    1.6  1  HTH_11        HTH domain
+       0.13   12.1   0.0        0.3   11.0   0.0    1.6  1  HTH_DeoR      DeoR-like helix-turn-helix domain
+
+
+Domain annotation for each model (and alignments):
+>> NUMOD3  NUMOD3 motif
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   2.2   2.2e-11   5.3e-08       1      37 []     135     172 ..     135     172 .. 0.93
+   2 !   22.0   0.7   5.3e-08   0.00013       1      22 [.     160     181 ..     160     183 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 32.8 bits;  conditional E-value: 2.2e-11
+  NUMOD3   1 GrkhseEtKaKiskAlkGe.nnpnyGKkhseeTkkkis 37 
+             G kh++E+K Kis+A+      p +GK+h+ eT+ ++s
+    orf1 135 GSKHTNESKTKISAARNVVeVQPIKGKTHTVETRLQMS 172
+             78************988644*****************9 PP
+
+  == domain 2  score: 22.0 bits;  conditional E-value: 5.3e-08
+  NUMOD3   1 GrkhseEtKaKiskAlkGennp 22 
+             G++h++Et+  +s+++kG+ n+
+    orf1 160 GKTHTVETRLQMSASKKGNQNH 181
+             99*****************554 PP
+
+>> GIY-YIG  GIY-YIG catalytic domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.6   0.0   1.3e-10   3.1e-07       3      61 ..      33      95 ..      31     125 .. 0.80
+   2 ?    2.9   0.0     0.058   1.4e+02      18      63 ..     160     206 ..     159     214 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 30.6 bits;  conditional E-value: 1.3e-10
+             EEEEEEETTT--EEEEEESSHHHHHHHHHHHHHHT--S-H....S.STEEEEEEEE----HHH CS
+  GIY-YIG  3 giYiirskenkliYvGstknlekRlkqHnsgkkakatrkk....gkkpfeliileifptksea 61
+             g+Y+i++++ + iY Gs+ n+ +Rl +H+  +++ + r+     g+++f + ++e+f+ + ++
+     orf1 33 GVYVIICTVTGTIYLGSSINIGERLMDHFIESSNIHLRNSiakhGVENFVFGVVEFFEPDPDL 95
+             9***************************77776666665578899***********9987666 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.058
+              EEESSHHHHHHHHHHHHHHT--S-H.S.STEEEEEEEE----HHHHH CS
+  GIY-YIG  18 GstknlekRlkqHnsgkkakatrkk.gkkpfeliileifptkseale 63 
+              G+t ++e+Rl+   s+k++ +++ +  +++++ + +++f +k+ a+e
+     orf1 160 GKTHTVETRLQMSASKKGNQNHSIAvCVYTLDNVLFKEFISKKAAAE 206
+              99********9998888888887667677777777777777776644 PP
+
+>> NUMOD1  NUMOD1 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   0.4     9e-07    0.0022       2      37 .]     184     219 ..     183     219 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 18.3 bits;  conditional E-value: 9e-07
+  NUMOD1   2 pVyvYDlntktigkFsSireAakyLgishntInkyl 37 
+              V vY+l+  +  +F+S+++Aa+ + +s  tI++y+
+    orf1 184 AVCVYTLDNVLFKEFISKKAAAEWFSVSDTTIRNYI 219
+             5889*******************************8 PP
+
+>> HTH_Tnp_ISL3  Helix-turn-helix domain of transposase family ISL3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   3.6e-05     0.088      28      49 ..     199     220 ..     194     221 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 3.6e-05
+  HTH_Tnp_ISL3  28 rsvkavArqlgvSwtTVwrifd 49 
+                   +s ka+A+ + vS+tT++++++
+          orf1 199 ISKKAAAEWFSVSDTTIRNYIK 220
+                   689****************986 PP
+
+>> SurA_N_3  SurA N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   3.9e-05     0.096      87     124 ..     189     226 ..     138     231 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 3.9e-05
+  SurA_N_3  87 vldslidealllqeakklglsvsdeevaqeiasipaFq 124
+               +ld++  ++ ++++a+ + +svsd  ++++i++++ Fq
+      orf1 189 TLDNVLFKEFISKKAAAEWFSVSDTTIRNYIKTNSIFQ 226
+               699999*******************************9 PP
+
+>> HTH_17  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   6.3e-05      0.15       5      30 ..     202     226 ..     198     232 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 6.3e-05
+  HTH_17   5 eEaAelLgvsrsTvyrlirrGelpaa 30 
+             + aAe + vs++T++++i+++ + + 
+    orf1 202 KAAAEWFSVSDTTIRNYIKTNSI-FQ 226
+             5699***************9988.55 PP
+
+>> HTH_11  HTH domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   0.00012       0.3      22      38 ..     205     221 ..     196     221 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 0.00012
+             HHHHTS-HHHHHHHHHH CS
+  HTH_11  22 AeeLnVSrrtvrrdIka 38 
+             Ae ++VS +t+r++Ik+
+    orf1 205 AEWFSVSDTTIRNYIKT 221
+             8889***********96 PP
+
+>> HTH_DeoR  DeoR-like helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   0.00012       0.3      12      33 ..     196     217 ..     190     223 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00012
+  HTH_DeoR  12 qgklsveelvellgvSeaTiRR 33 
+               + ++s + ++e + vS++TiR+
+      orf1 196 KEFISKKAAAEWFSVSDTTIRN 217
+               67888899*************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (234 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       678  (0.0345355); expected 392.6 (0.02)
+Passed bias filter:                      447  (0.0227689); expected 392.6 (0.02)
+Passed Vit filter:                        45  (0.00229218); expected 19.6 (0.001)
+Passed Fwd filter:                         8  (0.000407498); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 0.31u 0.16s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 2458.19
+//
+Query:       orf2  [L=141]
+Description: source=IMGVR_UViG_3300022523_000339_3300022523_Ga0242663_1000509/1697-123 coords=984..1406 length=141 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.8e-11   42.1   3.9    9.8e-09   35.1   0.3    2.4  2  NUMOD3    NUMOD3 motif
+     0.0001   22.5   0.1    0.00035   20.8   0.0    2.0  2  NUMOD1    NUMOD1 domain
+  ------ inclusion threshold ------
+      0.012   15.8   0.2      0.051   13.7   0.0    2.1  2  HTH_Mga   M protein trans-acting positive regulator (MGA) HTH
+      0.015   15.2   0.0      0.029   14.3   0.0    1.5  1  MerR      MerR family regulatory protein
+      0.029   14.7   0.1      0.057   13.8   0.1    1.5  1  HTH_17    Helix-turn-helix domain
+      0.058   13.7   0.0       0.15   12.4   0.0    1.6  2  HTH_28    Helix-turn-helix domain
+
+
+Domain annotation for each model (and alignments):
+>> NUMOD3  NUMOD3 motif
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.0   0.3    0.0019       6.3      25      37 .]      40      52 ..      38      52 .. 0.87
+   2 !   35.1   0.3     3e-12   9.8e-09       1      27 [.      57      83 ..      57      85 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.0019
+  NUMOD3 25 GKkhseeTkkkis 37
+            G +h+e Tkk+is
+    orf2 40 GTTHTEVTKKQIS 52
+            7799999999998 PP
+
+  == domain 2  score: 35.1 bits;  conditional E-value: 3e-12
+  NUMOD3  1 GrkhseEtKaKiskAlkGennpnyGKk 27
+            Gr+++e t+ K+s+++kG n+p++GK+
+    orf2 57 GRTLTETTRIKMSESHKGINHPMFGKI 83
+            9*************************7 PP
+
+>> NUMOD1  NUMOD1 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   1.1e-07   0.00035       2      37 .]      89     124 ..      88     124 .. 0.97
+   2 ?   -3.5   0.0       4.7   1.5e+04      23      30 ..     131     138 ..     129     140 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 1.1e-07
+  NUMOD1   2 pVyvYDlntktigkFsSireAakyLgishntInkyl 37 
+             +++ Y l+ +++ +FsS   Aa+ Lgis++t ++yl
+    orf2  89 KIFLYSLDNTLVKEFSSQVLAAEWLGISSRTLRHYL 124
+             89*********************************8 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 4.7
+  NUMOD1  23 akyLgish 30 
+              kyL +sh
+    orf2 131 GKYLIKSH 138
+             67776777 PP
+
+>> HTH_Mga  M protein trans-acting positive regulator (MGA) HTH domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0      0.71   2.3e+03      13      27 ..      59      72 ..      58      76 .. 0.81
+   2 ?   13.7   0.0   1.6e-05     0.051      26      58 ..     109     139 ..     101     141 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.71
+  HTH_Mga 13 lLteneksltldela 27
+             +Lte + +++++e  
+     orf2 59 TLTE-TTRIKMSESH 72
+             5899.9999999875 PP
+
+  == domain 2  score: 13.7 bits;  conditional E-value: 1.6e-05
+  HTH_Mga  26 lakeLglseltlqsdiseLnelFpeelsivikk 58 
+              +a+ Lg+s++tl++++++ +  F ++++i++ k
+     orf2 109 AAEWLGISSRTLRHYLNKKT--FAGKYLIKSHK 139
+              5889*************999..*****999876 PP
+
+>> MerR  MerR family regulatory protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.3   0.0   8.7e-06     0.029       5      20 ..     109     124 ..     101     127 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 8.7e-06
+           HHHHHTS-HHHHHHHH CS
+  MerR   5 vaeltGvsprtLRyYe 20 
+           +ae +G+s+rtLR+Y 
+  orf2 109 AAEWLGISSRTLRHYL 124
+           37889**********5 PP
+
+>> HTH_17  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8   0.1   1.7e-05     0.057       7      31 ..     109     132 ..     109     140 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.7e-05
+  HTH_17   7 aAelLgvsrsTvyrlirrGelpaak 31 
+             aAe Lg+s +T++ +++++ + a k
+    orf2 109 AAEWLGISSRTLRHYLNKKTF-AGK 132
+             8******************99.654 PP
+
+>> HTH_28  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0       2.9   9.6e+03      14      25 ..      31      42 ..      28      43 .. 0.78
+   2 ?   12.4   0.0   4.5e-05      0.15      14      34 ..     105     125 ..      90     128 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 2.9
+  HTH_28 14 svreaArelgis 25
+            s +ea  +lg++
+    orf2 31 SPSEAGSKLGTT 42
+            678999999975 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 4.5e-05
+  HTH_28  14 svreaArelgisrrtvyrWik 34 
+             s+  aA++lgis+rt++  ++
+    orf2 105 SQVLAAEWLGISSRTLRHYLN 125
+             45569***********98776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (141 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       454  (0.0231255); expected 392.6 (0.02)
+Passed bias filter:                      354  (0.0180318); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         6  (0.000305623); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.29u 0.15s 00:00:00.43 Elapsed: 00:00:00.28
+# Mc/sec: 1658.26
+//
+Query:       orf3  [L=118]
+Description: source=IMGVR_UViG_3300022523_000339_3300022523_Ga0242663_1000509/1697-123 coords=815..462 length=118 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (118 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       414  (0.021088); expected 392.6 (0.02)
+Passed bias filter:                      306  (0.0155868); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.12s 00:00:00.42 Elapsed: 00:00:00.28
+# Mc/sec: 1389.30
+//
+[ok]

@@ -1,0 +1,152 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300032150_000031_3300032150_Ga0314779_1000614_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300032150_000031_3300032150_Ga0314779_1000614_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=487]
+Description: source=IMGVR_UViG_3300032150_000031_3300032150_Ga0314779_1000614/1654-52 coords=3..1463 length=487 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.3e-18   67.5   0.0    5.9e-11   42.4   0.0    2.3  2  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    7.4e-15   55.3   0.0    1.4e-14   54.4   0.0    1.4  1  Intron_maturas2  Type II intron maturase
+    0.00011   22.3   0.4    0.00074   19.6   0.1    2.5  2  GIIM             Group II intron, maturase-specific domain
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.0     9e-15   5.9e-11      74     156 ..       2      82 ..       1      95 [. 0.91
+   2 !   22.8   0.0   9.4e-09   6.1e-05     159     222 .]     157     219 ..     132     219 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 42.4 bits;  conditional E-value: 9e-15
+            EEBCCGCCCSBB-GGGGGGG-EEET.........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T. CS
+  RVT_1  74 lDlkkaFdsvpleellrkltafkvptklinliksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrk 156
+             Dl kaFd++++  l r+l+++  ++ +in+i + +  r  ++ +++ + ++  ++ g+pqGsvlSPll+n+++++l++ +++
+   orf1   2 ADLVKAFDRIHHGVLRRELNRVVDDKAMINIIAKQV--RVGYIDFSNLSNSKMESTIGTPQGSVLSPLLCNIYLHPLDEFMEE 82 
+            7***********************************..88888887777899************************9987776 PP
+
+  == domain 2  score: 22.8 bits;  conditional E-value: 9.4e-09
+            ...TEEECTTEEEEEESS.HHHHHHHHHHHHHHHHH.TT--BEGGG-EEE.....ESSEEETTEEE CS
+  RVT_1 159 kgvtllrYaDDililsks.keelqelleaveewlke.sglkinpeKtklvlftvkseevkyLGvtl 222
+               +++rYaDD+l+ + + k+++  +l+ + +++++  ++k++++K+ + +   +++ v +LG++l
+   orf1 157 CRTYYCRYADDFLVGHVGnKKNAWLILQQIAAFVEQhLNMKLHEKKSGVKH---HENGVIFLGYHL 219
+            4679**************5555************9988************9...9999*****986 PP
+
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.4   0.0   2.1e-18   1.4e-14       4     107 ..     242     346 ..     239     370 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 54.4 bits;  conditional E-value: 2.1e-18
+  Intron_maturas2   4 lvlnaPirkiikkLakagfvktkk....ekgkPrsvlrwidle.drdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlkl 92 
+                      + + +P++++ k+ a++gf ++ k    +k + r+  +wi+l+ d d++ ry+a+  g+ +YY ++    +l      +l+ s+++TLA+++k 
+             orf1 242 IKFGIPVERLFKRYAEKGFFQKAKkgnqDKYVARRLDKWIFLPsDLDVIRRYNAVASGIAQYYAGSRYPSALN-EFWSVLKRSLALTLAHRHKD 334
+                      56789***************9988899999***********96268***************************.7778**************** PP
+
+  Intron_maturas2  93 ktvrkvikkfGkkls 107
+                      kt + ++ k G   +
+             orf1 335 KTAKSAFIKWG---V 346
+                      ***********...3 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0      0.47   3.1e+03      52      63 ..     270     281 ..     260     283 .. 0.70
+   2 !   19.6   0.1   1.1e-07   0.00074      23      74 ..     288     339 ..     285     345 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.47
+  GIIM  52 dhyirrrLrrwl 63 
+           d+y+ rrL +w+
+  orf1 270 DKYVARRLDKWI 281
+           667777777775 PP
+
+  == domain 2  score: 19.6 bits;  conditional E-value: 1.1e-07
+  GIIM  23 elirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkkrrr 74 
+           ++ir++n++ +G a+Yy      + +++  + ++r+L+  l ++hk k+ + 
+  orf1 288 DVIRRYNAVASGIAQYYAGSRYPSALNEFWSVLKRSLALTLAHRHKDKTAKS 339
+           79******************9999999999*****************98665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (487 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       548  (0.0279136); expected 392.6 (0.02)
+Passed bias filter:                      474  (0.0241443); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.38u 0.18s 00:00:00.56 Elapsed: 00:00:00.35
+# Mc/sec: 4540.29
+//
+Query:       orf2  [L=148]
+Description: source=IMGVR_UViG_3300032150_000031_3300032150_Ga0314779_1000614/1654-52 coords=1357..914 length=148 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (148 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       268  (0.0136512); expected 392.6 (0.02)
+Passed bias filter:                      252  (0.0128362); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.15s 00:00:00.44 Elapsed: 00:00:00.30
+# Mc/sec: 1608.49
+//
+Query:       orf3  [L=108]
+Description: source=IMGVR_UViG_3300032150_000031_3300032150_Ga0314779_1000614/1654-52 coords=756..433 length=108 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (108 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       203  (0.0103403); expected 392.6 (0.02)
+Passed bias filter:                      182  (0.00927058); expected 392.6 (0.02)
+Passed Vit filter:                        13  (0.000662184); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.16s 00:00:00.44 Elapsed: 00:00:00.31
+# Mc/sec: 1129.54
+//
+[ok]

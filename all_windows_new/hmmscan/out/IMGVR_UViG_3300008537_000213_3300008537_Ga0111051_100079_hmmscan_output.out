@@ -1,0 +1,170 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300008537_000213_3300008537_Ga0111051_100079_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300008537_000213_3300008537_Ga0111051_100079_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=150]
+Description: source=IMGVR_UViG_3300008537_000213_3300008537_Ga0111051_100079/87450-89034 coords=1..450 length=150 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.1e-07   30.7   2.1    3.6e-07   29.9   2.1    1.4  1  HNH_3         HNH endonuclease
+  ------ inclusion threshold ------
+      0.068   12.7   0.0       0.42   10.2   0.0    2.0  2  HTH_Tnp_ISL3  Helix-turn-helix domain of transposase family I
+       0.12   11.9   0.8       0.15   11.6   0.8    1.1  1  Tfb4          Transcription factor Tfb4
+
+
+Domain annotation for each model (and alignments):
+>> HNH_3  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   2.1   5.5e-11   3.6e-07       2      45 ..      11      54 ..      10      55 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 5.5e-11
+  HNH_3  2 yaHrvvwelhnGpiPkglvVdHidgdksnnrpeNLrlvTkrena 45
+           ++H +v+ +++ +   + +V H++g+k++n+  NL+ vT +en+
+   orf1 11 RVHKLVANHFLKKEYAKDIVNHKNGNKLDNNVNNLEFVTLSENT 54
+           689999****99999999************************96 PP
+
+>> HTH_Tnp_ISL3  Helix-turn-helix domain of transposase family ISL3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.0     0.098   6.4e+02      39      48 ..      50      59 ..      46      60 .. 0.85
+   2 ?   10.2   0.0   6.4e-05      0.42      29      49 ..      90     110 ..      86     111 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.098
+  HTH_Tnp_ISL3 39 vSwtTVwrif 48
+                  +S++T++ i+
+          orf1 50 LSENTIHAIY 59
+                  89*****997 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 6.4e-05
+  HTH_Tnp_ISL3  29 svkavArqlgvSwtTVwrifd 49 
+                   sv+++ + +++S++TV r+++
+          orf1  90 SVTEAGKFYNISTRTVGRRLN 110
+                   9*****************997 PP
+
+>> Tfb4  Transcription factor Tfb4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.8   2.3e-05      0.15      25      95 ..      23      94 ..       9     111 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.3e-05
+          HHHHHHHHHHHHHHHHHSTT-EEEEEEEETTEEEESSTTHHH.H------HHH--CCCHT-S-HHHHHHHHH CS
+  Tfb4 25 sevlasllvflNahLalnaaNkvaviashsqkakflYpseek.ekeaskkkdvelskssknkyrefrlvdel 95
+          +e  ++++   N     n+ N++ +++ ++++++ +Y+ +++ +k++ +kk+  +s +++ +yr f+ v e+
+  orf1 23 KEYAKDIVNHKNGNKLDNNVNNLEFVTLSENTIHAIYTLKRDfTKKELEKKRPIISIENNVTYRFFKSVTEA 94
+          67789999999999999***********************9965666667777788888899**99999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (150 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       954  (0.0485941); expected 392.6 (0.02)
+Passed bias filter:                      316  (0.0160962); expected 392.6 (0.02)
+Passed Vit filter:                        27  (0.00137531); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.29u 0.19s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1537.77
+//
+Query:       orf2  [L=140]
+Description: source=IMGVR_UViG_3300008537_000213_3300008537_Ga0111051_100079/87450-89034 coords=586..1005 length=140 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.2e-08   32.4   0.1    5.3e-08   32.1   0.1    1.0  1  NRDD      Anaerobic ribonucleoside-triphosphate reductase
+  ------ inclusion threshold ------
+      0.011   15.4   3.0      0.014   15.0   3.0    1.2  1  Stevor    Subtelomeric Variable Open Reading frame
+
+
+Domain annotation for each model (and alignments):
+>> NRDD  Anaerobic ribonucleoside-triphosphate reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.1   5.4e-12   5.3e-08      85     158 ..      13     134 ..      12     138 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 32.1 bits;  conditional E-value: 5.4e-12
+           HHHHHHHHHHHHHHHHTSSSS-EEETTHHHHHHHHHHHHHHTTSS-GG................................................GHHHHHHHH CS
+  NRDD  85 iesalalavnilqtvqneqaGgqaissfdtylapfvrkdyekelkkae................................................ltkkevkqa 141
+           ++s+  + + i++  +  +  g +++++d +l ++++k+y+k +++                                                  +t++e++q 
+  orf2  13 FQSFSLQKITIIYVSKDIIILGFTVPEIDSLLEYYAEKTYNKIFNQEYeeifnnemkivdiesryenidhnskeyeikvenaktkaiklakekaftKTQRECEQG 117
+           678888888888888999999***********************99669******************************************************** PP
+
+           HHHHHHHTTS-S..SSS CS
+  NRDD 142 mqafvynlntlpsrrGa 158
+           +q++ y+lnt++s+rG+
+  orf2 118 VQGIEYKLNTVASSRGG 134
+           ***************96 PP
+
+>> Stevor  Subtelomeric Variable Open Reading frame
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.0   3.0   1.5e-06     0.014      83     137 ..      51     106 ..      45     128 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.5e-06
+  Stevor  83 tlekelLetYeevfgdesdimlksgiytndddkssd.skscectdinkakLaktkg 137
+             t +k + + Yee+f++e +i+ +  +y+n d++s++ +  +e + ++  kLak k+
+    orf2  51 TYNKIFNQEYEEIFNNEMKIVDIESRYENIDHNSKEyEIKVENAKTKAIKLAKEKA 106
+             556778899*************************9878889999999999998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (140 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1596  (0.0812958); expected 392.6 (0.02)
+Passed bias filter:                      477  (0.0242971); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.31u 0.13s 00:00:00.44 Elapsed: 00:00:00.29
+# Mc/sec: 1597.76
+//
+Query:       orf3  [L=95]
+Description: source=IMGVR_UViG_3300008537_000213_3300008537_Ga0111051_100079/87450-89034 coords=623..339 length=95 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (95 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       992  (0.0505297); expected 392.6 (0.02)
+Passed bias filter:                      231  (0.0117665); expected 392.6 (0.02)
+Passed Vit filter:                        28  (0.00142624); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.13s 00:00:00.43 Elapsed: 00:00:00.29
+# Mc/sec: 1087.99
+//
+[ok]

@@ -1,0 +1,246 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2885188861_000001_2885188861_2885188906_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2885188861_000001_2885188861_2885188906_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=483]
+Description: source=IMGVR_UViG_2885188861_000001_2885188861_2885188906/3148-1477 coords=3..1451 length=483 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      1e-08   34.6   0.0    1.9e-08   33.8   0.0    1.3  1  AAA_10           AAA-like domain
+    9.9e-06   25.9   0.1    3.3e-05   24.2   0.0    1.8  2  DUF87            Helicase HerA, central domain
+     0.0015   17.4   0.0     0.0024   16.7   0.0    1.3  1  P-loop_TraG      TraG P-loop domain
+  ------ inclusion threshold ------
+      0.028   13.9   0.0       0.05   13.1   0.0    1.3  1  FtsK_SpoIIIE     FtsK/SpoIIIE family
+       0.04   12.9   0.0      0.055   12.4   0.0    1.2  1  T4SS-DNA_transf  Type IV secretory system Conjugative DNA tra
+       0.05   13.4   0.1       0.23   11.2   0.1    2.2  1  NepR             Anti-sigma factor NepR
+       0.07   12.6   0.0        2.6    7.5   0.0    2.2  2  Zeta_toxin       Zeta toxin
+      0.072   12.2   0.0       0.12   11.4   0.0    1.3  1  TrwB_AAD_bind    Type IV secretion-system coupling protein DN
+
+
+Domain annotation for each model (and alignments):
+>> AAA_10  AAA-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.8   0.0   7.8e-12   1.9e-08      15     200 ..     273     463 ..     261     468 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 33.8 bits;  conditional E-value: 7.8e-12
+  AAA_10  15 kgsktnasasliiGdlGnGKSvlakllvlyi.sllggkaliiDpkkerekfketlpeiakkinvvtLdseeenegvLdPlvllk...eekeaeslaedilel. 112
+             +++k ++++ li+G +G+GKS+ ak  + ++  + ++ ++i Dp  e    +++++      +v++++++++    ++P+ +     +  +  sl+ d++   
+    orf1 273 DRKKLKNPNGLIVGTPGAGKSFAAKREITNVfIVTKDDIIICDPEGEYFPLVRAFKG-----QVIRISPNSHD--YINPMDINLnyaDDDDPLSLKSDFILSl 368
+             68999*******************986666615567899999*****7778888866.....66666644444..5666655321233333344444433221 PP
+
+  AAA_10 113 ...llgvk.kkesekkaalseaveavle........gkqrgllavieelrkedekvareiarhlesvvkkslaklvfsdgsveeaislekkvtvlevedL 200
+                + g k   e  +k+++   v+ v +        +k + l+++ + lrk++e  a+ +a  le  v++sl   vf++ +   ++ l+++++ ++++dL
+    orf1 369 celIVGGKnGLEPVEKTIIDRCVRMVYQdyledpvpEKMPILEDLYNLLRKQEEAEAQRLATALEIYVNGSLK--VFNHRT---NVELNNRLVCFDIKDL 463
+             22244433267788888999999999988877665333366666666669*******************9996..787775...3678899999999998 PP
+
+>> DUF87  Helicase HerA, central domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.1         2     5e+03     146     177 ..     119     146 ..      81     188 .. 0.52
+   2 !   24.2   0.0   1.3e-08   3.3e-05      27     101 ..     283     356 ..     272     452 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 2
+  DUF87 146 lleelkkekeelrklknqaiarlldkledllr 177
+            ++ ++     +++++k + +++  ++ +d++ 
+   orf1 119 VKAKVT----DINRMKIEEQKKAVRSGYDMDI 146
+            333333....3333333333333333333333 PP
+
+  == domain 2  score: 24.2 bits;  conditional E-value: 1.3e-08
+  DUF87  27 AilgsTGsGKSntvavLleellekkgatililDpHGEYgkalekllsekvkvitpspsakdkelkinpwsldpee 101
+            +i+g+ G+GKS+ ++  + ++    +  i+i Dp GEY+++  + ++++v  i+p +++  +++ in++  d ++
+   orf1 283 LIVGTPGAGKSFAAKREITNVFIVTKDDIIICDPEGEYFPLV-RAFKGQVIRISPNSHDYINPMDINLNYADDDD 356
+            699************988888878889**************9.88888887777766665555555554444333 PP
+
+>> P-loop_TraG  TraG P-loop domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.0   9.7e-07    0.0024      24     164 ..     274     420 ..     266     445 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 9.7e-07
+  P-loop_TraG  24 kgiitnrnklilGpsGsGksfftnhlv.rsyyeqgahvvlvdvGhsykglcelvgGyyftyeeenPikfnPfyiedgevldtekkesikt.l...lla 116
+                  +  ++n n li+G+ G+Gksf+  + + + +  +   +++ d    y  l +  +G+ +  + ++    nP+ i+ + + d +   s+k+ +   l  
+         orf1 274 RKKLKNPNGLIVGTPGAGKSFAAKREItNVFIVTKDDIIICDPEGEYFPLVRAFKGQVIRISPNSHDYINPMDINLN-YADDDDPLSLKSdFilsLCE 370
+                  556799***************9886550556678889********************99887766555555555433.44444444444322001334 PP
+
+  P-loop_TraG 117 lwkkedekvkrseyvalsnalklyyeklek..ekelfpcfnsfyeflkee 164
+                  l    ++ ++  e++ +  ++++ y+   +   +e +p ++ +y+ l+++
+         orf1 371 LIVGGKNGLEPVEKTIIDRCVRMVYQDYLEdpVPEKMPILEDLYNLLRKQ 420
+                  55567778888888899999987776544413467888888888888765 PP
+
+>> FtsK_SpoIIIE  FtsK/SpoIIIE family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0     2e-05      0.05      27      55 ..     266     295 ..     258     306 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 2e-05
+                   TS-EEEEEGGGS-..SEEEE--TTSSHHHH CS
+  FtsK_SpoIIIE  27 sgnplvldlkkma.shllvaGatgsGKSta 55 
+                   s+n +++d kk   +++l++G++g GKS a
+          orf1 266 SNNLIMADRKKLKnPNGLIVGTPGAGKSFA 295
+                   788888999988888*************76 PP
+
+>> T4SS-DNA_transf  Type IV secretory system Conjugative DNA transfer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   2.2e-05     0.055      46     115 ..     281     346 ..     247     442 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.2e-05
+                      XXXXXXXXXXXXXXXX..XXXXXXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.---GGG CS
+  T4SS-DNA_transf  46 hvlvvAptrsgKgvgv..viPnllkwkq.siVvlDpkgElaeltskiRkkqgrkVfvlePanlktsdrfNpld 115
+                       +l+v+ +++gK+ +    i+n++  ++  i++ Dp gE ++l+   +     +V++ +P + +     Np+d
+             orf1 281 NGLIVGTPGAGKSFAAkrEITNVFIVTKdDIIICDPEGEYFPLVRAFKG----QVIRISPNSHDYI---NPMD 346
+                      4689999*****9987336***9877776**************977664....5666777665555...6654 PP
+
+>> NepR  Anti-sigma factor NepR
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   9.4e-05      0.23       4      23 ..     387     406 ..     384     407 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 9.4e-05
+  NepR   4 IgrnLRrlYddvvdEpvPDr 23 
+           I+r  R +Y+d ++ pvP++
+  orf1 387 IDRCVRMVYQDYLEDPVPEK 406
+           99****************97 PP
+
+>> Zeta_toxin  Zeta toxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.7   0.0     0.032        78      68     113 ..      71     116 ..      61     123 .. 0.86
+   2 ?    7.5   0.0    0.0011       2.6      19      36 ..     282     299 ..     270     330 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.032
+  Zeta_toxin  68 dpktaseltqkdasrlvekllqkaiengynvilestlrspdvakkl 113
+                 d + a ++ q  a +l++k+l++ +e+ +n+++   ++s+d++k +
+        orf1  71 DTMGAVSYLQILAPELTDKMLAEFLEMDCNLLVNLHIQSIDQMKAI 116
+                 6677899999************************999999999865 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.0011
+  Zeta_toxin  19 illgGqpGaGKtelaell 36 
+                  l++G pGaGK+  a+  
+        orf1 282 GLIVGTPGAGKSFAAKRE 299
+                 5899********988643 PP
+
+>> TrwB_AAD_bind  Type IV secretion-system coupling protein DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0     5e-05      0.12      18      57 ..     282     322 ..     274     348 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 5e-05
+  TrwB_AAD_bind  18 ilivGttGsGKtqaleelldqi.rargdraiilDltGafve 57 
+                     livGt G GK+ a++  ++++    +d +ii D++G++  
+           orf1 282 GLIVGTPGAGKSFAAKREITNVfIVTKDDIIICDPEGEYFP 322
+                    589*********999877776626789***********964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (483 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       760  (0.0387123); expected 392.6 (0.02)
+Passed bias filter:                      585  (0.0297983); expected 392.6 (0.02)
+Passed Vit filter:                        60  (0.00305623); expected 19.6 (0.001)
+Passed Fwd filter:                         8  (0.000407498); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 0.40u 0.21s 00:00:00.61 Elapsed: 00:00:00.37
+# Mc/sec: 4287.04
+//
+Query:       orf2  [L=116]
+Description: source=IMGVR_UViG_2885188861_000001_2885188861_2885188906/3148-1477 coords=583..236 length=116 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+  ------ inclusion threshold ------
+      0.016   15.1   0.6      0.016   15.1   0.6    1.1  1  Claudin_2  PMP-22/EMP/MP20/Claudin tight junction
+      0.093   13.1   0.4       0.15   12.4   0.4    1.3  1  Adeno_E3B  Adenovirus E3B protein
+
+
+Domain annotation for each model (and alignments):
+>> Claudin_2  PMP-22/EMP/MP20/Claudin tight junction
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.1   0.6   1.7e-06     0.016      51     113 ..      17      84 ..       5     114 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.7e-06
+  Claudin_2  51 eesenktelfvvltqasn.....pfekkeeeivsisatsllalarfvqvlliLslvlivlavvlglla 113
+                + +  ++++f  ++         p+ +k+e  +sis++ + a++ + +++ ++s++++++ +++++ +
+       orf2  17 TTVTRNIRSFLDCKSSRRrfaspPYVFKSEGMMSISYPERTAFFCSSIFIRLMSVTFAFTSLIAFIWS 84 
+                444445555554443333888889999999*********************************99855 PP
+
+>> Adeno_E3B  Adenovirus E3B protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.4   1.5e-05      0.15      20      45 ..      65      90 ..      53     100 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.5e-05
+  Adeno_E3B 20 fvtlilicslvtvviafiqfidwvcv 45
+               f+ l+ +    t +iafi  +dw+c 
+       orf2 65 FIRLMSVTFAFTSLIAFIWSMDWICR 90
+               78888888899**************5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (116 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       564  (0.0287286); expected 392.6 (0.02)
+Passed bias filter:                      281  (0.0143134); expected 392.6 (0.02)
+Passed Vit filter:                        29  (0.00147718); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.32u 0.14s 00:00:00.46 Elapsed: 00:00:00.31
+# Mc/sec: 1227.85
+//
+Query:       orf3  [L=158]
+Description: source=IMGVR_UViG_2885188861_000001_2885188861_2885188906/3148-1477 coords=539..66 length=158 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (158 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       709  (0.0361145); expected 392.6 (0.02)
+Passed bias filter:                      364  (0.0185412); expected 392.6 (0.02)
+Passed Vit filter:                        32  (0.00162999); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.16s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 1640.72
+//
+[ok]

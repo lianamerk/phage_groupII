@@ -1,0 +1,151 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300035517_000518_3300035517_Ga0376472_0000846_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300035517_000518_3300035517_Ga0376472_0000846_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=187]
+Description: source=IMGVR_UViG_3300035517_000518_3300035517_Ga0376472_0000846/5795-4211 coords=282..842 length=187 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.7e-12   47.9   1.0    1.7e-12   47.9   1.0    1.6  2  ATP-cone  ATP cone domain
+    5.2e-11   42.0   0.0    8.5e-11   41.3   0.0    1.3  1  NRDD      Anaerobic ribonucleoside-triphosphate reductase
+  ------ inclusion threshold ------
+      0.089   12.1   0.6        1.2    8.5   0.3    2.2  2  PRTase_1  Phosphoribosyl transferase (PRTase)
+
+
+Domain annotation for each model (and alignments):
+>> ATP-cone  ATP cone domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.9   1.0   2.6e-16   1.7e-12       1      82 [.      15     100 ..      15     104 .. 0.85
+   2 ?   -1.0   0.0      0.47   3.1e+03      29      51 ..     111     133 ..      99     151 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 47.9 bits;  conditional E-value: 2.6e-16
+               -EEE-TTS-EEE--HHHHHHHHHHHHHH.-HHHHHHHHHHHHHHHHHH.HIIT..-BHHHHHHHHHHHHHHSS-HHHHHHHHHHHH CS
+  ATP-cone   1 ikViKRdGtvepfdvekIkraiekAceg.seeeideiaeeveaevrkr.lrdg..isteeIqdlvektliehpdyavaaayilyrn 82 
+               ++++KR+G ++pf++ekI++ai k+++  s    ++ia+++ ++v +  ++d+  +++ ++ ++v + l  ++++ +a++y  yr 
+      orf1  15 MFIVKRNGNKVPFEKEKIEKAIIKSMKYgSGIIKKDIAKKISEDVYEIfKDDEepPTVYQVENMVYHSLVSYNEVLTAKSYEGYRA 100
+               89***********************999866667777777777774441444477**************************99997 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.47
+               -HHHHHHHHHHHHHHHHHHHIIT CS
+  ATP-cone  29 seeeideiaeeveaevrkrlrdg 51 
+               +++ +  + +++ +ev++++ ++
+      orf1 111 TDDSVMGLLNRINDEVMNENSNK 133
+               55556666666666665554433 PP
+
+>> NRDD  Anaerobic ribonucleoside-triphosphate reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.3   0.0   1.3e-14   8.5e-11       1      53 [.     129     181 ..     129     186 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 41.3 bits;  conditional E-value: 1.3e-14
+           .XHTTHHHHHHHHHHHHHHHHHHHH-H..HHHHHHHHHHHTTSEEETTGGGTT CS
+  NRDD   1 eNankdskspsgqrlklasevskeyalkkllpkevaeaheegdiHiHDldyla 53 
+           eN+nk++  +s+qr+ +a+e+sk++a++kl+p ++++ah +g +H+HD+d ++
+  orf1 129 ENSNKNAVIVSTQRDLVAGEISKDLARRKLIPANIVQAHGDGMLHFHDMDCAK 181
+           8************************************************9865 PP
+
+>> PRTase_1  Phosphoribosyl transferase (PRTase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   0.3   0.00018       1.2      23      93 ..      71     142 ..      52     147 .. 0.84
+   2 ?    2.2   0.0     0.014        93     204     244 ..     145     186 ..     142     187 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00018
+  PRTase_1  23 sveekEkliqsgekhYsemlsvEyepsaeylelfeealeesaerlaeavavlaekileerg.keivlvSlaR 93 
+               +v + E+++ +   +Y e+l+  +    + ++ +++  +++ + +   ++++ +++++e++ k+ v+vS  R
+      orf1  71 TVYQVENMVYHSLVSYNEVLTAKSYEGYRAVQAYKRESNTTDDSVMGLLNRINDEVMNENSnKNAVIVSTQR 142
+       Query:       orf2  [L=187]
+Description: source=IMGVR_UViG_3300035517_000518_3300035517_Ga0376472_0000846/6414-4712 coords=901..1461 length=187 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.7e-12   47.9   1.0    1.7e-12   47.9   1.0    1.6  2  ATP-cone  ATP cone domain
+    5.2e-11   42.0   0.0    8.5e-11   41.3   0.0    1.3  1  NRDD      Anaerobic ribonucleoside-triphosphate reductase
+  ------ inclusion threshold ------
+      0.089   12.1   0.6        1.2    8.5   0.3    2.2  2  PRTase_1  Phosphoribosyl transferase (PRTase)
+
+
+Domain annotation for each model (and alignments):
+>> ATP-cone  ATP cone domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.9   1.0   2.6e-16   1.7e-12       1      82 [.      15     100 ..      15     104 .. 0.85
+   2 ?   -1.0   0.0      0.47   3.1e+03      29      51 ..     111     133 ..      99     151 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 47.9 bits;  conditional E-value: 2.6e-16
+               -EEE-TTS-EEE--HHHHHHHHHHHHHH.-HHHHHHHHHHHHHHHHHH.HIIT..-BHHHHHHHHHHHHHHSS-HHHHHHHHHHHH CS
+  ATP-cone   1 ikViKRdGtvepfdvekIkraiekAceg.seeeideiaeeveaevrkr.lrdg..isteeIqdlvektliehpdyavaaayilyrn 82 
+               ++++KR+G ++pf++ekI++ai k+++  s    ++ia+++ ++v +  ++d+  +++ ++ ++v + l  ++++ +a++y  yr 
+      orf2  15 MFIVKRNGNKVPFEKEKIEKAIIKSMKYgSGIIKKDIAKKISEDVYEIfKDDEepPTVYQVENMVYHSLVSYNEVLTAKSYEGYRA 100
+               89***********************999866667777777777774441444477**************************99997 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.47
+               -HHHHHHHHHHHHHHHHHHHIIT CS
+  ATP-cone  29 seeeideiaeeveaevrkrlrdg 51 
+               +++ +  + +++ +ev++++ ++
+      orf2 111 TDDSVMGLLNRINDEVMNENSNK 133
+               55556666666666665554433 PP
+
+>> NRDD  Anaerobic ribonucleoside-triphosphate reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.3   0.0   1.3e-14   8.5e-11       1      53 [.     129     181 ..     129     186 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 41.3 bits;  conditional E-value: 1.3e-14
+           .XHTTHHHHHHHHHHHHHHHHHHHH-H..HHHHHHHHHHHTTSEEETTGGGTT CS
+  NRDD   1 eNankdskspsgqrlklasevskeyalkkllpkevaeaheegdiHiHDldyla 53 
+           eN+nk++  +s+qr+ +a+e+sk++a++kl+p ++++ah +g +H+HD+d ++
+  orf2 129 ENSNKNAVIVSTQRDLVAGEISKDLARRKLIPANIVQAHGDGMLHFHDMDCAK 181
+           8************************************************9865 PP
+
+>> PRTase_1  Phosphoribosyl transferase (PRTase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   0.3   0.00018       1.2      23      93 ..      71     142 ..      52     147 .. 0.84
+   2 ?    2.2   0.0     0.014        93     204     244 ..     145     186 ..     142     187 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00018
+  PRTase_1  23 sveekEkliqsgekhYsemlsvEyepsaeylelfeealeesaerlaeavavlaekileerg.keivlvSlaR 93 
+               +v + E+++ +   +Y e+l+  +    + ++ +++  +++ + +   ++++ +++++e++ k+ v+vS  R
+      orf2  71 TVYQVENMVYHSLVSYNEVLTAKSYEGYRAVQAYKRESNTTDDSVMGLLNRINDEVMNENSnKNAVIVSTQR 142
+               36777899999999******************************************998864799****877 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.014
+  PRTase_1 204 vsGLvSRtvlnedligpd..dfHgakfyeelaeedvsrefvdt 244
+               v+G +S+ + +++li ++  + Hg  +  ++++ d++++f++t
+      orf2 145 VAGEISKDLARRKLIPANivQAHGDGM-LHFHDMDCAKRFLET 186
+               8999*********99887667798765.589*********997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (187 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       921  (0.0469132); expected 392.6 (0.02)
+Passed bias filter:                      461  (0.0234821); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.27u 0.11s 00:00:00.38 Elapsed: 00:00:00.23
+# Mc/sec: 2660.89
+//
+[ok]

@@ -1,0 +1,150 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300006746_000150_3300006746_Ga0101796_100832_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300006746_000150_3300006746_Ga0101796_100832_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=483]
+Description: source=IMGVR_UViG_3300006746_000150_3300006746_Ga0101796_100832/12865-11194 coords=3..1451 length=483 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.3e-07   30.2   0.0    3.8e-07   29.5   0.0    1.2  1  AAA_10        AAA-like domain
+    1.3e-05   25.6   0.0    6.6e-05   23.2   0.0    2.1  2  DUF87         Helicase HerA, central domain
+    9.1e-05   21.4   0.0    0.00014   20.7   0.0    1.2  1  P-loop_TraG   TraG P-loop domain
+  ------ inclusion threshold ------
+      0.029   13.8   0.0      0.053   13.0   0.0    1.3  1  FtsK_SpoIIIE  FtsK/SpoIIIE family
+
+
+Domain annotation for each model (and alignments):
+>> AAA_10  AAA-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0   7.8e-11   3.8e-07      14     200 ..     272     463 ..     263     467 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 7.8e-11
+  AAA_10  14 vkgsktnasasliiGdlGnGKSvlakl.lvlyisllggkaliiDpkkerekfketlpeiakkinvvtLdseeenegvLdPlvllk...eekeaeslaedilel 112
+             v+++  ++++ li+G +G GKS++ak  + +  +l ++ ++i Dp +e    + +l       +v+++++ + n   ++P+ l     + +   sl+ d++  
+    orf1 272 VDRKLLKNPNGLILGTPGSGKSFSAKReIANCFLLTNDDVIICDPEAEYAPLVDRLHG-----QVIKISPTSTN--YINPMDLNLdysDDESPLSLKSDFILS 367
+             67788899*****************972555566778999999*****8888888866.....67777765555..677776643233333333444443322 PP
+
+  AAA_10 113 ....llgvk.kkesekkaalseaveavle....gkqrgllavieel....rkedekvareiarhlesvvkkslaklvfsdgsveeaislekkvtvlevedL 200
+                 + g k   +  +k+++   v+ v +     + ++ + ++e l    r+++ek a+ ia  le  v +sl   vf++ s +  + ++++++  ++++L
+    orf1 368 lcelIVGGKdGLQPVQKTIIDRCVRLVYQtylnDPRPENMPILEDLynllRSQEEKEAQYIATALEIYVTGSLN--VFNHQS-N--VDINNRIVCYDIKEL 463
+             12224444436677888899999999998888744455555555554444899******************997..788876.3..345577777666665 PP
+
+>> DUF87  Helicase HerA, central domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.1      0.24   1.2e+03     162     214 ..     112     133 ..      78     199 .. 0.60
+   2 !   23.2   0.0   1.4e-08   6.6e-05      27     130 ..     283     396 ..     272     482 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.24
+  DUF87 162 nqaiarlldkledllrkggsfsnsstdliallleklekegkitiidlsgvdel 214
+             +ai+++++k++dl+r++++                                +
+   orf1 112 VKAIKTVKRKITDLDRSKIEE-------------------------------Q 133
+            333333444444443333333...............................2 PP
+
+  == domain 2  score: 23.2 bits;  conditional E-value: 1.4e-08
+  DUF87  27 AilgsTGsGKSntvavLleellekkgatililDpHGEYgkalekllsekvkvitpspsa.............kdkelkinpwsldpeelldllee...ddkpaa 114
+            +ilg+ GsGKS+ ++  +++     +  ++i Dp  EY+++  ++l ++v  i+p +               ++ +l+     l+ + +l+l+e     ++ + 
+   orf1 283 LILGTPGSGKSFSAKREIANCFLLTNDDVIICDPEAEYAPLV-DRLHGQVIKISPTSTNyinpmdlnldysdDESPLS-----LKSDFILSLCELivgGKDGLQ 380
+            69*************988888879999**************9.88888887777764445655445444432222222.....233333333333332333333 PP
+
+  DUF87 115 avqrsvleealdqaka 130
+            +vq+ +++++++ + +
+   orf1 381 PVQKTIIDRCVRLVYQ 396
+            5566666666665554 PP
+
+>> P-loop_TraG  TraG P-loop domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.7   0.0   2.9e-08   0.00014      23     163 ..     273     419 ..     265     431 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 20.7 bits;  conditional E-value: 2.9e-08
+  P-loop_TraG  23 kkgiitnrnklilGpsGsGksfftnh.lvrsyyeqgahvvlvdvGhsykglcelvgGyyftyeeenPikfnPfyiedgevldtekkesikt.llla.. 116
+                  ++ +++n n lilG+ GsGksf   + + + ++ ++  v++ d    y  l + ++G+ +  + ++    nP+ ++  ++ d e   s+k+ ++l+  
+         orf1 273 DRKLLKNPNGLILGTPGSGKSFSAKReIANCFLLTNDDVIICDPEAEYAPLVDRLHGQVIKISPTSTNYINPMDLNL-DYSDDESPLSLKSdFILSlc 369
+                  678899****************9876166667789999**********************99999999999998875.48888888888753444411 PP
+
+  P-loop_TraG 117 .lwkkedekvkrseyvalsnalklyyeklek..ekelfpcfnsfyeflke 163
+                   l    ++ ++  +++ +  +++l y++  +  ++e +p ++ +y+ l++
+         orf1 370 eLIVGGKDGLQPVQKTIIDRCVRLVYQTYLNdpRPENMPILEDLYNLLRS 419
+                  14456677777888888888888777664441356778888888887766 PP
+
+>> FtsK_SpoIIIE  FtsK/SpoIIIE family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   1.1e-05     0.053      34      54 ..     275     294 ..     251     303 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.1e-05
+                   EGGGS-.SEEEE--TTSSHHH CS
+  FtsK_SpoIIIE  34 dlkkmashllvaGatgsGKSt 54 
+                    l k++ ++l++G++gsGKS 
+          orf1 275 KLLKNP-NGLILGTPGSGKSF 294
+                   344667.************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (483 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       703  (0.0358089); expected 392.6 (0.02)
+Passed bias filter:                      558  (0.028423); expected 392.6 (0.02)
+Passed Vit filter:                        65  (0.00331092); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.34u 0.19s 00:00:00.53 Elapsed: 00:00:00.32
+# Mc/sec: 4996.78
+//
+Query:       orf2  [L=168]
+Description: source=IMGVR_UViG_3300006746_000150_3300006746_Ga0101796_100832/12865-11194 coords=749..246 length=168 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.062   12.9   0.0      0.074   12.7   0.0    1.2  1  DUF6753   Family of unknown function (DUF6753)
+
+
+Domain annotation for each model (and alignments):
+>> DUF6753  Family of unknown function (DUF6753)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   3.7e-06     0.074      26      73 ..      21      68 ..      18     128 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 3.7e-06
+  DUF6753 26 ldlvvktglskdDPlflvlvatgqLevlLedaPaalellfkkWnkela 73
+             ldl+ ++g ++  P fl+ v+ gqL v+L  + a l+ ++ k +  ++
+     orf2 21 LDLIESQGQTAHQPFFLLEVQSGQLAVILLGNRACLKDVVAKLTGGVR 68
+             8999*************************9999999988886655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (168 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       563  (0.0286777); expected 392.6 (0.02)
+Passed bias filter:                      479  (0.0243989); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.29u 0.14s 00:00:00.43 Elapsed: 00:00:00.28
+# Mc/sec: 1953.55
+//
+[ok]

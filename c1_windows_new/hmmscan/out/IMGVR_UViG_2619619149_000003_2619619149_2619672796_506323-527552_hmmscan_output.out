@@ -1,0 +1,151 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_2619619149_000003_2619619149_2619672796_506323-527552_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_2619619149_000003_2619619149_2619672796_506323-527552_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=123]
+Description: source=IMGVR_UViG_2619619149_000003_2619619149_2619672796_506323-527552/20768-18688 coords=108..476 length=123 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (123 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       704  (0.0358598); expected 392.6 (0.02)
+Passed bias filter:                      468  (0.0238386); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.30u 0.17s 00:00:00.47 Elapsed: 00:00:00.33
+# Mc/sec: 1210.56
+//
+Query:       orf2  [L=244]
+Description: source=IMGVR_UViG_2619619149_000003_2619619149_2619672796_506323-527552/20768-18688 coords=778..1509 length=244 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.3e-28   99.9   1.7    1.3e-28   99.9   1.7    1.7  2  ArdcN           N-terminal domain of anti-restriction factor 
+    3.9e-07   30.3   0.2      6e-07   29.7   0.2    1.3  1  MPTase-PolyVal  Zincin-like metallopeptidase
+  ------ inclusion threshold ------
+      0.058   13.4   2.8       0.06   13.3   0.7    2.1  2  DUF5759         Family of unknown function (DUF5759)
+
+
+Domain annotation for each model (and alignments):
+>> ArdcN  N-terminal domain of anti-restriction factor ArdC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.0       2.5   1.7e+04      25      41 ..       9      25 ..       9      26 .. 0.76
+   2 !   99.9   1.7     2e-32   1.3e-28       1     122 []      61     163 ..      61     163 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 2.5
+  ArdcN 25 Pwatsgsaapqnvssgr 41
+           P +ts+s+ p+n+ss+r
+   orf2  9 PYRTSRSSKPKNLSSKR 25
+           56777777999999887 PP
+
+  == domain 2  score: 99.9 bits;  conditional E-value: 2e-32
+  ArdcN   1 kdlyeeitdqiieeleagtapWqkPwatsgsaapqnvssgrpYsgiNqllLelqaeeagyespvwltfkqakklgaqvkkGekgtevvyyktfkkekedkeade 104
+            k++ye it+qiie+le+g+ pW+kPw ++   +p n ++ +pY+giN++lL       g     ++tfkq+k++g++vkkGek+  vv++k++k+e+e+k    
+   orf2  61 KKIYEMITNQIIEKLEQGVIPWRKPWVNG---IPVNWKTQKPYRGINTMLLDG-----G----EYATFKQIKEAGGKVKKGEKSHIVVFWKMIKVEDEKK---- 148
+            689*************************7...********************9.....6....79***************************99999999.... PP
+
+  ArdcN 105 eeeeeekeipvlktytVF 122
+               eeek+ip l++y+VF
+   orf2 149 ---EEEKNIPLLRYYRVF 163
+            ...899***********9 PP
+
+>> MPTase-PolyVal  Zincin-like metallopeptidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.2   9.2e-11     6e-07      16      52 ..     204     240 ..     187     242 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 9.2e-11
+  MPTase-PolyVal  16 hggdrAfYspskDliqlPekeaFkeaesyyatllHel 52 
+                      ++ rA+Y p +D++++P+k+ F + ++yy+tl+He+
+            orf2 204 FQSGRAYYVPFEDRVNVPPKKDFPNVHEYYSTLFHEM 240
+                     56789*******************************8 PP
+
+>> DUF5759  Family of unknown function (DUF5759)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.7   9.2e-06      0.06       4      32 ..      47      75 ..      45      79 .. 0.89
+   2 ?   -2.8   0.0      0.98   6.4e+03      18      29 ..     230     241 ..     228     243 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 9.2e-06
+  DUF5759  4 kdlakiekkkknvkketYkkiyeqfirkI 32
+             ++ + ++k+ k ++k++Y++i +q+i+k 
+     orf2 47 SEFQRKNKEEKTMSKKIYEMITNQIIEKL 75
+             6889999******************9996 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.98
+  DUF5759  18 ketYkkiyeqfi 29 
+              +e Y ++++++i
+     orf2 230 HEYYSTLFHEMI 241
+              899999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (244 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1064  (0.0541972); expected 392.6 (0.02)
+Passed bias filter:                      629  (0.0320395); expected 392.6 (0.02)
+Passed Vit filter:                        46  (0.00234311); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.35u 0.22s 00:00:00.56 Elapsed: 00:00:00.35
+# Mc/sec: 2313.00
+//
+Query:       orf3  [L=107]
+Description: source=IMGVR_UViG_2619619149_000003_2619619149_2619672796_506323-527552/20768-18688 coords=736..416 length=107 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (107 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       280  (0.0142624); expected 392.6 (0.02)
+Passed bias filter:                      263  (0.0133965); expected 392.6 (0.02)
+Passed Vit filter:                        16  (0.000814996); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.16s 00:00:00.44 Elapsed: 00:00:00.29
+# Mc/sec: 1204.25
+//
+[ok]

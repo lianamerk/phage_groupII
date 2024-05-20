@@ -1,0 +1,114 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300014766_000124_3300014766_Ga0134337_100643_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300014766_000124_3300014766_Ga0134337_100643_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=349]
+Description: source=IMGVR_UViG_3300014766_000124_3300014766_Ga0134337_100643/13015-11431 coords=427..1473 length=349 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.011   15.7   4.5       0.22   11.6   0.3    3.0  3  DUF723    Protein of unknown function (DUF723)
+       0.07   13.2   0.6        2.2    8.4   0.1    2.7  2  Mistic    Membrane-integrating protein Mistic
+
+
+Domain annotation for each model (and alignments):
+>> DUF723  Protein of unknown function (DUF723)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8   0.1    0.0031        30       3      60 .]      35      94 ..      33      94 .. 0.74
+   2 ?   11.6   0.3   2.2e-05      0.22       9      42 ..     108     141 ..     101     157 .. 0.79
+   3 ?   -2.4   0.0      0.52   5.1e+03      43      55 ..     181     193 ..     177     196 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.0031
+  DUF723  3 ltfeeaasrleekFphlkl...veFegvakPvvinCPlHGnvtystykalikSkyGCPeCa 60
+            lt +e+  r +ek +++ l   v++   +  + i C  HG     +  +  k   GCP Ca
+    orf1 35 LTNDEVIRRCKEKHGNKYLydkVNYVDDKTNILIGCRQHGYF-WQNPRNHYKLGCGCPICA 94
+            566778888888888866533366667777888999999976.567788889999***997 PP
+
+  == domain 2  score: 11.6 bits;  conditional E-value: 2.2e-05
+  DUF723   9 asrleekFphlklveFegvakPvvinCPlHGnvt 42 
+             a +++  F + + v++  ++  vvi CP HG+ +
+    orf1 108 AQKVHGDFYDYSQVNYVDNRTKVVIICPYHGKFE 141
+             6788889999999******************865 PP
+
+  == domain 3  score: -2.4 bits;  conditional E-value: 0.52
+  DUF723  43 ystykalikSkyG 55 
+             +s+ k+ + SkyG
+    orf1 181 MSRMKSTLLSKYG 193
+             6888999999999 PP
+
+>> Mistic  Membrane-integrating protein Mistic
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.1   0.00022       2.2      40      62 ..      38      60 ..      22      64 .. 0.88
+   2 ?    2.0   0.0     0.022   2.1e+02      35      52 ..      97     114 ..      94     124 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00022
+            HHHHHHHHHHTSSSS-HHHHHHH CS
+  Mistic 40 lkliekAkekyGeevineKiNai 62
+             ++i++ kek+G++ + +K+N +
+    orf1 38 DEVIRRCKEKHGNKYLYDKVNYV 60
+            589******************86 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.022
+             SHHHHHHHHHHHHHHTSS CS
+  Mistic  35 fedevlkliekAkekyGe 52 
+             +++ ++++i kA++++G+
+    orf1  97 LKETTESFIVKAQKVHGD 114
+             78999************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (349 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       835  (0.0425326); expected 392.6 (0.02)
+Passed bias filter:                      406  (0.0206805); expected 392.6 (0.02)
+Passed Vit filter:                        19  (0.000967808); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.31u 0.17s 00:00:00.48 Elapsed: 00:00:00.31
+# Mc/sec: 3681.21
+//
+Query:       orf2  [L=167]
+Description: source=IMGVR_UViG_3300014766_000124_3300014766_Ga0134337_100643/13015-11431 coords=1086..586 length=167 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (167 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       923  (0.0470151); expected 392.6 (0.02)
+Passed bias filter:                      281  (0.0143134); expected 392.6 (0.02)
+Passed Vit filter:                         9  (0.000458435); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.32u 0.10s 00:00:00.42 Elapsed: 00:00:00.27
+# Mc/sec: 2001.64
+//
+[ok]

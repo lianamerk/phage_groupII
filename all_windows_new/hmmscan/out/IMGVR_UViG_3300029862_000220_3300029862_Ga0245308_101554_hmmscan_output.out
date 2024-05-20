@@ -1,0 +1,71 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300029862_000220_3300029862_Ga0245308_101554_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300029862_000220_3300029862_Ga0245308_101554_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=199]
+Description: source=IMGVR_UViG_3300029862_000220_3300029862_Ga0245308_101554/1-717 coords=2..598 length=199 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.4e-27   94.4   6.5    3.4e-26   91.2   2.4    2.3  2  GIIM      Group II intron, maturase-specific domain
+  ------ inclusion threshold ------
+        0.1   12.6   0.4       0.21   11.6   0.4    1.5  1  C1_1      Phorbol esters/diacylglycerol binding domain (C1 do
+
+
+Domain annotation for each model (and alignments):
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.2   2.4   3.4e-30   3.4e-26       7      80 .]       1      73 [.       1      73 [. 0.98
+   2 !    5.0   0.1    0.0029        28      28      67 ..     116     154 ..      98     159 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 91.2 bits;  conditional E-value: 3.4e-30
+  GIIM  7 kireltkrsskgvsleelirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkkrrralrkyw 80
+          kir ++ +s+kg+++e lir lnp+i+GW+nYy+ +va+++f+k d  i+++L++w++r+h+kk++++++ +y+
+  orf1  1 KIRGII-DSNKGSKQESLIRLLNPVITGWVNYYKNCVASDTFRKADYLIFEKLWQWAKRRHPKKGKYWIADRYF 73
+          89****.888**************************************************************98 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0029
+  GIIM  28 lnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkh 67 
+            np+   W++Y+ +  + ++++ l +  ++ L++w ++ h
+  orf1 116 ANPFDPEWTEYFEKRKTYKMLQSL-NGRKSLLYMWERQNH 154
+           6777778**************999.777888888887776 PP
+
+>> C1_1  Phorbol esters/diacylglycerol binding domain (C1 domain)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.4   2.2e-05      0.21       9      48 ..     151     195 ..     147     199 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.2e-05
+           SS--B-TTT-SB-.....-SSSS-EEEETTT--EE-CCCCTTS-S CS
+  C1_1   9 kqptfCkhCgefl.....wgkekqglkCswCkllvHkkChekvpk 48 
+           +q + C  Cg+++     wg + q++  +  ++l H++C +kv +
+  orf1 151 RQNHLCPVCGKPIdkkhpWGTSQQIVNGKKVNFLLHDSCRRKVIQ 195
+           57899************************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (199 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       840  (0.0427873); expected 392.6 (0.02)
+Passed bias filter:                      549  (0.0279645); expected 392.6 (0.02)
+Passed Vit filter:                        71  (0.00361654); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.33u 0.14s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 2057.79
+//
+[ok]

@@ -1,0 +1,115 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300031869_000187_3300031869_Ga0316030_100159_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300031869_000187_3300031869_Ga0316030_100159_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=304]
+Description: source=IMGVR_UViG_3300031869_000187_3300031869_Ga0316030_100159/1572-18 coords=252..1163 length=304 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    9.7e-28   97.0   0.4    2.1e-27   95.9   0.4    1.6  1  Intron_maturas2  Type II intron maturase
+    4.3e-12   46.1   0.0      7e-11   42.2   0.0    2.3  1  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    4.4e-05   23.6   0.2    0.00013   22.1   0.2    1.8  1  GIIM             Group II intron, maturase-specific domain
+  ------ inclusion threshold ------
+      0.033   14.3   0.0      0.076   13.1   0.0    1.6  1  Ribosomal_S24e   Ribosomal protein S24e
+      0.086   13.2   0.0       0.15   12.5   0.0    1.3  1  GP44             Gene product 44
+
+
+Domain annotation for each model (and alignments):
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   95.9   0.4   5.4e-31   2.1e-27       4     108 ..     187     289 ..     184     302 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 95.9 bits;  conditional E-value: 5.4e-31
+  Intron_maturas2   4 lvlnaPirkiikkLakagfvktkkekgkPrsvlrwidledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvrk 97 
+                      l l aP+++i k+L ++gf++ + + g+  +   w++ ++ ++++ y+++ rg+lnYYsf +n++r ++ +++il+ sc+k LA K+kl  v+k
+             orf1 187 LRLLAPMDRIYKRLTNTGFMSAEYKSGI--PRFLWLHNSKDTLIQLYNSVLRGYLNYYSFTHNYHRVASSLEFILHTSCAKLLAAKFKLRSVSK 278
+                      66789*****************755555..5578************************************************************ PP
+
+  Intron_maturas2  98 vikkfGkklsd 108
+                      v++k+G+ l+ 
+             orf1 279 VLEKYGQDLKG 289
+                      ******55544 PP
+
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.0   1.8e-14     7e-11     131     219 ..      19     161 ..      16     164 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 1.8e-14
+            B--ST-TTHHHHHHHHHHHHHTT-T............................................................TEEECTTEEEEEESS.HHH CS
+  RVT_1 131 glpqGsvlSPllfnlfmnellrelrkra......................................................kgvtllrYaDDililsks.kee 179
+            g+pqGs++SPll+n++++el+  +++                                                           +++rYaDD ++++++ +e+
+   orf1  19 GTPQGSIISPLLANIYLHELDVFIQNMKkdydkgkttarnpvyrklehlriqanknkdfklgatylkemqlinarmpndpnfRRMYYIRYADDWVLAIRGpRED 122
+            89*****************999988877889*********************************************************************8888 PP
+
+            HHHHHHHHHHHHHH.TT--BEGGG-EEE......ESSEEETT CS
+  RVT_1 180 lqelleaveewlke.sglkinpeKtklvlftv.kseevkyLG 219
+            + ++l++++++l +  +lk++ eK+k+    + ++e+  +LG
+   orf1 123 AINILQEIRSMLDNtLKLKLSIEKSKIS---NpRKESALFLG 161
+            ************9999***********9...77888888888 PP
+
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   0.2   3.4e-08   0.00013      22      79 ..     225     283 ..     219     284 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 3.4e-08
+  GIIM  22 eelirklnpiirGWanYyrlv.vakrvfskldhyirrrLrrwllrkhkkkkrrralrky 79 
+           ++li+ +n+++rG+ nYy+++ +  rv s l+  ++ + ++ l  k+k  +  ++l ky
+  orf1 225 DTLIQLYNSVLRGYLNYYSFThNYHRVASSLEFILHTSCAKLLAAKFKLRSVSKVLEKY 283
+           689******************************9********99999998888888887 PP
+
+>> Ribosomal_S24e  Ribosomal protein S24e
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   1.9e-05     0.076      29      60 ..      37      68 ..      19      73 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.9e-05
+                    CTTEEEEEEEE-SSSSEEEEEEEEES-HHHHH CS
+  Ribosomal_S24e 29 kdlvvvfglktefGggkstGfakiYdslealk 60
+                    +  v+++++k  +++gk+t+   +Y +le+l+
+            orf1 37 ELDVFIQNMKKDYDKGKTTARNPVYRKLEHLR 68
+                    5569************************9985 PP
+
+>> GP44  Gene product 44
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   3.7e-05      0.15      27      86 ..     120     182 ..     113     201 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 3.7e-05
+  GP44  27 rrkaielmkeiaevdensvrykgatedatisldge...llslwqrnliaalfyaDGkakkevv 86 
+           r+ ai+ ++ei ++ +n+++ k + e+++is   +   l+     nl + ++ a Gk ++++ 
+  orf1 120 REDAINILQEIRSMLDNTLKLKLSIEKSKISNPRKesaLFLGTLINLSSHVYFAKGKNHQNIR 182
+           899***************************9875534444445689999*********99983 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (304 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       563  (0.0286777); expected 392.6 (0.02)
+Passed bias filter:                      401  (0.0204258); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.40u 0.19s 00:00:00.59 Elapsed: 00:00:00.36
+# Mc/sec: 2776.04
+//
+[ok]

@@ -1,0 +1,141 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300009592_000587_3300009592_Ga0115101_1062390_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300009592_000587_3300009592_Ga0115101_1062390_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=284]
+Description: source=IMGVR_UViG_3300009592_000587_3300009592_Ga0115101_1062390/1-943 coords=3..854 length=284 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.7e-18   65.5   5.7    8.2e-18   64.4   5.7    1.6  1  GIIM             Group II intron, maturase-specific domain
+    4.9e-10   39.6   1.7    8.1e-10   38.8   1.7    1.4  1  HNH              HNH endonuclease
+    1.2e-07   31.7   0.8    2.1e-07   30.9   0.8    1.4  1  HNH_5            HNH endonuclease
+     0.0033   17.5   0.0      0.008   16.3   0.0    1.6  1  HNH_4            HNH endonuclease
+  ------ inclusion threshold ------
+      0.076   13.1   0.3       0.15   12.2   0.3    1.5  1  Intron_maturas2  Type II intron maturase
+
+
+Domain annotation for each model (and alignments):
+>> GIIM  Group II intron, maturase-specific domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.4   5.7   2.1e-21   8.2e-18       1      80 []      60     138 ..      60     138 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 64.4 bits;  conditional E-value: 2.1e-21
+  GIIM   1 vkrfkrkireltkrsskgvsleelirklnpiirGWanYyrlvvakrvfskldhyirrrLrrwllrkhkkkkrrralrkyw 80 
+           v+r++++i+ l+ +s+++ s + li+ lnp++rGWa+Y+r+v ++r f+++ +y +  L rw++rkh++ + r+  ++yw
+  orf1  60 VNRIQKRIKMLV-NSNRKASSGRLIQLLNPVVRGWAEYFRTVSSSRAFRRISKYCFDTLLRWARRKHRTIGSRKLVKRYW 138
+           57899*******.66688999**********************************************************9 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   1.7   2.1e-13   8.1e-10       1      45 [.     225     269 ..     225     271 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 38.8 bits;  conditional E-value: 2.1e-13
+           -SSSS-B-SSEE--EEEESS-TTTT--BSGGGEEEE-HHHHHHHH CS
+   HNH   1 CeyCgrkfhksdalevdHiipisqggaddieNlqllCksCHnkkh 45 
+           C  C+ + + ++ le++Hiip+s gg++   Nl+ l+++CH++ +
+  orf1 225 CWSCKCPMDPKQVLEIHHIIPKSVGGTNAMKNLAVLHRECHRQIT 269
+           778999999999******************************987 PP
+
+>> HNH_5  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.9   0.8   5.2e-11   2.1e-07       1      45 [.     225     270 ..     225     277 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 30.9 bits;  conditional E-value: 5.2e-11
+  HNH_5   1 CiyCgkeipeeel.seeHIipeslGGklkisnlqtlCkkCNsklgq 45 
+            C +C+ +++ +++ ++ HIip+s GG++ ++nl +l ++C+ + +q
+   orf1 225 CWSCKCPMDPKQVlEIHHIIPKSVGGTNAMKNLAVLHRECHRQITQ 270
+            999**996666655***************************99876 PP
+
+>> HNH_4  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0     2e-06     0.008      17      47 ..     236     266 ..     228     275 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 2e-06
+  HNH_4  17 keydiDHilPrsrsfdDsvsNkvLvlrsaNq 47 
+            + ++i Hi+P+s +  ++++N+ + +r++ +
+   orf1 236 QVLEIHHIIPKSVGGTNAMKNLAVLHRECHR 266
+            5589*******************99999966 PP
+
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.3   3.8e-05      0.15      45     103 ..      81     138 ..      52     163 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 3.8e-05
+  Intron_maturas2  45 dIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvrkvikkfG 103
+                       +++  + ++rg  +Y++ ++  +++r ri    ++ +++   rK++    rk +k++ 
+             orf1  81 RLIQLLNPVVRGWAEYFRTVSSSRAFR-RISKYCFDTLLRWARRKHRTIGSRKLVKRYW 138
+                      57889999*******************.6655567889999999**9999999999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (284 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       505  (0.0257233); expected 392.6 (0.02)
+Passed bias filter:                      394  (0.0200693); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.35u 0.19s 00:00:00.54 Elapsed: 00:00:00.34
+# Mc/sec: 2739.87
+//
+Query:       orf2  [L=167]
+Description: source=IMGVR_UViG_3300009592_000587_3300009592_Ga0115101_1062390/1-943 coords=562..62 length=167 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.18   12.0   0.0       0.35   11.0   0.0    1.3  1  OSCP      ATP synthase delta (OSCP) subunit
+
+
+Domain annotation for each model (and alignments):
+>> OSCP  ATP synthase delta (OSCP) subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.8e-05      0.35      65     114 ..      49      98 ..      34     100 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.8e-05
+  OSCP  65 lseevknflklLaenkRlsllpeiaeefeellaeargiveaeVtsavpLs 114
+           ++  ++nfl  ++   Rl++l+ + +++  + ++ar+ +++  +sa+pL+
+  orf2  49 FQYRLTNFLLPIVRCLRLAHLSRVSKQYLLIRRKARELLTVLKYSAHPLT 98 
+           566789******************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (167 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       437  (0.0222596); expected 392.6 (0.02)
+Passed bias filter:                      344  (0.0175224); expected 392.6 (0.02)
+Passed Vit filter:                        19  (0.000967808); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.30u 0.16s 00:00:00.46 Elapsed: 00:00:00.29
+# Mc/sec: 1869.79
+//
+[ok]

@@ -1,0 +1,290 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300023371_003715_3300023371_Ga0216340_10018390_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300023371_003715_3300023371_Ga0216340_10018390_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=485]
+Description: source=IMGVR_UViG_3300023371_003715_3300023371_Ga0216340_10018390/10121-8453 coords=3..1457 length=485 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    2.2e-11   44.0   0.0    1.8e-06   28.1   0.0    3.1  3  AAA_5            AAA domain (dynein-related subfamily)
+    4.4e-05   24.0   0.0    8.6e-05   23.1   0.0    1.5  1  AAA              ATPase family associated with various cellul
+    9.6e-05   22.8   0.0     0.0002   21.8   0.0    1.5  1  AAA_22           AAA domain
+     0.0042   16.8   0.0     0.0085   15.8   0.0    1.4  1  AAA_7            P-loop containing dynein motor region
+  ------ inclusion threshold ------
+       0.01   15.4   0.1       0.02   14.4   0.1    1.4  1  Mg_chelatase     Magnesium chelatase, subunit ChlI
+      0.018   14.2   0.1       0.06   12.5   0.1    1.7  2  AAA_6            Hydrolytic ATP binding site of dynein motor 
+      0.022   14.1   0.0       0.05   12.9   0.0    1.5  1  TIP49            TIP49 P-loop domain
+      0.027   14.6   0.2      0.074   13.1   0.0    1.8  2  TsaE             Threonylcarbamoyl adenosine biosynthesis pro
+       0.06   13.8   0.0      0.099   13.1   0.0    1.4  1  AAA_16           AAA ATPase domain
+      0.071   12.3   0.2       0.14   11.3   0.2    1.4  1  Parvo_NS1        Parvovirus non-structural protein NS1
+      0.083   12.7   0.0       0.19   11.5   0.0    1.6  1  Sigma54_activat  Sigma-54 interaction domain
+      0.086   12.7   0.2       0.18   11.7   0.2    1.5  1  AAA_30           AAA domain
+      0.097   12.7   0.0       0.17   11.9   0.0    1.3  1  NACHT            NACHT domain
+       0.16   11.8   0.0       0.34   10.8   0.0    1.5  1  RuvB_N           Holliday junction DNA helicase RuvB P-loop d
+
+
+Domain annotation for each model (and alignments):
+>> AAA_5  AAA domain (dynein-related subfamily)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.0      0.39   5.5e+02      28      63 ..     202     237 ..     193     255 .. 0.82
+   2 !   28.1   0.0   1.3e-09   1.8e-06       1      99 [.     266     390 ..     266     400 .. 0.81
+   3 !   11.5   0.0   0.00018      0.25      49     133 ..     402     482 ..     391     485 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.39
+            EEEE--TT--HHHHTEEEEESSSSEEEEE-HHHHHH CS
+  AAA_5  28 eyvqltrdtteedlkgrreikngttslvdsplvraa 63 
+            ++++    ++++d++g+ e+++++  l++++lv + 
+   orf1 202 TIKAAETVIEQSDFVGQFELQPRNLTLEEQALVPKL 237
+            56666777899********************99765 PP
+
+  == domain 2  score: 28.1 bits;  conditional E-value: 1.3e-09
+            EEEEECSTTSSCCHHHHHHHHCCSTTEEEEE--TT--HHHHTEEEEES.SSSEEEEE-HHHHHHH..........................T-CEEEEETCTTS CS
+  AAA_5   1 dvlLvGppGtgKselaerlaaalnreveyvqltrdtteedlkgrreik.ngttslvdsplvraar..........................egeilvlDEvera 77 
+            ++lL Gp GtgK++ a+ +aa ln ++  + ++++t+  d++g++ ++ + ++s   ++  ++++                          eg   +l ++++ 
+   orf1 266 NFLLRGPAGTGKTMCAKAIAAGLNLPYMKYTCSAGTEIFDFIGQILPDsE-NKSVATNEELQKVEamgginyenvakllnlpdledmeydpEGTYKILTGIDKK 368
+            689********************************************963.44433333333444445888999999999999999999999999999999999 PP
+
+            -HHHHCCHHHCTTTSCECGGCS CS
+  AAA_5  78 esevlnsLlslleerrllleeg 99 
+            + +v++ +  +l++    +  +
+   orf1 369 DASVQDCMAVVLDKTISKVQAL 390
+            9999999988888776665555 PP
+
+  == domain 3  score: 11.5 bits;  conditional E-value: 0.00018
+            SSSEEEEE-HHHHHHHT-CEEEEETCTTS-.HHHHCCHHHCTTTSCECGGCSCCECCSSSSSEB--EEEEEEECSSSSSSSSTTHH CS
+  AAA_5  49 ngttslvdsplvraaregeilvlDEverae.sevlnsLlslleerrllleeggelvkaknddllerfrviatanpldrslnelspa 133
+            ++t s+++  + ra ++g ++ l E +++  + vl  L+slle++   + + ge +   +d       v+ t+n  + +   l+ a
+   orf1 402 GQTFSYTETDFLRALKNGYVVELQEPTTIMqPGVLVGLNSLLEQEGSITLPTGEIIERHPD-----AVVVVTTNVDYEGCRGLNRA 482
+            678899**********************999***************999999999999997.....78888988877444444445 PP
+
+>> AAA  ATPase family associated with various cellular activities (AAA)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.1   0.0   6.1e-08   8.6e-05       2      33 ..     268     299 ..     267     327 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 23.1 bits;  conditional E-value: 6.1e-08
+           EEESSTTSSHHHHHHHHHHHHTSEEEEEETTT CS
+   AAA   2 llyGppGtGKTllakavakelgvefleisgse 33 
+           ll Gp GtGKT++aka+a  l+ ++++  +s 
+  orf1 268 LLRGPAGTGKTMCAKAIAAGLNLPYMKYTCSA 299
+           899*******************9999888775 PP
+
+>> AAA_22  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   0.0   1.4e-07    0.0002       9      77 ..     268     324 ..     261     342 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 1.4e-07
+  AAA_22   9 vvtGesGtGKTtllrrlleqldeeakaeeerpevvfvtlpsstsskdllrellralglelkaerlssee 77 
+             ++ G++GtGKT++++ ++  l         + +++++t++++t+  d+  ++l + +++  a   ++ee
+    orf1 268 LLRGPAGTGKTMCAKAIAAGL---------NLPYMKYTCSAGTEIFDFIGQILPDSENKSVA---TNEE 324
+             678******************.........**********************9999988877...3333 PP
+
+>> AAA_7  P-loop containing dynein motor region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.0     6e-06    0.0085      17      63 ..     248     291 ..     241     310 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 6e-06
+  AAA_7  17 vdtvrysyllelllknkkpvLlvGptGtGKtviiknllkkldkekyl 63 
+            v+ ++   l++  +++ +++Ll Gp+GtGKt+++k +   l+   + 
+   orf1 248 VEICKHAQLTTGKATQMRNFLLRGPAGTGKTMCAKAIAAGLN---LP 291
+            55666677777788999******************9998888...33 PP
+
+>> Mg_chelatase  Magnesium chelatase, subunit ChlI
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.4   0.1   1.4e-05      0.02      22      44 ..     264     286 ..     252     304 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 1.4e-05
+  Mg_chelatase  22 gHnlllvGppGsGKtmlakrlps 44 
+                     n+ll Gp+G+GKtm ak++++
+          orf1 264 MRNFLLRGPAGTGKTMCAKAIAA 286
+                   5799***************9976 PP
+
+>> AAA_6  Hydrolytic ATP binding site of dynein motor region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   4.3e-05      0.06      36      70 ..     268     302 ..     250     312 .. 0.81
+   2 ?   -1.8   0.0      0.95   1.3e+03     117     150 ..     444     478 ..     438     480 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 4.3e-05
+  AAA_6  36 apaGpagtGKtEtvkdLakalaklvvvfncsesld 70 
+             + GpagtGKt   k++a+ l   ++ + cs + +
+   orf1 268 LLRGPAGTGKTMCAKAIAAGLNLPYMKYTCSAGTE 302
+            478***************************98876 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.95
+  AAA_6 117 eklkkfvf.egkeiklnksvgifitmnpgyagrte 150
+            e++ ++++ +g+ i+ ++++ +++t+n +y+g+  
+   orf1 444 EQEGSITLpTGEIIERHPDAVVVVTTNVDYEGCRG 478
+            55556666467888999999**********99875 PP
+
+>> TIP49  TIP49 P-loop domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   3.5e-05      0.05      49      90 ..     263     305 ..     245     309 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.5e-05
+            -S-EEEEE--TTSSCHHHHHHHHHHH-.TTS-EEEEECCCC-- CS
+  TIP49  49 aGravLlaGpsgtGktalaiaiskelg.edvpfvalsgsevys 90 
+              r  Ll Gp+gtGkt  a ai+  l+   ++++  +g+e++ 
+   orf1 263 QMRNFLLRGPAGTGKTMCAKAIAAGLNlPYMKYTCSAGTEIFD 305
+            45789*********************98899999999999995 PP
+
+>> TsaE  Threonylcarbamoyl adenosine biosynthesis protein TsaE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.0         7   9.8e+03      60      78 ..      49      67 ..      47      84 .. 0.70
+   2 ?   13.1   0.0   5.3e-05     0.074      17      47 ..     260     290 ..     244     298 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.4 bits;  conditional E-value: 7
+          EEEEE..CSEEEEEE-TTG CS
+  TsaE 60 eeYelekegklyHfDlYRl 78
+           eY+++ +++ yH+ +Y  
+  orf1 49 AEYKSSVNADAYHLVVYNK 67
+          6787766667888877764 PP
+
+  == domain 2  score: 13.1 bits;  conditional E-value: 5.3e-05
+           THHCTEEEEEEESTTSSHHHHHHHHHHHCT- CS
+  TsaE  17 aleagdvvlLeGdLGaGKTtlvrglaralgv 47 
+           ++++ + +lL+G+ G+GKT+ ++++a++l++
+  orf1 260 KATQMRNFLLRGPAGTGKTMCAKAIAAGLNL 290
+           33445569*******************9976 PP
+
+>> AAA_16  AAA ATPase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   7.1e-05     0.099      20      49 ..     260     289 ..     248     381 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 7.1e-05
+  AAA_16  20 rsgrpesvllsGesGvGKsalvrelleale 49 
+             ++ + ++ ll G++G+GK+  +++++  l+
+    orf1 260 KATQMRNFLLRGPAGTGKTMCAKAIAAGLN 289
+             4556699**************999987555 PP
+
+>> Parvo_NS1  Parvovirus non-structural protein NS1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.2    0.0001      0.14     100     139 ..     251     289 ..     246     296 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 0.0001
+  Parvo_NS1 100 gqvllawlskqlgkrntvwfyGpantGktnlaeaIakavp 139
+                +++   +  k ++ rn  ++ Gpa tGkt+ a+aIa ++ 
+       orf1 251 CKHAQLTTGKATQMRN-FLLRGPAGTGKTMCAKAIAAGLN 289
+                5555556667766666.5789***************9865 PP
+
+>> Sigma54_activat  Sigma-54 interaction domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   0.00014      0.19      18      44 ..     260     286 ..     245     303 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 0.00014
+                      HHTSSS-EEEEESTTSSHHHHHHHHHH CS
+  Sigma54_activat  18 vaktdlsvlitGesGtGKellaraihe 44 
+                       a++  + l++G  GtGK+++a+ai +
+             orf1 260 KATQMRNFLLRGPAGTGKTMCAKAIAA 286
+                      45556899****************975 PP
+
+>> AAA_30  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.2   0.00013      0.18      19      40 ..     265     286 ..     252     302 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00013
+  AAA_30  19 rvavltGpAGtGKttalkalre 40 
+             r  +l GpAGtGKt+  ka+++
+    orf1 265 RNFLLRGPAGTGKTMCAKAIAA 286
+             45799***********999976 PP
+
+>> NACHT  NACHT domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   0.00012      0.17       3      25 ..     267     289 ..     265     298 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00012
+            EEEEC-TTTCHHHHHHHHHHHHC CS
+  NACHT   3 vilqGeaGsGKTtLlqklalawa 25 
+             +l+G+aG GKT+ ++ +a  + 
+   orf1 267 FLLRGPAGTGKTMCAKAIAAGLN 289
+            689***************98876 PP
+
+>> RuvB_N  Holliday junction DNA helicase RuvB P-loop domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   0.00024      0.34      29      67 ..     260     299 ..     242     336 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00024
+  RuvB_N  29 reealdhvllyGpPGlGkttlakiiakelgvk.lkitsgP 67 
+             + +++   ll Gp G Gkt  ak ia+ l+   +k t++ 
+    orf1 260 KATQMRNFLLRGPAGTGKTMCAKAIAAGLNLPyMKYTCSA 299
+             45567789*******************9997524555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (485 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       717  (0.036522); expected 392.6 (0.02)
+Passed bias filter:                      557  (0.028372); expected 392.6 (0.02)
+Passed Vit filter:                        76  (0.00387123); expected 19.6 (0.001)
+Passed Fwd filter:                        14  (0.000713121); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.36u 0.18s 00:00:00.54 Elapsed: 00:00:00.33
+# Mc/sec: 4787.57
+//
+Query:       orf2  [L=110]
+Description: source=IMGVR_UViG_3300023371_003715_3300023371_Ga0216340_10018390/10121-8453 coords=874..545 length=110 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (110 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       381  (0.0194071); expected 392.6 (0.02)
+Passed bias filter:                      215  (0.0109515); expected 392.6 (0.02)
+Passed Vit filter:                        14  (0.000713121); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.26u 0.15s 00:00:00.41 Elapsed: 00:00:00.28
+# Mc/sec: 1306.19
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300042026_000221_3300042026_Ga0453778_001945_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300042026_000221_3300042026_Ga0453778_001945_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=114]
+Description: source=IMGVR_UViG_3300042026_000221_3300042026_Ga0453778_001945/890-2425 coords=1083..1424 length=114 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    6.4e-07   29.6   0.2    8.8e-07   29.1   0.2    1.2  1  HNH             HNH endonuclease
+  ------ inclusion threshold ------
+      0.076   13.2   0.1       0.15   12.3   0.1    1.4  1  Zn_ribbon_SprT  SprT-like zinc ribbon domain
+
+
+Domain annotation for each model (and alignments):
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.2     9e-11   8.8e-07       1      45 [.      65     109 ..      65     111 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 9e-11
+           -SSSS-B-SSEE--EEEESS-TTTT--BSGGGEEEE-HHHHHHHH CS
+   HNH   1 CeyCgrkfhksdalevdHiipisqggaddieNlqllCksCHnkkh 45 
+           C  Cg+  ++s++ e + i p ++gg++++ N ++l+k+CH + +
+  orf1  65 CAACGEILDDSESIELHRINPGKDGGEYTLKNTVPLHKTCHESVT 109
+           999**************************************9866 PP
+
+>> Zn_ribbon_SprT  SprT-like zinc ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.1   1.5e-05      0.15      16      32 ..      53      70 ..      51      74 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.5e-05
+  Zn_ribbon_SprT 16 rhlrs.rrhnyrCrrCkg 32
+                    +++++ ++hny C  C++
+            orf1 53 FRRKVyKIHNYKCAACGE 70
+                    79**************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (114 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       718  (0.0365729); expected 392.6 (0.02)
+Passed bias filter:                      457  (0.0232783); expected 392.6 (0.02)
+Passed Vit filter:                        43  (0.0021903); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.31u 0.20s 00:00:00.51 Elapsed: 00:00:00.36
+# Mc/sec: 1038.46
+//
+[ok]

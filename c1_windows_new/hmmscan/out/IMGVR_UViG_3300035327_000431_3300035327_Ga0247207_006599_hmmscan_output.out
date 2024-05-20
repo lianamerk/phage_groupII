@@ -1,0 +1,160 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=166]
+Description: source=IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599/1-1393 coords=3..500 length=166 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    7.4e-65  218.3   0.9    8.2e-65  218.2   0.9    1.0  1  Transposon_TraM  Conjugative transposon, TraM
+    2.2e-05   24.6   1.6     0.0067   16.5   0.2    2.0  2  TrbI             Bacterial conjugation TrbI-like protein
+
+
+Domain annotation for each model (and alignments):
+>> Transposon_TraM  Conjugative transposon, TraM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.2   0.9   8.4e-69   8.2e-65      41     194 .]       3     156 ..       1     156 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 218.2 bits;  conditional E-value: 8.4e-69
+  Transposon_TraM  41 eekeqekntIkAvidetqtvtdgsrvrLrLleditvggtlipkgtlltgkvkiqgeRlklkitsievegkiipVelsvYDtDGqeGlyvpesee 134
+                      ++++ +kntI+Av+ ++q+v++g+ v+LrL+e+++vg++lip++t l+g +++qgeRl++ itsie +g++++V+l+vYD+DGqeG+++p+s+e
+             orf1   3 RKTSVAKNTIAAVVANDQSVINGQAVKLRLTEPMWVGNALIPRNTPLVGVARLQGERLEVAITSIEANGSVYEVDLTVYDSDGQEGINIPNSME 96 
+                      678899**************************************************************************************** PP
+
+  Transposon_TraM 135 rdavkeiaanmgqglgtsidisssagaqiasdlakgviqgasqylskkirkvKvklKagy 194
+                       da++ei anmg+++g+si++++++gaqiasd+++g+i+g+sqyl+kk+r+vKv+lKagy
+             orf1  97 SDALHEIGANMGSTMGSSINLTTNTGAQIASDVGRGLINGVSQYLNKKLRTVKVHLKAGY 156
+                      **********************************************************98 PP
+
+>> TrbI  Bacterial conjugation TrbI-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.2   6.8e-07    0.0067       8      94 ..      12      89 ..       7      91 .. 0.79
+   2 !    7.7   0.1   0.00033       3.3     118     179 ..     104     160 ..      95     166 .] 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 6.8e-07
+          EEEEESS-EETTS-EEEEEEE-S-EE-SSSSSECC-TT-EEEEEEEEEESSSSEEEEEEEEEEE-TTSEEEESS--BEE-TTS-CCC CS
+  TrbI  8 ipavLltginsdlpgsvvaqvtedvysatgeavlipkgsrligeydsavakGqeRvlvvwtrlilpdgksielggapgadadGkaGl 94
+          i av+ +  +   ++ v+ ++te+++   g+a++ p+++ l+g  +    +G eR+ v+ t +   +g++ e+ ++ ++d+dG+ G+
+  orf1 12 IAAVVANDQSVINGQAVKLRLTEPMW--VGNALI-PRNTPLVGVARL---QG-ERLEVAITSIEA-NGSVYEV-DLTVYDSDGQEGI 89
+          66777666667777789*********..899777.********5555...67.*********986.5555555.55899******98 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00033
+           ---EEEE------------HHHHHHHHT-TT-BHHHHHHHHHHHHTTS--EEEE-TT-EEEE CS
+  TrbI 118 agelanaassssttgstgtdslaaavlegagqalsqvaqrilkraenipptievpqGtkvei 179
+           +++++++++ss + +    +++ a++++ +g  l +  +++l+++++   + ++++G++v i
+  orf1 104 GANMGSTMGSSINLT----TNTGAQIASDVGRGLINGVSQYLNKKLRTVKV-HLKAGYRVMI 160
+           445555555555555....45556666666666666666667666665555.6677777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (166 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       614  (0.0312755); expected 392.6 (0.02)
+Passed bias filter:                      482  (0.0245518); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.30u 0.17s 00:00:00.47 Elapsed: 00:00:00.33
+# Mc/sec: 1659.48
+//
+Query:       orf2  [L=103]
+Description: source=IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599/1-1393 coords=504..812 length=103 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (103 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       887  (0.0451813); expected 392.6 (0.02)
+Passed bias filter:                      627  (0.0319377); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.18s 00:00:00.47 Elapsed: 00:00:00.31
+# Mc/sec: 1075.94
+//
+Query:       orf3  [L=162]
+Description: source=IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599/1-1393 coords=842..1327 length=162 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (162 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       566  (0.0288305); expected 392.6 (0.02)
+Passed bias filter:                      359  (0.0182865); expected 392.6 (0.02)
+Passed Vit filter:                        19  (0.000967808); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.29u 0.18s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 1660.20
+//
+Query:       orf4  [L=100]
+Description: source=IMGVR_UViG_3300035327_000431_3300035327_Ga0247207_006599/1-1393 coords=842..543 length=100 frame=6 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (100 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       747  (0.0380501); expected 392.6 (0.02)
+Passed bias filter:                      466  (0.0237368); expected 392.6 (0.02)
+Passed Vit filter:                        30  (0.00152812); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.18s 00:00:00.46 Elapsed: 00:00:00.31
+# Mc/sec: 1042.48
+//
+[ok]

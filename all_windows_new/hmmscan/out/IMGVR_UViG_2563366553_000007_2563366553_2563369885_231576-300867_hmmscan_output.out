@@ -1,0 +1,143 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_2563366553_000007_2563366553_2563369885_231576-300867_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_2563366553_000007_2563366553_2563369885_231576-300867_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=260]
+Description: source=IMGVR_UViG_2563366553_000007_2563366553_2563369885_231576-300867/7007-5423 coords=2..781 length=260 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    9.2e-46  156.7   0.5    2.4e-45  155.3   0.0    1.7  2  DNA_pol3_alpha   Bacterial DNA polymerase III alpha NTPase do
+  ------ inclusion threshold ------
+       0.22   11.5   0.0       0.41   10.6   0.0    1.3  1  AcnX_swivel_put  Aconitase X swivel domain
+
+
+Domain annotation for each model (and alignments):
+>> DNA_pol3_alpha  Bacterial DNA polymerase III alpha NTPase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.2      0.12   1.2e+03     159     203 ..       2      46 ..       1      50 [. 0.76
+   2 !  155.3   0.0   2.5e-49   2.4e-45       1     108 [.     147     257 ..     147     259 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.12
+                     HHHHHTS---SS.--GGGG-----SHHHHHHH-HHHHHHHHHHHTT CS
+  DNA_pol3_alpha 159 dklaklipkelg.itlekaleeekelkelieedeevkrlvelakkl 203
+                     +klak+i  +l+ i  ++ +  e + +++ +ed+  k+l+ lakkl
+            orf1   2 NKLAKQIALKLKgI-FKDDFYIEIQRHNIKDEDKINKQLMLLAKKL 46 
+                     57888888886634.4555555589999999999999999999987 PP
+
+  == domain 2  score: 155.3 bits;  conditional E-value: 2.5e-49
+                     HHHHHHHHHHHHHHS...TT---TTHHHHHHHHHHHHHHHT-HHHHHHHHHHHHHHHHTT--B-S--GGGGG-HHHHHTTS----HHHHT--HHH CS
+  DNA_pol3_alpha   1 eyLrklveeglkerl...keelpeevkerlekElevIekmgfadyflivadlvkaakkkgilvGpgRGSaagslvayllgiTeidPlkydllFer 92 
+                     ey++kl+eeg+ker+   ++  + e+kerle E+++I kmg++dyfliv+d++++akk++i++GpgRGS  gslvay+l+iTe+dP++ydllFer
+            orf1 147 EYFKKLCEEGFKERFygsSKYESVEYKERLEFEVKTICKMGYPDYFLIVWDFINFAKKNNIPIGPGRGSCVGSLVAYVLKITEMDPIRYDLLFER 241
+                     689***********9875444667*********************************************************************** PP
+
+                     HS-TTS-------EEE CS
+  DNA_pol3_alpha  93 FlnpervsmPDiDidf 108
+                     Flnp+r+smPDiD+ +
+            orf1 242 FLNPDRISMPDIDVGV 257
+                     *************976 PP
+
+>> AcnX_swivel_put  Aconitase X swivel domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   4.2e-05      0.41      36      56 ..     212     232 ..     207     234 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 4.2e-05
+                      -S--SS-TTHHHHHHHHT-S- CS
+  AcnX_swivel_put  36 gkGStvgsyvllelkkngtaP 56 
+                      g+GS+vgs+v + lk +++ P
+             orf1 212 GRGSCVGSLVAYVLKITEMDP 232
+                      8**************999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (260 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       831  (0.0423289); expected 392.6 (0.02)
+Passed bias filter:                      540  (0.0275061); expected 392.6 (0.02)
+Passed Vit filter:                        40  (0.00203749); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.35u 0.20s 00:00:00.55 Elapsed: 00:00:00.37
+# Mc/sec: 2297.06
+//
+[ok]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+   PHP 107 yykkpridkelleeyfegllalsgcvlGhldlillqkgkleeaeelaeeylkifkkkgfyiEints 172
+           +yk+p+i++++le+y++g+++lsgc+ G++ +++ + g+ + a+++a +++ ifk ++fyiEi+++
+  orf1 191 FYKSPQIKYSWLEKYNKGVIVLSGCIAGEIPRAIAD-GNNKLAKQIALKLKGIFK-DDFYIEIQRH 254
+           677*******************************77.88****************.68******97 PP
+
+>> Mt_ATP-synt_B  Mitochondrial ATP synthase B chain precursor (ATP-synt_B)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.4   1.5e-07   0.00074      38      91 ..       7      61 ..       5      65 .. 0.93
+   2 ?   -2.6   0.1       0.8   3.9e+03      83      83 ..     274     274 ..     219     310 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 1.5e-07
+                   HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCC.CHHHHCCHHHHHHHHH CS
+  Mt_ATP-synt_B 38 ikefldkriekiqeelnqsrnlkeealkerieqekklq.slveltkslfevskeq 91
+                   +    +k+ ekiq+el++ +n++ + +  +ie+  k   sl++++++lf+ +ke+
+           orf1  7 YVNLSKKQCEKIQSELKEGKNNSSSNYLSLIENDGKIEvSLLNGKEVLFVLKKEK 61
+                   5667789***************************99988**************96 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.8
+                    H CS
+  Mt_ATP-synt_B  83 s 83 
+                    +
+           orf1 274 D 274
+                    2 PP
+
+>> AcnX_swivel_put  Aconitase X swivel domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.1      0.55   2.7e+03      67      78 ..     210     221 ..     207     222 .. 0.89
+   2 ?    9.5   0.0   0.00018      0.89      36      56 ..     439     459 ..     434     461 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.55
+                      HHHHHHHHHT-- CS
+  AcnX_swivel_put  67 ilvlGaivadiP 78 
+                      i+++G+i  +iP
+             orf1 210 IVLSGCIAGEIP 221
+                      8999****9999 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00018
+                      -S--SS-TTHHHHHHHHT-S- CS
+  AcnX_swivel_put  36 gkGStvgsyvllelkkngtaP 56 
+                      g+GS+vgs+v + lk +++ P
+             orf1 439 GRGSCVGSLVAYVLKITEMDP 459
+                      8**************999988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (487 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       851  (0.0433476); expected 392.6 (0.02)
+Passed bias filter:                      452  (0.0230236); expected 392.6 (0.02)
+Passed Vit filter:                        32  (0.00162999); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.39u 0.18s 00:00:00.57 Elapsed: 00:00:00.35
+# Mc/sec: 4557.04
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300006464_000343_3300006464_Ga0100221_1003406_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300006464_000343_3300006464_Ga0100221_1003406_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=483]
+Description: source=IMGVR_UViG_3300006464_000343_3300006464_Ga0100221_1003406/7812-6228 coords=2..1450 length=483 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.1e-30  107.0   0.1      3e-30  105.5   0.0    1.8  2  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.5   0.0   1.5e-34     3e-30      45     222 .]       1     207 [.       1     207 [. 0.92
+   2 ?   -1.9   0.0      0.11   2.2e+03      12      28 ..     271     287 ..     226     315 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 105.5 bits;  conditional E-value: 1.5e-34
+            HHHH..............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...........................TEEEEESB--ST-TTHHHHHHH CS
+  RVT_1  45 frpgrstldav.edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptk.linliksflstrsfsvrv.ngeeskgryekkglpqGsvlSPllfnl 145
+            frp+rs+++a+ ++++    ++ + ++++++D+k++Fd+v++++l+r+++++++++k li +ik++l   ++ +++ ++   ++    kg+pqG+++SPll+n+
+   orf1   1 FRPNRSVEHAInRTYTML--QMMNLHYVIEFDIKGFFDNVNHSKLIRQIWSLGIHDKtLIFIIKRIL---TAPIKMpDN---TTVLPDKGTPQGGIISPLLANI 96 
+            89*******997665555..77888*****************************8652789999999...545566444...899******************* PP
+
+            HHHHHHTT-T.........................................TEEECTTEEEEEESSHHHHHHHHHHHHHHHHH.TT--BEGGG-EEE......E CS
+  RVT_1 146 fmnellrelrkra...................................kgvtllrYaDDililskskeelqelleaveewlke.sglkinpeKtklvlftv.ks 212
+            ++nel+  +++++                                   k+ +++rYaDD+ i++++ke++ +  eav ew++e  +l+++peKt++v   + ++
+   orf1  97 VLNELDWWIASQWeenpiaisrgreriigktkvfdkshgyrimkntemKEMHIIRYADDFRIFCRTKEDAVRTKEAVTEWIEErLKLEVSPEKTRIV---NtRK 197
+            **********************************************************************************999************...6677 PP
+
+            SSEEETTEEE CS
+  RVT_1 213 eevkyLGvtl 222
+            +  ++LG+++
+   orf1 198 RWSEFLGFKI 207
+            8889999976 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.11
+            ......-THHHHCTB-- CS
+  RVT_1  12 isllsvdykalnkliak 28 
+              ++s+d++ + +++  
+   orf1 271 ATCISIDCREFHRRVMT 287
+            33445555555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (483 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       767  (0.0390689); expected 392.6 (0.02)
+Passed bias filter:                      453  (0.0230746); expected 392.6 (0.02)
+Passed Vit filter:                        27  (0.00137531); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.33u 0.19s 00:00:00.52 Elapsed: 00:00:00.35
+# Mc/sec: 4588.24
+//
+[ok]

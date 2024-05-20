@@ -1,0 +1,64 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300008406_000320_3300008406_Ga0115224_1003417_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300008406_000320_3300008406_Ga0115224_1003417_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=401]
+Description: source=IMGVR_UViG_3300008406_000320_3300008406_Ga0115224_1003417/979-2563 coords=206..1408 length=401 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+     0.0014   19.3   0.4     0.0025   18.4   0.4    1.4  1  Tn7_TnsA-like_N  TnsA-like endonuclease N terminal
+  ------ inclusion threshold ------
+       0.16   11.2   0.0       0.24   10.6   0.0    1.3  1  Arb2             Arb2 domain
+
+
+Domain annotation for each model (and alignments):
+>> Tn7_TnsA-like_N  TnsA-like endonuclease N terminal
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.4   2.6e-07    0.0025       4      82 ..     289     375 ..     282     377 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 2.6e-07
+  Tn7_TnsA-like_N   4 VleireQpltipyaselgi......kkrrytpDflvtykdgkgkkkllvevKpekelk.......ektlkrnqeKleaareyaeekgikfki 82 
+                      V+++ ++   i+y+++ ++        ++ + Df+++ +d     ++++e+  e++ k        +++k+ q++ ++++ey+ ++gi++  
+             orf1 289 VIRYLSEN-NIEYTEQKTFqdllglGGKYLSYDFYIKHNDI----YYIIECQGEQHFKpikyfggVEKFKIQQAHDKLKKEYCDKRGIRYIE 375
+                      55555554.344444444333333366699*******9964....49*****************62699999*****************975 PP
+
+>> Arb2  Arb2 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   2.5e-05      0.24     125     174 ..     285     334 ..     263     352 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.5e-05
+           HHHHHHHHHHHHTCCCSTS.CEEEEEEETCHHHHHHHHHHHS--TTTEEE CS
+  Arb2 125 esqelllylwdnyielfesaekifllGvGdaysgvvkLlserdvrsrvka 174
+             q+++ yl +n ie++e+ +   llG+G  y++    ++++d++  +++
+  orf1 285 LEQDVIRYLSENNIEYTEQKTFQDLLGLGGKYLSYDFYIKHNDIYYIIEC 334
+           5799**************999999*******************9988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (401 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       797  (0.040597); expected 392.6 (0.02)
+Passed bias filter:                      364  (0.0185412); expected 392.6 (0.02)
+Passed Vit filter:                        27  (0.00137531); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.32
+# Mc/sec: 4147.80
+//
+[ok]

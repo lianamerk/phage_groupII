@@ -1,0 +1,85 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300016762_000758_3300016762_Ga0182084_1294798_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300016762_000758_3300016762_Ga0182084_1294798_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=467]
+Description: source=IMGVR_UViG_3300016762_000758_3300016762_Ga0182084_1294798/1611-26 coords=1..1401 length=467 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.1e-23   84.1   0.1    1.4e-15   57.6   0.0    2.3  2  RVT_1            Reverse transcriptase (RNA-dependent DNA pol
+    1.9e-10   41.0   1.4    4.7e-10   39.7   1.4    1.8  1  Intron_maturas2  Type II intron maturase
+     0.0067   16.7   1.4      0.083   13.2   1.4    2.5  1  HNH              HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.6   0.0   2.1e-19   1.4e-15      66     158 ..       3      89 ..       2     124 .. 0.91
+   2 !   24.2   0.0   3.3e-09   2.2e-05     159     221 ..     158     219 ..     131     220 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 57.6 bits;  conditional E-value: 2.1e-19
+            TS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET..........................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T... CS
+  RVT_1  66 kkaklllklDlkkaFdsvpleellrkltafkvptklinliksflstrsfsvrv.ngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra 158
+            k+ k+++++D+k+ Fd++++++l++ l +   +++++ li+++l     ++ + ++    +r++  g pqG+v+SP+l+n+++++l++ l+k +
+   orf1   3 KGTKWFIEFDIKSYFDNINHNKLMEILSERIEDDRFLALIRKML----RAGYMeDW---NFRATHSGAPQGGVISPILSNIYLDKLDKYLEKLC 89 
+            5789****************************************....45667455...7****************************999977 PP
+
+  == domain 2  score: 24.2 bits;  conditional E-value: 3.3e-09
+            ...TEEECTTEEEEEESS.HHHHHHHHHHHHHHHHH.TT--BEGGG-EEE.....ESSEEETTEE CS
+  RVT_1 159 kgvtllrYaDDililsks.keelqelleaveewlke.sglkinpeKtklvlftvkseevkyLGvt 221
+            k + ++rYaDD+++   + k e++e+  ++ ++lk+   l+ ++eKtk+++   +++ v++LG+ 
+   orf1 158 KRLWYCRYADDFVLGQIGsKAEAEEIKMKITRFLKDeLLLEASEEKTKIAH---HEKGVRFLGYD 219
+            7889**********98886888*************9899***********9...*********96 PP
+
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   1.4   7.2e-14   4.7e-10      15     103 ..     258     343 ..     230     379 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 39.7 bits;  conditional E-value: 7.2e-14
+  Intron_maturas2  15 kkLakagfvktkkekgkPrsvlrwidledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklktvrkvikkfG 103
+                       + +  g+ +   ++  P+  + + + ++ +Il+ y++  rg+ +YY++a n+   +  ++++  +sc kTLA+K++   v+k+ +k  
+             orf1 258 YYCERYGLGNI--DTWTPTHRVGLYQANHTEILNAYNSELRGVAQYYKLACNYSITMWKLHFMADYSCRKTLANKHRT-SVAKISRKHV 343
+                      44444444444..6888999999999***************************98888*******************9.8999888865 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   1.4   1.3e-05     0.083       1      34 [.     402     434 ..     402     455 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.3e-05
+           -SSSS-B-SSEE--EEEESS-TTT..T--BSGGGEE CS
+   HNH   1 CeyCgrkfhksdalevdHiipisq..ggaddieNlq 34 
+           CeyCg++   +   e +Hi  +++  +ga+++e ++
+  orf1 402 CEYCGDQTAYV---EEHHIRALKDirKGAKTWERMM 434
+           *******9777...*********999*****98665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (467 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       907  (0.0462001); expected 392.6 (0.02)
+Passed bias filter:                      554  (0.0282192); expected 392.6 (0.02)
+Passed Vit filter:                        44  (0.00224124); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.33u 0.18s 00:00:00.51 Elapsed: 00:00:00.31
+# Mc/sec: 4862.11
+//
+[ok]

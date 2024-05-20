@@ -1,0 +1,107 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300031672_000534_3300031672_Ga0307373_10032036_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300031672_000534_3300031672_Ga0307373_10032036_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=227]
+Description: source=IMGVR_UViG_3300031672_000534_3300031672_Ga0307373_10032036/4132-5706 coords=2..682 length=227 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.012   15.8   0.3      0.029   14.6   0.2    1.8  2  TaqI_C    TaqI-like C-terminal specificity domain
+
+
+Domain annotation for each model (and alignments):
+>> TaqI_C  TaqI-like C-terminal specificity domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.6   0.2   1.5e-06     0.029       9      91 ..      39     122 ..      23     151 .. 0.73
+   2 ?   -1.6   0.0      0.16   3.1e+03      79      94 ..     144     159 ..     132     192 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.5e-06
+  TaqI_C   9 ikrysieikknYldllkkklknekakewfe...ekpkilv.rdiskklaaaydekayyvlntlyilvakeelnvslkyllgiLNSkl 91 
+             ik+++   +kn ++ +++ +k+++   w+    ++  i++  +  +++ ++y e  + +++ l+ ++   +++++ +++ ++LNS +
+    orf1  39 IKKFQNAKNKNGTETIQSACKGHR-PFWYSlrpKQASIVTaINPYERFFFSYSETPFTIDQRLVAIT--VNKKYDVELIAALLNSVV 122
+             666666666666777766666666.777776666666777334455899**************9999..44459***********65 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.16
+  TaqI_C  79 slkyllgiLNSklikf 94 
+             ++  +l +LN +l+++
+    orf1 144 NYFKMLRVLNPDLLSV 159
+             5555666666666653 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (227 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       800  (0.0407498); expected 392.6 (0.02)
+Passed bias filter:                      486  (0.0247555); expected 392.6 (0.02)
+Passed Vit filter:                        33  (0.00168093); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.40u 0.20s 00:00:00.60 Elapsed: 00:00:00.38
+# Mc/sec: 1966.29
+//
+Query:       orf2  [L=109]
+Description: source=IMGVR_UViG_3300031672_000534_3300031672_Ga0307373_10032036/4132-5706 coords=661..987 length=109 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.8e-13   50.7   0.0    2.1e-13   50.5   0.0    1.0  1  RAMA      Restriction Enzyme Adenine Methylase Associated
+      1e-05   25.5   0.1    1.9e-05   24.6   0.1    1.5  1  DUF4357   Domain of unknown function (DUF4357)
+
+
+Domain annotation for each model (and alignments):
+>> RAMA  Restriction Enzyme Adenine Methylase Associated
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.5   0.0   2.1e-17   2.1e-13      18     102 ..      18     104 ..       6     108 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 50.5 bits;  conditional E-value: 2.1e-17
+  RAMA  18 rvtlkdLleagllqpGeellsieykgqkhsAtlladGkIrl..edg.qvfaspsawakavkgkksgnGWaswky..kskgkkLddlrkel 102
+           ++tlk+++++gl++p + ++s + +  ++++++ +dG+I l   +  +vf sps +a +v  k s+nGW++wk+   ++ k L+ lr ++
+  orf2  18 NITLKMIVDSGLIKPDTTIYSLS-QP-QVTGKINSDGSITLiiDNQnKVFISPSGAAREVV-KLSVNGWTFWKIfiDNEYKELSVLRGKY 104
+           79******************743.33.58**********988644469*************.************9888888999999877 PP
+
+>> DUF4357  Domain of unknown function (DUF4357)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   0.1   1.9e-09   1.9e-05      20      47 ..      60      87 ..      45      93 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 1.9e-09
+  DUF4357 20 teDylfsSPSaAAsvvlGrsaNGwteWk 47
+             +++  f SPS+AA  v+  s+NGwt Wk
+     orf2 60 NQNKVFISPSGAAREVVKLSVNGWTFWK 87
+             78899**********************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (109 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       407  (0.0207315); expected 392.6 (0.02)
+Passed bias filter:                      321  (0.0163509); expected 392.6 (0.02)
+Passed Vit filter:                        25  (0.00127343); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.33u 0.18s 00:00:00.51 Elapsed: 00:00:00.33
+# Mc/sec: 1095.10
+//
+[ok]

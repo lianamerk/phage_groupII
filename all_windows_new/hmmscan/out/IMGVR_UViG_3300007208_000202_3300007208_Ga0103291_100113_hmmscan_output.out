@@ -1,0 +1,111 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300007208_000202_3300007208_Ga0103291_100113_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300007208_000202_3300007208_Ga0103291_100113_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=344]
+Description: source=IMGVR_UViG_3300007208_000202_3300007208_Ga0103291_100113/34418-32834 coords=456..1487 length=344 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    7.5e-06   26.1   0.1       0.25   11.6   0.0    3.5  3  Cas6b_N    Cas6b N-terminal domain
+  ------ inclusion threshold ------
+      0.029   14.4   7.5       0.76    9.9   0.5    3.8  3  DUF723     Protein of unknown function (DUF723)
+       0.12   12.4   0.2       0.44   10.6   0.1    2.1  2  EF-hand_6  EF-hand domain
+
+
+Domain annotation for each model (and alignments):
+>> Cas6b_N  Cas6b N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.0   3.8e-05      0.25      47      75 ..      24      52 ..       4      58 .. 0.90
+   2 !    5.9   0.0    0.0021        14      47      72 ..      87     112 ..      71     115 .. 0.89
+   3 !    4.3   0.0     0.007        46      47      72 ..     150     175 ..     130     177 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3.8e-05
+  Cas6b_N 47 liYrYPliQYkvidnkpsilgieegaell 75
+              +Y+Y ++ Yk+ + k++il+++ g+  +
+     orf1 24 NRYNYDQVDYKANNIKVAILCLKHGVFYI 52
+             58**********************99666 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.0021
+  Cas6b_N  47 liYrYPliQYkvidnkpsilgieega 72 
+               +Y Y l+ Yk    k+ i +++ g+
+     orf1  87 NRYDYSLVDYKNNRTKVMIKCFDHGV 112
+              58********************9997 PP
+
+  == domain 3  score: 4.3 bits;  conditional E-value: 0.007
+  Cas6b_N  47 liYrYPliQYkvidnkpsilgieega 72 
+                Y Y l+ Y     k+ i++++ g+
+     orf1 150 NSYDYSLVKYINNSTKVDIVCLKHGV 175
+              47********************9997 PP
+
+>> DUF723  Protein of unknown function (DUF723)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.1     0.065   4.3e+02      22      41 ..      31      50 ..      19      67 .. 0.77
+   2 ?    9.9   0.5   0.00012      0.76      18      60 .]      90     130 ..      78     130 .. 0.81
+   3 ?    5.3   0.2    0.0031        21      18      59 ..     153     192 ..     142     193 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.065
+  DUF723 22 veFegvakPvvinCPlHGnv 41
+            v+++ ++  v+i C +HG+ 
+    orf1 31 VDYKANNIKVAILCLKHGVF 50
+            67778888899*******75 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 0.00012
+  DUF723  18 hlklveFegvakPvvinCPlHGnvtystykalikSkyGCPeCa 60 
+             + +lv+++ ++  v i+C  HG+ +    +  +    GCP+Ca
+    orf1  90 DYSLVDYKNNRTKVMIKCFDHGVFNQNPDDH-LR-GNGCPQCA 130
+             5789******************887655554.54.46*****7 PP
+
+  == domain 3  score: 5.3 bits;  conditional E-value: 0.0031
+  DUF723  18 hlklveFegvakPvvinCPlHGnvtystykalikSkyGCPeC 59 
+             + +lv++  +   v i+C +HG+      +    S  GC +C
+    orf1 153 DYSLVKYINNSTKVDIVCLKHGVFSQTPGNH--LSGKGCRKC 192
+             568999999999**********865444333..377788888 PP
+
+>> EF-hand_6  EF-hand domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0       1.8   1.2e+04      17      23 ..     135     141 ..     134     142 .. 0.83
+   2 ?   10.6   0.1   6.8e-05      0.44       8      28 ..     274     294 ..     273     301 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 1.8
+  EF-hand_6  17 idkeElr 23 
+                ++keE++
+       orf1 135 LTKEEFI 141
+                89***97 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 6.8e-05
+  EF-hand_6   8 lfDkdgdGkidkeElrkaLrk 28 
+                 + +d+++kid++El ++++k
+       orf1 274 NHFYDKNNKIDIDELNRWIEK 294
+                5789***********998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (344 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       774  (0.0394254); expected 392.6 (0.02)
+Passed bias filter:                      299  (0.0152302); expected 392.6 (0.02)
+Passed Vit filter:                        25  (0.00127343); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.32u 0.17s 00:00:00.49 Elapsed: 00:00:00.33
+# Mc/sec: 3433.85
+//
+[ok]

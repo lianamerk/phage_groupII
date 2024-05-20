@@ -1,0 +1,126 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300028564_000510_3300028564_Ga0255344_1003401_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300028564_000510_3300028564_Ga0255344_1003401_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=402]
+Description: source=IMGVR_UViG_3300028564_000510_3300028564_Ga0255344_1003401/7050-5419 coords=258..1463 length=402 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.6e-16   60.7   2.4    1.8e-16   60.5   0.2    2.1  2  RNA_pol_Rpb1_5  RNA polymerase Rpb1, domain 5
+     0.0036   17.7   0.2      0.012   15.9   0.0    1.9  2  RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+  ------ inclusion threshold ------
+      0.015   14.3   0.3      0.023   13.7   0.3    1.3  1  tRNA-synt_1c    tRNA synthetases class I (E and Q), catalytic
+      0.052   13.6   1.2       0.13   12.3   0.0    2.2  2  RNA_pol_Rpb1_4  RNA polymerase Rpb1, domain 4
+
+
+Domain annotation for each model (and alignments):
+>> RNA_pol_Rpb1_5  RNA polymerase Rpb1, domain 5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.1      0.16   7.7e+02     137     146 ..     136     145 ..      22     236 .. 0.62
+   2 !   60.5   0.2   3.6e-20   1.8e-16       1      94 [.     254     396 ..     254     401 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.16
+                     HHHHCHHHHH CS
+                     xxxxxxxxxx RF
+  RNA_pol_Rpb1_5 137 elekakkvkk 146
+                      ++++k++++
+            orf1 136 TKNHEKIMYQ 145
+                     2222222222 PP
+
+  == domain 2  score: 60.5 bits;  conditional E-value: 3.6e-20
+                     B--HHHHHHHHHHHHHHHHHHHHHTCHHHHHHHHHHHHHTTEEE..ETTSEEEETTS-EEESSGGGTT........................... CS
+                     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxx........................... RF
+  RNA_pol_Rpb1_5   1 GLkvkefffhtmggReGLiDtAvkTaesGYlqRrlvkaledvvv..kyddtvrnsggeivqflygedg........................... 66 
+                     GL+++e+   + ggR+G+iD +  Ta sGYl+R++v  + +v    + +d+++++  e+        +                           
+            orf1 254 GLTSTEYVDTSIGGRKGIIDRSQMTAVSGYLTRQMVYCAASVKAslRVKDCGTKHYFEVDVKD----Kklaevlnhrylsngklienpdeilnkk 344
+                     9**************************************999751156789988887774332....223345999******************* PP
+
+                     .........................B--TT-BHHHHHHHHHHHHHHHCCSSTS CS
+                     .........................xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  RNA_pol_Rpb1_5  67 .........................lvepGeavGiiaaQSiGePgTQltlnTF 94 
+                                               +    ++GiiaaQ +Ge gTQlt++TF
+            orf1 345 ilvrspmyctspeicqtclgydvptRI-RASNIGIIAAQILGERGTQLTMQTF 396
+                     *********************998544.4578********************* PP
+
+>> RNA_pol_Rpb1_2  RNA polymerase Rpb1, domain 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.0   2.5e-06     0.012     141     164 ..       8      31 ..       5      33 .. 0.91
+   2 ?   -2.0   0.0      0.82     4e+03      55      87 ..     111     144 ..      91     171 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 2.5e-06
+                     SSS-EEEEE--SSHHHHHHHHHTS CS
+  RNA_pol_Rpb1_2 141 FDGDemnlhlpqseearaEaeell 164
+                     FDGD+m ++lp +e a+ Ea+e +
+            orf1   8 FDGDQMGIYLPLTEAAQKEAKEKM 31 
+                     9*******************9865 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.82
+                     TTSSSSEEEEETTTSSEEETTTS-C.HHHHTTTT CS
+  RNA_pol_Rpb1_2  55 pevyPgasyvkredgsekklkakkr.klakelek 87 
+                      ++ P  +++k++d ++  l   ++ k ++++ +
+            orf1 111 ITETPINKQYKKKDTNRLFLDLLEKtKNHEKIMY 144
+                     4566777777777777777766655445555544 PP
+
+>> tRNA-synt_1c  tRNA synthetases class I (E and Q), catalytic domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   0.3   4.7e-06     0.023      62     130 ..     132     203 ..      91     212 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 4.7e-06
+                   HTT---S.SEEEEGGGGHHHHHHHHHHHHHTTSEEEE-STHHHHHHHHCCSSHSS..-TTTTS-HHHHHHHH CS
+  tRNA-synt_1c  62 wlgikwd.ekptyqsdrfdelkkyaeeLikkGkAYvcectkeeleeereeqeklg..skerdrydeenlklf 130
+                   +l+ + + ek++yq + + ++  ++  Li k++ +  ++ +e+l+e++e++ k++  s+e ++  +  l+ f
+          orf1 132 LLEKTKNhEKIMYQMNDLMKIAMIVPTLIGKSMDFNQFQLPEHLKEQKEAAFKAEnpSAELEKITKATLEAF 203
+                   3433333489***************************************97755500333344444444444 PP
+
+>> RNA_pol_Rpb1_4  RNA polymerase Rpb1, domain 4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.2      0.52   2.5e+03      17      55 ..     106     144 ..      94     146 .. 0.52
+   2 ?   12.3   0.0   2.7e-05      0.13      12      71 ..     173     230 ..     163     259 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.52
+                     HHHHHHH.HHHHHHHHHHHHHHHHHHHHHST.TTSHHHHHH CS
+  RNA_pol_Rpb1_4  17 sleelfe.akinkilnkardkagkiasksla.asNsiliMv 55 
+                     s  e+   + ink  +  ++++++++ + l+ ++N+ +iM 
+            orf1 106 SIMEIITeTPINKQYK--KKDTNRLFLDLLEkTKNHEKIMY 144
+                     4333333233333333..34456676666665578888775 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 2.7e-05
+                     HHHHHHHHHHHH.HHHHHHHHHHHHHHHHHHHHHSTTTSHHHHHHHTTSSS-HHHHHHHHT CS
+  RNA_pol_Rpb1_4  12 dlpgksleelfe.akinkilnkardkagkiaskslaasNsiliMvksGaKGsiinisqiag 71 
+                     + +++++e+ f+ ++ +  l+k+++++ +++++s   +  i+ +v+sG++G   n+   + 
+            orf1 173 EHLKEQKEAAFKaENPSAELEKITKATLEAFKES---NSIIYDLVNSGSRGKLENVQTQIV 230
+                     4555556666664444444566666655555555...345789************975554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (402 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       916  (0.0466585); expected 392.6 (0.02)
+Passed bias filter:                      508  (0.0258761); expected 392.6 (0.02)
+Passed Vit filter:                        35  (0.0017828); expected 19.6 (0.001)
+Passed Fwd filter:                         4  (0.000203749); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.28u 0.22s 00:00:00.50 Elapsed: 00:00:00.34
+# Mc/sec: 3836.82
+//
+[ok]

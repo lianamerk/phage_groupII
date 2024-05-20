@@ -1,0 +1,57 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300031223_000872_3300031223_Ga0307981_1009180_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300031223_000872_3300031223_Ga0307981_1009180_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=91]
+Description: source=IMGVR_UViG_3300031223_000872_3300031223_Ga0307981_1009180/3067-4642 coords=2..274 length=91 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.061   13.2   0.7       0.24   11.4   0.1    2.2  2  TnpW      Transposon-encoded protein TnpW
+
+
+Domain annotation for each model (and alignments):
+>> TnpW  Transposon-encoded protein TnpW
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.0     0.084   1.6e+03      25      33 ..       9      17 ..       6      18 .. 0.82
+   2 ?   11.4   0.1   1.2e-05      0.24       3      17 ..      43      57 ..      42      61 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.084
+  TnpW 25 adKierlik 33
+          ++Kie li+
+  orf1  9 YSKIEALIE 17
+          69**99986 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 1.2e-05
+  TnpW  3 kkIGgtTYvVeahFk 17
+          kkI++tT+ V ++++
+  orf1 43 KKINDTTFLVTGYVD 57
+          8*********99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (91 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       701  (0.035707); expected 392.6 (0.02)
+Passed bias filter:                      378  (0.0192543); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.27u 0.16s 00:00:00.43 Elapsed: 00:00:00.30
+# Mc/sec: 988.46
+//
+[ok]

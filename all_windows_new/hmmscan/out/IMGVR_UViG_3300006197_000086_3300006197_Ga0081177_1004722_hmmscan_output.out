@@ -1,0 +1,117 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300006197_000086_3300006197_Ga0081177_1004722_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300006197_000086_3300006197_Ga0081177_1004722_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=111]
+Description: source=IMGVR_UViG_3300006197_000086_3300006197_Ga0081177_1004722/1-852 coords=90..422 length=111 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.5e-13   51.0   0.0    1.8e-13   50.7   0.0    1.0  1  Intron_maturas2  Type II intron maturase
+
+
+Domain annotation for each model (and alignments):
+>> Intron_maturas2  Type II intron maturase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.7   0.0   9.4e-18   1.8e-13       6      93 ..       6      93 ..       2     108 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 50.7 bits;  conditional E-value: 9.4e-18
+  Intron_maturas2  6 lnaPirkiikkLakagfvktkk.ekgkPrsvlrwidledrdIllrykaiirgllnYYsfadnkkrlrerikyilrkscvkTLArKlklk 93
+                     l +P+++i k + ++++v++ k   ++P +      l d +I++ y++  rg+ + Ys+a+++ +l  +  y++++sc+kTLA+K+k  
+             orf1  6 LLIPMERIEKFMYDREIVIQGKdGSLVPWQRNSMAGLTDLEIVDTYNSQTRGICDHYSIASDFSKLT-YFAYLMEYSCLKTLAKKHKTR 93
+                     679*******9*9*9999987767899****************************************.******************973 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (111 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       401  (0.0204258); expected 392.6 (0.02)
+Passed bias filter:                      349  (0.0177771); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.28u 0.17s 00:00:00.45 Elapsed: 00:00:00.32
+# Mc/sec: 1153.00
+//
+Query:       orf2  [L=121]
+Description: source=IMGVR_UViG_3300006197_000086_3300006197_Ga0081177_1004722/1-852 coords=382..744 length=121 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     0.0036   17.4   4.2       0.68   10.1   0.6    2.4  2  zf-BED    BED zinc finger
+     0.0084   16.4   6.0       0.07   13.4   0.2    2.4  2  HNH       HNH endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> zf-BED  BED zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.8   0.2   0.00019       1.8       2      25 ..      44      72 ..      43      90 .. 0.86
+   2 !   10.1   0.6   6.9e-05      0.68       7      28 ..      98     119 ..      92     121 .] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.00019
+            -TTSSS----.....GGSS--EETTTTEE CS
+  zf-BED  2 kvWkyfrevp.....lkekkavCryCgkq 25
+             v+++ ++++      ++k  +C++Cg++
+    orf2 44 TVKNHIHFSTrnslgSRSKACKCGLCGAE 72
+            6899999999999999**********986 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 6.9e-05
+             S----GGSS--EETTTTEE--- CS
+  zf-BED   7 frevplkekkavCryCgkqlsr 28 
+             + ++ ++++ +vC+ C+k++  
+    orf2  98 AMIARKRKTLVVCKGCHKKIHH 119
+             55677899***********975 PP
+
+>> HNH  HNH endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.2   7.2e-06      0.07       1      30 [.      66      95 ..      66      96 .. 0.89
+   2 !    4.9   1.4    0.0033        33      36      46 ..     109     119 ..     107     120 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 7.2e-06
+          -SSSS-B-SSEE--EEEESS-TTT.T--BSG CS
+   HNH  1 CeyCgrkfhksdalevdHiipisq.ggaddi 30
+          C  Cg ++++  ++e++H+   ++ +g+  +
+  orf2 66 CGLCGAEGDGI-SFEIHHVNKMKNlKGKEQW 95
+          99********9.*******999988887776 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.0033
+           E-HHHHHHHHH CS
+   HNH  36 lCksCHnkkhd 46 
+           +Ck CH+k h+
+  orf2 109 VCKGCHKKIHH 119
+           79999999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (121 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       827  (0.0421251); expected 392.6 (0.02)
+Passed bias filter:                      417  (0.0212408); expected 392.6 (0.02)
+Passed Vit filter:                        34  (0.00173187); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.28u 0.14s 00:00:00.42 Elapsed: 00:00:00.28
+# Mc/sec: 1429.05
+//
+[ok]

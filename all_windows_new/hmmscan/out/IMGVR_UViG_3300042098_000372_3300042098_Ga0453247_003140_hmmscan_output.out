@@ -1,0 +1,80 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300042098_000372_3300042098_Ga0453247_003140_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300042098_000372_3300042098_Ga0453247_003140_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=453]
+Description: source=IMGVR_UViG_3300042098_000372_3300042098_Ga0453247_003140/1776-171 coords=135..1493 length=453 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.2e-40  137.2   0.2    1.4e-39  136.0   0.2    1.6  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+     0.0016   18.7   0.5     0.0032   17.7   0.5    1.5  1  MAS20     MAS20 protein import receptor
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.0   0.2   1.4e-43   1.4e-39       1     221 [.     100     329 ..     100     330 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 136.0 bits;  conditional E-value: 1.4e-43
+            EE-TT.S-EEE......-THHHHCTB--.........-------HHHH.............HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET...... CS
+  RVT_1   1 ipKkgpgsyRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldavedllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptklinl 104
+            ipK + + +Rp+++  +  k++++ +a  + +++e+ + e+++gfr +r+ ++a++++ ++  + k  +++++ D+k++Fd+v+++ l++ ++    +++l+ l
+   orf1 100 IPKGD-NAVRPLGISAIENKIVESGLARIMGNIYENDFMEFSYGFRAKRNAHQALKVIGDS-INFKPVNHIVEADIKGFFDNVEHDLLMEFIQIRIKDSSLLFL 201
+            8****.*************************************************666666.344788************************************ PP
+
+            ...................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T............TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGGG CS
+  RVT_1 105 iksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra......kgvtllrYaDDililskskeelqelleaveewlkesglkinpeK 202
+            i  fl    +++ ++   s+ ++++kg+pqGs+lSP+l+n+f++ +l ++            v ++rYaDD+++l+++++e+q++l+a+++++++++l+++p+K
+   orf1 202 IDLFL----KAGYIDD--SQLITTEKGTPQGSILSPMLANIFLHYVLDKWFDDKvqnhtnGYVEIVRYADDFICLVQTQDEAQKILRALKNRFEKYKLELHPDK 299
+            *****....6666766..59*************************999998888899998889***************************************** PP
+
+            -EEE................ESSEEETTEE CS
+  RVT_1 203 tklvlft..........v.kseevkyLGvt 221
+            t++++f+          + +++++++LG+t
+   orf1 300 TSVFSFGryerqnakqqNrRANTFDFLGFT 329
+            ************9997548*********98 PP
+
+>> MAS20  MAS20 protein import receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.5   3.3e-07    0.0032       8     112 ..     325     438 ..     319     443 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 3.3e-07
+  MAS20   8 flgYciYFDykRrsdpefrkklrerrkkqkkaakeeeeaekaaqkka........lkealeeakee.plptdaeevekyFleevqlGEellaq..gdeeeaaeh 100
+            flg+  Y D+ Rr + +  +k   ++ + k ++   ++  k+ +++         lk+ l+   e  ++ ++ +++++y++  v+l  ++l++  +++ ++ e+
+   orf1 325 FLGFTHYCDKTRRGHFKVGRKTSAKKYRVKAKE--LNQWLKSIRNQVltkdwwktLKQKLQGHYEYyGVSENYHSIKQYYVLAVKLTRKWLNRrsQKKAMSWEK 426
+            89***********99777777766666666443..33333333333333565444444444444446777999********************888899999** PP
+
+  MAS20 101 lynAlkvypqPa 112
+            +yn l +yp P+
+   orf1 427 MYNYLNLYPLPK 438
+            *********997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (453 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       921  (0.0469132); expected 392.6 (0.02)
+Passed bias filter:                      495  (0.0252139); expected 392.6 (0.02)
+Passed Vit filter:                        38  (0.00193562); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.37u 0.18s 00:00:00.55 Elapsed: 00:00:00.29
+# Mc/sec: 5146.92
+//
+[ok]

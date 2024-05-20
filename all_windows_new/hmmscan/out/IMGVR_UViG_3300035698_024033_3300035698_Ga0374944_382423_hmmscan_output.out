@@ -1,0 +1,61 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300035698_024033_3300035698_Ga0374944_382423_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300035698_024033_3300035698_Ga0374944_382423_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=221]
+Description: source=IMGVR_UViG_3300035698_024033_3300035698_Ga0374944_382423/6535-8130 coords=665..3 length=221 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+  ------ inclusion threshold ------
+       0.16   10.9   0.1        2.7    6.9   0.0    1.8  2  GSH_synth_ATP  Eukaryotic glutathione synthase, ATP binding d
+
+
+Domain annotation for each model (and alignments):
+>> GSH_synth_ATP  Eukaryotic glutathione synthase, ATP binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.0   0.00014       2.7      65     125 ..      90     150 ..      69     158 .. 0.77
+   2 ?    3.1   0.0     0.002        39      56      82 ..     154     179 ..     144     191 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00014
+                    HHHHH.HTTHHHHHHHH.HHHHTTTHHHHHHHHHHHTS-S-----EEEEEEEEEEEEEETT.. CS
+                    xxxxx.xxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  GSH_synth_ATP  65 akvas.deefLeevlee.vikvDeFtakLweiyekvkeeglkqklslglfRsDYllhkeeeek 125
+                    +  +  d +f++++le  v++v+eF+ ++ e ++ +   ++ ++l+  ++R+DYl ++   ++
+           orf1  90 DTTSDdDPDFFTHLLEFlVANVNEFIIQMGEGFSITP--NYIHNLKTVIIRNDYLSNSILFKE 150
+                    5555426789999999878999*********998665..5799************98765555 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.002
+                    HHHHHHHHHHHHHHHTTHHHHHHHHHH CS
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  GSH_synth_ATP  56 vqkayneLyakvasdeefLeevleevi 82 
+                    +  +++eLy++v+ +++f+ ++++++i
+           orf1 154 ID-DVEELYQNVSLSKKFIGRMHTSLI 179
+                    53.579**************9999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (221 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       479  (0.0243989); expected 392.6 (0.02)
+Passed bias filter:                      330  (0.0168093); expected 392.6 (0.02)
+Passed Vit filter:                        24  (0.00122249); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.30u 0.18s 00:00:00.48 Elapsed: 00:00:00.33
+# Mc/sec: 2210.78
+//
+[ok]

@@ -1,0 +1,121 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300037502_003424_3300037502_Ga0310151_0007286_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300037502_003424_3300037502_Ga0310151_0007286_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=165]
+Description: source=IMGVR_UViG_3300037502_003424_3300037502_Ga0310151_0007286/1558-1 coords=3..497 length=165 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.1e-14   53.9   0.1    5.9e-14   52.5   0.1    1.7  2  CLP_protease  Clp protease
+  ------ inclusion threshold ------
+       0.14   11.2   0.0       0.17   10.9   0.0    1.2  1  IMPDH         IMP dehydrogenase / GMP reductase domain
+
+
+Domain annotation for each model (and alignments):
+>> CLP_protease  Clp protease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.5   0.1     6e-18   5.9e-14     103     179 ..       6      82 ..       1      85 [. 0.95
+   2 ?   -1.3   0.0       0.2     2e+03      55      72 ..      91     108 ..      90     116 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 52.5 bits;  conditional E-value: 6e-18
+                   EETTEEEEECSTEEEEEEEHHHHHHHHHHHHHHHHHHHHHHHHHHTS-HHHHHHHHTSTEEEEHHHHHHHTSSSEE- CS
+  CLP_protease 103 alpnarimihqPlggaqgqasdieieaeellkikerlneilakhtgqslekiekdldrdtflsaeeAveyGLidevi 179
+                   + p + imih P+  + g++ d++   + l ++ke++++ ++ +tg s+ ki++ +d +t++sa+ A+e  ++d+++
+          orf1   6 VSPLSVIMIHNPAMLIAGEVADLQVGINLLSEVKESIINAYQTKTGLSRAKISHMMDSETWMSAHKAIELKFADKIL 82 
+                   668999*********************************************************************98 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.2
+                   ES-B-HHHHHHHHHHHHH CS
+  CLP_protease  55 spGGsvtaglaIydtmqy 72 
+                   s GG + + +++ ++++ 
+          orf1  91 SIGGFIYDQMTVTNALRN 108
+                   778888888888887765 PP
+
+>> IMPDH  IMP dehydrogenase / GMP reductase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   1.8e-05      0.17     238     327 ..      34     130 ..      17     145 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.8e-05
+            CCTTBTTSSSEEEEET.T.EEEEEEECTTSHHHHHH.TSS-TTS-......--SS-SBEEEEEE--B-HHHHHHHHHHHHHHHHHHHT-SSHHHHHH CS
+            xxxxxxxxxxxxxxxx.x.xxxxxxxxxxxxxxxxx.xxxxxxxx.x...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  IMPDH 238 llagteEspgevilie.g.rkyKeyrGmgslgamkk.gskdryfq.k...eeklvpeGvegrvpykGsvkevveqlvgglrsgmgylGaktieelre 327
+            ll+ ++Es  + + ++ g ++ K    m s + m++ ++ +  f  k   e++ v e + g + ++ +v++ +++ + g+++ m+yl a++ eel+e
+   orf1  34 LLSEVKESIINAYQTKtGlSRAKISHMMDSETWMSAhKAIELKFAdKilyESEPVDESIGGFIYDQMTVTNALRNKLPGIQARMKYLKASEEEELKE 130
+            677777887766665544256788888888888844233343333222335599*************************************999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (165 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       720  (0.0366748); expected 392.6 (0.02)
+Passed bias filter:                      510  (0.025978); expected 392.6 (0.02)
+Passed Vit filter:                        29  (0.00147718); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.39u 0.21s 00:00:00.60 Elapsed: 00:00:00.38
+# Mc/sec: 1430.78
+//
+Query:       orf2  [L=320]
+Description: source=IMGVR_UViG_3300037502_003424_3300037502_Ga0310151_0007286/1558-1 coords=488..1447 length=320 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.7e-55  187.0   0.0      6e-55  186.7   0.0    1.1  1  Phage_capsid  Phage capsid family
+
+
+Domain annotation for each model (and alignments):
+>> Phage_capsid  Phage capsid family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  186.7   0.0   3.1e-59     6e-55       1     194 [.     128     318 ..     128     320 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 186.7 bits;  conditional E-value: 3.1e-59
+  Phage_capsid   1 ggylvpeelsteIiellreestirqlatvirtsssgtveilvdtgeaeaawvgenaeipetdsktfgqitlsvkklaalvpvskelLddsaidleay 97 
+                   gg+lvp+e ++++i++l+e +++r+l++vi+ts  g  +i+v  ++ +aaw  e ++  e+d  +f+q+tls++kl+++++vs+elL+ds++dleay
+          orf2 128 GGFLVPDEYENQLIQALQEANVLRNLCNVINTS-HGDRKIPVVASHGSAAWMDEVGAFNESDD-AFTQVTLSAYKLGTMLKVSDELLNDSYFDLEAY 222
+                   8******************************88.8888888888888****************.********************************* PP
+
+  Phage_capsid  98 iadelaeafarkedeaflnGdGdgngqpkGilastaavatgkaakvt.tntadnlidliysldaayranasfvmnpstlaalrklkdadgrylfqpg 193
+                   ia e+a++++ +e+e fl+G+G++  +p+G+l+ t+ +++g++a+ + ++t+d+++dl++sl++ yr+n++f++n++t++a+rklkd++g+yl+q  
+          orf2 223 IAVEFARRIGAAEEEGFLTGNGSS--KPTGLLHTTGGASLGVTAASAtAITMDEVLDLYHSLKSSYRKNGTFLVNDATIKAIRKLKDGQGQYLWQRV 317
+                   ********************7766..******999999999999888999********************************************966 PP
+
+  Phage_capsid 194 l 194
+                   +
+          orf2 318 T 318
+                   5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (320 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                      1049  (0.0534332); expected 392.6 (0.02)
+Passed bias filter:                      715  (0.0364201); expected 392.6 (0.02)
+Passed Vit filter:                        62  (0.00315811); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.40u 0.16s 00:00:00.56 Elapsed: 00:00:00.32
+# Mc/sec: 3287.56
+//
+[ok]

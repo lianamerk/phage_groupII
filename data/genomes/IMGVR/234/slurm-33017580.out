@@ -1,0 +1,90 @@
+2024-05-17 12:46:34.691 | INFO     | __main__:main:105 - Starting Pharokka v1.5.1
+2024-05-17 12:46:34.692 | INFO     | __main__:main:106 - Command executed: Namespace(infile='../c1_genomes/IMGVR_UViG_2199352008_000234.fna', outdir='./test_pharokka', database='/n/eddy_lab/data/pharokka', threads='20', force=False, prefix='Default', locustag='Default', gene_predictor='phanotate', meta=False, split=False, coding_table='11', evalue='1E-05', fast=False, mmseqs2_only=False, meta_hmm=False, dnaapler=False, custom_hmm='', genbank=False, terminase=False, terminase_strand='nothing', terminase_start='nothing', skip_extra_annotations=False, skip_mash=False, citation=False)
+2024-05-17 12:46:34.692 | INFO     | __main__:main:107 - Repository homepage is https://github.com/gbouras13/pharokka
+2024-05-17 12:46:34.692 | INFO     | __main__:main:108 - Written by George Bouras: george.bouras@adelaide.edu.au
+2024-05-17 12:46:34.692 | INFO     | __main__:main:110 - Checking database installation in /n/eddy_lab/data/pharokka.
+2024-05-17 12:46:34.714 | INFO     | __main__:main:113 - All databases have been successfully checked.
+2024-05-17 12:46:34.714 | INFO     | __main__:main:129 - Checking dependencies.
+2024-05-17 12:46:37.386 | INFO     | input_commands:check_dependencies:367 - Phanotate version found is v1.5.1
+2024-05-17 12:46:37.387 | INFO     | input_commands:check_dependencies:376 - Phanotate version is ok.
+2024-05-17 12:46:37.516 | INFO     | input_commands:check_dependencies:398 - MMseqs2 version found is v13.45111
+2024-05-17 12:46:37.516 | INFO     | input_commands:check_dependencies:407 - MMseqs2 version is ok.
+2024-05-17 12:46:38.898 | INFO     | input_commands:check_dependencies:431 - tRNAscan-SE version found is v2.0.12
+2024-05-17 12:46:38.898 | INFO     | input_commands:check_dependencies:442 - tRNAscan-SE version is ok.
+2024-05-17 12:46:40.034 | INFO     | input_commands:check_dependencies:466 - MinCED version found is v0.4.2
+2024-05-17 12:46:40.034 | INFO     | input_commands:check_dependencies:477 - MinCED version is ok.
+2024-05-17 12:46:40.045 | INFO     | input_commands:check_dependencies:503 - ARAGORN version found is v1.2.41
+2024-05-17 12:46:40.045 | INFO     | input_commands:check_dependencies:514 - ARAGORN version is ok.
+2024-05-17 12:46:40.250 | INFO     | input_commands:check_dependencies:531 - mash version found is v2.3
+2024-05-17 12:46:40.251 | INFO     | input_commands:check_dependencies:538 - mash version is ok.
+2024-05-17 12:46:44.126 | INFO     | input_commands:check_dependencies:557 - Dnaapler version found is v0.5.0
+2024-05-17 12:46:44.127 | INFO     | input_commands:check_dependencies:564 - Dnaapler version is ok.
+2024-05-17 12:46:44.127 | INFO     | input_commands:check_dependencies:576 - Pyrodigal version is v3.2.1
+2024-05-17 12:46:44.127 | INFO     | input_commands:check_dependencies:577 - Pyrodigal version is ok.
+2024-05-17 12:46:44.127 | INFO     | input_commands:check_dependencies:589 - Pyrodigal_gv version is v0.3.1
+2024-05-17 12:46:44.127 | INFO     | input_commands:check_dependencies:590 - Pyrodigal_gv version is ok.
+2024-05-17 12:46:44.227 | INFO     | input_commands:validate_fasta:218 - Checking input ../c1_genomes/IMGVR_UViG_2199352008_000234.fna.
+2024-05-17 12:46:44.228 | INFO     | input_commands:validate_fasta:220 - Input ../c1_genomes/IMGVR_UViG_2199352008_000234.fna is in FASTA format.
+2024-05-17 12:46:44.229 | INFO     | input_commands:validate_fasta:225 - Checking input ../c1_genomes/IMGVR_UViG_2199352008_000234.fna for duplicate FASTA headers.
+2024-05-17 12:46:44.229 | INFO     | input_commands:validate_fasta:227 - All headers in ../c1_genomes/IMGVR_UViG_2199352008_000234.fna are unique.
+2024-05-17 12:46:44.229 | INFO     | input_commands:validate_gene_predictor:252 - Phanotate will be used for gene prediction.
+2024-05-17 12:46:44.230 | INFO     | __main__:main:292 - Running Phanotate.
+2024-05-17 12:46:44.238 | INFO     | external_tools:run:50 - Started running phanotate.py -f fasta -o ./test_pharokka/phanotate_out_tmp.fasta ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ...
+2024-05-17 12:46:47.531 | INFO     | external_tools:run:52 - Done running phanotate.py -f fasta -o ./test_pharokka/phanotate_out_tmp.fasta ../c1_genomes/IMGVR_UViG_2199352008_000234.fna
+2024-05-17 12:46:47.541 | INFO     | external_tools:run:50 - Started running phanotate.py -f tabular -o ./test_pharokka/phanotate_out.txt ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ...
+2024-05-17 12:46:50.412 | INFO     | external_tools:run:52 - Done running phanotate.py -f tabular -o ./test_pharokka/phanotate_out.txt ../c1_genomes/IMGVR_UViG_2199352008_000234.fna
+2024-05-17 12:46:50.474 | INFO     | __main__:main:321 - Starting tRNA-scanSE.
+2024-05-17 12:46:50.478 | INFO     | external_tools:run:50 - Started running tRNAscan-SE --thread 20 -G -Q -j ./test_pharokka/trnascan_out.gff ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ...
+2024-05-17 12:46:50.834 | INFO     | external_tools:run:52 - Done running tRNAscan-SE --thread 20 -G -Q -j ./test_pharokka/trnascan_out.gff ../c1_genomes/IMGVR_UViG_2199352008_000234.fna
+2024-05-17 12:46:50.835 | INFO     | processes:run_minced:786 - Running MinCED.
+2024-05-17 12:46:50.839 | INFO     | external_tools:run:50 - Started running minced ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ./test_pharokka/pharokka_minced_spacers.txt ./test_pharokka/pharokka_minced.gff ...
+2024-05-17 12:46:51.038 | INFO     | external_tools:run:52 - Done running minced ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ./test_pharokka/pharokka_minced_spacers.txt ./test_pharokka/pharokka_minced.gff
+2024-05-17 12:46:51.039 | INFO     | processes:run_aragorn:815 - Running Aragorn.
+2024-05-17 12:46:51.043 | INFO     | external_tools:run:50 - Started running aragorn -l -gcbact -w -m -o ./test_pharokka/pharokka_aragorn.txt ../c1_genomes/IMGVR_UViG_2199352008_000234.fna ...
+2024-05-17 12:46:51.056 | INFO     | external_tools:run:52 - Done running aragorn -l -gcbact -w -m -o ./test_pharokka/pharokka_aragorn.txt ../c1_genomes/IMGVR_UViG_2199352008_000234.fna
+2024-05-17 12:46:51.057 | INFO     | __main__:main:329 - Starting MMseqs2.
+2024-05-17 12:46:51.057 | INFO     | processes:run_mmseqs:643 - Running MMseqs2 on PHROG Database.
+2024-05-17 12:46:51.062 | INFO     | external_tools:run:50 - Started running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/target_dir/target_seqs ...
+2024-05-17 12:46:51.859 | INFO     | external_tools:run:52 - Done running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/target_dir/target_seqs
+2024-05-17 12:46:51.864 | INFO     | external_tools:run:50 - Started running mmseqs search -e 1E-05 /n/eddy_lab/data/pharokka/phrogs_profile_db ./test_pharokka/target_dir/target_seqs ./test_pharokka/mmseqs/results_mmseqs ./test_pharokka/tmp_dir/ -s 8.5 --threads 20 ...
+2024-05-17 12:47:46.497 | INFO     | external_tools:run:52 - Done running mmseqs search -e 1E-05 /n/eddy_lab/data/pharokka/phrogs_profile_db ./test_pharokka/target_dir/target_seqs ./test_pharokka/mmseqs/results_mmseqs ./test_pharokka/tmp_dir/ -s 8.5 --threads 20
+2024-05-17 12:47:46.503 | INFO     | external_tools:run:50 - Started running mmseqs createtsv /n/eddy_lab/data/pharokka/phrogs_profile_db ./test_pharokka/target_dir/target_seqs ./test_pharokka/mmseqs/results_mmseqs ./test_pharokka/mmseqs_results.tsv --full-header --threads 20 ...
+2024-05-17 12:47:46.895 | INFO     | external_tools:run:52 - Done running mmseqs createtsv /n/eddy_lab/data/pharokka/phrogs_profile_db ./test_pharokka/target_dir/target_seqs ./test_pharokka/mmseqs/results_mmseqs ./test_pharokka/mmseqs_results.tsv --full-header --threads 20
+2024-05-17 12:47:46.912 | INFO     | processes:run_mmseqs:643 - Running MMseqs2 on CARD Database.
+2024-05-17 12:47:46.917 | INFO     | external_tools:run:50 - Started running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/CARD_target_dir/target_seqs ...
+2024-05-17 12:47:47.667 | INFO     | external_tools:run:52 - Done running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/CARD_target_dir/target_seqs
+2024-05-17 12:47:47.672 | INFO     | external_tools:run:50 - Started running mmseqs search --min-seq-id 0.8 -c 0.4 /n/eddy_lab/data/pharokka/CARD ./test_pharokka/CARD_target_dir/target_seqs ./test_pharokka/CARD/results_mmseqs ./test_pharokka/CARD_dir/ -s 8.5 --threads 20 ...
+2024-05-17 12:47:56.592 | INFO     | external_tools:run:52 - Done running mmseqs search --min-seq-id 0.8 -c 0.4 /n/eddy_lab/data/pharokka/CARD ./test_pharokka/CARD_target_dir/target_seqs ./test_pharokka/CARD/results_mmseqs ./test_pharokka/CARD_dir/ -s 8.5 --threads 20
+2024-05-17 12:47:56.598 | INFO     | external_tools:run:50 - Started running mmseqs createtsv /n/eddy_lab/data/pharokka/CARD ./test_pharokka/CARD_target_dir/target_seqs ./test_pharokka/CARD/results_mmseqs ./test_pharokka/CARD_results.tsv --full-header --threads 20 ...
+2024-05-17 12:47:56.827 | INFO     | external_tools:run:52 - Done running mmseqs createtsv /n/eddy_lab/data/pharokka/CARD ./test_pharokka/CARD_target_dir/target_seqs ./test_pharokka/CARD/results_mmseqs ./test_pharokka/CARD_results.tsv --full-header --threads 20
+2024-05-17 12:47:56.846 | INFO     | processes:run_mmseqs:643 - Running MMseqs2 on VFDB Database.
+2024-05-17 12:47:56.851 | INFO     | external_tools:run:50 - Started running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/VFDB_target_dir/target_seqs ...
+2024-05-17 12:47:57.609 | INFO     | external_tools:run:52 - Done running mmseqs createdb ./test_pharokka/phanotate_aas_tmp.fasta ./test_pharokka/VFDB_target_dir/target_seqs
+2024-05-17 12:47:57.615 | INFO     | external_tools:run:50 - Started running mmseqs search --min-seq-id 0.8 -c 0.4 /n/eddy_lab/data/pharokka/vfdb ./test_pharokka/VFDB_target_dir/target_seqs ./test_pharokka/VFDB/results_mmseqs ./test_pharokka/VFDB_dir/ -s 8.5 --threads 20 ...
+2024-05-17 12:48:12.685 | INFO     | external_tools:run:52 - Done running mmseqs search --min-seq-id 0.8 -c 0.4 /n/eddy_lab/data/pharokka/vfdb ./test_pharokka/VFDB_target_dir/target_seqs ./test_pharokka/VFDB/results_mmseqs ./test_pharokka/VFDB_dir/ -s 8.5 --threads 20
+2024-05-17 12:48:12.691 | INFO     | external_tools:run:50 - Started running mmseqs createtsv /n/eddy_lab/data/pharokka/vfdb ./test_pharokka/VFDB_target_dir/target_seqs ./test_pharokka/VFDB/results_mmseqs ./test_pharokka/vfdb_results.tsv --full-header --threads 20 ...
+2024-05-17 12:48:12.938 | INFO     | external_tools:run:52 - Done running mmseqs createtsv /n/eddy_lab/data/pharokka/vfdb ./test_pharokka/VFDB_target_dir/target_seqs ./test_pharokka/VFDB/results_mmseqs ./test_pharokka/vfdb_results.tsv --full-header --threads 20
+2024-05-17 12:48:12.953 | INFO     | __main__:main:360 - Running PyHMMER on PHROGs.
+2024-05-17 12:48:30.831 | INFO     | __main__:main:376 - Post Processing Output.
+2024-05-17 12:48:30.878 | INFO     | post_processing:create_mmseqs_tophits:2128 - Processing MMseqs2 outputs.
+2024-05-17 12:48:30.878 | INFO     | post_processing:create_mmseqs_tophits:2129 - Processing PHROGs output.
+2024-05-17 12:48:31.080 | INFO     | post_processing:process_vfdb_results:2332 - Processing VFDB output.
+2024-05-17 12:48:31.089 | INFO     | post_processing:process_vfdb_results:2415 - 0 VFDB virulence factors identified.
+2024-05-17 12:48:31.090 | INFO     | post_processing:process_card_results:2432 - Processing CARD output.
+2024-05-17 12:48:31.099 | INFO     | post_processing:process_card_results:2550 - 0 CARD AMR genes identified.
+2024-05-17 12:48:31.201 | INFO     | __main__:main:447 - Converting gff to genbank.
+/n/home07/lmerk/.local/lib/python3.10/site-packages/Bio/SeqIO/InsdcIO.py:727: BiopythonWarning: Increasing length of locus line to allow long name. This will result in fields that are not in usual positions.
+  warnings.warn(
+2024-05-17 12:48:31.254 | INFO     | __main__:main:460 - Finding the closest match for each contig in INPHARED using mash.
+2024-05-17 12:48:31.259 | INFO     | external_tools:run:50 - Started running mash sketch ../c1_genomes/IMGVR_UViG_2199352008_000234.fna -o ./test_pharokka/input_mash_sketch.msh -i ...
+2024-05-17 12:48:31.308 | INFO     | external_tools:run:52 - Done running mash sketch ../c1_genomes/IMGVR_UViG_2199352008_000234.fna -o ./test_pharokka/input_mash_sketch.msh -i
+2024-05-17 12:48:31.312 | INFO     | external_tools:run_to_stdout:59 - Started running mash dist ./test_pharokka/input_mash_sketch.msh /n/eddy_lab/data/pharokka/1Aug2023_genomes.fa.msh -d 0.2 -i ...
+2024-05-17 12:48:33.608 | INFO     | external_tools:run_to_stdout:61 - Done running mash dist ./test_pharokka/input_mash_sketch.msh /n/eddy_lab/data/pharokka/1Aug2023_genomes.fa.msh -d 0.2 -i
+2024-05-17 12:48:34.062 | INFO     | __main__:main:480 - Pharokka has finished.
+2024-05-17 12:48:34.062 | INFO     | __main__:main:481 - Elapsed time: 119.38 seconds
+2024-05-17 12:48:34.063 | INFO     | __main__:main:483 - If you use Pharokka in your research, please cite:
+2024-05-17 12:48:34.063 | INFO     | __main__:main:484 - George Bouras, Roshan Nepal, Ghais Houtak, Alkis James Psaltis, Peter-John Wormald, Sarah Vreugde.
+2024-05-17 12:48:34.063 | INFO     | __main__:main:487 - Pharokka: a fast scalable bacteriophage annotation tool.
+2024-05-17 12:48:34.063 | INFO     | __main__:main:488 - Bioinformatics, Volume 39, Issue 1, January 2023, btac776.
+2024-05-17 12:48:34.063 | INFO     | __main__:main:489 - https://doi.org/10.1093/bioinformatics/btac776.
+2024-05-17 12:48:34.063 | INFO     | __main__:main:490 - You should also cite the full list of tools Pharokka uses, which can be found at https://github.com/gbouras13/pharokka#citation.

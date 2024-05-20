@@ -1,0 +1,58 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300013895_000344_3300013895_Ga0181325_11279587_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300013895_000344_3300013895_Ga0181325_11279587_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=135]
+Description: source=IMGVR_UViG_3300013895_000344_3300013895_Ga0181325_11279587/3325-4899 coords=778..1182 length=135 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      5e-05   24.3   3.0       0.19   12.8   0.2    2.3  2  LAGLIDADG_1  LAGLIDADG endonuclease
+
+
+Domain annotation for each model (and alignments):
+>> LAGLIDADG_1  LAGLIDADG endonuclease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.2   1.9e-05      0.38      50      90 ..       8      49 ..       2      56 .. 0.82
+   2 !   12.8   0.2   9.6e-06      0.19       1      15 [.     106     120 ..     106     123 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.9e-05
+                 HT.ECEEEEETTTEEEEEEE-SHHHHHHTHHHHHHHST-SST CS
+  LAGLIDADG_1 50 lg.lgsikkrkkdkyvsyiisnsskslkilipyfdkypllss 90
+                 ++ +g i+  +k+   +++i++ ++   i+ + f kyp++++
+         orf1  8 FNsVGRIYESSKKTELHLAITKLEHLKWIIENVFAKYPFFTT 49
+                 445788888888889*******8888888889*******997 PP
+
+  == domain 2  score: 12.8 bits;  conditional E-value: 9.6e-06
+                  HHHHHHHHEEEEEEE CS
+  LAGLIDADG_1   1 laGFiDgdGsfsitv 15 
+                  l+GFi g+Gsfsi+ 
+         orf1 106 LSGFINGEGSFSIRA 120
+                  89***********85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (135 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       348  (0.0177262); expected 392.6 (0.02)
+Passed bias filter:                      300  (0.0152812); expected 392.6 (0.02)
+Passed Vit filter:                        21  (0.00106968); expected 19.6 (0.001)
+Passed Fwd filter:                         1  (5.09372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.30u 0.17s 00:00:00.47 Elapsed: 00:00:00.33
+# Mc/sec: 1337.57
+//
+[ok]

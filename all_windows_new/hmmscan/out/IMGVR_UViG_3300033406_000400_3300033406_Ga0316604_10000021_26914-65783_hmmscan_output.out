@@ -1,0 +1,141 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300033406_000400_3300033406_Ga0316604_10000021_26914-65783_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300033406_000400_3300033406_Ga0316604_10000021_26914-65783_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=319]
+Description: source=IMGVR_UViG_3300033406_000400_3300033406_Ga0316604_10000021_26914-65783/27344-25645 coords=507..1463 length=319 frame=3 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.1e-12   45.9   0.0    1.7e-11   44.3   0.0    1.9  2  ParBc          ParB/Sulfiredoxin domain
+    3.8e-06   26.9   0.0      6e-06   26.3   0.0    1.2  1  N6_N4_Mtase    DNA methylase
+  ------ inclusion threshold ------
+       0.11   12.9   0.0       0.21   12.0   0.0    1.4  1  DUF6189        Family of unknown function (DUF6189)
+       0.13   12.3   0.2       0.32   11.1   0.2    1.6  1  V_ATPase_prox  Vacuolar ATPase Subunit I N-terminal proximal 
+        0.2   11.4   0.0       0.36   10.6   0.0    1.4  1  Cons_hypoth95  Conserved hypothetical protein 95
+
+
+Domain annotation for each model (and alignments):
+>> ParBc  ParB/Sulfiredoxin domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.0   4.2e-15   1.7e-11       3      89 ..      22     108 ..      20     109 .. 0.95
+   2 ?   -2.6   0.0       1.8   7.1e+03      54      73 ..     191     210 ..     189     216 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 4.2e-15
+            EEGGGEEXXTTXXXXX...XHHHHHHHHHHHHHHXXXSXEEEEEXXSSSEEEEEXHHHHHHHHHTTXSEEEEEEXXXXHHHHHHHHHHHH CS
+  ParBc   3 vplseirpnplqprkd...seekieeLaasIkkkGllqPiivrkvrqgryeiiaGerRlrAakllglkevpvivleitdeeamalslien 89 
+            +p+ ++ p p++pr+d    +++ e+L++sI + G ++Piiv k     + +i+G+ Rl+ ++++g +ev+v   ++  ++++al+++ n
+   orf1  22 LPIGKLNPAPYNPRLDlkpGDKDYEKLKKSILTYGYIDPIIVNKRG---FVVIGGHQRLKILQEMGHNEVEVSLVDLPLDKEKALNIALN 108
+            6999*************998999*********************98...*****************************999999999887 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 1.8
+            XHHHHHHHHHTTXSEEEEEE CS
+  ParBc  54 GerRlrAakllglkevpviv 73 
+            G++Rl   +  + ++v ++ 
+   orf1 191 GKHRLLCGDATRQEDVSCLM 210
+            88888877777777777765 PP
+
+>> N6_N4_Mtase  DNA methylase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.0   1.5e-09     6e-06       2      88 ..     216     302 ..     215     314 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 1.5e-09
+                  EEEEE--SSSSSSSS...HHHHGGGGSSCHHHHHHHHHHHHHHHHHHEEEEEEEEEEE-TTTHHCHHHHHHHHHTTGCEEEEEEEEEESS CS
+  N6_N4_Mtase   2 dlivtdpPYntgkdy...endeqyeeedsyeeyleflekvlkevrrvLkddgsifiniddseikkelkaladeifggffllnvivwkkpn 88 
+                  ++++tdpPYn++  +   ++ +  +++ s +++ +fl +  k++ +  +++g i++   d e  +  + +a+ ++g + l++ ++w k +
+         orf1 216 NMVFTDPPYNVNYTGgtaSKLKIQNDSMSDADFYRFLLESYKNMFDHVAPGGAIYVCHADTEGLN--FRKAMLDAG-WLLKQCLIWVKNS 302
+                  89**********999988888888999999*************************9988888886..555566678.**********974 PP
+
+>> DUF6189  Family of unknown function (DUF6189)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   5.3e-05      0.21      20      91 ..      91     163 ..      83     173 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 5.3e-05
+  DUF6189  20 klgddallrryadsilgnsgagewqi.aledlvallrqhkipvtaadlrdldvvfgylsrsaseevssraras 91 
+              +l d +l +  a  i  n   g+w+i  l+dl+a l+q  i +  +  +dl++     +  a ee  s  +  
+     orf1  91 SLVDLPLDKEKALNIALNKTGGDWDIpRLQDLLAELQQTGIDLEITGYDDLEIEELMHTALADEETESPHQRV 163
+              57788888999999************559*********************99866666666666666655555 PP
+
+>> V_ATPase_prox  Vacuolar ATPase Subunit I N-terminal proximal lobe
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.2   8.2e-05      0.32      14      45 ..     120     155 ..     117     159 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 8.2e-05
+  V_ATPase_prox  14 reLLaeLqrvGv....vhLdPLeveeLsayrLskde 45 
+                    ++LLaeLq+ G+       d Le+eeL    L+ +e
+           orf1 120 QDLLAELQQTGIdleiTGYDDLEIEELMHTALADEE 155
+                    58********964333678********988877554 PP
+
+>> Cons_hypoth95  Conserved hypothetical protein 95
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   9.1e-05      0.36      92     128 ..     192     229 ..     164     248 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 9.1e-05
+                    TTEEEEES-HHHHCTS-.-SS-EEEEEEE--SSSTTCH CS
+  Cons_hypoth95  92 evaelvedaleallkla.kkkeefdivflDPPyakell 128
+                    +++ l  da+++ +  +   +++ ++vf DPPy+ + +
+           orf1 192 KHRLLCGDATRQEDVSClMDGKKANMVFTDPPYNVNYT 229
+                    566666666666555551356789*********98864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (319 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       561  (0.0285758); expected 392.6 (0.02)
+Passed bias filter:                      533  (0.0271496); expected 392.6 (0.02)
+Passed Vit filter:                        36  (0.00183374); expected 19.6 (0.001)
+Passed Fwd filter:                         5  (0.000254686); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.39u 0.20s 00:00:00.59 Elapsed: 00:00:00.36
+# Mc/sec: 2932.54
+//
+Query:       orf2  [L=96]
+Description: source=IMGVR_UViG_3300033406_000400_3300033406_Ga0316604_10000021_26914-65783/27344-25645 coords=479..192 length=96 frame=4 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (96 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       352  (0.0179299); expected 392.6 (0.02)
+Passed bias filter:                      254  (0.0129381); expected 392.6 (0.02)
+Passed Vit filter:                        11  (0.00056031); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.34u 0.17s 00:00:00.51 Elapsed: 00:00:00.33
+# Mc/sec: 967.85
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300031867_008521_3300031867_Ga0326511_10019870_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300031867_008521_3300031867_Ga0326511_10019870_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=277]
+Description: source=IMGVR_UViG_3300031867_008521_3300031867_Ga0326511_10019870/2409-671 coords=1..831 length=277 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+       0.03   14.0   0.0      0.049   13.3   0.0    1.2  1  DUF1609   Protein of unknown function (DUF1609)
+      0.087   12.7   0.0       0.36   10.8   0.0    1.9  2  CvfB_WH   CvfB-like winged helix domain
+
+
+Domain annotation for each model (and alignments):
+>> DUF1609  Protein of unknown function (DUF1609)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.0     5e-06     0.049     175     213 ..      50      88 ..      46     102 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 5e-06
+  DUF1609 175 edeelsdaskfvyPkgvrsevvkekdefrivwrnpkdts 213
+              + +e+ d+ +++yPk  r   vk+ ++fr  +r    t+
+     orf1  50 HADEVLDMFMYEYPKTARRKDVKSLEKFRAQYRSVLFTT 88 
+              56899***************************9876665 PP
+
+>> CvfB_WH  CvfB-like winged helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   3.6e-05      0.36       4      49 ..      97     143 ..      96     147 .. 0.87
+   2 ?   -1.6   0.0      0.26   2.6e+03       2      17 ..     248     264 ..     247     271 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 3.6e-05
+  CvfB_WH   4 levLkengGflpltDksdPeeIkavfgiSKkaFK.rAvGaLlkqgkI 49 
+              l v+ +ng++l++ Dk++    +a++++S  +FK rA G+  +++ I
+     orf1  97 LHVMTNNGNTLNYVDKASQMILSAAYDLSAETFKlRARGNTERRKNI 143
+              67899*****************************7787776665555 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.26
+  CvfB_WH   2 kilevLken.gGflplt 17 
+               +   +ke+ gG+lpl 
+     orf1 248 VLTTLIKEApGGRLPLV 264
+              56677888899999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (277 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       383  (0.019509); expected 392.6 (0.02)
+Passed bias filter:                      326  (0.0166055); expected 392.6 (0.02)
+Passed Vit filter:                        16  (0.000814996); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.30u 0.20s 00:00:00.50 Elapsed: 00:00:00.35
+# Mc/sec: 2570.78
+//
+[ok]

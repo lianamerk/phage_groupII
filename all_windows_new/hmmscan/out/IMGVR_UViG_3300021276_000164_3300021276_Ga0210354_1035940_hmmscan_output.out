@@ -1,0 +1,97 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./all_windows_new/hmmscan/out/IMGVR_UViG_3300021276_000164_3300021276_Ga0210354_1035940_hmmscan_output.out
+# per-seq hits tabular output:     ./all_windows_new/hmmscan/tblout/IMGVR_UViG_3300021276_000164_3300021276_Ga0210354_1035940_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=427]
+Description: source=IMGVR_UViG_3300021276_000164_3300021276_Ga0210354_1035940/410-1987 coords=1..1281 length=427 frame=1 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.7e-31  109.0   0.0    4.4e-31  108.3   0.0    1.3  1  RVT_1     Reverse transcriptase (RNA-dependent DNA polymerase
+    1.2e-23   83.3   2.2    1.8e-23   82.7   0.1    2.3  2  RVT_N     N-terminal domain of reverse transcriptase
+  ------ inclusion threshold ------
+       0.18   11.4   0.0       0.33   10.5   0.0    1.4  1  PgdA_N    Peptidoglycan GlcNAc deacetylase N-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> RVT_1  Reverse transcriptase (RNA-dependent DNA polymerase)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.3   0.0   6.7e-35   4.4e-31       2     221 ..      89     298 ..      88     299 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 108.3 bits;  conditional E-value: 6.7e-35
+            E-TT.S-EEE......-THHHHCTB--.........-------HHHH.................HCCHTS--EEEEEEBCCGCCCSBB-GGGGGGG-EEET... CS
+  RVT_1   2 pKkgpgsyRpisllsvdykalnkliakrLkdvlekllsenqpgfrpgrstldav....edllkalkkkkkaklllklDlkkaFdsvpleellrkltafkvptkl 101
+             K + g+ Rp+++++++++a++ l++ +L++v+e+   + ++gfrpg+st+d      ++l++  + ++++k++lklD++++Fd++++e+ ++  t   v    
+   orf1  89 TKAN-GKQRPLGIPTTRDRAMQCLVKYALEPVYESYAFDGSYGFRPGHSTWDIQnrlfQNLKS--NWNGSKKTILKLDIEGCFDTINHEKMMSLTTLPEVA--- 186
+            5888.*********************************************9977654333333..367788*******************99988885555... PP
+
+            ......................TEEEEESB--ST-TTHHHHHHHHHHHHHTT-T.........TEEECTTEEEEEESSHHHHHHHHHHHHHHHHHTT--BEGGG CS
+  RVT_1 102 inliksflstrsfsvrvngeeskgryekkglpqGsvlSPllfnlfmnellrelrkra...kgvtllrYaDDililskskeelqelleaveewlkesglkinpeK 202
+             ++++s l          g  +++ +   ++pqG+ +SP+l+n++++ ++   + ++   k    lrYa D++++    e +++ +++v+++l+  glk  ++K
+   orf1 187 KKILRSAL----E----AGILKEQDKNLLVTPQGCLVSPVLCNIALHGIEDLNNVKIrgqKYQRGLRYANDMIFILMPGECCETFINKVKDFLSTRGLKADEAK 282
+            45777777....2....233567788999**************************996666666689*****999999999*********************** PP
+
+            -EEE.....ESSEEETTEE CS
+  RVT_1 203 tklvlftvkseevkyLGvt 221
+            tk+v+     + +++LG +
+   orf1 283 TKIVS---PLKGFDFLGWQ 298
+            ****7...9999*****87 PP
+
+>> RVT_N  N-terminal domain of reverse transcriptase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.7   0.1   2.8e-27   1.8e-23      13      83 .]       2      72 ..       1      72 [. 0.98
+   2 ?   -1.0   0.2      0.36   2.4e+03      20      45 ..     309     334 ..     299     345 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 82.7 bits;  conditional E-value: 2.8e-27
+  RVT_N 13 VfkLqkrIykAsqegdikkvkkLqklLtkSlsakllavrrVtqdnkgkktagvdgvksltpkerlelveeL 83
+           +f+Lq+rI+kA++++d++ vk+Lq lL+ S ++k lavr+  q n gkktag+dg+ksl+pker++lv+eL
+   orf1  2 LFRLQNRIFKAAKRNDFNSVKRLQSLLLGSKCSKYLAVRQTIQFNAGKKTAGIDGIKSLNPKERFQLVTEL 72
+           69******************************************************************987 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.36
+  RVT_N  20 IykAsqegdikkvkkLqklLtkSlsa 45 
+            +   sq+++ + +++++ l+  S + 
+   orf1 309 VCYPSQKNRKQMIHRIKFLMKDSRYK 334
+            55567889999999999999988875 PP
+
+>> PgdA_N  Peptidoglycan GlcNAc deacetylase N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   5.1e-05      0.33     134     186 ..     260     315 ..     252     326 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 5.1e-05
+             HHHHHHHHHH----------.-------------GGG--EEE..ETTEEEE----- CS
+  PgdA_N 134 keillneikeqLekkkleet.dveeivkklesldLsalsFsY..kdsqlvlklpka 186
+              e+++n++k++L  ++l+ +  +++iv  l+  d   ++F+   k  +lv +++++
+    orf1 260 CETFINKVKDFLSTRGLKADeAKTKIVSPLKGFDFLGWQFRVqaKTNKLVCYPSQK 315
+             589**************9661578999*************8622556777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (427 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       833  (0.0424307); expected 392.6 (0.02)
+Passed bias filter:                      603  (0.0307152); expected 392.6 (0.02)
+Passed Vit filter:                        37  (0.00188468); expected 19.6 (0.001)
+Passed Fwd filter:                         3  (0.000152812); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.31u 0.18s 00:00:00.49 Elapsed: 00:00:00.31
+# Mc/sec: 4476.99
+//
+[ok]

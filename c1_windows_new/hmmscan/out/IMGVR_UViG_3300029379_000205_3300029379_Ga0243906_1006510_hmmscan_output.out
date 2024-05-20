@@ -1,0 +1,104 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             -
+# target HMM database:             /n/eddy_lab/data/pfam-35.0/Pfam-A.hmm
+# output directed to file:         ./c1_windows_new/hmmscan/out/IMGVR_UViG_3300029379_000205_3300029379_Ga0243906_1006510_hmmscan_output.out
+# per-seq hits tabular output:     ./c1_windows_new/hmmscan/tblout/IMGVR_UViG_3300029379_000205_3300029379_Ga0243906_1006510_hmmscan_output.tblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       orf1  [L=231]
+Description: source=IMGVR_UViG_3300029379_000205_3300029379_Ga0243906_1006510/1-1359 coords=2..694 length=231 frame=2 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    3.3e-67  227.0   0.0    3.8e-67  226.8   0.0    1.0  1  Phage_portal    Phage portal protein
+  ------ inclusion threshold ------
+      0.095   12.0   0.0       0.13   11.6   0.0    1.1  1  Phage_portal_2  Phage portal protein, lambda family
+
+
+Domain annotation for each model (and alignments):
+>> Phage_portal  Phage portal protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.8   0.0   3.9e-71   3.8e-67     125     316 .]       1     191 [.       1     191 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 226.8 bits;  conditional E-value: 3.9e-71
+                   HHHHTHHHHHHHHHHHHHHHHHHHS---BS-EEEE--.SS--HHHHHHHHHHHHTTTSSSTTTTB---B-SSEEEE----SS-S-SSHHHHHHHHHH CS
+  Phage_portal 125 pleaareaiglalaaeeyaakffkngarpsgiLkikapgklsdeqrkrlkeefeeaysgasnagkvavleggmdykplslspedaqflesrkfavee 221
+                   p+++a++aig++ a eey+a+ff nga+psg+L  ++pg +++   +r+++++++ay+g +na+kvavle+g++++p+s+++++aqfle+rkf++ee
+          orf1   1 PIALAKNAIGISIACEEYGASFFGNGASPSGVL--EHPGVIKNP--ERVRDAWQRAYGG-RNAHKVAVLEEGVKFTPISIPNNEAQFLETRKFQIEE 92 
+                   899******************************..999888764..79***********.599********************************** PP
+
+                   HHHHHT--HHHHT--SS-SSSSSTTHHHHHHHHTSHHHHHHHHHHHHHHHC.......-EEEE-CSS-GHHHHHHHHH...HHHS-TTS-HHHHHHH CS
+  Phage_portal 222 IarafgvpphllgdlgkstysnieeanlafventllPllkrieqelnrkLl....kkglyiefnldellrgdtktraeayaklvqagiltpNEvRal 314
+                   Iar+++vp h++gdl+++t+sn+e+ +l+fv+++l+P++ r+eq l + Ll    k +++i+fn+++llrgd ++r++ ya+++q+g+++ N++R+l
+          orf1  93 IARMYRVPLHMIGDLDHATFSNVEHLSLDFVKYSLDPWIVRWEQGLMKALLsdseKGKYFIKFNVEGLLRGDYASRMQGYATARQNGWMSANDIREL 189
+                   *******************************************************888**************************************9 PP
+
+                   HT CS
+  Phage_portal 315 en 316
+                   e+
+          orf1 190 ED 191
+                   86 PP
+
+>> Phage_portal_2  Phage portal protein, lambda family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.3e-05      0.13     291     350 ..      60     118 ..      27     126 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.3e-05
+  Phage_portal_2 291 aiveLapGedvkflnparpganfeaFvkaqlraiAaglgvpyelltgDlsgvnYSsaRaa 350
+                     +++ L++G ++++++ ++  a+f + +k+q+++iA+ ++vp + + gDl  +++S + + 
+            orf1  60 KVAVLEEGVKFTPISIPNNEAQFLETRKFQIEEIARMYRVPLH-MIGDLDHATFSNVEHL 118
+                     5778*************************************97.679********87655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (231 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       378  (0.0192543); expected 392.6 (0.02)
+Passed bias filter:                      337  (0.0171659); expected 392.6 (0.02)
+Passed Vit filter:                        23  (0.00117156); expected 19.6 (0.001)
+Passed Fwd filter:                         2  (0.000101874); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.32u 0.19s 00:00:00.51 Elapsed: 00:00:00.35
+# Mc/sec: 2141.77
+//
+Query:       orf2  [L=122]
+Description: source=IMGVR_UViG_3300029379_000205_3300029379_Ga0243906_1006510/1-1359 coords=998..633 length=122 frame=5 desc=
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (122 residues searched)
+Target model(s):                       19632  (3329936 nodes)
+Passed MSV filter:                       471  (0.0239914); expected 392.6 (0.02)
+Passed bias filter:                      276  (0.0140587); expected 392.6 (0.02)
+Passed Vit filter:                        15  (0.000764059); expected 19.6 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              19632  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.28u 0.19s 00:00:00.47 Elapsed: 00:00:00.32
+# Mc/sec: 1268.07
+//
+[ok]
