@@ -1,0 +1,204 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad annotate (v1.8.0). This will perform gene calling in the  │
+│  input sequences and annotate the predicted proteins with geNomad's          │
+│  markers.                                                                    │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_annotate                                                         │
+│    ├── CP133956_annotate.json (execution parameters)                         │
+│    ├── CP133956_genes.tsv (gene annotation data)                             │
+│    ├── CP133956_taxonomy.tsv (taxonomic assignment)                          │
+│    ├── CP133956_mmseqs2.tsv (MMseqs2 output file)                            │
+│    └── CP133956_proteins.faa (protein FASTA file)                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:38:08] Executing genomad annotate.                                          
+[10:38:08] Creating the CP133956_annotate directory.                            
+[10:38:14] Proteins predicted with pyrodigal-gv were written to                 
+           CP133956_proteins.faa.                                               
+[10:38:58] Proteins annotated with MMseqs2 and geNomad database (v1.7) were     
+           written to CP133956_mmseqs2.tsv.                                     
+[10:38:58] Deleting CP133956_mmseqs2.                                           
+[10:39:01] Gene data was written to CP133956_genes.tsv.                         
+[10:39:01] Taxonomic assignment data was written to CP133956_taxonomy.tsv.      
+[10:39:01] geNomad annotate finished!                                           
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad find-proviruses (v1.8.0). This will find putative         │
+│  proviral regions within the input sequences.                                │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_find_proviruses                                                  │
+│    ├── CP133956_find_proviruses.json (execution parameters)                  │
+│    ├── CP133956_provirus.tsv (provirus data)                                 │
+│    ├── CP133956_provirus.fna (provirus nucleotide sequences)                 │
+│    ├── CP133956_provirus_proteins.faa (provirus protein sequences)           │
+│    ├── CP133956_provirus_genes.tsv (provirus gene annotation data)           │
+│    ├── CP133956_provirus_taxonomy.tsv (provirus taxonomic assignment)        │
+│    ├── CP133956_provirus_mmseqs2.tsv (MMseqs2 output file)                   │
+│    └── CP133956_provirus_aragorn.tsv (Aragorn output file)                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:39:01] Executing genomad find-proviruses.                                   
+[10:39:01] Creating the CP133956_find_proviruses directory.                     
+[10:39:11] Integrases identified with MMseqs2 and geNomad database (v1.7) were  
+           written to CP133956_provirus_mmseqs2.tsv.                            
+[10:39:11] Deleting CP133956_provirus_mmseqs2.                                  
+[10:39:12] Deleting CP133956_provirus_mmseqs2_input.faa.                        
+[10:39:14] tRNAs identified with Aragorn were written to                        
+           CP133956_provirus_aragorn.tsv.                                       
+[10:39:14] Deleting CP133956_provirus_aragorn_input.fna.                        
+[10:39:14] Provirus regions identified.                                         
+[10:39:14] Provirus data was written to CP133956_provirus.tsv.                  
+[10:39:14] Provirus nucleotide sequences were written to CP133956_provirus.fna. 
+[10:39:14] Provirus protein sequences were written to                           
+           CP133956_provirus_proteins.faa.                                      
+[10:39:14] Provirus gene data was written to CP133956_provirus_genes.tsv.       
+[10:39:14] Taxonomic assignment data was written to                             
+           CP133956_provirus_taxonomy.tsv.                                      
+[10:39:14] geNomad find-proviruses finished!                                    
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad marker-classification (v1.8.0). This will classify the    │
+│  input sequences into chromosome, plasmid, or virus based on the presence    │
+│  of geNomad markers and other gene-related features.                         │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_marker_classification                                            │
+│    ├── CP133956_marker_classification.json (execution parameters)            │
+│    ├── CP133956_features.tsv (sequence feature data: tabular format)         │
+│    ├── CP133956_features.npz (sequence feature data: binary format)          │
+│    ├── CP133956_marker_classification.tsv (sequence classification: tabular  │
+│    │   format)                                                               │
+│    ├── CP133956_marker_classification.npz (sequence classification: binary   │
+│    │   format)                                                               │
+│    ├── CP133956_provirus_features.tsv (provirus feature data: tabular        │
+│    │   format)                                                               │
+│    ├── CP133956_provirus_features.npz (provirus feature data: binary         │
+│    │   format)                                                               │
+│    ├── CP133956_provirus_marker_classification.tsv (provirus                 │
+│    │   classification: tabular format)                                       │
+│    └── CP133956_provirus_marker_classification.npz (provirus                 │
+│        classification: binary format)                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:39:14] Executing genomad marker-classification.                             
+[10:39:14] Creating the CP133956_marker_classification directory.               
+[10:39:15] Sequence features computed.                                          
+[10:39:15] Sequence features in binary format written to CP133956_features.npz. 
+[10:39:15] Sequence features in tabular format written to CP133956_features.tsv.
+[10:39:15] Provirus features computed.                                          
+[10:39:15] Provirus features in binary format written to                        
+           CP133956_provirus_features.npz.                                      
+[10:39:15] Provirus features in tabular format written to                       
+           CP133956_provirus_features.tsv.                                      
+[10:39:16] Sequences classified.                                                
+[10:39:16] Sequence classification in binary format written to                  
+           CP133956_marker_classification.npz.                                  
+[10:39:16] Sequence classification in tabular format written to                 
+           CP133956_marker_classification.tsv.                                  
+[10:39:16] Proviruses classified.                                               
+[10:39:16] Provirus classification in binary format written to                  
+           CP133956_provirus_marker_classification.npz.                         
+[10:39:16] Provirus classification in tabular format written to                 
+           CP133956_provirus_marker_classification.tsv.                         
+[10:39:16] geNomad marker-classification finished!                              
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad nn-classification (v1.8.0). This will classify the input  │
+│  sequences into chromosome, plasmid, or virus based on the nucleotide        │
+│  sequence.                                                                   │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_nn_classification                                                │
+│    ├── CP133956_nn_classification.json (execution parameters)                │
+│    ├── CP133956_encoded_sequences (directory containing encoded sequence     │
+│    │   data)                                                                 │
+│    ├── CP133956_nn_classification.tsv (contig classification: tabular        │
+│    │   format)                                                               │
+│    ├── CP133956_nn_classification.npz (contig classification: binary         │
+│    │   format)                                                               │
+│    ├── CP133956_encoded_proviruses (directory containing encoded sequence    │
+│    │   data)                                                                 │
+│    ├── CP133956_provirus_nn_classification.tsv (provirus classification:     │
+│    │   tabular format)                                                       │
+│    └── CP133956_provirus_nn_classification.npz (provirus classification:     │
+│        binary format)                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:40:21] Executing genomad nn-classification.                                 
+[10:40:21] Creating the CP133956_nn_classification directory.                   
+[10:40:21] Creating the CP133956_nn_classification/CP133956_encoded_sequences   
+           directory.                                                           
+[10:40:26] Encoded sequence data written to CP133956_encoded_sequences.         
+[10:40:26] Creating the CP133956_nn_classification/CP133956_encoded_proviruses  
+           directory.                                                           
+[10:40:26] Encoded provirus data written to CP133956_encoded_proviruses.        
+
+[10:40:34] Sequences classified.                                                
+[10:40:34] Sequence classification in binary format written to                  
+           CP133956_nn_classification.npz.                                      
+[10:40:34] Deleting encoded sequence data.                                      
+[10:40:34] Sequence classification in tabular format written to                 
+           CP133956_nn_classification.tsv.                                      
+
+[10:40:35] Proviruses classified.                                               
+[10:40:35] Provirus classification in binary format written to                  
+           CP133956_provirus_nn_classification.npz.                             
+[10:40:35] Deleting encoded provirus data.                                      
+[10:40:35] Provirus classification in tabular format written to                 
+           CP133956_provirus_nn_classification.tsv.                             
+[10:40:35] geNomad nn-classification finished!                                  
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad aggregated-classification (v1.8.0). This will aggregate   │
+│  the results of the marker-classification and nn-classification modules to   │
+│  classify the input sequences into chromosome, plasmid, or virus.            │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_aggregated_classification                                        │
+│    ├── CP133956_aggregated_classification.json (execution parameters)        │
+│    ├── CP133956_aggregated_classification.tsv (sequence classification:      │
+│    │   tabular format)                                                       │
+│    ├── CP133956_aggregated_classification.npz (sequence classification:      │
+│    │   binary format)                                                        │
+│    ├── CP133956_provirus_aggregated_classification.tsv (provirus             │
+│    │   classification: tabular format)                                       │
+│    └── CP133956_provirus_aggregated_classification.npz (provirus             │
+│        classification: binary format)                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:40:36] Executing genomad aggregated-classification.                         
+[10:40:36] Creating the CP133956_aggregated_classification directory.           
+[10:40:36] The total marker frequencies of the input sequences were computed.   
+[10:40:36] Sequences classified.                                                
+[10:40:36] Sequence classification in binary format written to                  
+           CP133956_aggregated_classification.npz.                              
+[10:40:36] Sequence classification in tabular format written to                 
+           CP133956_aggregated_classification.tsv.                              
+[10:40:36] Proviruses classified.                                               
+[10:40:36] Provirus classification in binary format written to                  
+           CP133956_provirus_aggregated_classification.npz.                     
+[10:40:36] Provirus classification in tabular format written to                 
+           CP133956_provirus_aggregated_classification.tsv.                     
+[10:40:36] geNomad aggregated-classification finished!                          
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad summary (v1.8.0). This will summarize the results across  │
+│  modules into a classification report.                                       │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    CP133956_summary                                                          │
+│    ├── CP133956_summary.json (execution parameters)                          │
+│    ├── CP133956_virus_summary.tsv (virus classification summary)             │
+│    ├── CP133956_plasmid_summary.tsv (plasmid classification summary)         │
+│    ├── CP133956_virus.fna (virus nucleotide FASTA file)                      │
+│    ├── CP133956_plasmid.fna (plasmid nucleotide FASTA file)                  │
+│    ├── CP133956_virus_proteins.faa (virus protein FASTA file)                │
+│    ├── CP133956_plasmid_proteins.faa (plasmid protein FASTA file)            │
+│    ├── CP133956_virus_genes.tsv (virus gene annotation data)                 │
+│    └── CP133956_plasmid_genes.tsv (plasmid gene annotation data)             │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[10:40:36] Executing genomad summary.                                           
+[10:40:36] Creating the CP133956_summary directory.                             
+[10:40:36] Using scores from aggregated-classification.                         
+[10:40:36] 0 plasmid(s) and 2 virus(es) were identified.                        
+[10:40:36] Nucleotide sequences were written to CP133956_plasmid.fna and        
+           CP133956_virus.fna.                                                  
+[10:40:36] Protein sequences were written to CP133956_plasmid_proteins.faa and  
+           CP133956_virus_proteins.faa.                                         
+[10:40:36] Gene annotation data was written to CP133956_plasmid_genes.tsv and   
+           CP133956_virus_genes.tsv.                                            
+[10:40:36] Summary files were written to CP133956_plasmid_summary.tsv and       
+           CP133956_virus_summary.tsv.                                          
+[10:40:36] geNomad summary finished!                                            
