@@ -16,20 +16,17 @@ hmmsearch --tblout RVT_gii_hmmscan.tblout -o RVT_gii_hmmscan.out -A RVT_gii_hmms
 hmmsearch --tblout RVT_crispr_hmmscan.tblout -o RVT_crispr_hmmscan.out -A RVT_crispr_hmmscan.aout ../PF00078.hmm crispr.faa
 hmmsearch --tblout RVT_g2l_hmmscan.tblout -o RVT_g2l_hmmscan.out -A RVT_g2l_hmmscan.aout ../PF00078.hmm g2l.faa
 
-3. Convert each .out to a .faa and take a subset of 20 of those so the tree isn't too full. The script to do this is called "convert.sh" so just run the following command in the each_cat directory.
-bash convert.sh
+3. Convert each .out to a .faa and take a subset of 20 of those so the tree isn't too full. The script to do this is called filter_and_sample.py. Then add the subtype prefixes using add_headers.py
 
-4. Combine them into one big .faa: cat *subset20.faa > toro_evensubset.faa.
+4. Combine them into one big .faa: cat each_cat/*sample20_prefix* > toro_subsampled.faa
 
 Now, to collect the sequences from the millard introns, (still in the each_cat directory), run:
-sbatch -t 6-00:00 -p eddy -J hmmsearch -c 64 --mem-per-cpu=6G -N 1 -o %x.out --wrap="hmmsearch --tblout RVT_millard_hmmscan.tblout -o RVT_millard_hmmscan.out -A RVT_millard_hmmscan.aout ./PF00078.hmm /n/eddy_lab/users/lmerk/millard_sept/inphared_11Sep2024/11Sep2024_vConTACT2_proteins.faa"
+sbatch -t 6-00:00 -p eddy -J hmmsearch -c 64 --mem-per-cpu=6G -N 1 -o %x.out --wrap="hmmsearch --tblout RVT_millard_hmmscan.tblout -o RVT_millard_hmmscan.out -A RVT_millard_hmmscan.aout ./PF00078.hmm {path/to/inphared_vConTACT2_proteins.faa}"
 
-5. From the Millard search, grab just the ones that are in group II introns: python pull.py millard_RVT_hmmsearch.faa  millard_introns.txt millard_intron.faa
-
-6. Combine the two: cat toro_evensubset.faa millard_intron.faa > both.faa
+6. Combine the toro subset with the Millard IEPs: cat toro_evensubset.faa millard_intron.faa > both.faa
 
 7. Submit a job to make the tree (in an environment that has MAFFT, mine is in 'defensefinder' env):
 sbatch tree.sh
 
-8. View it in iTol, and you can use the metadata text file (final_colorstrip.txt).
+8. View it in iTol, and you can use the create a metadata text file using colorstrip.py
 

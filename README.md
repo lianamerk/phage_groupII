@@ -21,11 +21,9 @@ Code corresponing to the paper:
 ---
 
 # Genomes
-- **Code**
-    - Inphared pipeline for genome assembly and annotation
-- **Data**
-    - Metadata [`phage_metadata.tsv`](genomes/data/metadata/phage_metadata.tsv)
-    - Genbank annotations [`genomes/data/annotation/_gbks/`](genomes/data/annotation/_gbks)
+
+- [Inphared perl script](https://github.com/RyanCook94/inphared/blob/main/inphared.pl)was used in  December 2023, Millard Lab, but genomes from this version are available from the [Millard lab website](http://millardlab.org/bacteriophage-genomics/phage-genomes-dec-2023/).
+- [IMG/VR database v4.1 ](https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
 
 ---
 
@@ -41,7 +39,7 @@ Group II intron depicted is BUCT083 prediction by [viennaRNA](http://rna.tbi.uni
 
 [Matplotlib python script]("./viz/fig2/matplotlib_clusters.py") to create base of subtype tree, later modified in Illustrator.
 
-To assign subtypes, a mixture of secondary structure prediction and sequence similarity was used. The secondary structure prediction was done by [viennaRNA](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi) and key structural components were verified by eye. the sequence similarity was done by [nhmmer].
+To assign subtypes, a mixture of secondary structure prediction and sequence similarity was used. The secondary structure prediction was done by [viennaRNA](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi) and key structural components were verified by eye. Sequence similarity was done by [nhmmer].
 
 ``` bash
 cmsearch -o g2_intron_IB.out -A g2_intron_IB.aout --tblout g2_intron_IB.tblout --verbose -E 10 --cpu 64 /n/eddy_lab/users/lmerk/infernal_builds/g2_introns.cm ./IB.fna 
@@ -104,6 +102,7 @@ Follow the protocol listed in 00README.txt.
 Follow the protocol listed in 00README.txt.
 
 ## Supplementary Table 1
-To identify the closest uninterrupted gene, the flanking gene was extracted from the genbank file and used as a query in a pHMMER search against Uniprot downloaded in Nov 2024. The top hit was then reported in Supplementary Table 1. This was run with the bash scripts
-- [`phmmer_millard.sh`](viz/supp_figs/table_s1/flanking_genes/phmmer_millard.sh) against the Millard phage `.faa`
-- [`phmmer.sh`](viz/supp_figs/table_s1/flanking_genes/phmmer.sh) against Uniprot.
+To identify the closest uninterrupted gene, the flanking gene was extracted from the `genbank` file and used as a query in a pHMMER search against Uniprot downloaded in Nov 2024. The top hit was then reported in Supplementary Table 1. This was run with the command:
+``` bash
+phmmer -o ${flank}.out --tblout ${flank}.tblout ${flank}.faa /n/eddy_lab/data/uniprot-2024nov/uniprot.fa
+```

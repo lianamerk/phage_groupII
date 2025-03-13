@@ -9,7 +9,7 @@ with open("all_headers.csv", "w", newline="") as out_csv:
     writer.writerow(["sequence_id", "file_name_no_ext"])
     
     # Loop over all FASTA files ending with "subset20.faa"
-    for faa_file in glob.glob("*subset20.faa"):
+    for faa_file in glob.glob("*sample20.faa"):
         # 1) Remove the ".faa" extension 
         base_name = os.path.splitext(faa_file)[0]
         # e.g. "RVT_retron_hmmscan_subset20.faa" -> "RVT_retron_hmmscan_subset20"
@@ -24,7 +24,7 @@ with open("all_headers.csv", "w", newline="") as out_csv:
         # e.g. "retron_hmmscan_subset20" -> "retron_subset20"
 
         # 4) Remove "_subset20"
-        base_name = base_name.replace("_subset20", "")
+        base_name = base_name.replace("_sample20", "")
         # e.g. "retron_subset20" -> "retron"
 
         file_name_no_ext = base_name
