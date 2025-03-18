@@ -1,15 +1,15 @@
 How to recreate this figure:
 
 1. Search the sep2024 inphared database with the terminase LSU: PF03237
-hmmsearch -o PF03237_millard_sept.out -A PF03237_millard_sept.aout --tblout PF03237_millard_sept.tblout PF03237.hmm /n/eddy_lab/users/lmerk/millard_sept/inphared_11Sep2024/11Sep2024_vConTACT2_proteins.faa 
+hmmsearch -o PF03237_millard_sept.out -A PF03237_millard_sept.aout --tblout PF03237_millard_sept.tblout PF03237.hmm /path/to/millard/genomes/11Sep2024_vConTACT2_proteins.faa 
 
 2. Take the aout from this and construct an hmm: 
 hmmbuild PF03237_millard.hmm PF03237_millard_sept.aout
 
-3. Use this to search the imgvr database: 
-hmmsearch -o PF03237_millard_imgvr.out -A PF03237_millard_imgvr.aout --tblout PF03237_millard_imgvr.tblout millard/PF03237_millard.hmm /n/eddy_lab/users/lmerk/phage_groupII/IMGVR/all_imgvr_hit_genome_annotations/phanotate.faa
+3. Use this to search the IMG/VR genomes that have group II introns, and have been annotated with pharokka:
+hmmsearch -o PF03237_millard_imgvr.out -A PF03237_millard_imgvr.aout --tblout PF03237_millard_imgvr.tblout millard/PF03237_millard.hmm /path/to/IMGVR/genomes/pharokka_annotation/phanotate.faa
 and also to search the Millard database again:
-hmmsearch -o PF03237_millard_sept_2.out -A PF03237_millard_sept_2.aout --tblout PF03237_millard_sept_2.tblout millard/PF03237_millard.hmm /n/eddy_lab/users/lmerk/millard_sept/inphared_11Sep2024/11Sep2024_vConTACT2_proteins.faa 
+hmmsearch -o PF03237_millard_sept_2.out -A PF03237_millard_sept_2.aout --tblout PF03237_millard_sept_2.tblout millard/PF03237_millard.hmm /path/to/millard/genomes/11Sep2024_vConTACT2_proteins.faa  
 
 4. Run through the process in millard/terl_millard_processing.ipynb. This will eventually give you a file, millard/Terminase_6N.faa, which you will use in the joint terminase tree.
 
