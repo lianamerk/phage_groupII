@@ -2,4 +2,4 @@ This directory implements Infernal and updates the genbank files with the indivi
 
 1. Run the bash script to submit Infernal jobs `infernal.sh`
 2. Run `python main.py`
-3. Once you have curated the start/ends of the introns into g2_df.csv, you cna run python `add_full_length_intron.py`
+3. Once you have curated the start/ends of the introns into g2_df.csv, you can run `python add_full_length_intron.py`
