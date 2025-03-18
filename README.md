@@ -22,9 +22,9 @@ Code corresponing to the paper:
 
 # Genomes
 
-- [Inphared perl script](https://github.com/RyanCook94/inphared/blob/main/inphared.pl)was used in  December 2023, Millard Lab, but genomes from this version are available from the [Millard lab website](http://millardlab.org/bacteriophage-genomics/phage-genomes-dec-2023/).
+- [Inphared perl script](https://github.com/RyanCook94/inphared/blob/main/inphared.pl) was used in  December 2023, Millard Lab, but genomes from this version are available from the [Millard lab website](http://millardlab.org/bacteriophage-genomics/phage-genomes-dec-2023/).
 - [IMG/VR database v4.1 ](https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
-
+- [Bakta](https://github.com/oschwengers/bakta) and [Pharokka](https://github.com/gbouras13/pharokka) were both used for annotation of phage genomes with introns.
 ---
 
 ## Figure 1
