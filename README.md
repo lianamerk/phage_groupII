@@ -31,8 +31,6 @@ Code and data corresponing to the paper:
 
 <img src="./viz/fig1/fig1.svg" width=300>
 
-Group II intron depicted is BUCT083 prediction by [viennaRNA](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi), then traced in Illustrator. Remaining portions of the figure made in Illustrator.
-
 ## Figure 2
 
 <img src="./viz/fig2/fig2.svg" width=300>
