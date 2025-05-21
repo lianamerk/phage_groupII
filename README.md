@@ -1,7 +1,7 @@
 # 2025 Phage Group II Introns
 
 ## About
-Code corresponing to the paper:
+Code and data corresponing to the paper:
 
 > [**Group II Introns in Phage Genomes** (2025)]()
 > 
@@ -77,7 +77,10 @@ Follow the protocol listed in 00README.txt.
       - Bacillus phage vB_BspM_Internexus [`MW749003.gb`](viz/fig5/fig5a_newpolymerase/seqs/MW749003.gb)
       - Bacillus phage AR9 [`NC_031039.gb`](viz/fig5/fig5a_newpolymerase/seqs/NC_031039.gb)
 
-### 5b Host Transfer
+### 5b HEG
+CapR and EDxHD/Vsr domains were annotated in genbank files for each homing endonuclease. The `HEG_svg.py` script creates a baseline plot for the HEGs on the same axis.
+
+### 5c Host Transfer
 - **Code**
     - In an environment with `lovis4u` installed, run the following command:
       ``` bash
