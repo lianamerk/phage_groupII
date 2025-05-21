@@ -5,7 +5,7 @@ Code and data corresponing to the paper:
 
 > [**Group II Introns in Phage Genomes** (2025)]()
 > 
-> Liana Merk, Sean Eddy
+> Liana Merk, Tom Jones, Sean Eddy
 
 ## Table of Contents
 - [Genomes](#genomes)
