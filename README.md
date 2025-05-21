@@ -1,7 +1,7 @@
 # 2025 Phage Group II Introns
 
 ## About
-Code corresponing to the paper:
+Code and data corresponing to the paper:
 
 > [**Group II Introns in Phage Genomes** (2025)]()
 > 
